@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+[ -f "$HOME/.xprofile" ] && . ~/.xprofile
+xrdb $HOME/.config/Xorg/Xresources
+
+bash ~/.config/.screenlayout/auto_layout.sh
+bash ~/.config/wallpaper/set_feh_bg.sh
+
+#################################################################################
+# Window manager:
+# DWM:
+#[ -f "$HOME/.config/dwm/statusbar.sh" ] && . ~/.config/dwm/statusbar.sh &
+#exec dwm
+
+# i3:
+exec i3
+##################################################################################

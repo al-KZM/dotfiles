@@ -1,0 +1,76 @@
+#!/usr/bin/env sh
+# Wrappers
+alias lf="lfrun"
+
+alias sudo="sudo "
+alias ka="killall" \
+	mkd="mkdir -pv" \
+	mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
+	calcurse="calcurse -D ~/.config/calcurse" \
+	magit="nvim -c MagitOnly" \
+	p="sudo pacman" \
+	SS="sudo systemctl" \
+	f="$FILE" \
+	g="git" \
+	trem="transmission-remote" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	x="sxiv -ft *" \
+	sdn="sudo shutdown -h now" \
+	gua="git remote | xargs -L1 git push --all" \
+	ls="ls -hN --color=auto --group-directories-first --hide="__pycache__/"" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi" \
+	yt="youtube-dl --add-metadata -i -o '%(upload_date)s-%(title)s.%(ext)s'" \
+	yta="yt -x -f bestaudio/best" \
+	YT="youtube-viewer" \
+	ref="shortcuts >/dev/null; source ~/.config/shortcutrc" \
+	upc="sudo pacman -Syu; pkill -RTMIN+8 i3blocks" \
+	lsp="pacman -Qett --color=always | less" \
+	ffmpeg="ffmpeg -hide_banner"\
+	ll="ls -lash"\
+    pm="python -m"\
+    pi="pip install --user"\
+    chwp="bash ~/.config/wallpaper/set_feh_bg.sh"\
+    rmwp="python ~/.config/wallpaper/forget_wp.py"\
+    python="ipython"\
+    cfi="vi ~/.config/i3/config"\
+    goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
+    python="ipython"\
+    routine="python /home/eyal/documents/programmation/training_programs/routine/myroutine.py"\
+    teaching="bash /home/eyal/documents/programmation/scripts/teacher_screen.sh"\
+    chrome="google-chrome-stable"\
+
+
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" vi="nvim" # Use neovim for vim if present.
+alias mutt="neomutt"
+
+vf() { fzf | xargs -r -I % $EDITOR % ;}
+
+alias ,work="cd ~/documents/work/" \
+,army="cd ~/documents/army/" \
+,di="cd ~/documents/work/dev-institute" \
+,2py="cd ~/documents/work/dev-institute/classes/python2" \
+,3py="cd ~/documents/work/dev-institute/classes/python3" \
+,el="cd ~/documents/work/dev-institute/classes/elijah"\
+,prog="cd ~/documents/programmation"\
+
+
+alias dwm-config="/home/eyal/dwm-install/dwm-6.2/current-dwm-luke/"
+
+alias xcopy="xclip -selection clipboard"
+
+# DONT USE RM ANYMORE
+alias t="rmtrash"
+alias td="rmtrash -r"
+alias rm="echo Use 'tr', or the full path i.e. /bin/rm"
+
+# Files opener
+alias vinit="vi ~/.config/nvim/init.vim.d/"
+alias vplg="vi ~/.config/nvim/init.vim.d/plugins.vim"
+alias vsht="vi ~/.config/nvim/init.vim.d/shortcuts.vim"
+alias vfnc="vi ~/.config/nvim/init.vim.d/functions.vim"
+alias vrtp="vi ~/.config/nvim/init.vim.d/runtime/"
+
+
