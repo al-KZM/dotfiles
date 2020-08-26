@@ -19,21 +19,19 @@ main() {
 				> "$FIFO_UEBERZUG"
 			;;
 		"draw")
-
 			declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW" \
                 [x]="$x_pos" [y]="$y_pos"\
                 [scaler]=cover [scaling_position_x]=1 [scaling_position_y]=1 \
                 [width]="$width" [height]="$height"\
                 [scaling_position_x]=0 [scaling_position_y]=0\
 				 [path]="$img_path") > "$FIFO_UEBERZUG"
+            if [ "$img_path" != $(cat $LAST_PIC_FILE)] ; then
+                echo "$img_path" > $LAST_PIC_FILE
+                lf -remote "send reload"
+            fi
 			;;
 		"*") echo "Unknown command: '$1', '$2'" ;;
 	esac
-    if [ $img_path -ne `cat /tmp/last_ueberzug_img` ] ; then
-        echo $img_path > /tmp/last_ueberzug_img
-        echo "$img_path" >> /tmp/helloworld
-        lf -remote "send reload"
-    fi
 }
 
 main "$@"

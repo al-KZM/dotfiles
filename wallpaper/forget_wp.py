@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/usr/bin/python3
 #
 # remove_current_from_list.py
 # wallpaper

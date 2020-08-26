@@ -6,6 +6,7 @@
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 # Adds python site packages
 export PATH="$PATH:$HOME/.local/lib/python3.8/site-packages"
+export PATH="$PATH:$HOME/.config/scripts/"
 
 export EDITOR="nvim"
 export TERMINAL="st"

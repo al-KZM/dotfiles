@@ -42,35 +42,38 @@ alias ka="killall" \
     teaching="bash /home/eyal/documents/programmation/scripts/teacher_screen.sh"\
     chrome="google-chrome-stable"\
 
-
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" vi="nvim" # Use neovim for vim if present.
 alias mutt="neomutt"
 
 vf() { fzf | xargs -r -I % $EDITOR % ;}
-
-alias ,work="cd ~/documents/work/" \
-,army="cd ~/documents/army/" \
-,di="cd ~/documents/work/dev-institute" \
-,2py="cd ~/documents/work/dev-institute/classes/python2" \
-,3py="cd ~/documents/work/dev-institute/classes/python3" \
-,el="cd ~/documents/work/dev-institute/classes/elijah"\
-,prog="cd ~/documents/programmation"\
-
-
-alias dwm-config="/home/eyal/dwm-install/dwm-6.2/current-dwm-luke/"
-
-alias xcopy="xclip -selection clipboard"
 
 # DONT USE RM ANYMORE
 alias t="rmtrash"
 alias td="rmtrash -r"
 alias rm="echo Use 'tr', or the full path i.e. /bin/rm"
 
+# Navigation
+alias ,work="cd ~/documents/work/"
+alias ,army="cd ~/documents/army/"
+alias ,di="cd ~/documents/work/dev-institute"
+alias ,2py="cd ~/documents/work/dev-institute/classes/python2"
+alias ,3py="cd ~/documents/work/dev-institute/classes/python3"
+alias ,el="cd ~/documents/work/dev-institute/classes/elijah"
+alias ,prog="cd ~/documents/programmation"
+alias ,unif="cd ~/documents/university"
+alias ,linear="cd ~/documents/university/courses_notes/linear_algebra"
+
+alias dwm-config="/home/eyal/dwm-install/dwm-6.2/current-dwm-luke/"
+alias xcopy="xclip -selection clipboard"
+
 # Files opener
 alias vinit="vi ~/.config/nvim/init.vim.d/"
+alias vrc="vi ~/.config/nvim/init.vim.d/init.vim"
 alias vplg="vi ~/.config/nvim/init.vim.d/plugins.vim"
 alias vsht="vi ~/.config/nvim/init.vim.d/shortcuts.vim"
 alias vfnc="vi ~/.config/nvim/init.vim.d/functions.vim"
 alias vrtp="vi ~/.config/nvim/init.vim.d/runtime/"
+alias lfrc="vi ~/.config/lf/lfrc"
+alias alrc="vi ~/.aliasrc"
 
 

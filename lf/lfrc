@@ -19,6 +19,15 @@ cmd open ${{
     esac
 }}
 
+cmd reload_all &{{
+    reload
+    $HOME/.config/lf/image.sh draw "$CACHE" $num 1 $numb $numc
+}}
+
+cmd open_shell_at &{{
+    st -e zsh
+}}
+
 cmd mkdir ${{
   printf "Directory Name: "
   read ans
@@ -182,6 +191,13 @@ map br $vimv $fx
 map r rename
 map H top
 map L bottom
-map R reload
+map R reload_all
+
 map C clear
 map U unselect
+
+# Open in terminal
+map S :open_shell_at
+
+# Navigation
+map ,d cd ~/documents/documentations/
