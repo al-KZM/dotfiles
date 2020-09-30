@@ -43,5 +43,4 @@ mpd >/dev/null 2>&1 &
 # Switch escape and caps if tty:
 sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null
 
-
 sudo mount /dev/sda1 /mnt/usb 2>/dev/null

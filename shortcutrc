@@ -29,20 +29,3 @@ cfB="$EDITOR ~/.config/i3blocks/config" \
 cfk="$EDITOR ~/.config/sxhkd/sxhkdrc" \
 z="$READER $@" \
 
-# automatic ls after a cd and remap actual cd to it
-function cd() {
-	builtin cd "$@" && ls -F;
-    echo "$PWD" > /tmp/last_dir
-}
-
-function lcd(){
-    cd `cat /tmp/last_dir`
-}
-
-function clip(){
-    xclip -sel clip < $1
-}
-
-function add_dotfile(){
-    echo `realpath $1` >> $HOME/.config/dotfiles_bkp/dotfiles_list.txt
-}

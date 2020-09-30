@@ -1,7 +1,10 @@
 # .zshrc
+#
+# Start up Tmux automatically
+##[[ $TERM != "screen" ]] && exec tmux
+
 export ZSH=$HOME/.config/oh-my-zsh
 ZSH_THEME="amuse"
-plugins+=( zsh-syntax-highlighting )
 source $ZSH/oh-my-zsh.sh
 
 # Are we running under grsecurity's RBAC?
@@ -19,7 +22,7 @@ rbac_auth
 # Basic zsh config.
 umask 077
 ZDOTDIR=${ZDOTDIR:-${HOME}}
-ZSHDDIR="${HOME}/.config/zsh.d"
+ZSHDDIR="${HOME}/.config/zsh"
 HISTFILE="${ZDOTDIR}/.zsh_history"
 HISTSIZE='64000'
 SAVEHIST="${HISTSIZE}"
@@ -28,6 +31,8 @@ export TMP="$HOME/tmp"
 export TEMP="$TMP"
 export TMPDIR="$TMP"
 export TMPPREFIX="${TMPDIR}/zsh"
+export LAST_DIR_FILE="$HOME/.last_dir"
+export LAST_LAST_DIR_FILE="$HOME/.last_last_dir"
 
 if [ ! -d "${TMP}" ]; then mkdir "${TMP}"; fi
 
@@ -38,6 +43,8 @@ if [ ! -d "${TMUX_TMPDIR}" ]; then mkdir -p "${TMUX_TMPDIR}"; fi
 if ! [[ "${PATH}" =~ "^${HOME}/bin" ]]; then
     export PATH="${HOME}/bin:${PATH}"
 fi
+
+PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
 
 # Not all servers have terminfo for rxvt-256color. :<
 if [ "${TERM}" = 'rxvt-256color' ] && ! [ -f '/usr/share/terminfo/r/rxvt-256color' ] && ! [ -f '/lib/terminfo/r/rxvt-256color' ] && ! [ -f "${HOME}/.terminfo/r/rxvt-256color" ]; then
@@ -60,22 +67,6 @@ CYAN='\e[1;36m'
 NC='\e[0m'
 
 # Functions
-
-# Fancy cd that can cd into parent directory, if trying to cd into file.
-# useful with ^F fuzzy searcher.
-cd() {
-    if (( $+2 )); then
-        builtin cd "$@"
-        return 0
-    fi
-
-    if [ -f "$1" ]; then
-        echo "${yellow}cd ${1:h}${NC}" >&2
-        builtin cd "${1:h}"
-    else
-        builtin cd "${@}"
-    fi
-}
 
 run_under_tmux() {
     # Run $1 under session or attach if such session already exist.
@@ -107,7 +98,7 @@ run_under_tmux() {
     fi
 }
 
-t() { run_under_tmux rtorrent 'nice -n 19 ionice -c 3 rtorrent'; }
+torrent() { run_under_tmux rtorrent 'nice -n 19 ionice -c 3 rtorrent'; }
 irc() { run_under_tmux irssi "TERM='screen' command irssi"; }
 
 over_ssh() {
@@ -160,9 +151,6 @@ poweroff() { confirm_wrapper --root $0 "$@"; }
 reboot() { confirm_wrapper --root $0 "$@"; }
 hibernate() { confirm_wrapper --root $0 "$@"; }
 
-startx() {
-    exec =startx "$@"
-}
 
 has() {
     local string="${1}"
@@ -602,9 +590,13 @@ bindkey -v '^?' backward-delete-char
 # Additional scripts
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+[ -f "$ZDOTDIR/functions/general_funcs.sh" ] && source "$ZDOTDIR/functions/general_funcs.sh"
 
 # After
 neofetch
+builtin cd `cat $LAST_DIR_FILE`  # cd to last dir
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+

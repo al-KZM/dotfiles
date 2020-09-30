@@ -37,6 +37,10 @@ for_window [instance="dropdown_zsh"] resize set 1200 500
 for_window [instance="dropdown_zsh"] border pixel 3
 for_window [instance="dropdown_*"] move position center
 
+# Every feh is floating and the focus is not switched automatically
+for_window [instance="feh"] floating enable
+no_focus [instance="feh"]
+
 # Add dropdown: clinote_shell.sh
 
 ###---Automatic Startup Windows---###
@@ -193,7 +197,7 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id transmission-daemon
 
 #Polybar
-#exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #Add hebrew to keyboard
 exec_always --no-startup-id setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
@@ -201,14 +205,14 @@ exec_always --no-startup-id setxkbmap -model pc105 -layout us,il -option grp:alt
 ###---Sound Definitions---###
 
 ###---i3 Bar---###
-bar {
-	font pango:mono 10
-    # Reads a program and display everyline of its stdout
-	status_command i3blocks
-	position top
-	mode dock
-	modifier None
-}
+#bar {
+#	font pango:mono 10
+#    # Reads a program and display everyline of its stdout
+#	status_command i3blocks
+#	position top
+#	mode dock
+#	modifier None
+#}
 
 ###---Basic Bindings---###
 bindsym $mod+x			    exec --no-startup-id mpc pause; exec --no-startup-id pauseallmpv ; exec --no-startup-id i3lock -e -f -c 1d2021 ; exec --no-startup-id xset dpms force off
@@ -234,6 +238,10 @@ bindsym $mod+Shift+i        exec --no-startup-id i3resize up
 
 bindsym $mod+n			    exec $term -e newsboat && pkill -RTMIN+6 i3blocks
 
+# Screenshots
+bindsym Print               exec "flameshot gui"
+bindsym Shift+Print         exec "flameshot gui -c -p ~/images/screen_captures"
+bindsym $mod+Print          exec "flameshot full -c -p ~/images/screen_captures"
 
 # Scratchpad
 bindsym $mod+Shift+minus    move scratchpad

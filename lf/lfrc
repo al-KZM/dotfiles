@@ -13,7 +13,7 @@ cmd open ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$f";;
         text/x-tex) $EDITOR "$f";;
-        video/*|image/*/application) xdg-open "$f";;
+        video/*|image/*/application) xdg-open "$f" & disown xdg-open;;
         application/pdf) $READER "$f";;
         *) xdg-open "$f" ;;
     esac
@@ -166,14 +166,6 @@ map tr restore_trash
 # Broot Mapping
 map f broot_jump
 
-# Dragon Mapping
-#map dr dragon
-#map ds dragon-stay
-#map di dragon-individual
-#map dm mvdragon
-#map dc cpdragon
-#map dl dlfile
-
 map ss stripspace
 
 # Basic Functions
@@ -200,4 +192,25 @@ map U unselect
 map S :open_shell_at
 
 # Navigation
-map ,d cd ~/documents/documentations/
+map `m cd /mnt/nasmultimedia/
+
+map `~ cd ~
+map `/ cd /tmp
+
+
+map `d cd ~/documents
+map `h cd ~/documents/documentations/
+map `p cd ~/documents/programmation/
+map `u cd ~/documents/university/
+map `w cd ~/documents/work
+map `i cd ~/documents/work/dev-institute
+map `f cd ~/documents/work/freelance
+map `n cd ~/documents/work/teaching_notes
+
+map `t cd ~/Downloads
+
+map `c cd ~/.config
+map `v cd ~/.config/nvim/init.vim.d
+map `s cd ~/.config/scripts
+
+

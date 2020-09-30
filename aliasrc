@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 # Wrappers
 alias lf="lfrun"
+alias cat="bat"
 
 alias sudo="sudo "
 alias ka="killall" \
@@ -47,6 +48,31 @@ alias mutt="neomutt"
 
 vf() { fzf | xargs -r -I % $EDITOR % ;}
 
+# Commands
+alias cp='cp -iv'
+alias rcp='rsync -v --progress'
+alias rmv='rsync -v --progress --remove-source-files'
+alias mv='mv -iv'
+alias rm='rm -iv'
+alias rmdir='rmdir -v'
+alias ln='ln -v'
+alias chmod="chmod -c"
+alias chown="chown -c"
+alias mkdir="mkdir -v"
+
+if command -v colordiff > /dev/null 2>&1; then
+    alias diff="colordiff -Nuar"
+else
+    alias diff="diff -Nuar"
+fi
+
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias ls='ls --color=auto --human-readable --group-directories-first --classify'
+alias ll='ls --color=auto --human-readable --group-directories-first --classify -l'
+alias lla='ls --color=auto --human-readable --group-directories-first --classify -la'
+
+
 # DONT USE RM ANYMORE
 alias t="rmtrash"
 alias td="rmtrash -r"
@@ -56,6 +82,7 @@ alias rm="echo Use 'tr', or the full path i.e. /bin/rm"
 alias ,work="cd ~/documents/work/"
 alias ,army="cd ~/documents/army/"
 alias ,di="cd ~/documents/work/dev-institute"
+alias ,maayan="cd ~/documents/work/private_classes/maayan"
 alias ,2py="cd ~/documents/work/dev-institute/classes/python2"
 alias ,3py="cd ~/documents/work/dev-institute/classes/python3"
 alias ,el="cd ~/documents/work/dev-institute/classes/elijah"
@@ -67,13 +94,20 @@ alias dwm-config="/home/eyal/dwm-install/dwm-6.2/current-dwm-luke/"
 alias xcopy="xclip -selection clipboard"
 
 # Files opener
-alias vinit="vi ~/.config/nvim/init.vim.d/"
+alias zrc="vi ~/.config/zsh/.zshrc"
 alias vrc="vi ~/.config/nvim/init.vim.d/init.vim"
+alias vinit="vi ~/.config/nvim/init.vim.d/"
 alias vplg="vi ~/.config/nvim/init.vim.d/plugins.vim"
 alias vsht="vi ~/.config/nvim/init.vim.d/shortcuts.vim"
 alias vfnc="vi ~/.config/nvim/init.vim.d/functions.vim"
 alias vrtp="vi ~/.config/nvim/init.vim.d/runtime/"
 alias lfrc="vi ~/.config/lf/lfrc"
+alias lfdoc="lf -doc | less"
 alias alrc="vi ~/.aliasrc"
 
-
+# Tmux
+alias xn="tmux new-session"
+alias xnv="tmux new-session \; split-window -v"
+alias xnh="tmux new-session \; split-window -h"
+alias xls="tmux ls"
+alias xat="tmux attach-session -t "
