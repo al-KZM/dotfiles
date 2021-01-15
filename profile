@@ -10,7 +10,7 @@ export PATH="$PATH:$HOME/.config/scripts/"
 
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="brave"
+export BROWSER="google-chrome-stable"
 export READER="zathura"
 export FILE="vifm"
 export BIB="$HOME/Documents/LaTeX/uni.bib"
@@ -44,3 +44,4 @@ mpd >/dev/null 2>&1 &
 sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null
 
 sudo mount /dev/sda1 /mnt/usb 2>/dev/null
+

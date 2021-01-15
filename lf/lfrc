@@ -25,7 +25,7 @@ cmd reload_all &{{
 }}
 
 cmd open_shell_at &{{
-    st -e zsh
+    nohup st -e zsh
 }}
 
 cmd mkdir ${{

@@ -3,6 +3,8 @@
 alias lf="lfrun"
 alias cat="bat"
 
+alias editbashrc="vi ~/.bashrc; source ~/.bashrc"
+
 alias sudo="sudo "
 alias ka="killall" \
 	mkd="mkdir -pv" \
@@ -36,7 +38,6 @@ alias ka="killall" \
     chwp="bash ~/.config/wallpaper/set_feh_bg.sh"\
     rmwp="python ~/.config/wallpaper/forget_wp.py"\
     python="ipython"\
-    cfi="vi ~/.config/i3/config"\
     goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
     python="ipython"\
     routine="python /home/eyal/documents/programmation/training_programs/routine/myroutine.py"\
@@ -73,13 +74,22 @@ alias ll='ls --color=auto --human-readable --group-directories-first --classify 
 alias lla='ls --color=auto --human-readable --group-directories-first --classify -la'
 
 
+# Scripts
+alias gpush="bash ~/.config/scripts/git_add_commit_push.sh"
+alias grpush="bash ~/.config/scripts/git_add_commit_push.sh routine"
+alias wacomconfig="bash ~/.config/scripts/configure_xsetwacom_tablet.sh"
+
+
 # DONT USE RM ANYMORE
+alias cfi="vi ~/.config/i3/config"
 alias t="rmtrash"
 alias td="rmtrash -r"
 alias rm="echo Use 'tr', or the full path i.e. /bin/rm"
 
 # Navigation
+alias ,cnf="cd ~/.config"
 alias ,work="cd ~/documents/work/"
+alias ,doc="cd ~/documents/"
 alias ,army="cd ~/documents/army/"
 alias ,di="cd ~/documents/work/dev-institute"
 alias ,maayan="cd ~/documents/work/private_classes/maayan"
@@ -88,7 +98,12 @@ alias ,3py="cd ~/documents/work/dev-institute/classes/python3"
 alias ,el="cd ~/documents/work/dev-institute/classes/elijah"
 alias ,prog="cd ~/documents/programmation"
 alias ,unif="cd ~/documents/university"
-alias ,linear="cd ~/documents/university/courses_notes/linear_algebra"
+alias ,ulin="cd ~/documents/university/courses_notes/linear_algebra_1"
+alias ,udisc="cd ~/documents/university/courses_notes/discrete_maths_1"
+alias ,ujav="cd ~/documents/university/courses_notes/java_1"
+alias ,u="cd ~/documents/university"
+# TEMPORARY Navigation
+alias ,raph="cd ~/documents/work/freelance/raph_zeitoun/leslibraires"
 
 alias dwm-config="/home/eyal/dwm-install/dwm-6.2/current-dwm-luke/"
 alias xcopy="xclip -selection clipboard"
@@ -101,9 +116,14 @@ alias vplg="vi ~/.config/nvim/init.vim.d/plugins.vim"
 alias vsht="vi ~/.config/nvim/init.vim.d/shortcuts.vim"
 alias vfnc="vi ~/.config/nvim/init.vim.d/functions.vim"
 alias vrtp="vi ~/.config/nvim/init.vim.d/runtime/"
+alias vtex="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/tex.snippets"
+alias vsnips="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/"
 alias lfrc="vi ~/.config/lf/lfrc"
 alias lfdoc="lf -doc | less"
-alias alrc="vi ~/.aliasrc"
+alias alrc="vi ~/.aliasrc; source ~/.aliasrc"
+
+# Files manipulation
+alias cleantex="bash ~/.config/scripts/clean_latex_compilation_files.sh"
 
 # Tmux
 alias xn="tmux new-session"

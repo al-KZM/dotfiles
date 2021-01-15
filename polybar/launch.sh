@@ -21,4 +21,4 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-polybar top -l $POLYBAR_VERBOSE
+polybar top -l $POLYBAR_VERBOSE -c ~/.config/polybar/config.ini &

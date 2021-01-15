@@ -45,13 +45,13 @@ no_focus [instance="feh"]
 
 ###---Automatic Startup Windows---###
 # Workspace 1 is lifestyle
-exec --no-startup-id st -n lifestyle_news -e newsboat
+#exec --no-startup-id st -n lifestyle_news -e newsboat
 #exec --no-startup-id st -n lifestyle_finder -e ranger
 #exec --no-startup-id st -n lifestyle_music -e spt
 #exec --no-startup-id st -n lifestyle_notes -e clinote_shell.sh
 #exec --no-startup-id st -n lifestyle_todo -e trello_cli
 #exec --no-startup-id st -n lifestyle_calendar -e calendar_cli
-exec --no-startup-id qutebrowser --qtarg name lifestyle_dashboard -r dashboard
+#exec --no-startup-id qutebrowser --qtarg name lifestyle_dashboard -r dashboard
 
 #exec --no-startup-id st -n lifestyle_journal -e daily_journal TODO
 for_window [instance="lifestyle_*"] move container to workspace 1
@@ -76,9 +76,9 @@ for_window [instance="lifestyle_dashboard"] resize set 1473 987
 
 # Workspace 8 is system dashboard
 #exec --no-startup-id i3-msg "workspace 8; exec mem_monitor; exec wifi_dashboard"
-exec --no-startup-id st -n dashboard_memory -e htop
-exec --no-startup-id st -n dashboard_wifi -e nmtui
-exec --no-startup-id st -n dashboard_network -e network_scan
+#exec --no-startup-id st -n dashboard_memory -e htop
+#exec --no-startup-id st -n dashboard_wifi -e nmtui
+#exec --no-startup-id st -n dashboard_network -e network_scan
 for_window [instance="dashboard_*"] move container to workspace 8
 for_window [instance="dashboard_*"] floating enable
 for_window [instance="dashboard_*"] resize set 800 400
@@ -98,6 +98,7 @@ hide_edge_borders smart
 for_window [class="^.*"] border pixel 5
 gaps inner $inner_gaps
 gaps outer $outer_gaps
+gaps top 40
 
 ###---Workspaces---###
 set $ws1 "1"
@@ -222,11 +223,16 @@ bindsym $mod+Shift+grave    exec "shutdown now"
 
 #Start programs
 bindsym $mod+Return         exec $term
+bindsym $mod+v              exec pavucontrol
 bindsym $mod+w              exec --no-startup-id $BROWSER
 bindsym $mod+Shift+w        exec $term -e nmtui
 bindsym $mod+b              exec $term -e lfrun ~/documents/university/courses_notes
 bindsym $mod+t              exec --no-startup-id ddspawn zsh
 bindsym $mod+slash          exec --no-startup-id ddspawn ipython
+
+# Show documents
+bindsym $mod+Shift+n        exec $READER ~/documents/university/courses_notes/linear_algebra_1/course_book.pdf
+bindsym $mod+Shift+b        exec $READER ~/documents/university/courses_notes/discrete_maths_1/course_book.pdf
 
 # Focus on programs
 #bindsym $mod+y [title='nvim'] focus
