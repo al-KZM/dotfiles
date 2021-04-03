@@ -1,0 +1,38 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="Python 3.8" />
+      <type value="Python SDK" />
+      <version value="Python 3.8.6" />
+      <homePath value="/usr/bin/python3.8" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file:///usr/lib/python3.8" type="simple" />
+            <root url="file:///usr/lib/python3.8/lib-dynload" type="simple" />
+            <root url="file://$USER_HOME$/.local/lib/python3.8/site-packages" type="simple" />
+            <root url="jar://$USER_HOME$/.local/lib/python3.8/site-packages/pyclewn-2.3-py3.8.egg!/" type="simple" />
+            <root url="file://$USER_HOME$/.config/qutebrowser/qutescript/src" type="simple" />
+            <root url="file://$USER_HOME$/.local/packages/Flask-AppBuilder" type="simple" />
+            <root url="file:///usr/lib/python3.8/site-packages" type="simple" />
+            <root url="file:///usr/lib/python3.8/site-packages/geeknote-0.2a0-py3.8.egg" type="simple" />
+            <root url="file:///usr/lib/python3.8/site-packages/beautifulsoup4-4.9.0-py3.8.egg" type="simple" />
+            <root url="file:///usr/lib/python3.8/site-packages/markdown2-2.3.8-py3.8.egg" type="simple" />
+            <root url="file:///usr/lib/python3.8/site-packages/SQLAlchemy-1.3.16-py3.8-linux-x86_64.egg" type="simple" />
+            <root url="file://$USER_HOME$/.cache/JetBrains/PyCharmCE2020.3/python_stubs/-1247971761" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stdlib/3.7" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stdlib/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/third_party/3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+  </component>
+</application>

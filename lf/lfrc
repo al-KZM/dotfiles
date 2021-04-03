@@ -14,7 +14,7 @@ cmd open ${{
         text/*|application/json) $EDITOR "$f";;
         text/x-tex) $EDITOR "$f";;
         video/*|image/*/application) xdg-open "$f" & disown xdg-open;;
-        application/pdf) $READER "$f";;
+        application/pdf) $READER "$f" & disown xdg-open;;
         *) xdg-open "$f" ;;
     esac
 }}

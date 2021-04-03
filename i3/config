@@ -12,6 +12,7 @@
 # Start compton
 exec --no-startup-id compton
 
+
 ###---Basic Definitions---###
 #font pango:DejaVu Sans Mono 8
 font pango:monospace 8
@@ -221,6 +222,8 @@ bindsym $mod+Shift+grave    exec "shutdown now"
 #Dropdown
 # TODO
 
+# TEMPORARY FOR LINEAR ALGEBRA EXAM (DELETE AFTER 16.02)
+bindsym $mod+m exec $term -e lfrun /home/eyal/documents/university/courses_notes/linear_algebra_1/LinAlgIpadBackup/ResumeForExam
 #Start programs
 bindsym $mod+Return         exec $term
 bindsym $mod+v              exec pavucontrol
@@ -234,6 +237,7 @@ bindsym $mod+slash          exec --no-startup-id ddspawn ipython
 bindsym $mod+Shift+n        exec $READER ~/documents/university/courses_notes/linear_algebra_1/course_book.pdf
 bindsym $mod+Shift+b        exec $READER ~/documents/university/courses_notes/discrete_maths_1/course_book.pdf
 
+
 # Focus on programs
 #bindsym $mod+y [title='nvim'] focus
 bindsym $mod+comma          exec i3-input -F 'mark %s' -l 1 -P 'Mark: '
@@ -245,9 +249,10 @@ bindsym $mod+Shift+i        exec --no-startup-id i3resize up
 bindsym $mod+n			    exec $term -e newsboat && pkill -RTMIN+6 i3blocks
 
 # Screenshots
-bindsym Print               exec "flameshot gui"
-bindsym Shift+Print         exec "flameshot gui -c -p ~/images/screen_captures"
-bindsym $mod+Print          exec "flameshot full -c -p ~/images/screen_captures"
+bindcode 107                exec "flameshot gui"
+bindsym $mod+Shift+x        exec "flameshot gui"
+#bindcode 78                 exec "flameshot gui -c -p ~/images/screen_captures"
+#bindcode $mod+107           exec "flameshot full -c -p ~/images/screen_captures"
 
 # Scratchpad
 bindsym $mod+Shift+minus    move scratchpad
@@ -390,3 +395,10 @@ bindsym XF86PowerOff		            exec --no-startup-id prompt "Shutdown computer
 
 # Go directly to workspace 2
 exec i3-msg "workspace 2"
+
+# EXAM MODE
+bindsym $mod+Shift+y exec "$HOME/.config/scripts/thebotofeyal.sh send-syntax-check $HOME/documents/university/courses_notes/java_1/Exam/Exam.java"
+
+bindsym $mod+Shift+u exec "$HOME/.config/scripts/thebotofeyal.sh send-output
+
+bindsym $mod+Shift+o exec "$HOME/.config/scripts/exam_auto_push_once.sh"

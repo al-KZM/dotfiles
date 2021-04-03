@@ -592,6 +592,8 @@ bindkey -v '^?' backward-delete-char
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 [ -f "$ZDOTDIR/functions/general_funcs.sh" ] && source "$ZDOTDIR/functions/general_funcs.sh"
 
+export PATH=$PATH:/usr/share/pycharm-community-2020.3.3/bin
+
 # After
 neofetch
 builtin cd `cat $LAST_DIR_FILE`  # cd to last dir

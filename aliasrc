@@ -89,7 +89,7 @@ alias rm="echo Use 'tr', or the full path i.e. /bin/rm"
 # Navigation
 alias ,cnf="cd ~/.config"
 alias ,work="cd ~/documents/work/"
-alias ,doc="cd ~/documents/"
+alias ,doc="cd $DOCUMENTS"
 alias ,army="cd ~/documents/army/"
 alias ,di="cd ~/documents/work/dev-institute"
 alias ,maayan="cd ~/documents/work/private_classes/maayan"
@@ -103,7 +103,8 @@ alias ,udisc="cd ~/documents/university/courses_notes/discrete_maths_1"
 alias ,ujav="cd ~/documents/university/courses_notes/java_1"
 alias ,u="cd ~/documents/university"
 # TEMPORARY Navigation
-alias ,raph="cd ~/documents/work/freelance/raph_zeitoun/leslibraires"
+alias ,exam="cd '/home/eyal/documents/university/courses_notes/discrete_maths_1/BdidaIpadBkp/ResumeForExams'"
+
 
 alias dwm-config="/home/eyal/dwm-install/dwm-6.2/current-dwm-luke/"
 alias xcopy="xclip -selection clipboard"
@@ -131,3 +132,14 @@ alias xnv="tmux new-session \; split-window -v"
 alias xnh="tmux new-session \; split-window -h"
 alias xls="tmux ls"
 alias xat="tmux attach-session -t "
+
+# Java
+alias jvc="javac -d . -sourcepath . *.java"
+alias jvc_src="javac -d . -sourcepath src src/*.java"
+
+# APIS
+alias termbin="nc termbin.com 9999"
+alias paste="sh $HOME/.config/scripts/termbin_file.sh"
+
+# NCDU
+alias scanslash="ncdu / --exclude '/mnt/*' --exclude '/home/*' --exclude '/opt/*' --exclude '/usr/*'"

@@ -1,0 +1,287 @@
+<application>
+  <component name="VimHistorySettings">
+    <history>
+      <history-search>
+        <entry encoding="base64">dG9rZW4=</entry>
+      </history-search>
+      <history-cmd>
+        <entry encoding="base64">d3c=</entry>
+        <entry encoding="base64">cTJ3</entry>
+        <entry encoding="base64">c3c=</entry>
+        <entry encoding="base64">Vw==</entry>
+        <entry encoding="base64">dw==</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+  <component name="VimMarksSettings">
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/wsgi.py" timestamp="1615928309894">
+        <mark key="[" line="2" column="17" />
+        <mark key="]" line="2" column="29" />
+        <mark key="^" line="2" column="29" />
+        <mark key="." line="2" column="28" />
+      </file>
+      <file name="/Python Console" timestamp="1615925678824">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/search_article.html" timestamp="1616359280200">
+        <mark key="'" line="0" column="0" />
+        <mark key="[" line="12" column="16" />
+        <mark key="]" line="12" column="39" />
+        <mark key="." line="12" column="38" />
+        <mark key="^" line="12" column="39" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/forms.py" timestamp="1616360054506">
+        <mark key="[" line="19" column="82" />
+        <mark key="]" line="21" column="41" />
+        <mark key="^" line="21" column="41" />
+        <mark key="." line="21" column="40" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/templates/hour.html" timestamp="1615925452869">
+        <mark key="'" line="2" column="18" />
+        <mark key="[" line="1" column="0" />
+        <mark key="]" line="1" column="0" />
+        <mark key="." line="1" column="0" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/news_functions.py" timestamp="1616357629679">
+        <mark key="[" line="13" column="37" />
+        <mark key="]" line="13" column="37" />
+        <mark key="^" line="13" column="0" />
+        <mark key="." line="13" column="37" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/__init__.py" timestamp="1616353544897">
+        <mark key="[" line="2" column="27" />
+        <mark key="]" line="4" column="56" />
+        <mark key="." line="4" column="55" />
+        <mark key="^" line="4" column="56" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/base.html" timestamp="1616357831882">
+        <mark key="[" line="23" column="0" />
+        <mark key="]" line="23" column="0" />
+        <mark key="." line="23" column="0" />
+        <mark key="^" line="35" column="0" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/templates/base.html" timestamp="1615926540240">
+        <mark key="[" line="10" column="64" />
+        <mark key="]" line="10" column="68" />
+        <mark key="." line="10" column="67" />
+        <mark key="^" line="10" column="68" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/static/css/master.css" timestamp="1615926679671">
+        <mark key="[" line="6" column="0" />
+        <mark key="]" line="6" column="24" />
+        <mark key="." line="6" column="23" />
+        <mark key="^" line="6" column="24" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/base.py" timestamp="1616353047870">
+        <mark key="[" line="0" column="9" />
+        <mark key="]" line="36" column="0" />
+        <mark key="." line="36" column="0" />
+        <mark key="^" line="36" column="0" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/static/master.css" timestamp="1615926494459">
+        <mark key="[" line="1" column="15" />
+        <mark key="]" line="1" column="22" />
+        <mark key="." line="1" column="21" />
+        <mark key="^" line="1" column="22" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/test_form.html" timestamp="1616353399424">
+        <mark key="[" line="5" column="12" />
+        <mark key="]" line="5" column="20" />
+        <mark key="." line="5" column="19" />
+        <mark key="^" line="5" column="20" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/routes.py" timestamp="1616360166316">
+        <mark key="'" line="37" column="3" />
+        <mark key="[" line="52" column="79" />
+        <mark key="]" line="54" column="57" />
+        <mark key="^" line="54" column="57" />
+        <mark key="." line="54" column="56" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/signup.html" timestamp="1616360246900">
+        <mark key="[" line="12" column="12" />
+        <mark key="]" line="13" column="28" />
+        <mark key="." line="13" column="27" />
+        <mark key="^" line="13" column="28" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/search_article.html.py" timestamp="1616357702732">
+        <mark key="[" line="0" column="22" />
+        <mark key="]" line="0" column="24" />
+        <mark key="^" line="0" column="24" />
+        <mark key="." line="0" column="23" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" timestamp="1615926995070">
+        <mark key="'" line="10" column="14" />
+        <mark key="[" line="57" column="0" />
+        <mark key="]" line="57" column="0" />
+        <mark key="^" line="49" column="5" />
+        <mark key="." line="57" column="0" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/articles.html" timestamp="1616357905290">
+        <mark key="[" line="6" column="0" />
+        <mark key="]" line="6" column="37" />
+        <mark key="." line="6" column="36" />
+        <mark key="^" line="6" column="37" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/templates/articles.html" timestamp="1615925449402">
+        <mark key="[" line="0" column="25" />
+        <mark key="]" line="0" column="102" />
+        <mark key="." line="0" column="101" />
+        <mark key="^" line="0" column="102" />
+      </file>
+      <file name="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/news_functions.py" timestamp="1615922330646">
+        <mark key="'" line="6" column="13" />
+        <mark key="[" line="15" column="6" />
+        <mark key="]" line="15" column="6" />
+        <mark key="." line="15" column="6" />
+        <mark key="^" line="15" column="43" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="8" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/oop.py" />
+      <jump line="32" column="2" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/daily_challenge.py" />
+      <jump line="5" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/daily_challenge.py" />
+      <jump line="75" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/daily_challenge.py" />
+      <jump line="60" column="17" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/daily_challenge.py" />
+      <jump line="13" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/oop_exercice.py" />
+      <jump line="0" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/oop_exercice.py" />
+      <jump line="2" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/oop_exercice.py" />
+      <jump line="7" column="32" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/daily_challenge.py" />
+      <jump line="0" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/daily_challenge.py" />
+      <jump line="0" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/oop.py" />
+      <jump line="18" column="1" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/humans_and_cars.py" />
+      <jump line="1" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/humans_and_cars.py" />
+      <jump line="96" column="44" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/humans_and_cars.py" />
+      <jump line="4" column="5" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/inheritance.py" />
+      <jump line="10" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/28_02_oop3/Lottery.py" />
+      <jump line="10" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/main.py" />
+      <jump line="28" column="29" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/operations.py" />
+      <jump line="0" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/calculator.py" />
+      <jump line="29" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/calculator.py" />
+      <jump line="2" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/09_03_modules2/json_test.py" />
+      <jump line="20" column="44" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/test.py" />
+      <jump line="6" column="8" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/test.py" />
+      <jump line="9" column="49" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/test.py" />
+      <jump line="1" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/test.py" />
+      <jump line="45" column="24" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/test.py" />
+      <jump line="14" column="30" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/test.py" />
+      <jump line="36" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/test.py" />
+      <jump line="40" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/test.py" />
+      <jump line="14" column="7" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/09_03_modules2/file_lesson.py" />
+      <jump line="11" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/07_03_modules1/test.py" />
+      <jump line="23" column="16" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="26" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="27" column="3" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="9" column="12" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="6" column="13" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/news_functions.py" />
+      <jump line="71" column="3" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="73" column="11" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="14" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="51" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="13" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="0" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="67" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="10" column="14" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/first.py" />
+      <jump line="36" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/templates/articles.html" />
+      <jump line="0" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/templates/articles.html" />
+      <jump line="2" column="18" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/templates/hour.html" />
+      <jump line="13" column="30" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/14_03_flask1/templates/base.html" />
+      <jump line="8" column="3" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/routes.py" />
+      <jump line="0" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/search_article.html" />
+      <jump line="9" column="0" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/search_article.html" />
+      <jump line="0" column="13" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/articles.html" />
+      <jump line="4" column="16" filename="$USER_HOME$/documents/work/dev-institute/classes/q6-2020/pynews/webapp/templates/signup.html" />
+    </jumps>
+  </component>
+  <component name="VimRegisterSettings">
+    <registers>
+      <register name="&quot;" type="8">
+        <text encoding="base64">dXNlcm5hbWUKdXNlcm5hbWU=</text>
+      </register>
+      <register name="-" type="4">
+        <text encoding="base64">Ig==</text>
+      </register>
+      <register name="m" type="4">
+        <keys>
+          <key char="94" code="0" mods="0" />
+          <key char="118" code="0" mods="0" />
+          <key char="101" code="0" mods="0" />
+          <key char="121" code="0" mods="0" />
+          <key char="105" code="0" mods="0" />
+          <key char="115" code="0" mods="0" />
+          <key char="101" code="0" mods="0" />
+          <key char="108" code="0" mods="0" />
+          <key char="102" code="0" mods="0" />
+          <key char="46" code="0" mods="0" />
+          <key char="65535" code="27" mods="0" />
+          <key char="65" code="0" mods="0" />
+          <key char="32" code="0" mods="0" />
+          <key char="61" code="0" mods="0" />
+          <key char="32" code="0" mods="0" />
+          <key char="65535" code="27" mods="0" />
+          <key char="112" code="0" mods="0" />
+          <key char="106" code="0" mods="0" />
+        </keys>
+      </register>
+      <register name="n" type="4">
+        <keys>
+          <key char="94" code="0" mods="0" />
+          <key char="101" code="0" mods="0" />
+          <key char="65535" code="65" mods="130" />
+          <key char="117" code="0" mods="0" />
+          <key char="65535" code="27" mods="0" />
+          <key char="65535" code="27" mods="0" />
+          <key char="98" code="0" mods="0" />
+        </keys>
+      </register>
+      <register name="/" type="4">
+        <text encoding="base64">dG9rZW4=</text>
+      </register>
+      <register name="0" type="2">
+        <text encoding="base64">ICAgICAgICA8cD4KICAgICAgICAgICAge3sgZm9ybS51c2VybmFtZS5sYWJlbCB9fQogICAgICAgICAgICB7eyBmb3JtLnVzZXJuYW1lKCkgfX0KICAgICAgICA8L3A+Cg==</text>
+      </register>
+      <register name="1" type="8">
+        <text encoding="base64">dXNlcm5hbWUKdXNlcm5hbWU=</text>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CiAgICA8bWV0YSBjaGFyc2V0PSJVVEYtOCI+CiAgICA8dGl0bGU+VGl0bGU8L3RpdGxlPgo8L2hlYWQ+Cjxib2R5PgoKPC9ib2R5Pgo8L2h0bWw+Cg==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgICAgIAo=</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgIAo=</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">ICAgICMK</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">ICAgICAgICAjIFJldHJpZXZlIGFuIGFydGljbGUgdGFsa2luZyBhYm91dCB0aGUgcXVlcnkKICAgICAgICBhcnRpY2xlcyA9IG5ld3NfZnVuY3Rpb25zLmdldF9uZXdzKGZvcm0ucXVlcnkuZGF0YSkKCiAgICAgICAgIyBEaXNwbGF5IHRoZSBhcnRpY2xlcyB3aXRoIGEgdGVtcGxhdGUKICAgICAgICByZXR1cm4gZmxhc2sucmVuZGVyX3RlbXBsYXRlKCJhcnRpY2xlcy5odG1sIiwgYXJ0aWNsZXM9YXJ0aWNsZXMpCg==</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ICAgICAgICBhcnRpY2xlcyA9IG5ld3NfZnVuY3Rpb25zLmdldF9uZXdzKGZvcm0ucXVlcnkuZGF0YSkKCiAgICAgICAgIyBEaXNwbGF5IHRoZSBhcnRpY2xlcyB3aXRoIGEgdGVtcGxhdGUKICAgICAgICByZXR1cm4gZmxhc2sucmVuZGVyX3RlbXBsYXRlKCJhcnRpY2xlcy5odG1sIiwgYXJ0aWNsZXM9YXJ0aWNsZXMpCg==</text>
+      </register>
+      <register name="8" type="2">
+        <text encoding="base64">ICAgICAgICAgICAgCg==</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">ICAgIDxsaT48L2xpPgo=</text>
+      </register>
+      <register name=":" type="4">
+        <text encoding="base64">dw==</text>
+      </register>
+    </registers>
+  </component>
+  <component name="VimSearchSettings">
+    <search>
+      <last-search encoding="base64">dG9rZW4=</last-search>
+      <last-offset encoding="base64" />
+      <last-pattern encoding="base64">dG9rZW4=</last-pattern>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+  </component>
+</application>

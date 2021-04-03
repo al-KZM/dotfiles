@@ -8,6 +8,9 @@ export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$
 export PATH="$PATH:$HOME/.local/lib/python3.8/site-packages"
 export PATH="$PATH:$HOME/.config/scripts/"
 
+
+export DOCUMENTS="$HOME/documents"
+export DOWNLOADS="$HOME/Downloads"
 export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="google-chrome-stable"
@@ -44,4 +47,43 @@ mpd >/dev/null 2>&1 &
 sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null
 
 sudo mount /dev/sda1 /mnt/usb 2>/dev/null
+
+# Open ~/.bash_profile (/users/youruser/.bash_profile) and write this line:
+export DATABASE_URI="postgres://postgres:postgres@localhost:5432/firstdb"
+
+export MAIL_USERNAME="eyalchoc.secondary@gmail.com"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -64,13 +64,49 @@
         </entry>
         <entry key="$USER_HOME$/documents/programmation/java/IdeaProjects/maman_13">
           <value>
-            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1lW24VBkkLiyNkzkrtWW0vMM8yq">
+            <RecentProjectMetaInfo projectWorkspaceId="1lW24VBkkLiyNkzkrtWW0vMM8yq">
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="IC-202.7660.26" />
-              <option name="buildTimestamp" value="1602334102969" />
+              <option name="buildTimestamp" value="1602334091083" />
               <frame x="970" y="39" width="918" height="1009" />
               <option name="productionCode" value="IC" />
-              <option name="projectOpenTimestamp" value="1608481166812" />
+              <option name="projectOpenTimestamp" value="1610719102417" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/documents/university/courses_notes/java_1/exams/maman_14">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1n6mmhL20QIjNybMHPngM4eHUWb">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.7660.26" />
+              <option name="buildTimestamp" value="1602334134555" />
+              <frame x="970" y="39" width="918" height="1009" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1611420393195" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/documents/university/courses_notes/java_1/exams/maman_15">
+          <value>
+            <RecentProjectMetaInfo projectWorkspaceId="1nTfTp212LdvKXCfvQ1eZB26Yyc">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.7660.26" />
+              <option name="buildTimestamp" value="1602334114263" />
+              <frame x="27" y="34" width="1866" height="1019" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1614182917755" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/documents/programmation/java/IdeaProjects/testlala">
+          <value>
+            <RecentProjectMetaInfo opened="true" projectWorkspaceId="1ow1f7O6uClJeFYR2rs1eGVKDyk">
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IC-202.7660.26" />
+              <option name="buildTimestamp" value="1602334114263" />
+              <frame x="27" y="34" width="1866" height="1019" />
+              <option name="productionCode" value="IC" />
+              <option name="projectOpenTimestamp" value="1614182940601" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
@@ -79,6 +115,9 @@
     <option name="lastProjectLocation" value="$USER_HOME$/documents/programmation/java/IdeaProjects" />
     <option name="recentPaths">
       <list>
+        <option value="$USER_HOME$/documents/programmation/java/IdeaProjects/testlala" />
+        <option value="$USER_HOME$/documents/university/courses_notes/java_1/exams/maman_15" />
+        <option value="$USER_HOME$/documents/university/courses_notes/java_1/exams/maman_14" />
         <option value="$USER_HOME$/documents/programmation/java/IdeaProjects/maman_13" />
         <option value="$USER_HOME$/documents/programmation/java/IdeaProjects/maman12" />
         <option value="$USER_HOME$/documents/university/courses_notes/java_1/exams/maman_11" />
