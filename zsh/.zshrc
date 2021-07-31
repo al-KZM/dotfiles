@@ -31,8 +31,8 @@ export TMP="$HOME/tmp"
 export TEMP="$TMP"
 export TMPDIR="$TMP"
 export TMPPREFIX="${TMPDIR}/zsh"
-export LAST_DIR_FILE="$HOME/.last_dir"
-export LAST_LAST_DIR_FILE="$HOME/.last_last_dir"
+export LAST_DIR_FILE="$HOME/.caching_files/.last_dir"
+export LAST_LAST_DIR_FILE="$HOME/.caching_files/.last_last_dir"
 
 if [ ! -d "${TMP}" ]; then mkdir "${TMP}"; fi
 

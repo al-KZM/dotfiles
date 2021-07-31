@@ -2,18 +2,22 @@
 # Profile file. Runs on login.
 
 # PATH
+export PATH=$PATH:/usr/share/pycharm-community-2020.3.3/bin
 # Adds `~/.local/bin/` and all subdirectories to $PATH
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 # Adds python site packages
-export PATH="$PATH:$HOME/.local/lib/python3.8/site-packages"
+export PATH="$PATH:$HOME/.local/lib/python3.9/site-packages"
 export PATH="$PATH:$HOME/.config/scripts/"
 
-# Config paths
-export VIMINIT="source ~/.config/nvim"
+# Add sixgill additionals (https://bitbucket.org/sixgill/sixgill/src/master/) to pythonpath
+export PYTHONPATH="$PYTHONPATH:$HOME/.local/lib/python3.9/site-packages/sixgill-additionals/"
 
+
+export DOCUMENTS="$HOME/documents"
+export DOWNLOADS="$HOME/Downloads"
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="brave"
+export BROWSER="google-chrome-stable"
 export READER="zathura"
 export FILE="vifm"
 export BIB="$HOME/Documents/LaTeX/uni.bib"
@@ -44,6 +48,14 @@ mpd >/dev/null 2>&1 &
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x dwm >/dev/null && exec startx
 
 # Switch escape and caps if tty:
-#sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null
+sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null
 
-#sudo mount /dev/sda1 /mnt/usb 2>/dev/null
+sudo mount /dev/sda1 /mnt/usb 2>/dev/null
+
+# Open ~/.bash_profile (/users/youruser/.bash_profile) and write this line:
+export DATABASE_URI="postgres://postgres:postgres@localhost:5432/firstdb"
+
+export MAIL_USERNAME="eyalchoc.secondary@gmail.com"
+
+# 3 screens layout
+xrandr --output eDP-1 --mode 1920x1080 --pos 4480x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-1-8 --mode 1920x1080 --pos 2560x0 --rotate normal --output DP-1-9 --mode 2560x1080 --pos 0x0 --rotate normal

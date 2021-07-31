@@ -10,3 +10,7 @@ map K zoom in
 map J zoom out
 map i recolor
 map p print
+
+
+map s feedkeys ":blist TOC<Return>"
+map t feedkeys ":blist theo<Return>"

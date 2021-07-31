@@ -3,6 +3,8 @@
 alias lf="lfrun"
 alias cat="bat"
 
+alias editbashrc="vi ~/.bashrc; source ~/.bashrc"
+
 alias sudo="sudo "
 alias ka="killall" \
 	mkd="mkdir -pv" \
@@ -42,6 +44,11 @@ alias ka="killall" \
     routine="python /home/eyal/documents/programmation/training_programs/routine/myroutine.py"\
     teaching="bash /home/eyal/documents/programmation/scripts/teacher_screen.sh"\
     web="$BROWSER"\
+    wpp="vi ~/.config/wallpaper/my_wallpapers.txt"\
+    py="ptipython"\
+    python="ipython"\
+    goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
+    chrome="google-chrome-stable"\
 
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" vi="nvim" # Use neovim for vim if present.
 alias mutt="neomutt"
@@ -59,8 +66,8 @@ alias ln='ln -v'
 alias chmod="chmod -c"
 alias chown="chown -c"
 alias mkdir="mkdir -v"
-alias vi="nvim" 
-
+alias vi="nvim"
+alias pycheck="pylama -o $HOME/.config/pylama/pylama.ini"
 if command -v colordiff > /dev/null 2>&1; then
     alias diff="colordiff -Nuar"
 else
@@ -80,18 +87,7 @@ alias td="rmtrash -r"
 #alias rm="echo Use 'tr', or the full path i.e. /bin/rm"
 
 # Navigation
-alias ,work="cd ~/documents/work/"
-alias ,army="cd ~/documents/army/"
-alias ,di="cd ~/documents/work/dev-institute"
-alias ,maayan="cd ~/documents/work/private_classes/maayan"
-alias ,2py="cd ~/documents/work/dev-institute/classes/python2"
-alias ,3py="cd ~/documents/work/dev-institute/classes/python3"
-alias ,el="cd ~/documents/work/dev-institute/classes/elijah"
-alias ,prog="cd ~/documents/programmation"
-alias ,unif="cd ~/documents/university"
-alias ,linear="cd ~/documents/university/courses_notes/linear_algebra"
 
-alias dwm-config="/home/eyal/dwm-install/dwm-6.2/current-dwm-luke/"
 alias xcopy="xclip -selection clipboard"
 
 # Files opener
@@ -105,6 +101,14 @@ alias vrtp="vi ~/.config/nvim/init.vim.d/runtime/"
 alias lfrc="vi ~/.config/lf/lfrc"
 alias lfdoc="lf -doc | less"
 alias alrc="vi ~/.aliasrc"
+alias vtex="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/tex.snippets"
+alias vsnips="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/"
+alias lfrc="vi ~/.config/lf/lfrc"
+alias lfdoc="lf -doc | less"
+alias alrc="vi ~/.aliasrc; source ~/.aliasrc"
+
+# Files manipulation
+alias cleantex="bash ~/.config/scripts/clean_latex_compilation_files.sh"
 
 # Tmux
 alias xn="tmux new-session"
@@ -112,3 +116,23 @@ alias xnv="tmux new-session \; split-window -v"
 alias xnh="tmux new-session \; split-window -h"
 alias xls="tmux ls"
 alias xat="tmux attach-session -t "
+
+# Java
+alias jvc="javac -d . -sourcepath . *.java"
+alias jvc_src="javac -d . -sourcepath src src/*.java"
+
+# APIS
+alias termbin="nc termbin.com 9999"
+alias paste="sh $HOME/.config/scripts/termbin_file.sh"
+
+# NCDU
+alias scanslash="ncdu / --exclude '/mnt/*' --exclude '/home/*' --exclude '/opt/*' --exclude '/usr/*'"
+
+# Sixgill
+alias sgvpn="sudo systemctl start openvpn-client@sixgill.service"
+alias sgdockb="docker build -f docker/Dockerfile ."
+alias sgbeg="sudo sh ~/documents/programmation/scripts/sixgill_day.sh"
+alias sgpy="~/.local/lib/python3.9/site-packages/sixgill-additionals"
+alias sg="cd ~/documents/work/sixgill"
+
+

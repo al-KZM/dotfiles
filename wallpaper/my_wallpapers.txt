@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://i.redd.it/q7to1xru7hl41.jpg
 https://i.redd.it/vadnvq88p6l41.jpg
 https://i.redd.it/hj6o1c860xk41.jpg
@@ -11,11 +12,37 @@ https://i.redd.it/1obm0kl59rj41.jpg
 https://i.redd.it/lj2c8euq04k41.jpg
 https://i.imgur.com/WSKeLut.jpg
 https://resi.ze-robot.com/dl/sm/small-memory-by-mikael-gustafsson-1440p-2560%C3%971080.jpg
+=======
+https://i.redd.it/hj6o1c860xk41.jpg
+https://i.redd.it/kl7m4086zhk41.png
+https://i.redd.it/xdc4oxu06qj41.png
+https://i.redd.it/z92qwnhb6qj41.jpg
+https://i.redd.it/1obm0kl59rj41.jpg
+https://i.imgur.com/WSKeLut.jpg
+>>>>>>> ba0d2d1d73e49f0494ff7e4c8b59c2461d642edb
 https://i.redd.it/qeln8u2318v41.jpg
 https://i.redd.it/l946eg64abv41.jpg
 https://i.redd.it/pvu3bva3ast41.png
 https://i.redd.it/8i3rh1nypfs41.png
 https://i.redd.it/mhuzvdi166s41.png
+<<<<<<< HEAD
 https://i.redd.it/hzagbyv8lvr41.png
 https://i.redd.it/9vj8w2ysrlr41.jpg
 https://i.redd.it/d0qcwuat2kr41.png
+=======
+https://i.redd.it/9vj8w2ysrlr41.jpg
+https://i.redd.it/d0qcwuat2kr41.png
+https://i.imgur.com/dM7ak2q.jpg
+https://i.imgur.com/300l4mW.jpg
+https://i.imgur.com/aoFKG2l.jpg
+https://i.imgur.com/efWXGkz.jpg
+https://i.imgur.com/DpY4Bsj.jpg
+https://i.imgur.com/B5PbybT.jpg
+https://i.redd.it/pmlqs50ywqz41.png
+https://wallpaperaccess.com/full/2752949.jpg
+https://wallpaperaccess.com/full/2752980.jpg
+https://wallpapercave.com/wp/wp6822284.jpg
+https://images.hdqwalls.com/download/razer-4k-q2-2560x1080.jpg
+https://images.wallpapersden.com/image/download/shinobu-kochou-kimetsu-no-yaiba_bGZlamiUmZqaraWkpJRnamtlrWZlbWU.jpg
+https://images.wallpapersden.com/image/download/hisoka-hunter-x-hunter_bGtpbGiUmZqaraWkpJRnamtlrWZlbWU.jpg
+>>>>>>> ba0d2d1d73e49f0494ff7e4c8b59c2461d642edb

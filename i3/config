@@ -10,7 +10,8 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 # Start compton
-#exec --no-startup-id compton
+exec --no-startup-id compton
+
 
 ###---Basic Definitions---###
 #font pango:DejaVu Sans Mono 8
@@ -98,6 +99,7 @@ hide_edge_borders smart
 for_window [class="^.*"] border pixel 5
 gaps inner $inner_gaps
 gaps outer $outer_gaps
+gaps top 40
 
 ###---Workspaces---###
 set $ws1 "1"
@@ -197,7 +199,7 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id transmission-daemon
 
 #Polybar
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #Add hebrew to keyboard
 exec_always --no-startup-id setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
@@ -222,11 +224,14 @@ bindsym $mod+Shift+grave    exec "shutdown now"
 
 #Start programs
 bindsym $mod+Return         exec $term
+bindsym $mod+v              exec pavucontrol
 bindsym $mod+w              exec --no-startup-id $BROWSER
 bindsym $mod+Shift+w        exec $term -e nmtui
 bindsym $mod+b              exec $term -e lfrun ~/documents/university/courses_notes
 bindsym $mod+t              exec --no-startup-id ddspawn zsh
 bindsym $mod+slash          exec --no-startup-id ddspawn ipython
+
+
 
 # Focus on programs
 #bindsym $mod+y [title='nvim'] focus
@@ -239,9 +244,8 @@ bindsym $mod+Shift+i        exec --no-startup-id i3resize up
 bindsym $mod+n			    exec $term -e newsboat && pkill -RTMIN+6 i3blocks
 
 # Screenshots
-bindsym Print               exec "flameshot gui"
-bindsym Shift+Print         exec "flameshot gui -c -p ~/images/screen_captures"
-bindsym $mod+Print          exec "flameshot full -c -p ~/images/screen_captures"
+bindcode 107                exec "deepin-screenshot"
+bindsym $mod+Shift+x        exec "deepin-screenshot"
 
 # Scratchpad
 bindsym $mod+Shift+minus    move scratchpad

@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+!/usr/bin/env sh
 
 userresources=$HOME/.config/Xorg/Xresources
 usermodmap=$HOME/.Xmodmap
@@ -46,7 +46,8 @@ fi
 #exec dwm
 
 # i3:
-#exec i3 
+<<<<<<< HEAD
+#exec i3
 
 # xfce:
 #exec startxfce4
