@@ -222,8 +222,6 @@ bindsym $mod+Shift+grave    exec "shutdown now"
 #Dropdown
 # TODO
 
-# TEMPORARY FOR LINEAR ALGEBRA EXAM (DELETE AFTER 16.02)
-bindsym $mod+m exec $term -e lfrun /home/eyal/documents/university/courses_notes/linear_algebra_1/LinAlgIpadBackup/ResumeForExam
 #Start programs
 bindsym $mod+Return         exec $term
 bindsym $mod+v              exec pavucontrol
@@ -396,9 +394,3 @@ bindsym XF86PowerOff		            exec --no-startup-id prompt "Shutdown computer
 # Go directly to workspace 2
 exec i3-msg "workspace 2"
 
-# EXAM MODE
-bindsym $mod+Shift+y exec "$HOME/.config/scripts/thebotofeyal.sh send-syntax-check $HOME/documents/university/courses_notes/java_1/Exam/Exam.java"
-
-bindsym $mod+Shift+u exec "$HOME/.config/scripts/thebotofeyal.sh send-output
-
-bindsym $mod+Shift+o exec "$HOME/.config/scripts/exam_auto_push_once.sh"

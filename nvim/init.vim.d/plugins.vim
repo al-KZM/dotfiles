@@ -354,8 +354,8 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 """"""""""""""""""""""SYNTASTIC"""""""""""""""""''
 " let g:syntastic_java_checkers = ['checkstyle']
-" let g:syntastic_java_checkstyle_classpath = '/home/eyal/documents/clones/checkstyle/checkstyle-8.39-all.jar'
-" let g:syntastic_java_checkstyle_conf_file = '/home/eyal/documents/clones/checkstyle/checkstyle.xml'
+" let g:syntastic_java_checkstyle_classpath = '$HOME/documents/clones/checkstyle/checkstyle-8.39-all.jar'
+" let g:syntastic_java_checkstyle_conf_file = '$HOME/documents/clones/checkstyle/checkstyle.xml'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*

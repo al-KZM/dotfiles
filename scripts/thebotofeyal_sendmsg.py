@@ -13,10 +13,10 @@ import click
 import subprocess
 import javac_parser
 
-COMPILING_SCRIPT="/home/eyal/.config/scripts/java_compile_notrace.sh"
-DELETE_SCRIPT="/home/eyal/.config/scripts/java_delete_traces.sh"
-EXAM_FILE="/home/eyal/documents/university/courses_notes/java_1/Exam/Exam.java"
-EXAM_DIR="/home/eyal/documents/university/courses_notes/java_1/Exam/"
+COMPILING_SCRIPT="~/.config/scripts/java_compile_notrace.sh"
+DELETE_SCRIPT="/.config/scripts/java_delete_traces.sh"
+EXAM_FILE="/documents/university/courses_notes/java_1/Exam/Exam.java"
+EXAM_DIR="/documents/university/courses_notes/java_1/Exam/"
 
 
 EYAL_ID = "1148205096"

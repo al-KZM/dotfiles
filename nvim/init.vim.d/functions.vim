@@ -82,7 +82,7 @@ func! MakeCjhebrew()
     echo l:content
     write
     silent execute "normal ggjdG"
-    let l:signs =  execute("!cat % | /home/eyal/.config/scripts/make_cjhebrew.py")
+    let l:signs =  execute("!cat % | $HOME/.config/scripts/make_cjhebrew.py")
     execute "bw! cjhebrew_tmp"
     echo l:signs
     execute "normal! i" . l:signs

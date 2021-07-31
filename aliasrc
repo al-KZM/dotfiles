@@ -40,8 +40,6 @@ alias ka="killall" \
     py="ptipython"\
     python="ipython"\
     goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
-    routine="python /home/eyal/documents/programmation/training_programs/routine/myroutine.py"\
-    teaching="bash /home/eyal/documents/programmation/scripts/teacher_screen.sh"\
     chrome="google-chrome-stable"\
 
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" vi="nvim" # Use neovim for vim if present.
@@ -60,7 +58,7 @@ alias ln='ln -v'
 alias chmod="chmod -c"
 alias chown="chown -c"
 alias mkdir="mkdir -v"
-alias pycheck="pylama -o /home/eyal/.config/pylama/pylama.ini"
+alias pycheck="pylama -o $HOME/.config/pylama/pylama.ini"
 
 if command -v colordiff > /dev/null 2>&1; then
     alias diff="colordiff -Nuar"
@@ -114,9 +112,6 @@ alias ,ulin="cd ~/documents/university/courses_notes/linear_algebra_1"
 alias ,udisc="cd ~/documents/university/courses_notes/discrete_maths_1"
 alias ,ujav="cd ~/documents/university/courses_notes/java_1"
 alias ,u="cd ~/documents/university"
-# TEMPORARY Navigation
-alias ,exam="cd '/home/eyal/documents/university/courses_notes/discrete_maths_1/BdidaIpadBkp/ResumeForExams'"
-
 
 alias dwm-config="/home/eyal/dwm-install/dwm-6.2/current-dwm-luke/"
 alias xcopy="xclip -selection clipboard"
