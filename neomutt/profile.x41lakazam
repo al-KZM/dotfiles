@@ -1,0 +1,26 @@
+set my_pass="`pass show email/x41lakazam@gmail.com`"
+
+set hostname  = "gmail.com"
+set realname  = "Eyal Shukrun"
+set from      = "x41lakazam@gmail.com"
+set signature = "~/.config/neomutt/signatur.x41lakazam"
+
+set imap_user = "x41lakazam@gmail.com"
+set imap_pass = $my_pass
+
+set smtp_url  = "smtp://x41lakazam@gmail.com@smtp.gmail.com:587"
+set smtp_pass = $my_pass
+
+color status     brightgreen    blue
+
+set folder = "imaps://$imap_user@imap.gmail.com"
+
+# Location of inbox
+set spoolfile = "+INBOX"
+
+# Location of drafts
+set postponed = "+[GMail]/Drafts"
+
+mailboxes +GMail/INBOX
+
+account-hook $folder "set imap_user=x41lakazam@gmail.com imap_pass=$my_pass"

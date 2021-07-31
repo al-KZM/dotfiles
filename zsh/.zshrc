@@ -31,8 +31,8 @@ export TMP="$HOME/tmp"
 export TEMP="$TMP"
 export TMPDIR="$TMP"
 export TMPPREFIX="${TMPDIR}/zsh"
-export LAST_DIR_FILE="$HOME/.last_dir"
-export LAST_LAST_DIR_FILE="$HOME/.last_last_dir"
+export LAST_DIR_FILE="$HOME/.caching_files/.last_dir"
+export LAST_LAST_DIR_FILE="$HOME/.caching_files/.last_last_dir"
 
 if [ ! -d "${TMP}" ]; then mkdir "${TMP}"; fi
 
@@ -592,7 +592,6 @@ bindkey -v '^?' backward-delete-char
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 [ -f "$ZDOTDIR/functions/general_funcs.sh" ] && source "$ZDOTDIR/functions/general_funcs.sh"
 
-export PATH=$PATH:/usr/share/pycharm-community-2020.3.3/bin
 
 # After
 neofetch

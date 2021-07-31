@@ -21,7 +21,6 @@ alias ka="killall" \
 	x="sxiv -ft *" \
 	sdn="sudo shutdown -h now" \
 	gua="git remote | xargs -L1 git push --all" \
-	ls="ls -hN --color=auto --group-directories-first --hide="__pycache__/"" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
@@ -37,9 +36,10 @@ alias ka="killall" \
     pi="pip install --user"\
     chwp="bash ~/.config/wallpaper/set_feh_bg.sh"\
     rmwp="python ~/.config/wallpaper/forget_wp.py"\
+    wpp="vi ~/.config/wallpaper/my_wallpapers.txt"\
+    py="ptipython"\
     python="ipython"\
     goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
-    python="ipython"\
     routine="python /home/eyal/documents/programmation/training_programs/routine/myroutine.py"\
     teaching="bash /home/eyal/documents/programmation/scripts/teacher_screen.sh"\
     chrome="google-chrome-stable"\
@@ -60,6 +60,7 @@ alias ln='ln -v'
 alias chmod="chmod -c"
 alias chown="chown -c"
 alias mkdir="mkdir -v"
+alias pycheck="pylama -o /home/eyal/.config/pylama/pylama.ini"
 
 if command -v colordiff > /dev/null 2>&1; then
     alias diff="colordiff -Nuar"
@@ -69,29 +70,40 @@ fi
 
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
-alias ls='ls --color=auto --human-readable --group-directories-first --classify'
-alias ll='ls --color=auto --human-readable --group-directories-first --classify -l'
+alias ls="ls --human-readable --classify -hN --color=auto --group-directories-first --hide='*__pycache__*'"
+alias ll='ls --color=auto --human-readable --group-directories-first --classify -la'
 alias lla='ls --color=auto --human-readable --group-directories-first --classify -la'
 
+
+# Git
+alias ga="git add"
+alias com="git commit"
+alias gg="git checkout"
+alias gdiff="git diff --cached"
+alias qdiff="git diff --name-status"
+alias gai="git add -i"
+alias gfs="git flow feature start "
+alias gff="git flow feature finish"
 
 # Scripts
 alias gpush="bash ~/.config/scripts/git_add_commit_push.sh"
 alias grpush="bash ~/.config/scripts/git_add_commit_push.sh routine"
 alias wacomconfig="bash ~/.config/scripts/configure_xsetwacom_tablet.sh"
+alias pygignore="curl -sS https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore >> .gitignore"
+alias newioc="python ~/documents/programmation/scripts/sixgill/new_ioc_rule.py"
 
 
 # DONT USE RM ANYMORE
 alias cfi="vi ~/.config/i3/config"
 alias t="rmtrash"
 alias td="rmtrash -r"
-alias rm="echo Use 'tr', or the full path i.e. /bin/rm"
+#alias rm="echo Use 'tr', or the full path i.e. /bin/rm"
 
 # Navigation
 alias ,cnf="cd ~/.config"
 alias ,work="cd ~/documents/work/"
 alias ,doc="cd $DOCUMENTS"
 alias ,army="cd ~/documents/army/"
-alias ,di="cd ~/documents/work/dev-institute"
 alias ,maayan="cd ~/documents/work/private_classes/maayan"
 alias ,2py="cd ~/documents/work/dev-institute/classes/python2"
 alias ,3py="cd ~/documents/work/dev-institute/classes/python3"
@@ -143,3 +155,12 @@ alias paste="sh $HOME/.config/scripts/termbin_file.sh"
 
 # NCDU
 alias scanslash="ncdu / --exclude '/mnt/*' --exclude '/home/*' --exclude '/opt/*' --exclude '/usr/*'"
+
+# Sixgill
+alias sgvpn="sudo systemctl start openvpn-client@sixgill.service"
+alias sgdockb="docker build -f docker/Dockerfile ."
+alias sgbeg="sudo sh ~/documents/programmation/scripts/sixgill_day.sh"
+alias sgpy="~/.local/lib/python3.9/site-packages/sixgill-additionals"
+alias sg="cd ~/documents/work/sixgill"
+
+
