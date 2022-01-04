@@ -177,6 +177,7 @@
 <c-@>	nvim/init.vim.d/plugins.vim	/^  inoremap <silent><expr> <c-@> coc#refresh()$/;"	m
 <c-l>	nvim/init.vim.d/shortcuts.vim	/^imap <c-l> <c-g>u<Esc>mt[s1z=`]`tmtla<c-g>u$/;"	m
 <c-space>	nvim/init.vim.d/plugins.vim	/^  inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<cr>	nvim/autoload/plug.vim	/^      nmap <buffer> <cr> <plug>(plug-preview)$/;"	m
 <cr>	nvim/init.vim.d/plugins.vim	/^  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
 <cr>	nvim/init.vim.d/plugins.vim	/^  inoremap <expr> <cr> pumvisible() ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
 <leader><leader>	nvim/init.vim.d/shortcuts.vim	/^inoremap <leader><leader> <Esc>\/<++><Enter>"_c4l$/;"	m
@@ -242,6 +243,7 @@
 <leader>x	nvim/init.vim.d/runtime/ftplugin/flutter.vim	/^map <leader>x  :FlutterRun$/;"	m
 <leader>x	nvim/init.vim.d/runtime/ftplugin/python.vim	/^map <leader>x :FloatermNew --autoclose=0 python %<CR>$/;"	m
 <leader>y	nvim/init.vim.d/shortcuts.vim	/^nnoremap <leader>y :Clap yanks<CR>$/;"	m
+<plug>(plug-preview)	nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> <plug>(plug-preview) :silent! call <SID>preview_commit()<cr>$/;"	m
 <space>	nvim/init.vim.d/shortcuts.vim	/^nnoremap <space> za$/;"	m
 <space>a	nvim/init.vim.d/plugins.vim	/^nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>$/;"	m
 <space>c	nvim/init.vim.d/plugins.vim	/^nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>$/;"	m
@@ -259,6 +261,7 @@ CREDENTIALS_PATH	polybar/scripts/gmail/launch.py	/^CREDENTIALS_PATH = Path(DIR, 
 CREDENTIALS_PATH	polybar/scripts/gmail/list_labels.py	/^CREDENTIALS_PATH = os.path.join(DIR, 'credentials.json')$/;"	v
 CopyLastElemStep	nvim/init.vim.d/runtime/ftplugin/tex.vim	/^func! CopyLastElemStep()$/;"	f
 Cout	nvim/init.vim.d/runtime/ftplugin/cpp.vim	/^function Cout()$/;"	f
+D	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> D  :PlugDiff<cr>$/;"	m
 DELETE_SCRIPT	scripts/thebotofeyal_sendmsg.py	/^DELETE_SCRIPT="\/.config\/scripts\/java_delete_traces.sh"$/;"	v
 DIR	polybar/scripts/gmail/auth.py	/^DIR = Path(__file__).resolve().parent$/;"	v
 DIR	polybar/scripts/gmail/launch.py	/^DIR = Path(__file__).resolve().parent$/;"	v
@@ -281,11 +284,22 @@ H	nvim/init.vim.d/shortcuts.vim	/^nnoremap <buffer> H :<C-u>execute "!pydoc3 " .
 IFS	neofetch/config.conf	/^IFS='_' read -r -a array <<< "$quote"$/;"	k
 Installation	polybar/scripts/gmail/README.md	/^## Installation$/;"	s	chapter:Polybar Gmail
 K	nvim/init.vim.d/plugins.vim	/^nnoremap <silent> K :call <SID>show_documentation()<CR>$/;"	m
+L	nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
+L	nvim/autoload/plug.vim	/^    xnoremap <silent> <buffer> L :call <SID>status_load(line('.'))<cr>$/;"	m
 MakeCjhebrew	nvim/init.vim.d/functions.vim	/^func! MakeCjhebrew()$/;"	f
 Module	polybar/scripts/gmail/README.md	/^### Module$/;"	S	section:Polybar Gmail""Installation
 NERDTreeIgnore	nvim/init.vim.d/plugins.vim	/^let NERDTreeIgnore=['\\.pyc$', '\\~$'] "ignore files in NERDTree$/;"	v
 O	nvim/init.vim.d/runtime/ftplugin/help.vim	/^nnoremap <buffer> O ?'\\l\\{2,\\}'<CR>$/;"	m
 OR	nvim/init.vim.d/plugins.vim	/^command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')$/;"	c
+Plug	nvim/autoload/plug.vim	/^  command! -nargs=+ -bar Plug call plug#(<args>)$/;"	c
+PlugClean	nvim/autoload/plug.vim	/^  command! -nargs=0 -bar -bang PlugClean call s:clean(<bang>0)$/;"	c
+PlugDiff	nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugDiff    call s:diff()$/;"	c
+PlugInstall	nvim/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugInstall call s:install(<bang>0, /;"	c
+PlugLOD	nvim/autoload/plug.vim	/^    augroup PlugLOD$/;"	a
+PlugSnapshot	nvim/autoload/plug.vim	/^  command! -nargs=? -bar -bang -complete=file PlugSnapshot call s:snapshot(<bang>0, <f-args>)$/;"	c
+PlugStatus	nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugStatus  call s:status()$/;"	c
+PlugUpdate	nvim/autoload/plug.vim	/^  command! -nargs=* -bar -bang -complete=customlist,s:names PlugUpdate  call s:update(<bang>0, [/;"	c
+PlugUpgrade	nvim/autoload/plug.vim	/^  command! -nargs=0 -bar PlugUpgrade if s:upgrade() | execute 'source' s:esc(s:me) | endif$/;"	c
 Polybar Gmail	polybar/scripts/gmail/README.md	/^# Polybar Gmail$/;"	c
 PrettyJson	nvim/init.vim.d/functions.vim	/^function! PrettyJson()$/;"	f
 PrettyXML	nvim/init.vim.d/runtime/ftplugin/xml.vim	/^command! PrettyXML call DoPrettyXML()$/;"	c
@@ -293,6 +307,8 @@ PythonExec	nvim/init.vim.d/functions.vim	/^function PythonExec()$/;"	f
 PythonExecLine	nvim/init.vim.d/functions.vim	/^function PythonExecLine()$/;"	f
 PythonRunfile	nvim/init.vim.d/functions.vim	/^function PythonRunfile()$/;"	f
 Q	nvim/init.vim.d/shortcuts.vim	/^noremap Q !!sh<CR>$/;"	m
+R	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> R  :call <SID>retry()<cr>$/;"	m
+S	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> S  :PlugStatus<cr>$/;"	m
 S	nvim/init.vim.d/runtime/ftplugin/help.vim	/^nnoremap <buffer> S ?\\|\\zs\\S\\+\\ze\\|<CR>$/;"	m
 S	nvim/init.vim.d/shortcuts.vim	/^	nnoremap S :%s\/\/g<Left><Left>$/;"	m
 SCOPE	polybar/scripts/gmail/auth.py	/^SCOPE = 'https:\/\/www.googleapis.com\/auth\/gmail.labels'$/;"	v
@@ -308,15 +324,20 @@ Strip	nvim/init.vim.d/functions.vim	/^function! Strip(input_string)$/;"	f
 StripTrailingWhitespaces	nvim/init.vim.d/functions.vim	/^function! StripTrailingWhitespaces()$/;"	f
 TOKEN	scripts/thebotofeyal_sendmsg.py	/^TOKEN = "1661976868:AAG5koBu5t6AgG2GfD5adIBjQC9HRRqsO8k"$/;"	v
 ToggleHebrew	nvim/init.vim.d/functions.vim	/^func! ToggleHebrew()$/;"	f
+U	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
+U	nvim/autoload/plug.vim	/^  xnoremap <silent> <buffer> U  :call <SID>status_update()<cr>$/;"	m
 Untitled	nvim/file_templates/skeleton-main.java	/^class Untitled {$/;"	c
 VIMDIR	nvim/init.vim	/^let VIMDIR="$HOME\/.config\/nvim\/init.vim.d"$/;"	v
 VIMDIR	nvim/init.vim.d/init.vim	/^let VIMDIR="$HOME\/.config\/nvim\/init.vim.d"$/;"	v
+X	nvim/autoload/plug.vim	/^    nnoremap <silent> <buffer> X :call <SID>revert()<cr>$/;"	m
 X	nvim/colors/basic-dark.vim	/^    fun <SID>X(group, fg, bg, attr)$/;"	f
 X	nvim/colors/basic-eighties.vim	/^    fun <SID>X(group, fg, bg, attr)$/;"	f
 X	nvim/colors/basic-light.vim	/^  fun <SID>X(group, fg, bg, attr)$/;"	f
 X	nvim/colors/basic-spacegray.vim	/^    fun <SID>X(group, fg, bg, attr)$/;"	f
 Z	nvim/init.vim.d/shortcuts.vim	/^nnoremap Z :call SpellCheckCurrent()<CR>$/;"	m
+[[	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> [[ :silent! call <SID>section('b')<cr>$/;"	m
 [g	nvim/init.vim.d/plugins.vim	/^nmap <silent> [g <Plug>(coc-diagnostic-prev)$/;"	m
+]]	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> ]] :silent! call <SID>section('')<cr>$/;"	m
 ]g	nvim/init.vim.d/plugins.vim	/^nmap <silent> ]g <Plug>(coc-diagnostic-next)$/;"	m
 ac	nvim/init.vim.d/plugins.vim	/^omap ac <Plug>(coc-classobj-a)$/;"	m
 ac	nvim/init.vim.d/plugins.vim	/^xmap ac <Plug>(coc-classobj-a)$/;"	m
@@ -426,8 +447,11 @@ crop_mode	neofetch/config.conf	/^crop_mode="normal"$/;"	k
 crop_offset	neofetch/config.conf	/^crop_offset="center"$/;"	k
 current	wallpaper/forget_wp.py	/^current = open('infos\/wallpaper.png.current','r').read()$/;"	v
 cursor_warp	qtile/config.py	/^cursor_warp = False$/;"	v
+d	nvim/autoload/plug.vim	/^      nnoremap <silent> <buffer> d :set opfunc=<sid>delete_op<cr>g@$/;"	m
+d	nvim/autoload/plug.vim	/^      xnoremap <silent> <buffer> d :<c-u>call <sid>delete_op(visualmode(), 1)<cr>$/;"	m
 date	polybar/config.ini	/^date = %m\/%d%$/;"	k	section:module/date
 dbe	compton.conf	/^dbe = false;$/;"	k
+dd	nvim/autoload/plug.vim	/^      nmap     <silent> <buffer> dd d_$/;"	m
 default_savepath	deepin/deepin-screenshot.conf	/^default_savepath=\/tmp$/;"	k	section:common
 delta	compton.conf	/^fade-delta = 4;$/;"	k
 devices_off_on_screensaver	openrazer/razer.conf	/^devices_off_on_screensaver = True$/;"	k	section:Startup
@@ -470,7 +494,8 @@ exec	polybar/config.ini	/^menu-3-2-exec = htop &$/;"	k	section:module/menu-apps
 extension_defaults	qtile/config.py	/^extension_defaults = widget_defaults.copy()$/;"	v
 fading	compton.conf	/^fading = true;$/;"	k
 fence	compton.conf	/^xrender-sync-fence = true;$/;"	k
-file	neofetch/quote_query.py	/^file = "\/home\/eyal\/.config\/neofetch\/quotes.txt"$/;"	v
+file	neofetch/quote_query.py	/^file = "\/home\/x41\/.config\/neofetch\/quotes.txt"$/;"	v
+filetypedetect	nvim/autoload/plug.vim	/^        augroup filetypedetect$/;"	a
 fill	polybar/config.ini	/^bar-volume-fill = ─$/;"	k	section:module/pulseaudio
 fixed	compton.conf	/^blur-background-fixed = false;$/;"	k
 floating_layout	qtile/config.py	/^floating_layout = layout.Floating(float_rules=[$/;"	v
@@ -498,6 +523,7 @@ g:OmniSharp_server_use_mono	nvim/init.vim.d/plugins.vim	/^let g:OmniSharp_server
 g:UltiSnipsExpandTrigger	nvim/init.vim.d/plugins.vim	/^let g:UltiSnipsExpandTrigger = '<tab>'$/;"	v
 g:UltiSnipsJumpBackwardTrigger	nvim/init.vim.d/plugins.vim	/^let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'$/;"	v
 g:UltiSnipsJumpForwardTrigger	nvim/init.vim.d/plugins.vim	/^let g:UltiSnipsJumpForwardTrigger = '<tab>'$/;"	v
+g:_plug_bang	nvim/autoload/plug.vim	/^    let g:_plug_bang = (s:is_win && has('gui_running') ? 'silent ' : '').'!'.escape(cmd, '#!%')$/;"	v
 g:colorizer_auto_color	nvim/init.vim.d/plugins.vim	/^let g:colorizer_auto_color = 1$/;"	v
 g:colors_name	nvim/colors/basic-dark.vim	/^let g:colors_name = "basic-dark"$/;"	v
 g:colors_name	nvim/colors/basic-eighties.vim	/^let g:colors_name = "basic-eighties"$/;"	v
@@ -510,11 +536,17 @@ g:easytags_file	nvim/init.vim.d/plugins.vim	/^let g:easytags_file = '~\/.config\
 g:hot_reload_on_save	nvim/init.vim.d/plugins.vim	/^let g:hot_reload_on_save=0$/;"	v
 g:livepreview_previewer	nvim/init.vim.d/plugins.vim	/^let g:livepreview_previewer = $READER$/;"	v
 g:livepreview_previewer	nvim/init.vim.d/plugins.vim	/^let g:livepreview_previewer = 'zathura'$/;"	v
+g:loaded_plug	nvim/autoload/plug.vim	/^let g:loaded_plug = 1$/;"	v
 g:lsc_auto_map	nvim/init.vim.d/plugins.vim	/^let g:lsc_auto_map = v:true$/;"	v
 g:lt_height	nvim/init.vim	/^let g:lt_height = 10$/;"	v
 g:lt_height	nvim/init.vim.d/init.vim	/^let g:lt_height = 10$/;"	v
 g:lt_location_list_toggle_map	nvim/init.vim.d/shortcuts.vim	/^let g:lt_location_list_toggle_map = '<F10>'$/;"	v
 g:lt_quickfix_list_toggle_map	nvim/init.vim.d/shortcuts.vim	/^let g:lt_quickfix_list_toggle_map = '<F11>'$/;"	v
+g:plug_home	nvim/autoload/plug.vim	/^  let g:plug_home = home$/;"	v
+g:plugs	nvim/autoload/plug.vim	/^    let g:plugs[name] = spec$/;"	v
+g:plugs	nvim/autoload/plug.vim	/^  let g:plugs = {}$/;"	v
+g:plugs_order	nvim/autoload/plug.vim	/^  let g:plugs_order = []$/;"	v
+g:plugs_order	nvim/autoload/plug.vim	/^  let g:plugs_order = get(g:, 'plugs_order', keys(g:plugs))$/;"	v
 g:session_autoload	nvim/init.vim	/^let g:session_autoload = "yes"$/;"	v
 g:session_autoload	nvim/init.vim.d/init.vim	/^let g:session_autoload = "yes"$/;"	v
 g:session_autosave	nvim/init.vim	/^let g:session_autosave = "yes"$/;"	v
@@ -664,6 +696,7 @@ name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]
 name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:7
 name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:8
 name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:9
+o	nvim/autoload/plug.vim	/^      nmap <buffer> o <plug>(plug-preview)$/;"	m
 o	nvim/init.vim.d/runtime/ftplugin/help.vim	/^nnoremap <buffer> o \/'\\l\\{2,\\}'<CR>$/;"	m
 opacity	compton.conf	/^active-opacity = 1;$/;"	k
 opacity	compton.conf	/^detect-client-opacity = true;$/;"	k
@@ -680,6 +713,12 @@ packetloss	polybar/config.ini	/^format-packetloss = <animation-packetloss> <labe
 padding	polybar/config.ini	/^padding = 5$/;"	k	section:bar/top
 parser	polybar/scripts/gmail/launch.py	/^parser = argparse.ArgumentParser()$/;"	v
 pics_list	wallpaper/forget_wp.py	/^pics_list = "my_wallpapers.txt"$/;"	v
+plug#	nvim/autoload/plug.vim	/^function! plug#(repo, ...)$/;"	f
+plug#begin	nvim/autoload/plug.vim	/^function! plug#begin(...)$/;"	f
+plug#end	nvim/autoload/plug.vim	/^function! plug#end()$/;"	f
+plug#helptags	nvim/autoload/plug.vim	/^function! plug#helptags()$/;"	f
+plug#load	nvim/autoload/plug.vim	/^function! plug#load(...)$/;"	f
+plug#shellescape	nvim/autoload/plug.vim	/^function! plug#shellescape(arg, ...)$/;"	f
 position	polybar/config.ini	/^tray-position =$/;"	k	section:bar/bottom
 possible	compton.conf	/^unredir-if-possible = false;$/;"	k
 print_count	polybar/scripts/gmail/launch.py	/^def print_count(count, is_odd=False):$/;"	f
@@ -688,6 +727,8 @@ public_ip_host	neofetch/config.conf	/^public_ip_host="http:\/\/ident.me"$/;"	k
 public_ip_timeout	neofetch/config.conf	/^public_ip_timeout=2$/;"	k
 pylama	pylama/pylama.ini	/^[pylama]$/;"	s
 python_highlight_all	nvim/init.vim.d/runtime/ftplugin/python.vim	/^let python_highlight_all=1$/;"	v
+q	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :call <SID>close_pane()<cr>$/;"	m
+q	nvim/autoload/plug.vim	/^  nnoremap <silent> <buffer> q :q<cr>$/;"	m
 qtVersion	qutebrowser/qsettings/QtProject.conf	/^qtVersion=5.14.2$/;"	k	section:FileDialog
 quote	neofetch/config.conf	/^quote=`python $HOME\/.config\/neofetch\/quote_query.py $term_size`$/;"	k
 r	neofetch/quotes_dl.py	/^r = req.get(url)$/;"	v
@@ -727,25 +768,46 @@ right	polybar/config.ini	/^modules-right = date memory wireless-network ping xke
 right	polybar/config.ini	/^padding-right = 2$/;"	k	section:bar/bottom
 rule	compton.conf	/^opacity-rule = ["85:class_g = `st`"];$/;"	k
 s	nvim/init.vim.d/runtime/ftplugin/help.vim	/^nnoremap <buffer> s \/\\|\\zs\\S\\+\\ze\\|<CR>$/;"	m
+s:TYPE	nvim/autoload/plug.vim	/^let s:TYPE = {$/;"	v
+s:append_ul	nvim/autoload/plug.vim	/^function! s:append_ul(lnum, text)$/;"	f
 s:aqua	nvim/colors/basic-dark.vim	/^let s:aqua = "00b8d4"$/;"	v
 s:aqua	nvim/colors/basic-eighties.vim	/^let s:aqua = "66cccc"$/;"	v
 s:aqua	nvim/colors/basic-light.vim	/^let s:aqua = "00897b"$/;"	v
 s:aqua	nvim/colors/basic-spacegray.vim	/^let s:aqua = '85a7a5'$/;"	v
+s:ask	nvim/autoload/plug.vim	/^function! s:ask(message, ...)$/;"	f
+s:ask_no_interrupt	nvim/autoload/plug.vim	/^function! s:ask_no_interrupt(...)$/;"	f
+s:assign_name	nvim/autoload/plug.vim	/^function! s:assign_name()$/;"	f
+s:assoc	nvim/autoload/plug.vim	/^function! s:assoc(dict, key, val)$/;"	f
 s:background	nvim/colors/basic-dark.vim	/^    let s:background = "202020"$/;"	v
 s:background	nvim/colors/basic-dark.vim	/^let s:background = "263238"$/;"	v
 s:background	nvim/colors/basic-eighties.vim	/^let s:background = "2d2d2d"$/;"	v
 s:background	nvim/colors/basic-light.vim	/^let s:background = "f7faff"$/;"	v
 s:background	nvim/colors/basic-spacegray.vim	/^    let s:background = '202020'$/;"	v
 s:background	nvim/colors/basic-spacegray.vim	/^let s:background = '111314'$/;"	v
+s:bang	nvim/autoload/plug.vim	/^function! s:bang(cmd, ...)$/;"	f
+s:bar	nvim/autoload/plug.vim	/^function! s:bar()$/;"	f
+s:base_spec	nvim/autoload/plug.vim	/^let s:base_spec = { 'branch': '', 'frozen': 0 }$/;"	v
+s:batchfile	nvim/autoload/plug.vim	/^  function! s:batchfile(cmd)$/;"	f
 s:blue	nvim/colors/basic-dark.vim	/^let s:blue = "6699cc"$/;"	v
 s:blue	nvim/colors/basic-eighties.vim	/^let s:blue = "6699cc"$/;"	v
 s:blue	nvim/colors/basic-light.vim	/^let s:blue = "3b5bb5"$/;"	v
 s:blue	nvim/colors/basic-spacegray.vim	/^let s:blue = '7d8fa3'$/;"	v
 s:check_back_space	nvim/init.vim.d/plugins.vim	/^function! s:check_back_space() abort$/;"	f
+s:check_ruby	nvim/autoload/plug.vim	/^function! s:check_ruby()$/;"	f
+s:checkout	nvim/autoload/plug.vim	/^function! s:checkout(spec)$/;"	f
+s:chsh	nvim/autoload/plug.vim	/^function! s:chsh(swap)$/;"	f
+s:clean	nvim/autoload/plug.vim	/^function! s:clean(force)$/;"	f
+s:close_pane	nvim/autoload/plug.vim	/^function! s:close_pane()$/;"	f
 s:comment	nvim/colors/basic-dark.vim	/^let s:comment = "78909c"$/;"	v
 s:comment	nvim/colors/basic-eighties.vim	/^let s:comment = "999999"$/;"	v
 s:comment	nvim/colors/basic-light.vim	/^let s:comment = "7c7c7c"$/;"	v
 s:comment	nvim/colors/basic-spacegray.vim	/^let s:comment = '515f6a'$/;"	v
+s:compare_git_uri	nvim/autoload/plug.vim	/^function! s:compare_git_uri(a, b)$/;"	f
+s:cpo_save	nvim/autoload/plug.vim	/^let s:cpo_save = &cpo$/;"	v
+s:define_commands	nvim/autoload/plug.vim	/^function! s:define_commands()$/;"	f
+s:delete	nvim/autoload/plug.vim	/^function! s:delete(range, force)$/;"	f
+s:delete_op	nvim/autoload/plug.vim	/^function! s:delete_op(type, ...)$/;"	f
+s:diff	nvim/autoload/plug.vim	/^function! s:diff()$/;"	f
 s:diff_aqua	nvim/colors/basic-dark.vim	/^let s:diff_aqua = "333366"$/;"	v
 s:diff_aqua	nvim/colors/basic-eighties.vim	/^let s:diff_aqua = "333366"$/;"	v
 s:diff_aqua	nvim/colors/basic-light.vim	/^let s:diff_aqua = "bbeeff"$/;"	v
@@ -762,11 +824,31 @@ s:diff_yellow	nvim/colors/basic-dark.vim	/^let s:diff_yellow = "666633"$/;"	v
 s:diff_yellow	nvim/colors/basic-eighties.vim	/^let s:diff_yellow = "666633"$/;"	v
 s:diff_yellow	nvim/colors/basic-light.vim	/^let s:diff_yellow = "ffffaa"$/;"	v
 s:diff_yellow	nvim/colors/basic-spacegray.vim	/^let s:diff_yellow = '555522'$/;"	v
+s:dirpath	nvim/autoload/plug.vim	/^  function! s:dirpath(path)$/;"	f
+s:do	nvim/autoload/plug.vim	/^function! s:do(pull, force, todo)$/;"	f
+s:doautocmd	nvim/autoload/plug.vim	/^function! s:doautocmd(...)$/;"	f
+s:dobufread	nvim/autoload/plug.vim	/^function! s:dobufread(names)$/;"	f
+s:err	nvim/autoload/plug.vim	/^function! s:err(msg)$/;"	f
+s:esc	nvim/autoload/plug.vim	/^function! s:esc(path)$/;"	f
+s:escrtp	nvim/autoload/plug.vim	/^function! s:escrtp(path)$/;"	f
+s:extract_name	nvim/autoload/plug.vim	/^function! s:extract_name(str, prefix, suffix)$/;"	f
+s:find_name	nvim/autoload/plug.vim	/^function! s:find_name(lnum)$/;"	f
+s:finish	nvim/autoload/plug.vim	/^function! s:finish(pull)$/;"	f
+s:finish_bindings	nvim/autoload/plug.vim	/^function! s:finish_bindings()$/;"	f
 s:foreground	nvim/colors/basic-dark.vim	/^let s:foreground = "cfd8dc"$/;"	v
 s:foreground	nvim/colors/basic-eighties.vim	/^let s:foreground = "eeeeee"$/;"	v
 s:foreground	nvim/colors/basic-light.vim	/^let s:foreground = "263238"$/;"	v
 s:foreground	nvim/colors/basic-spacegray.vim	/^let s:foreground = 'b3b8c4'$/;"	v
+s:format_git_log	nvim/autoload/plug.vim	/^function! s:format_git_log(line)$/;"	f
+s:format_message	nvim/autoload/plug.vim	/^function! s:format_message(bullet, name, message)$/;"	f
 s:get_visual_selection	nvim/init.vim.d/functions.vim	/^function! s:get_visual_selection()$/;"	f
+s:git_dir	nvim/autoload/plug.vim	/^function! s:git_dir(dir) abort$/;"	f
+s:git_local_branch	nvim/autoload/plug.vim	/^function! s:git_local_branch(dir) abort$/;"	f
+s:git_origin_branch	nvim/autoload/plug.vim	/^function! s:git_origin_branch(spec)$/;"	f
+s:git_origin_url	nvim/autoload/plug.vim	/^function! s:git_origin_url(dir) abort$/;"	f
+s:git_revision	nvim/autoload/plug.vim	/^function! s:git_revision(dir) abort$/;"	f
+s:git_validate	nvim/autoload/plug.vim	/^function! s:git_validate(spec, check_branch)$/;"	f
+s:git_version_requirement	nvim/autoload/plug.vim	/^function! s:git_version_requirement(...)$/;"	f
 s:gitgutter_aqua	nvim/colors/basic-dark.vim	/^    let s:gitgutter_aqua = s:background$/;"	v
 s:gitgutter_aqua	nvim/colors/basic-dark.vim	/^    let s:gitgutter_aqua = s:diff_aqua$/;"	v
 s:gitgutter_aqua	nvim/colors/basic-eighties.vim	/^  let s:gitgutter_aqua = s:background$/;"	v
@@ -799,6 +881,8 @@ s:gitgutter_yellow	nvim/colors/basic-light.vim	/^  let s:gitgutter_yellow = s:ba
 s:gitgutter_yellow	nvim/colors/basic-light.vim	/^  let s:gitgutter_yellow = s:diff_yellow$/;"	v
 s:gitgutter_yellow	nvim/colors/basic-spacegray.vim	/^    let s:gitgutter_yellow = s:background$/;"	v
 s:gitgutter_yellow	nvim/colors/basic-spacegray.vim	/^    let s:gitgutter_yellow = s:diff_yellow$/;"	v
+s:glob	nvim/autoload/plug.vim	/^function! s:glob(from, pattern)$/;"	f
+s:glob_dir	nvim/autoload/plug.vim	/^function! s:glob_dir(path)$/;"	f
 s:green	nvim/colors/basic-dark.vim	/^let s:green = "88b888"$/;"	v
 s:green	nvim/colors/basic-eighties.vim	/^let s:green = "99cc99"$/;"	v
 s:green	nvim/colors/basic-light.vim	/^let s:green = "409b1c"$/;"	v
@@ -807,6 +891,23 @@ s:grey	nvim/colors/basic-dark.vim	/^let s:grey = "b0bec5"$/;"	v
 s:grey	nvim/colors/basic-eighties.vim	/^let s:grey = "d3d0c8"$/;"	v
 s:grey	nvim/colors/basic-light.vim	/^let s:grey = "888888"$/;"	v
 s:grey	nvim/colors/basic-spacegray.vim	/^let s:grey = '808080'$/;"	v
+s:hash_match	nvim/autoload/plug.vim	/^function! s:hash_match(a, b)$/;"	f
+s:infer_properties	nvim/autoload/plug.vim	/^function! s:infer_properties(name, repo)$/;"	f
+s:install	nvim/autoload/plug.vim	/^function! s:install(force, names)$/;"	f
+s:is_local_plug	nvim/autoload/plug.vim	/^  function! s:is_local_plug(repo)$/;"	f
+s:is_managed	nvim/autoload/plug.vim	/^function! s:is_managed(name)$/;"	f
+s:is_powershell	nvim/autoload/plug.vim	/^function! s:is_powershell(shell)$/;"	f
+s:is_preview_window_open	nvim/autoload/plug.vim	/^function! s:is_preview_window_open()$/;"	f
+s:is_updated	nvim/autoload/plug.vim	/^function! s:is_updated(dir)$/;"	f
+s:is_win	nvim/autoload/plug.vim	/^let s:is_win = has('win32')$/;"	v
+s:isabsolute	nvim/autoload/plug.vim	/^function! s:isabsolute(dir) abort$/;"	f
+s:job_abort	nvim/autoload/plug.vim	/^function! s:job_abort()$/;"	f
+s:job_cb	nvim/autoload/plug.vim	/^function! s:job_cb(fn, job, ch, data)$/;"	f
+s:job_exit_cb	nvim/autoload/plug.vim	/^function! s:job_exit_cb(self, data) abort$/;"	f
+s:job_out_cb	nvim/autoload/plug.vim	/^function! s:job_out_cb(self, data) abort$/;"	f
+s:last_non_empty_line	nvim/autoload/plug.vim	/^function! s:last_non_empty_line(lines)$/;"	f
+s:lastline	nvim/autoload/plug.vim	/^function! s:lastline(msg)$/;"	f
+s:lazy	nvim/autoload/plug.vim	/^function! s:lazy(plug, opt)$/;"	f
 s:lcs	nvim/colors/basic-dark.vim	/^let s:lcs = "425761"$/;"	v
 s:lcs	nvim/colors/basic-eighties.vim	/^let s:lcs = "425761"$/;"	v
 s:lcs	nvim/colors/basic-light.vim	/^let s:lcs = "c7bfbb"$/;"	v
@@ -817,27 +918,104 @@ s:line	nvim/colors/basic-eighties.vim	/^let s:line = "3d3d3d"$/;"	v
 s:line	nvim/colors/basic-light.vim	/^let s:line = "f7faff"$/;"	v
 s:line	nvim/colors/basic-spacegray.vim	/^    let s:line = '303030'$/;"	v
 s:line	nvim/colors/basic-spacegray.vim	/^let s:line = '171717'$/;"	v
+s:lines	nvim/autoload/plug.vim	/^function! s:lines(msg)$/;"	f
+s:load_plugin	nvim/autoload/plug.vim	/^function! s:load_plugin(spec)$/;"	f
+s:loaded	nvim/autoload/plug.vim	/^let s:loaded = get(s:, 'loaded', {})$/;"	v
+s:loaded_names	nvim/autoload/plug.vim	/^function! s:loaded_names()$/;"	f
+s:lod	nvim/autoload/plug.vim	/^function! s:lod(names, types, ...)$/;"	f
+s:lod_cmd	nvim/autoload/plug.vim	/^function! s:lod_cmd(cmd, bang, l1, l2, args, names)$/;"	f
+s:lod_ft	nvim/autoload/plug.vim	/^function! s:lod_ft(pat, names)$/;"	f
+s:lod_map	nvim/autoload/plug.vim	/^function! s:lod_map(map, names, with_prefix, prefix)$/;"	f
+s:log	nvim/autoload/plug.vim	/^function! s:log(bullet, name, lines)$/;"	f
+s:log4	nvim/autoload/plug.vim	/^function! s:log4(name, msg)$/;"	f
+s:logpos	nvim/autoload/plug.vim	/^function! s:logpos(name)$/;"	f
+s:lpad	nvim/autoload/plug.vim	/^function! s:lpad(str, len)$/;"	f
+s:mac_gui	nvim/autoload/plug.vim	/^let s:mac_gui = has('gui_macvim') && has('gui_running')$/;"	v
+s:me	nvim/autoload/plug.vim	/^  let s:me = resolve(expand('<sfile>:p'))$/;"	v
+s:names	nvim/autoload/plug.vim	/^function! s:names(...)$/;"	f
+s:new_window	nvim/autoload/plug.vim	/^function! s:new_window()$/;"	f
+s:nvim	nvim/autoload/plug.vim	/^let s:nvim = has('nvim-0.2') || (has('nvim') && exists('*jobwait') && !s:is_win)$/;"	v
+s:nvim_cb	nvim/autoload/plug.vim	/^function! s:nvim_cb(job_id, data, event) dict abort$/;"	f
 s:orange	nvim/colors/basic-dark.vim	/^let s:orange = "ffb74d"$/;"	v
 s:orange	nvim/colors/basic-eighties.vim	/^let s:orange = "ffb74d"$/;"	v
 s:orange	nvim/colors/basic-light.vim	/^let s:orange = "ff7800"$/;"	v
 s:orange	nvim/colors/basic-spacegray.vim	/^let s:orange = 'e5c078'$/;"	v
+s:parse_options	nvim/autoload/plug.vim	/^function! s:parse_options(arg)$/;"	f
+s:path	nvim/autoload/plug.vim	/^  function! s:path(path)$/;"	f
+s:plug_buf	nvim/autoload/plug.vim	/^let s:plug_buf = get(s:, 'plug_buf', -1)$/;"	v
+s:plug_call	nvim/autoload/plug.vim	/^  function! s:plug_call(fn, ...)$/;"	f
+s:plug_expand	nvim/autoload/plug.vim	/^function! s:plug_expand(fmt)$/;"	f
+s:plug_fnamemodify	nvim/autoload/plug.vim	/^function! s:plug_fnamemodify(fname, mods)$/;"	f
+s:plug_getcwd	nvim/autoload/plug.vim	/^function! s:plug_getcwd()$/;"	f
+s:plug_src	nvim/autoload/plug.vim	/^let s:plug_src = 'https:\/\/github.com\/junegunn\/vim-plug.git'$/;"	v
+s:plug_tab	nvim/autoload/plug.vim	/^let s:plug_tab = get(s:, 'plug_tab', -1)$/;"	v
+s:plug_tempname	nvim/autoload/plug.vim	/^function! s:plug_tempname()$/;"	f
+s:plug_window_exists	nvim/autoload/plug.vim	/^function! s:plug_window_exists()$/;"	f
+s:prepare	nvim/autoload/plug.vim	/^function! s:prepare(...)$/;"	f
+s:preview_commit	nvim/autoload/plug.vim	/^function! s:preview_commit()$/;"	f
+s:progress_bar	nvim/autoload/plug.vim	/^function! s:progress_bar(line, bar, total)$/;"	f
+s:progress_opt	nvim/autoload/plug.vim	/^function! s:progress_opt(base)$/;"	f
 s:purple	nvim/colors/basic-dark.vim	/^let s:purple = "ce93d8"$/;"	v
 s:purple	nvim/colors/basic-eighties.vim	/^let s:purple = "cc99cc"$/;"	v
 s:purple	nvim/colors/basic-light.vim	/^let s:purple = "673ab7"$/;"	v
 s:purple	nvim/colors/basic-spacegray.vim	/^let s:purple = 'a57a9e'$/;"	v
+s:reap	nvim/autoload/plug.vim	/^function! s:reap(name)$/;"	f
 s:red	nvim/colors/basic-dark.vim	/^let s:red = "ee877d"$/;"	v
 s:red	nvim/colors/basic-eighties.vim	/^let s:red = "f2777a"$/;"	v
 s:red	nvim/colors/basic-light.vim	/^let s:red = "d62a28"$/;"	v
 s:red	nvim/colors/basic-spacegray.vim	/^let s:red = 'cc6666'$/;"	v
+s:regress_bar	nvim/autoload/plug.vim	/^function! s:regress_bar()$/;"	f
+s:reload_plugins	nvim/autoload/plug.vim	/^function! s:reload_plugins()$/;"	f
+s:remove_rtp	nvim/autoload/plug.vim	/^function! s:remove_rtp()$/;"	f
+s:remove_triggers	nvim/autoload/plug.vim	/^function! s:remove_triggers(name)$/;"	f
+s:reorg_rtp	nvim/autoload/plug.vim	/^function! s:reorg_rtp()$/;"	f
+s:retry	nvim/autoload/plug.vim	/^function! s:retry()$/;"	f
+s:revert	nvim/autoload/plug.vim	/^function! s:revert()$/;"	f
+s:rm_rf	nvim/autoload/plug.vim	/^function! s:rm_rf(dir)$/;"	f
+s:rtp	nvim/autoload/plug.vim	/^function! s:rtp(spec)$/;"	f
+s:section	nvim/autoload/plug.vim	/^function! s:section(flags)$/;"	f
 s:selection	nvim/colors/basic-dark.vim	/^let s:selection = "546e7a"$/;"	v
 s:selection	nvim/colors/basic-eighties.vim	/^let s:selection = "546e7a"$/;"	v
 s:selection	nvim/colors/basic-light.vim	/^let s:selection = "e3fc8d"$/;"	v
 s:selection	nvim/colors/basic-spacegray.vim	/^let s:selection = '303537'$/;"	v
+s:shellesc_cmd	nvim/autoload/plug.vim	/^function! s:shellesc_cmd(arg, script)$/;"	f
+s:shellesc_ps1	nvim/autoload/plug.vim	/^function! s:shellesc_ps1(arg)$/;"	f
+s:shellesc_sh	nvim/autoload/plug.vim	/^function! s:shellesc_sh(arg)$/;"	f
 s:show_documentation	nvim/init.vim.d/plugins.vim	/^function! s:show_documentation()$/;"	f
+s:snapshot	nvim/autoload/plug.vim	/^function! s:snapshot(force, ...) abort$/;"	f
+s:source	nvim/autoload/plug.vim	/^function! s:source(from, ...)$/;"	f
+s:spawn	nvim/autoload/plug.vim	/^function! s:spawn(name, cmd, opts)$/;"	f
+s:split_rtp	nvim/autoload/plug.vim	/^function! s:split_rtp()$/;"	f
+s:status	nvim/autoload/plug.vim	/^function! s:status()$/;"	f
+s:status_load	nvim/autoload/plug.vim	/^function! s:status_load(lnum)$/;"	f
+s:status_update	nvim/autoload/plug.vim	/^function! s:status_update() range$/;"	f
+s:switch_in	nvim/autoload/plug.vim	/^function! s:switch_in()$/;"	f
+s:switch_out	nvim/autoload/plug.vim	/^function! s:switch_out(...)$/;"	f
+s:syntax	nvim/autoload/plug.vim	/^function! s:syntax()$/;"	f
+s:system	nvim/autoload/plug.vim	/^function! s:system(cmd, ...)$/;"	f
+s:system_chomp	nvim/autoload/plug.vim	/^function! s:system_chomp(...)$/;"	f
+s:tick	nvim/autoload/plug.vim	/^function! s:tick()$/;"	f
+s:to_a	nvim/autoload/plug.vim	/^function! s:to_a(v)$/;"	f
+s:to_s	nvim/autoload/plug.vim	/^function! s:to_s(v)$/;"	f
+s:triggers	nvim/autoload/plug.vim	/^let s:triggers = get(s:, 'triggers', {})$/;"	v
+s:trim	nvim/autoload/plug.vim	/^function! s:trim(str)$/;"	f
+s:update	nvim/autoload/plug.vim	/^function! s:update(force, names)$/;"	f
+s:update_finish	nvim/autoload/plug.vim	/^function! s:update_finish()$/;"	f
+s:update_impl	nvim/autoload/plug.vim	/^function! s:update_impl(pull, force, args) abort$/;"	f
+s:update_python	nvim/autoload/plug.vim	/^function! s:update_python()$/;"	f
+s:update_ruby	nvim/autoload/plug.vim	/^function! s:update_ruby()$/;"	f
+s:update_vim	nvim/autoload/plug.vim	/^function! s:update_vim()$/;"	f
+s:upgrade	nvim/autoload/plug.vim	/^function! s:upgrade()$/;"	f
+s:upgrade_specs	nvim/autoload/plug.vim	/^function! s:upgrade_specs()$/;"	f
+s:version_requirement	nvim/autoload/plug.vim	/^function! s:version_requirement(val, min)$/;"	f
+s:vim8	nvim/autoload/plug.vim	/^let s:vim8 = has('patch-8.0.0039') && exists('*job_start')$/;"	v
+s:warn	nvim/autoload/plug.vim	/^function! s:warn(cmd, msg)$/;"	f
 s:window	nvim/colors/basic-dark.vim	/^let s:window = "37474f"$/;"	v
 s:window	nvim/colors/basic-eighties.vim	/^let s:window = "444444"$/;"	v
 s:window	nvim/colors/basic-light.vim	/^let s:window = "cfd8dc"$/;"	v
 s:window	nvim/colors/basic-spacegray.vim	/^let s:window = '4c5966'$/;"	v
+s:with_cd	nvim/autoload/plug.vim	/^function! s:with_cd(cmd, dir, ...)$/;"	f
+s:wrap_cmds	nvim/autoload/plug.vim	/^  function! s:wrap_cmds(cmds)$/;"	f
 s:yellow	nvim/colors/basic-dark.vim	/^let s:yellow = "fff176"$/;"	v
 s:yellow	nvim/colors/basic-eighties.vim	/^let s:yellow = "ffcc66"$/;"	v
 s:yellow	nvim/colors/basic-light.vim	/^let s:yellow = "eab700"$/;"	v

@@ -135,4 +135,9 @@ alias sgbeg="sudo sh ~/documents/programmation/scripts/sixgill_day.sh"
 alias sgpy="~/.local/lib/python3.9/site-packages/sixgill-additionals"
 alias sg="cd ~/documents/work/sixgill"
 
+# Git
+alias gpsh="git push --set-upstream origin $(git symbolic-ref -q HEAD)"
+alias gpll="git pull --set-upstream origin $(git symbolic-ref -q HEAD)"
+alias gcm="git checkout master"
+
 
