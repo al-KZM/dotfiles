@@ -1,0 +1,974 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/x41/.config/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+&<space>	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap &<space> &amp;<space>$/;"	m
+,1	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,1 <h1><\/h1><Enter><Enter><++><Esc>2kf<i$/;"	m
+,1	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,1 #<Space><Enter><++><Esc>kA$/;"	m
+,2	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,2 <h2><\/h2><Enter><Enter><++><Esc>2kf<i$/;"	m
+,2	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,2 ##<Space><Enter><++><Esc>kA$/;"	m
+,3	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,3 <h3><\/h3><Enter><Enter><++><Esc>2kf<i$/;"	m
+,3	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,3 ###<Space><Enter><++><Esc>kA$/;"	m
+,P	nvim/init.vim.d/shortcuts.vim	/^nmap ,P :!$HOME\/.config\/scripts\/termbin_file.sh %<CR>$/;"	m
+,a	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,a <a<Space>href=""><++><\/a><Space><++><Esc>14hi$/;"	m
+,a	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,a [](<++>)<++><Esc>F[a$/;"	m
+,a	nvim/init.vim.d/runtime/ftplugin/xml.vim	/^inoremap ,a <a href="<++>"><++><\/a><++><Esc>F"ci"$/;"	m
+,b	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,b <b><\/b><Space><++><Esc>FbT>i$/;"	m
+,b	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,b ****<++><Esc>F*hi$/;"	m
+,c	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,c ```<cr>```<cr><cr><esc>2kO$/;"	m
+,c	nvim/init.vim.d/runtime/ftplugin/tex.vim	/^nmap ,c :VimtexTocToggle<CR>$/;"	m
+,dl	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,dl <dl><Enter><Enter><\/dl><enter><enter><++><esc>3kcc$/;"	m
+,dt	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,dt <dt><\/dt><Enter><dd><++><\/dd><Enter><++><esc>2kcit$/;"	m
+,e	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,e <a<Space>target="_blank"<Space>href=""><++><\/a><Space><++><Esc>14hi$/;"	m
+,e	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,e **<++><Esc>F*i$/;"	m
+,e	nvim/init.vim.d/runtime/ftplugin/xml.vim	/^inoremap ,e <item><Enter><title><++><\/title><Enter><guid<space>isPermaLink="false"><++><\/guid>/;"	m
+,gr	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,gr <font color="green"><\/font><Esc>F>a$/;"	m
+,h	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,h ====<Space><++><Esc>F=hi$/;"	m
+,i	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,i ![](<++>)<++><Esc>F[a$/;"	m
+,im	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,im <img src="" alt="<++>"><++><esc>Fcf"a$/;"	m
+,it	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,it <em><\/em><Space><++><Esc>FeT>i$/;"	m
+,l	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,l --------<Enter>$/;"	m
+,lc	nvim/init.vim.d/runtime/ftplugin/tex.vim	/^nmap ,lc :VimtexClean!<CR>$/;"	m
+,li	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,li <Esc>o<li><\/li><Esc>F>a$/;"	m
+,n	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,n ---<Enter><Enter>$/;"	m
+,ol	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,ol <ol><Enter><li><\/li><Enter><\/ol><Enter><Enter><++><Esc>03kf<i$/;"	m
+,p	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,p <p><\/p><Enter><Enter><++><Esc>02kf>a$/;"	m
+,p	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,p ```{python}<CR>```<CR><CR><esc>2kO$/;"	m
+,r	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,r ```{r}<CR>```<CR><CR><esc>2kO$/;"	m
+,rd	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,rd <font color="red"><\/font><Esc>F>a$/;"	m
+,s	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^inoremap ,s ~~~~<++><Esc>F~hi$/;"	m
+,tab	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,tab <table><Enter><\/table><Esc>O$/;"	m
+,td	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,td <td><\/td><++><Esc>Fdcit$/;"	m
+,th	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,th <th><\/th><++><Esc>Fhcit$/;"	m
+,tr	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,tr <tr><\/tr><Enter><++><Esc>kf<i$/;"	m
+,ul	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,ul <ul><Enter><li><\/li><Enter><\/ul><Enter><Enter><++><Esc>03kf<i$/;"	m
+,yl	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ,yl <font color="yellow"><\/font><Esc>F>a$/;"	m
+0	polybar/config.ini	/^animation-charging-0 = $/;"	k	section:module/battery
+0	polybar/config.ini	/^animation-packetloss-0 = ⚠$/;"	k	section:module/wireless-network
+0	polybar/config.ini	/^bar-volume-foreground-0 = #55aa55$/;"	k	section:module/pulseaudio
+0	polybar/config.ini	/^blacklist-0 = num lock$/;"	k	section:module/xkeyboard
+0	polybar/config.ini	/^font-0 = "NotoSans-Regular:size=12;2"$/;"	k	section:bar/top
+0	polybar/config.ini	/^menu-0-0 = Browsers$/;"	k	section:module/menu-apps
+0	polybar/config.ini	/^menu-2-0 = Gimp$/;"	k	section:module/menu-apps
+0	polybar/config.ini	/^menu-3-0 = Sound$/;"	k	section:module/menu-apps
+0	polybar/config.ini	/^ramp-capacity-0 = $/;"	k	section:module/battery
+0	polybar/config.ini	/^ramp-signal-0 = 😱$/;"	k	section:module/wireless-network
+0	polybar/config.ini	/^ramp-volume-0 = 🔈$/;"	k	section:module/pulseaudio
+0	polybar/scripts/gmail/client_secrets.json	/^{"installed":{"client_id":"1041679298587-8solnkr9tr8iktrut958if6tsgqt42m2.apps.googleusercontent/;"	s	array:installed.redirect_uris
+0	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:1.col
+0	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:2.col
+0	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:3.col
+0	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:4.col
+0	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:5.col
+0	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:6.col
+0	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:7.col
+0	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:8.col
+0	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:9.col
+1	polybar/config.ini	/^animation-charging-1 = $/;"	k	section:module/battery
+1	polybar/config.ini	/^animation-packetloss-1 = 📶$/;"	k	section:module/wireless-network
+1	polybar/config.ini	/^bar-volume-foreground-1 = #55aa55$/;"	k	section:module/pulseaudio
+1	polybar/config.ini	/^blacklist-1 = scroll lock$/;"	k	section:module/xkeyboard
+1	polybar/config.ini	/^font-1 = "Font Awesome 5 Free:style=Solid:size=10;1"$/;"	k	section:bar/top
+1	polybar/config.ini	/^menu-0-1 = Multimedia$/;"	k	section:module/menu-apps
+1	polybar/config.ini	/^menu-1-1 = Chrome$/;"	k	section:module/menu-apps
+1	polybar/config.ini	/^menu-2-1 = Krita$/;"	k	section:module/menu-apps
+1	polybar/config.ini	/^menu-3-1 = Wifi$/;"	k	section:module/menu-apps
+1	polybar/config.ini	/^ramp-capacity-1 = $/;"	k	section:module/battery
+1	polybar/config.ini	/^ramp-signal-1 = 😠$/;"	k	section:module/wireless-network
+1	polybar/config.ini	/^ramp-volume-1 = 🔉$/;"	k	section:module/pulseaudio
+1	polybar/scripts/gmail/client_secrets.json	/^{"installed":{"client_id":"1041679298587-8solnkr9tr8iktrut958if6tsgqt42m2.apps.googleusercontent/;"	s	array:installed.redirect_uris
+1	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:1.col
+1	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:2.col
+1	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:3.col
+1	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:4.col
+1	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:5.col
+1	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:6.col
+1	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:7.col
+1	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:8.col
+1	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:9.col
+1	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	o
+2	polybar/config.ini	/^animation-charging-2 = $/;"	k	section:module/battery
+2	polybar/config.ini	/^bar-volume-foreground-2 = #55aa55$/;"	k	section:module/pulseaudio
+2	polybar/config.ini	/^font-2 = "Font Awesome 5 Brands:size=10;1"$/;"	k	section:bar/top
+2	polybar/config.ini	/^menu-0-2 = Options$/;"	k	section:module/menu-apps
+2	polybar/config.ini	/^menu-3-2 = Htop$/;"	k	section:module/menu-apps
+2	polybar/config.ini	/^ramp-capacity-2 = $/;"	k	section:module/battery
+2	polybar/config.ini	/^ramp-signal-2 = 😒$/;"	k	section:module/wireless-network
+2	polybar/config.ini	/^ramp-volume-2 = 🔊$/;"	k	section:module/pulseaudio
+2	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:1.col
+2	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:2.col
+2	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:3.col
+2	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:4.col
+2	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:5.col
+2	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:6.col
+2	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:7.col
+2	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:8.col
+2	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	n	array:9.col
+2	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	o
+3	polybar/config.ini	/^animation-charging-3 = $/;"	k	section:module/battery
+3	polybar/config.ini	/^bar-volume-foreground-3 = #55aa55$/;"	k	section:module/pulseaudio
+3	polybar/config.ini	/^ramp-capacity-3 = $/;"	k	section:module/battery
+3	polybar/config.ini	/^ramp-signal-3 = 😊$/;"	k	section:module/wireless-network
+3	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	o
+4	polybar/config.ini	/^animation-charging-4 = $/;"	k	section:module/battery
+4	polybar/config.ini	/^bar-volume-foreground-4 = #55aa55$/;"	k	section:module/pulseaudio
+4	polybar/config.ini	/^ramp-capacity-4 = $/;"	k	section:module/battery
+4	polybar/config.ini	/^ramp-signal-4 = 😃$/;"	k	section:module/wireless-network
+4	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	o
+5	polybar/config.ini	/^bar-volume-foreground-5 = #f5a70a$/;"	k	section:module/pulseaudio
+5	polybar/config.ini	/^ramp-signal-5 = 😈$/;"	k	section:module/wireless-network
+5	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	o
+6	polybar/config.ini	/^bar-volume-foreground-6 = #ff5555$/;"	k	section:module/pulseaudio
+6	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	o
+7	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	o
+8	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	o
+9	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	o
+;;	nvim/init.vim.d/runtime/ftplugin/java.vim	/^imap ;; <esc>A;<Esc>o$/;"	m
+;;	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap ;; A;<esc>o$/;"	m
+<A-Left>	nvim/init.vim.d/shortcuts.vim	/^    nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>$/;"	m
+<A-Right>	nvim/init.vim.d/shortcuts.vim	/^    nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>$/;"	m
+<A-a>	nvim/init.vim.d/shortcuts.vim	/^nnoremap <A-a> <C-x>$/;"	m
+<A-s>	nvim/init.vim.d/runtime/ftplugin/python.vim	/^map <A-s> :call AutoInitArgs()<CR>$/;"	m
+<BS>	nvim/init.vim.d/runtime/ftplugin/help.vim	/^nnoremap <buffer> <BS> <C-T>$/;"	m
+<C-Left>	nvim/init.vim.d/shortcuts.vim	/^    nnoremap <C-Left> :tabprevious<CR>$/;"	m
+<C-Right>	nvim/init.vim.d/shortcuts.vim	/^    nnoremap <C-Right> :tabnext<CR>$/;"	m
+<C-h>	nvim/init.vim.d/shortcuts.vim	/^	map <C-h> <C-w>h$/;"	m
+<C-j>	nvim/init.vim.d/shortcuts.vim	/^	map <C-j> <C-w>j$/;"	m
+<C-j>I	nvim/init.vim.d/runtime/ftplugin/java.vim	/^imap <C-j>I <Plug>(JavaComplete-Imports-AddMissing)$/;"	m
+<C-j>R	nvim/init.vim.d/runtime/ftplugin/java.vim	/^imap <C-j>R <Plug>(JavaComplete-Imports-RemoveUnused)$/;"	m
+<C-j>a	nvim/init.vim.d/runtime/ftplugin/java.vim	/^imap <C-j>a <Plug>(JavaComplete-Generate-AccessorSetterGetter)$/;"	m
+<C-j>g	nvim/init.vim.d/runtime/ftplugin/java.vim	/^imap <C-j>g <Plug>(JavaComplete-Generate-AccessorGetter)$/;"	m
+<C-j>i	nvim/init.vim.d/runtime/ftplugin/java.vim	/^imap <C-j>i <Plug>(JavaComplete-Imports-AddSmart)$/;"	m
+<C-j>ii	nvim/init.vim.d/runtime/ftplugin/java.vim	/^imap <C-j>ii <Plug>(JavaComplete-Imports-Add)$/;"	m
+<C-j>jM	nvim/init.vim.d/runtime/ftplugin/java.vim	/^imap <C-j>jM <Plug>(JavaComplete-Generate-AbstractMethods)$/;"	m
+<C-j>s	nvim/init.vim.d/runtime/ftplugin/java.vim	/^imap <C-j>s <Plug>(JavaComplete-Generate-AccessorSetter)$/;"	m
+<C-k>	nvim/init.vim.d/shortcuts.vim	/^	map <C-k> <C-w>k$/;"	m
+<C-l>	nvim/init.vim.d/shortcuts.vim	/^	map <C-l> <C-w>l$/;"	m
+<C-m>	nvim/init.vim.d/runtime/ftplugin/python.vim	/^nnoremap <C-m> :!ctags -aR ~\/.local\/lib\/python3.9\/site-packages\/<cword><cr>$/;"	m
+<C-o><C-d>	nvim/init.vim.d/plugins.vim	/^nnoremap <C-o><C-d> :OmniSharpGotoDefinition<CR>$/;"	m
+<C-o><C-d><C-p>	nvim/init.vim.d/plugins.vim	/^nnoremap <C-o><C-d><C-p> :OmniSharpPreviewDefinition<CR>$/;"	m
+<C-o><C-r>	nvim/init.vim.d/plugins.vim	/^nnoremap <C-o><C-r> :!dotnet run$/;"	m
+<C-o><C-u>	nvim/init.vim.d/plugins.vim	/^nnoremap <C-o><C-u> :OmniSharpFindUsages<CR>$/;"	m
+<C-s>	nvim/init.vim.d/plugins.vim	/^nmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
+<C-s>	nvim/init.vim.d/plugins.vim	/^xmap <silent> <C-s> <Plug>(coc-range-select)$/;"	m
+<C-x>	nvim/init.vim.d/shortcuts.vim	/^    nnoremap <C-x> :tabclose<CR>$/;"	m
+<CR>	nvim/init.vim.d/runtime/ftplugin/help.vim	/^nnoremap <buffer> <CR> <C-]>$/;"	m
+<F2>	nvim/init.vim.d/runtime/ftplugin/tex.vim	/^map <F2> :LLPStartPreview<CR>$/;"	m
+<F3>	nvim/init.vim.d/shortcuts.vim	/^imap <F3> <c-o>:call ToggleHebrew()<cr>$/;"	m
+<F3>	nvim/init.vim.d/shortcuts.vim	/^map <F3> :call ToggleHebrew()<cr>$/;"	m
+<F4>	nvim/init.vim.d/shortcuts.vim	/^map <F4> :Clap colors<CR>$/;"	m
+<F5>	nvim/init.vim.d/shortcuts.vim	/^map <F5> :Clap files<CR>$/;"	m
+<F6>	nvim/init.vim.d/functions.vim	/^map <F6> :call MakeCjhebrew()<CR>$/;"	m
+<F8>	nvim/init.vim.d/runtime/ftplugin/tex.vim	/^map <F8> :call DisplayImage("~\/documents\/documentations\/cjhebrew\/letters.png")<CR>$/;"	m
+<F8>	nvim/init.vim.d/shortcuts.vim	/^nmap <F8> :TagbarOpenAutoClose<CR>$/;"	m
+<Leader><C-]>	nvim/init.vim.d/shortcuts.vim	/^    nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T$/;"	m
+<Leader>fu	nvim/init.vim.d/shortcuts.vim	/^nnoremap <Leader>fu :CtrlPFunky<Cr>$/;"	m
+<Leader>uu	nvim/init.vim.d/shortcuts.vim	/^nnoremap <Leader>uu :execute 'CtrlPFunky ' . expand('<cword>')<Cr>$/;"	m
+<S-TAB>	nvim/init.vim.d/plugins.vim	/^inoremap <expr><S-TAB> pumvisible() ? "\\<C-p>" : "\\<C-h>"$/;"	m
+<TAB>	nvim/init.vim.d/plugins.vim	/^inoremap <silent><expr> <TAB>$/;"	m
+<Tab>	nvim/init.vim.d/plugins.vim	/^inoremap <expr> <Tab> pumvisible() ? '<C-n>' :$/;"	m
+<c-@>	nvim/init.vim.d/plugins.vim	/^  inoremap <silent><expr> <c-@> coc#refresh()$/;"	m
+<c-l>	nvim/init.vim.d/shortcuts.vim	/^imap <c-l> <c-g>u<Esc>mt[s1z=`]`tmtla<c-g>u$/;"	m
+<c-space>	nvim/init.vim.d/plugins.vim	/^  inoremap <silent><expr> <c-space> coc#refresh()$/;"	m
+<cr>	nvim/init.vim.d/plugins.vim	/^  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
+<cr>	nvim/init.vim.d/plugins.vim	/^  inoremap <expr> <cr> pumvisible() ? "\\<C-y>" : "\\<C-g>u\\<CR>"$/;"	m
+<leader><leader>	nvim/init.vim.d/shortcuts.vim	/^inoremap <leader><leader> <Esc>\/<++><Enter>"_c4l$/;"	m
+<leader><leader>	nvim/init.vim.d/shortcuts.vim	/^map <leader><leader> <Esc>\/<++><Enter>"_c4l$/;"	m
+<leader><leader>	nvim/init.vim.d/shortcuts.vim	/^vnoremap <leader><leader> <Esc>\/<++><Enter>"_c4l$/;"	m
+<leader><leader>d	nvim/init.vim.d/shortcuts.vim	/^imap <leader><leader>d <esc>:call ToggleDeadKeys()<CR>a$/;"	m
+<leader><leader>d	nvim/init.vim.d/shortcuts.vim	/^nm <leader><leader>d :call ToggleDeadKeys()<CR>$/;"	m
+<leader>C	nvim/init.vim.d/shortcuts.vim	/^nmap <leader>C :SyntasticCheck<CR>$/;"	m
+<leader>N	nvim/init.vim.d/shortcuts.vim	/^nmap <leader>N :NERDTree %<CR>$/;"	m
+<leader>Tn	nvim/init.vim.d/shortcuts.vim	/^map <leader>Tn :TabooOpen$/;"	m
+<leader>Tr	nvim/init.vim.d/shortcuts.vim	/^map <leader>Tr :TabooRename$/;"	m
+<leader>X	nvim/init.vim.d/runtime/ftplugin/python.vim	/^map <leader>X :call PythonRunfile()<CR>$/;"	m
+<leader>a	nvim/init.vim.d/plugins.vim	/^nmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>a	nvim/init.vim.d/plugins.vim	/^xmap <leader>a  <Plug>(coc-codeaction-selected)$/;"	m
+<leader>ac	nvim/init.vim.d/plugins.vim	/^nmap <leader>ac  <Plug>(coc-codeaction)$/;"	m
+<leader>b	nvim/init.vim.d/runtime/ftplugin/python.vim	/^map <silent> <leader>b oimport ipdb; ipdb.set_trace()<esc>$/;"	m
+<leader>co	nvim/init.vim.d/runtime/ftplugin/c.vim	/^inoremap <leader>co std::cout << "" << std::endl;<Esc>^f"a$/;"	m
+<leader>f	nvim/init.vim.d/plugins.vim	/^nmap <leader>f  <Plug>(coc-format-selected)$/;"	m
+<leader>f	nvim/init.vim.d/plugins.vim	/^xmap <leader>f  <Plug>(coc-format-selected)$/;"	m
+<leader>f	nvim/init.vim.d/shortcuts.vim	/^map <leader>f :Goyo \\| set bg=light \\| set linebreak<CR>$/;"	m
+<leader>fD	nvim/init.vim.d/runtime/ftplugin/flutter.vim	/^map <leader>fD :FlutterVisualDebug$/;"	m
+<leader>fR	nvim/init.vim.d/runtime/ftplugin/flutter.vim	/^map <leader>fR :FlutterHotRestart$/;"	m
+<leader>fd	nvim/init.vim.d/runtime/ftplugin/flutter.vim	/^map <leader>fd :FlutterDevices$/;"	m
+<leader>fq	nvim/init.vim.d/runtime/ftplugin/flutter.vim	/^map <leader>fq :FlutterQuit$/;"	m
+<leader>fr	nvim/init.vim.d/runtime/ftplugin/flutter.vim	/^map <leader>fr :FlutterHotReload$/;"	m
+<leader>fs	nvim/init.vim.d/runtime/ftplugin/flutter.vim	/^map <leader>fs :FlutterSplit$/;"	m
+<leader>ft	nvim/init.vim.d/runtime/ftplugin/flutter.vim	/^map <leader>ft :FlutterTab$/;"	m
+<leader>fv	nvim/init.vim.d/runtime/ftplugin/flutter.vim	/^map <leader>fv :FlutterVSplit$/;"	m
+<leader>gd	nvim/init.vim.d/plugins.vim	/^nnoremap <leader>gd :Gvdiff<CR>$/;"	m
+<leader>h	nvim/init.vim.d/shortcuts.vim	/^nnoremap <leader>h :FSHere<CR>$/;"	m
+<leader>jA	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>jA <Plug>(JavaComplete-Generate-Accessors)$/;"	m
+<leader>jI	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>jI <Plug>(JavaComplete-Imports-AddMissing)$/;"	m
+<leader>jM	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>jM <Plug>(JavaComplete-Generate-AbstractMethods)$/;"	m
+<leader>jN	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <silent> <buffer> <leader>jN <Plug>(JavaComplete-Generate-ClassInFile)$/;"	m
+<leader>jR	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>jR <Plug>(JavaComplete-Imports-RemoveUnused)$/;"	m
+<leader>ja	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)$/;"	m
+<leader>ja	nvim/init.vim.d/runtime/ftplugin/java.vim	/^vmap <leader>ja <Plug>(JavaComplete-Generate-AccessorSetterGetter)$/;"	m
+<leader>jc	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>jc <Plug>(JavaComplete-Generate-Constructor)$/;"	m
+<leader>jcc	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>jcc <Plug>(JavaComplete-Generate-DefaultConstructor)$/;"	m
+<leader>jeq	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>jeq <Plug>(JavaComplete-Generate-EqualsAndHashCode)$/;"	m
+<leader>jg	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)$/;"	m
+<leader>jg	nvim/init.vim.d/runtime/ftplugin/java.vim	/^vmap <leader>jg <Plug>(JavaComplete-Generate-AccessorGetter)$/;"	m
+<leader>ji	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>ji <Plug>(JavaComplete-Imports-AddSmart)$/;"	m
+<leader>jii	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>jii <Plug>(JavaComplete-Imports-Add)$/;"	m
+<leader>jn	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <silent> <buffer> <leader>jn <Plug>(JavaComplete-Generate-NewClass)$/;"	m
+<leader>js	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)$/;"	m
+<leader>js	nvim/init.vim.d/runtime/ftplugin/java.vim	/^vmap <leader>js <Plug>(JavaComplete-Generate-AccessorSetter)$/;"	m
+<leader>jts	nvim/init.vim.d/runtime/ftplugin/java.vim	/^nmap <leader>jts <Plug>(JavaComplete-Generate-ToString)$/;"	m
+<leader>l	nvim/init.vim.d/shortcuts.vim	/^map <leader>l :call PythonExecLine()<CR>$/;"	m
+<leader>n	nvim/init.vim.d/shortcuts.vim	/^nmap <leader>n :NERDTreeToggle<CR>$/;"	m
+<leader>or	nvim/init.vim.d/shortcuts.vim	/^nmap <leader>or :setlocal spell! spelllang=en_us<CR>$/;"	m
+<leader>os	nvim/init.vim.d/shortcuts.vim	/^map <leader>os :OpenSession$/;"	m
+<leader>p	nvim/init.vim.d/shortcuts.vim	/^map <leader>p :call PythonExec()<CR>$/;"	m
+<leader>qf	nvim/init.vim.d/plugins.vim	/^nmap <leader>qf  <Plug>(coc-fix-current)$/;"	m
+<leader>rn	nvim/init.vim.d/plugins.vim	/^nmap <leader>rn <Plug>(coc-rename)$/;"	m
+<leader>sS	nvim/init.vim.d/shortcuts.vim	/^map <leader>sS :SaveSession$/;"	m
+<leader>ss	nvim/init.vim.d/shortcuts.vim	/^map <leader>ss :SaveSession<CR>$/;"	m
+<leader>t	nvim/init.vim.d/shortcuts.vim	/^nmap <leader>t :FloatermToggle<CR>$/;"	m
+<leader>uR	nvim/init.vim.d/shortcuts.vim	/^nmap <leader>uR :call UltiSnips#RefreshSnippets()<CR>$/;"	m
+<leader>vR	nvim/init.vim.d/shortcuts.vim	/^map <leader>vR :source ~\/.vimrc<CR>$/;"	m
+<leader>w	nvim/init.vim.d/runtime/ftplugin/html.vim	/^nnoremap <leader>w !google-chrome-stable %$/;"	m
+<leader>w	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^map <leader>w yiWi[<esc>Ea](<esc>pa)$/;"	m
+<leader>x	nvim/init.vim.d/runtime/ftplugin/flutter.vim	/^map <leader>x  :FlutterRun$/;"	m
+<leader>x	nvim/init.vim.d/runtime/ftplugin/python.vim	/^map <leader>x :FloatermNew --autoclose=0 python %<CR>$/;"	m
+<leader>y	nvim/init.vim.d/shortcuts.vim	/^nnoremap <leader>y :Clap yanks<CR>$/;"	m
+<space>	nvim/init.vim.d/shortcuts.vim	/^nnoremap <space> za$/;"	m
+<space>a	nvim/init.vim.d/plugins.vim	/^nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>$/;"	m
+<space>c	nvim/init.vim.d/plugins.vim	/^nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>$/;"	m
+<space>e	nvim/init.vim.d/plugins.vim	/^nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>$/;"	m
+<space>j	nvim/init.vim.d/plugins.vim	/^nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>$/;"	m
+<space>k	nvim/init.vim.d/plugins.vim	/^nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>$/;"	m
+<space>o	nvim/init.vim.d/plugins.vim	/^nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>$/;"	m
+<space>p	nvim/init.vim.d/plugins.vim	/^nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>$/;"	m
+<space>s	nvim/init.vim.d/plugins.vim	/^nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>$/;"	m
+AutoInitArgs	nvim/init.vim.d/runtime/ftplugin/python.vim	/^function AutoInitArgs()$/;"	f
+CLIENT_SECRETS_PATH	polybar/scripts/gmail/auth.py	/^CLIENT_SECRETS_PATH = Path(DIR, 'client_secrets.json')$/;"	v
+COMPILING_SCRIPT	scripts/thebotofeyal_sendmsg.py	/^COMPILING_SCRIPT="~\/.config\/scripts\/java_compile_notrace.sh"$/;"	v
+CREDENTIALS_PATH	polybar/scripts/gmail/auth.py	/^CREDENTIALS_PATH = Path(DIR, 'credentials.json')$/;"	v
+CREDENTIALS_PATH	polybar/scripts/gmail/launch.py	/^CREDENTIALS_PATH = Path(DIR, 'credentials.json')$/;"	v
+CREDENTIALS_PATH	polybar/scripts/gmail/list_labels.py	/^CREDENTIALS_PATH = os.path.join(DIR, 'credentials.json')$/;"	v
+CopyLastElemStep	nvim/init.vim.d/runtime/ftplugin/tex.vim	/^func! CopyLastElemStep()$/;"	f
+Cout	nvim/init.vim.d/runtime/ftplugin/cpp.vim	/^function Cout()$/;"	f
+DELETE_SCRIPT	scripts/thebotofeyal_sendmsg.py	/^DELETE_SCRIPT="\/.config\/scripts\/java_delete_traces.sh"$/;"	v
+DIR	polybar/scripts/gmail/auth.py	/^DIR = Path(__file__).resolve().parent$/;"	v
+DIR	polybar/scripts/gmail/launch.py	/^DIR = Path(__file__).resolve().parent$/;"	v
+DIR	polybar/scripts/gmail/list_labels.py	/^DIR = os.path.dirname(os.path.realpath(__file__))$/;"	v
+Dependencies	polybar/scripts/gmail/README.md	/^## Dependencies$/;"	s	chapter:Polybar Gmail
+DisplayImage	nvim/init.vim.d/functions.vim	/^function! DisplayImage(path)$/;"	f
+DoPrettyXML	nvim/init.vim.d/runtime/ftplugin/xml.vim	/^function! DoPrettyXML()$/;"	f
+EXAM_DIR	scripts/thebotofeyal_sendmsg.py	/^EXAM_DIR="\/documents\/university\/courses_notes\/java_1\/Exam\/"$/;"	v
+EXAM_FILE	scripts/thebotofeyal_sendmsg.py	/^EXAM_FILE="\/documents\/university\/courses_notes\/java_1\/Exam\/Exam.java"$/;"	v
+EYAL_ID	scripts/thebotofeyal_sendmsg.py	/^EYAL_ID = "1148205096"$/;"	v
+Example	polybar/scripts/gmail/README.md	/^### Example$/;"	S	section:Polybar Gmail""Script arguments
+FileDialog	qutebrowser/qsettings/QtProject.conf	/^[FileDialog]$/;"	s
+Fold	nvim/init.vim.d/plugins.vim	/^command! -nargs=? Fold :call     CocActionAsync('fold', <f-args>)$/;"	c
+Format	nvim/init.vim.d/plugins.vim	/^command! -nargs=0 Format :call CocActionAsync('format')$/;"	c
+General	openrazer/razer.conf	/^[General]$/;"	s
+Get list of all your mailbox labels	polybar/scripts/gmail/README.md	/^## Get list of all your mailbox labels$/;"	s	chapter:Polybar Gmail
+Gitignore	nvim/init.vim	/^function Gitignore(env)$/;"	f
+Gitignore	nvim/init.vim.d/init.vim	/^function Gitignore(env)$/;"	f
+H	nvim/init.vim.d/shortcuts.vim	/^nnoremap <buffer> H :<C-u>execute "!pydoc3 " . expand("<cword>")<CR>$/;"	m
+IFS	neofetch/config.conf	/^IFS='_' read -r -a array <<< "$quote"$/;"	k
+Installation	polybar/scripts/gmail/README.md	/^## Installation$/;"	s	chapter:Polybar Gmail
+K	nvim/init.vim.d/plugins.vim	/^nnoremap <silent> K :call <SID>show_documentation()<CR>$/;"	m
+MakeCjhebrew	nvim/init.vim.d/functions.vim	/^func! MakeCjhebrew()$/;"	f
+Module	polybar/scripts/gmail/README.md	/^### Module$/;"	S	section:Polybar Gmail""Installation
+NERDTreeIgnore	nvim/init.vim.d/plugins.vim	/^let NERDTreeIgnore=['\\.pyc$', '\\~$'] "ignore files in NERDTree$/;"	v
+O	nvim/init.vim.d/runtime/ftplugin/help.vim	/^nnoremap <buffer> O ?'\\l\\{2,\\}'<CR>$/;"	m
+OR	nvim/init.vim.d/plugins.vim	/^command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')$/;"	c
+Polybar Gmail	polybar/scripts/gmail/README.md	/^# Polybar Gmail$/;"	c
+PrettyJson	nvim/init.vim.d/functions.vim	/^function! PrettyJson()$/;"	f
+PrettyXML	nvim/init.vim.d/runtime/ftplugin/xml.vim	/^command! PrettyXML call DoPrettyXML()$/;"	c
+PythonExec	nvim/init.vim.d/functions.vim	/^function PythonExec()$/;"	f
+PythonExecLine	nvim/init.vim.d/functions.vim	/^function PythonExecLine()$/;"	f
+PythonRunfile	nvim/init.vim.d/functions.vim	/^function PythonRunfile()$/;"	f
+Q	nvim/init.vim.d/shortcuts.vim	/^noremap Q !!sh<CR>$/;"	m
+S	nvim/init.vim.d/runtime/ftplugin/help.vim	/^nnoremap <buffer> S ?\\|\\zs\\S\\+\\ze\\|<CR>$/;"	m
+S	nvim/init.vim.d/shortcuts.vim	/^	nnoremap S :%s\/\/g<Left><Left>$/;"	m
+SCOPE	polybar/scripts/gmail/auth.py	/^SCOPE = 'https:\/\/www.googleapis.com\/auth\/gmail.labels'$/;"	v
+SETPALETTEDARK	mutt/colors/mutt-compile-colors.sh	/^cat > palette_dark.tmp <<SETPALETTEDARK$/;"	h
+SETPALETTEDARK	neomutt/colors/mutt-compile-colors.sh	/^cat > palette_dark.tmp <<SETPALETTEDARK$/;"	h
+SETPALETTELIGHT	mutt/colors/mutt-compile-colors.sh	/^cat > palette_light.tmp <<SETPALETTELIGHT$/;"	h
+SETPALETTELIGHT	neomutt/colors/mutt-compile-colors.sh	/^cat > palette_light.tmp <<SETPALETTELIGHT$/;"	h
+Script arguments	polybar/scripts/gmail/README.md	/^## Script arguments$/;"	s	chapter:Polybar Gmail
+SpellCheckCurrent	nvim/init.vim.d/functions.vim	/^function! SpellCheckCurrent()$/;"	f
+Startup	openrazer/razer.conf	/^[Startup]$/;"	s
+Statistics	openrazer/razer.conf	/^[Statistics]$/;"	s
+Strip	nvim/init.vim.d/functions.vim	/^function! Strip(input_string)$/;"	f
+StripTrailingWhitespaces	nvim/init.vim.d/functions.vim	/^function! StripTrailingWhitespaces()$/;"	f
+TOKEN	scripts/thebotofeyal_sendmsg.py	/^TOKEN = "1661976868:AAG5koBu5t6AgG2GfD5adIBjQC9HRRqsO8k"$/;"	v
+ToggleHebrew	nvim/init.vim.d/functions.vim	/^func! ToggleHebrew()$/;"	f
+Untitled	nvim/file_templates/skeleton-main.java	/^class Untitled {$/;"	c
+VIMDIR	nvim/init.vim	/^let VIMDIR="$HOME\/.config\/nvim\/init.vim.d"$/;"	v
+VIMDIR	nvim/init.vim.d/init.vim	/^let VIMDIR="$HOME\/.config\/nvim\/init.vim.d"$/;"	v
+X	nvim/colors/basic-dark.vim	/^    fun <SID>X(group, fg, bg, attr)$/;"	f
+X	nvim/colors/basic-eighties.vim	/^    fun <SID>X(group, fg, bg, attr)$/;"	f
+X	nvim/colors/basic-light.vim	/^  fun <SID>X(group, fg, bg, attr)$/;"	f
+X	nvim/colors/basic-spacegray.vim	/^    fun <SID>X(group, fg, bg, attr)$/;"	f
+Z	nvim/init.vim.d/shortcuts.vim	/^nnoremap Z :call SpellCheckCurrent()<CR>$/;"	m
+[g	nvim/init.vim.d/plugins.vim	/^nmap <silent> [g <Plug>(coc-diagnostic-prev)$/;"	m
+]g	nvim/init.vim.d/plugins.vim	/^nmap <silent> ]g <Plug>(coc-diagnostic-next)$/;"	m
+ac	nvim/init.vim.d/plugins.vim	/^omap ac <Plug>(coc-classobj-a)$/;"	m
+ac	nvim/init.vim.d/plugins.vim	/^xmap ac <Plug>(coc-classobj-a)$/;"	m
+activate_on_save	polychromatic/preferences.json	/^        "activate_on_save": true,$/;"	b	object:editor
+adapter	polybar/config.ini	/^adapter = AC0$/;"	k	section:module/battery
+add_dotfile	zsh/functions/general_funcs.sh	/^function add_dotfile(){$/;"	f
+af	nvim/init.vim.d/plugins.vim	/^omap af <Plug>(coc-funcobj-a)$/;"	m
+af	nvim/init.vim.d/plugins.vim	/^xmap af <Plug>(coc-funcobj-a)$/;"	m
+alt	polybar/config.ini	/^date-alt = %Y\/%m\/%d%$/;"	k	section:module/date
+alt	polybar/config.ini	/^time-alt = %H:%M:%S$/;"	k	section:module/date
+args	polybar/scripts/gmail/launch.py	/^args = parser.parse_args()$/;"	v
+arr=	scripts/feh-browser.sh	/^arr=()$/;"	f
+arrow	deepin/deepin-screenshot.conf	/^[arrow]$/;"	s
+arrow_linewidth_index	deepin/deepin-screenshot.conf	/^arrow_linewidth_index=1$/;"	k	section:arrow
+as_json	neofetch/quotes_dl.py	/^as_json = json.loads(r.text)$/;"	v
+ascii_bold	neofetch/config.conf	/^ascii_bold="on"$/;"	k
+ascii_colors	neofetch/config.conf	/^ascii_colors=(distro)$/;"	k
+ascii_distro	neofetch/config.conf	/^ascii_distro="auto"$/;"	k
+auth_provider_x509_cert_url	polybar/scripts/gmail/client_secrets.json	/^{"installed":{"client_id":"1041679298587-8solnkr9tr8iktrut958if6tsgqt42m2.apps.googleusercontent/;"	s	object:installed
+auth_uri	polybar/scripts/gmail/client_secrets.json	/^{"installed":{"client_id":"1041679298587-8solnkr9tr8iktrut958if6tsgqt42m2.apps.googleusercontent/;"	s	object:installed
+auto_fullscreen	qtile/config.py	/^auto_fullscreen = True$/;"	v
+auto_minimize	qtile/config.py	/^auto_minimize = True$/;"	v
+b:dont_strip_trailing_spaces	nvim/init.vim.d/runtime/ftplugin/markdown.vim	/^let b:dont_strip_trailing_spaces=1$/;"	v
+b:dont_strip_trailing_spaces	nvim/init.vim.d/runtime/ftplugin/tex.vim	/^let b:dont_strip_trailing_spaces=1$/;"	v
+backend	compton.conf	/^backend = "glx";$/;"	k
+background	polybar/config.ini	/^background = #1d1e26$/;"	k	section:bar/bottom
+background	polybar/config.ini	/^background=#aa2F343F$/;"	k	section:bar/top
+background_color	neofetch/config.conf	/^background_color=$/;"	k
+bar/bottom	polybar/config.ini	/^[bar\/bottom]$/;"	s
+bar/top	polybar/config.ini	/^[bar\/top]$/;"	s
+bar_border	neofetch/config.conf	/^bar_border="on"$/;"	k
+bar_char_elapsed	neofetch/config.conf	/^bar_char_elapsed="-"$/;"	k
+bar_char_total	neofetch/config.conf	/^bar_char_total="="$/;"	k
+bar_color_elapsed	neofetch/config.conf	/^bar_color_elapsed="distro"$/;"	k
+bar_color_total	neofetch/config.conf	/^bar_color_total="distro"$/;"	k
+bar_length	neofetch/config.conf	/^bar_length=15$/;"	k
+base_url	scripts/thebotofeyal_sendmsg.py	/^base_url = f"https:\/\/api.telegram.org\/bot{TOKEN}"$/;"	v
+basedir	wallpaper/download_random.py	/^basedir = os.path.abspath(os.path.dirname(__file__))$/;"	v
+basedir	wallpaper/forget_wp.py	/^basedir = os.path.abspath(os.path.dirname(__file__))$/;"	v
+batt	dwm/statusbar.sh	/^batt(){$/;"	f
+battery	polybar/config.ini	/^battery = BAT0$/;"	k	section:module/battery
+battery_display	neofetch/config.conf	/^battery_display="off"$/;"	k
+bind_chained	qutebrowser/config.py	/^def bind_chained(key, *commands):$/;"	f
+block_height	neofetch/config.conf	/^block_height=1$/;"	k
+block_range	neofetch/config.conf	/^block_range=(0 15)$/;"	k
+block_width	neofetch/config.conf	/^block_width=3$/;"	k
+bold	neofetch/config.conf	/^bold="on"$/;"	k
+bottom	polybar/config.ini	/^bottom = true$/;"	k	section:bar/bottom
+bring_front_click	qtile/config.py	/^bring_front_click = False$/;"	v
+c	nvim/init.vim	/^nnoremap c "_c$/;"	m
+c	nvim/init.vim.d/init.vim	/^nnoremap c "_c$/;"	m
+cd	zsh/functions/general_funcs.sh	/^cd() {$/;"	f
+center	polybar/config.ini	/^fixed-center = false$/;"	k	section:bar/bottom
+center	polybar/config.ini	/^modules-center = xwindow battery menu-apps$/;"	k	section:bar/top
+charging	polybar/config.ini	/^format-charging = <animation-charging> <label-charging>$/;"	k	section:module/battery
+charging	polybar/config.ini	/^label-charging = %percentage%%$/;"	k	section:module/battery
+cleanup	lf/test.sh	/^function cleanup {$/;"	f
+clear_screen	lf/draw_img.sh	/^clear_screen() {$/;"	f
+cli	scripts/thebotofeyal_sendmsg.py	/^def cli():$/;"	f
+click	polybar/config.ini	/^cursor-click = pointer$/;"	k	section:bar/bottom
+click	polybar/config.ini	/^enable-click = false$/;"	k	section:module/i3
+client_id	polybar/scripts/gmail/client_secrets.json	/^{"installed":{"client_id":"1041679298587-8solnkr9tr8iktrut958if6tsgqt42m2.apps.googleusercontent/;"	s	object:installed
+client_secret	polybar/scripts/gmail/client_secrets.json	/^{"installed":{"client_id":"1041679298587-8solnkr9tr8iktrut958if6tsgqt42m2.apps.googleusercontent/;"	s	object:installed
+clip	zsh/functions/general_funcs.sh	/^function clip(){$/;"	f
+close	polybar/config.ini	/^label-close = x$/;"	k	section:module/menu-apps
+col	neofetch/quote_query.py	/^col = int(sys.argv[1])$/;"	v
+col	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	a	object:1
+col	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	a	object:2
+col	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	a	object:3
+col	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	a	object:4
+col	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	a	object:5
+col	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	a	object:6
+col	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	a	object:7
+col	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	a	object:8
+col	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	a	object:9
+color	polybar/config.ini	/^border-color = #00000000$/;"	k	section:bar/top
+color	polybar/config.ini	/^border-color =$/;"	k	section:bar/bottom
+color	polybar/config.ini	/^line-color =$/;"	k	section:bar/bottom
+color_blocks	neofetch/config.conf	/^color_blocks="on"$/;"	k
+color_index	deepin/deepin-screenshot.conf	/^color_index=3$/;"	k	section:arrow
+color_index	deepin/deepin-screenshot.conf	/^color_index=3$/;"	k	section:common
+color_index	deepin/deepin-screenshot.conf	/^color_index=3$/;"	k	section:line
+color_index	deepin/deepin-screenshot.conf	/^color_index=3$/;"	k	section:oval
+color_index	deepin/deepin-screenshot.conf	/^color_index=3$/;"	k	section:rectangle
+color_index	deepin/deepin-screenshot.conf	/^color_index=3$/;"	k	section:text
+colors	neofetch/config.conf	/^colors=(distro)$/;"	k
+colour	nvim/colors/basic-dark.vim	/^    fun <SID>colour(r, g, b)$/;"	f
+colour	nvim/colors/basic-eighties.vim	/^    fun <SID>colour(r, g, b)$/;"	f
+colour	nvim/colors/basic-light.vim	/^  fun <SID>colour(r, g, b)$/;"	f
+colour	nvim/colors/basic-spacegray.vim	/^    fun <SID>colour(r, g, b)$/;"	f
+common	deepin/deepin-screenshot.conf	/^[common]$/;"	s
+config_version	polychromatic/preferences.json	/^    "config_version": 5,$/;"	n
+connected	polybar/config.ini	/^format-connected = <ramp-signal> <label-connected>$/;"	k	section:module/wireless-network
+connected	polybar/config.ini	/^label-connected = %essid% %downspeed:9%$/;"	k	section:module/wireless-network
+corners	compton.conf	/^detect-rounded-corners = true;$/;"	k
+count_was	polybar/scripts/gmail/launch.py	/^            count_was = update_count(count_was)$/;"	v
+count_was	polybar/scripts/gmail/launch.py	/^count_was = 0$/;"	v
+cpu	dwm/statusbar.sh	/^cpu(){$/;"	f
+cpu_brand	neofetch/config.conf	/^cpu_brand="on"$/;"	k
+cpu_cores	neofetch/config.conf	/^cpu_cores="logical"$/;"	k
+cpu_display	neofetch/config.conf	/^cpu_display="off"$/;"	k
+cpu_speed	neofetch/config.conf	/^cpu_speed="on"$/;"	k
+cpu_temp	neofetch/config.conf	/^cpu_temp="off"$/;"	k
+creds	polybar/scripts/gmail/auth.py	/^    creds = Credentials.from_authorized_user_file(CREDENTIALS_PATH)$/;"	v
+creds	polybar/scripts/gmail/auth.py	/^    creds = flow.run_console()$/;"	v
+crop_mode	neofetch/config.conf	/^crop_mode="normal"$/;"	k
+crop_offset	neofetch/config.conf	/^crop_offset="center"$/;"	k
+current	wallpaper/forget_wp.py	/^current = open('infos\/wallpaper.png.current','r').read()$/;"	v
+cursor_warp	qtile/config.py	/^cursor_warp = False$/;"	v
+date	polybar/config.ini	/^date = %m\/%d%$/;"	k	section:module/date
+dbe	compton.conf	/^dbe = false;$/;"	k
+default_savepath	deepin/deepin-screenshot.conf	/^default_savepath=\/tmp$/;"	k	section:common
+delta	compton.conf	/^fade-delta = 4;$/;"	k
+devices_off_on_screensaver	openrazer/razer.conf	/^devices_off_on_screensaver = True$/;"	k	section:Startup
+dgroups_app_rules	qtile/config.py	/^dgroups_app_rules = []  # type: List$/;"	v
+dgroups_key_binder	qtile/config.py	/^dgroups_key_binder = None$/;"	v
+discharging	polybar/config.ini	/^format-discharging = <ramp-capacity> <label-discharging>$/;"	k	section:module/battery
+discharging	polybar/config.ini	/^label-discharging = %percentage%%$/;"	k	section:module/battery
+disconnected	polybar/config.ini	/^format-disconnected = <label-disconnected>$/;"	k	section:module/wireless-network
+disconnected	polybar/config.ini	/^label-disconnected = WiFi$/;"	k	section:module/wireless-network
+disk_display	neofetch/config.conf	/^disk_display="off"$/;"	k
+disk_show	neofetch/config.conf	/^disk_show=('\/')$/;"	k
+disk_subtitle	neofetch/config.conf	/^disk_subtitle="mount"$/;"	k
+distro_shorthand	neofetch/config.conf	/^distro_shorthand="off"$/;"	k
+down	polybar/config.ini	/^scroll-down = i3wm-wsprev$/;"	k	section:bar/bottom
+download_astronomy_pic_of_the_day	wallpaper/download_random.py	/^def download_astronomy_pic_of_the_day(dst='wallpaper.png', _filter=None):$/;"	f
+download_over_tor	torbrowser/settings.json	/^{"tbl_version": "0.3.2", "installed": false, "download_over_tor": false, "tor_socks_address": "1/;"	b
+download_pic	wallpaper/download_random.py	/^def download_pic(dst='wallpaper.png', src='pics_list.txt', _filter=None):$/;"	f
+downloaded_pic	wallpaper/download_random.py	/^downloaded_pic = download_pic(dst='tomorrow.png', src="my_wallpapers.txt")$/;"	v
+dte	dwm/statusbar.sh	/^dte(){$/;"	f
+editor	polychromatic/preferences.json	/^    "editor": {$/;"	o
+effect	deepin/deepin-screenshot.conf	/^[effect]$/;"	s
+empty	polybar/config.ini	/^bar-volume-empty = ─$/;"	k	section:module/pulseaudio
+error_prefix	polybar/scripts/gmail/launch.py	/^error_prefix = '%{F' + args.color + '}\\uf06a %{F-}'$/;"	v
+exclude	compton.conf	/^blur-background-exclude = [$/;"	k
+exclude	compton.conf	/^fade-exclude = [ ];$/;"	k
+exclude	compton.conf	/^focus-exclude = [ ];$/;"	k
+exclude	compton.conf	/^shadow-exclude = [$/;"	k
+exec	polybar/config.ini	/^exec = ~\/.config\/polybar\/scripts\/gmail\/launch.py$/;"	k	section:module/gmail
+exec	polybar/config.ini	/^exec = ~\/.config\/polybar\/scripts\/openvpn-status.sh$/;"	k	section:module/openvpn-status
+exec	polybar/config.ini	/^exec = ~\/.config\/polybar\/scripts\/ping.sh$/;"	k	section:module/ping
+exec	polybar/config.ini	/^menu-0-0-exec = menu-open-1$/;"	k	section:module/menu-apps
+exec	polybar/config.ini	/^menu-0-1-exec = menu-open-2$/;"	k	section:module/menu-apps
+exec	polybar/config.ini	/^menu-0-2-exec = menu-open-3$/;"	k	section:module/menu-apps
+exec	polybar/config.ini	/^menu-1-1-exec = google-chrome-stable &$/;"	k	section:module/menu-apps
+exec	polybar/config.ini	/^menu-2-0-exec = gimp &$/;"	k	section:module/menu-apps
+exec	polybar/config.ini	/^menu-2-1-exec = krita &$/;"	k	section:module/menu-apps
+exec	polybar/config.ini	/^menu-3-0-exec = pavucontrol &$/;"	k	section:module/menu-apps
+exec	polybar/config.ini	/^menu-3-1-exec = nmtui &$/;"	k	section:module/menu-apps
+exec	polybar/config.ini	/^menu-3-2-exec = htop &$/;"	k	section:module/menu-apps
+extension_defaults	qtile/config.py	/^extension_defaults = widget_defaults.copy()$/;"	v
+fading	compton.conf	/^fading = true;$/;"	k
+fence	compton.conf	/^xrender-sync-fence = true;$/;"	k
+file	neofetch/quote_query.py	/^file = "\/home\/eyal\/.config\/neofetch\/quotes.txt"$/;"	v
+fill	polybar/config.ini	/^bar-volume-fill = ─$/;"	k	section:module/pulseaudio
+fixed	compton.conf	/^blur-background-fixed = false;$/;"	k
+floating_layout	qtile/config.py	/^floating_layout = layout.Floating(float_rules=[$/;"	v
+fnull	wallpaper/download_random.py	/^fnull = open(os.devnull, 'w')$/;"	v
+focus_on_window_activation	qtile/config.py	/^focus_on_window_activation = "smart"$/;"	v
+focused	compton.conf	/^mark-ovredir-focused = true;$/;"	k
+focused	compton.conf	/^mark-wmwin-focused = true;$/;"	k
+follow_mouse_focus	qtile/config.py	/^follow_mouse_focus = True$/;"	v
+font	polybar/config.ini	/^bar-volume-empty-font = 2$/;"	k	section:module/pulseaudio
+font	polybar/config.ini	/^bar-volume-fill-font = 2$/;"	k	section:module/pulseaudio
+font	polybar/config.ini	/^bar-volume-indicator-font = 2$/;"	k	section:module/pulseaudio
+font	polybar/config.ini	/^label-font = 3$/;"	k	section:module/date
+fontsize	deepin/deepin-screenshot.conf	/^fontsize=12$/;"	k	section:text
+force_en-US	torbrowser/settings.json	/^{"tbl_version": "0.3.2", "installed": false, "download_over_tor": false, "tor_socks_address": "1/;"	b
+foreground	polybar/config.ini	/^animation-packetloss-0-foreground = #ffa64c$/;"	k	section:module/wireless-network
+foreground	polybar/config.ini	/^animation-packetloss-1-foreground = #000000$/;"	k	section:module/wireless-network
+foreground	polybar/config.ini	/^bar-volume-indicator-foreground = #ff$/;"	k	section:module/pulseaudio
+foreground	polybar/config.ini	/^foreground = #b0b287$/;"	k	section:bar/bottom
+foreground	polybar/config.ini	/^label-disconnected-foreground = #66ffffff$/;"	k	section:module/wireless-network
+format	polybar/config.ini	/^format = <label>$/;"	k	section:module/memory
+format	polybar/config.ini	/^format = 🕓 <label>$/;"	k	section:module/date
+framerate	polybar/config.ini	/^animation-discharging-framerate = 500$/;"	k	section:module/battery
+front	compton.conf	/^glx-copy-from-front = false;$/;"	k
+g:OmniSharp_server_use_mono	nvim/init.vim.d/plugins.vim	/^let g:OmniSharp_server_use_mono = 1$/;"	v
+g:UltiSnipsExpandTrigger	nvim/init.vim.d/plugins.vim	/^let g:UltiSnipsExpandTrigger = '<tab>'$/;"	v
+g:UltiSnipsJumpBackwardTrigger	nvim/init.vim.d/plugins.vim	/^let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'$/;"	v
+g:UltiSnipsJumpForwardTrigger	nvim/init.vim.d/plugins.vim	/^let g:UltiSnipsJumpForwardTrigger = '<tab>'$/;"	v
+g:colorizer_auto_color	nvim/init.vim.d/plugins.vim	/^let g:colorizer_auto_color = 1$/;"	v
+g:colors_name	nvim/colors/basic-dark.vim	/^let g:colors_name = "basic-dark"$/;"	v
+g:colors_name	nvim/colors/basic-eighties.vim	/^let g:colors_name = "basic-eighties"$/;"	v
+g:colors_name	nvim/colors/basic-light.vim	/^let g:colors_name = "basic-light"$/;"	v
+g:colors_name	nvim/colors/basic-spacegray.vim	/^let g:colors_name = 'basic-spacegray'$/;"	v
+g:colors_name	nvim/colors/zenburn.vim	/^let g:colors_name="zenburn"$/;"	v
+g:ctrlp_user_command	nvim/init.vim.d/plugins.vim	/^let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']$/;"	v
+g:easytags_cmd	nvim/init.vim.d/plugins.vim	/^let g:easytags_cmd = '\/usr\/bin\/ctags'$/;"	v
+g:easytags_file	nvim/init.vim.d/plugins.vim	/^let g:easytags_file = '~\/.config\/nvim\/tags'$/;"	v
+g:hot_reload_on_save	nvim/init.vim.d/plugins.vim	/^let g:hot_reload_on_save=0$/;"	v
+g:livepreview_previewer	nvim/init.vim.d/plugins.vim	/^let g:livepreview_previewer = $READER$/;"	v
+g:livepreview_previewer	nvim/init.vim.d/plugins.vim	/^let g:livepreview_previewer = 'zathura'$/;"	v
+g:lsc_auto_map	nvim/init.vim.d/plugins.vim	/^let g:lsc_auto_map = v:true$/;"	v
+g:lt_height	nvim/init.vim	/^let g:lt_height = 10$/;"	v
+g:lt_height	nvim/init.vim.d/init.vim	/^let g:lt_height = 10$/;"	v
+g:lt_location_list_toggle_map	nvim/init.vim.d/shortcuts.vim	/^let g:lt_location_list_toggle_map = '<F10>'$/;"	v
+g:lt_quickfix_list_toggle_map	nvim/init.vim.d/shortcuts.vim	/^let g:lt_quickfix_list_toggle_map = '<F11>'$/;"	v
+g:session_autoload	nvim/init.vim	/^let g:session_autoload = "yes"$/;"	v
+g:session_autoload	nvim/init.vim.d/init.vim	/^let g:session_autoload = "yes"$/;"	v
+g:session_autosave	nvim/init.vim	/^let g:session_autosave = "yes"$/;"	v
+g:session_autosave	nvim/init.vim.d/init.vim	/^let g:session_autosave = "yes"$/;"	v
+g:syntastic_always_populate_loc_list	nvim/init.vim.d/plugins.vim	/^let g:syntastic_always_populate_loc_list = 1$/;"	v
+g:syntastic_auto_loc_list	nvim/init.vim.d/plugins.vim	/^let g:syntastic_auto_loc_list = 1$/;"	v
+g:syntastic_check_on_open	nvim/init.vim.d/plugins.vim	/^let g:syntastic_check_on_open = 0$/;"	v
+g:syntastic_check_on_wq	nvim/init.vim.d/plugins.vim	/^let g:syntastic_check_on_wq = 0$/;"	v
+g:syntastic_mode_map	nvim/init.vim.d/plugins.vim	/^let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }$/;"	v
+g:tex_conceal	nvim/init.vim.d/plugins.vim	/^let g:tex_conceal="abdgms"$/;"	v
+g:tex_flavor	nvim/init.vim.d/plugins.vim	/^let g:tex_flavor = "tex"$/;"	v
+g:tex_flavor	nvim/init.vim.d/plugins.vim	/^let g:tex_flavor='latex'$/;"	v
+g:updatetime	nvim/init.vim.d/plugins.vim	/^let g:updatetime = 1000$/;"	v
+g:vimtex_quickfix_mode	nvim/init.vim.d/plugins.vim	/^let g:vimtex_quickfix_mode=0$/;"	v
+g:vimtex_view_method	nvim/init.vim.d/plugins.vim	/^let g:vimtex_view_method='zathura'$/;"	v
+g:vimwiki_ext2syntax	nvim/init.vim.d/runtime/filetype.vim	/^let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown/;"	v
+g:vimwiki_list	nvim/init.vim.d/runtime/filetype.vim	/^let g:vimwiki_list = [{'path': '~\/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]$/;"	v
+g:zenburn_alternate_Error	nvim/colors/zenburn.vim	/^    let g:zenburn_alternate_Error = 0$/;"	v
+g:zenburn_alternate_Include	nvim/colors/zenburn.vim	/^    let g:zenburn_alternate_Include = 0$/;"	v
+g:zenburn_alternate_Visual	nvim/colors/zenburn.vim	/^    let g:zenburn_alternate_Visual = 0$/;"	v
+g:zenburn_color_also_Ignore	nvim/colors/zenburn.vim	/^    let g:zenburn_color_also_Ignore = 0$/;"	v
+g:zenburn_disable_Label_underline	nvim/colors/zenburn.vim	/^    let g:zenburn_disable_Label_underline = 0$/;"	v
+g:zenburn_enable_TagHighlight	nvim/colors/zenburn.vim	/^    let g:zenburn_enable_TagHighlight = 0$/;"	v
+g:zenburn_force_dark_Background	nvim/colors/zenburn.vim	/^    let g:zenburn_force_dark_Background = 0$/;"	v
+g:zenburn_high_Contrast	nvim/colors/zenburn.vim	/^    let g:zenburn_high_Contrast = 0$/;"	v
+g:zenburn_old_Visual	nvim/colors/zenburn.vim	/^    let g:zenburn_old_Visual = 0$/;"	v
+g:zenburn_transparent	nvim/colors/zenburn.vim	/^    let g:zenburn_transparent = 0$/;"	v
+g:zenburn_unified_CursorColumn	nvim/colors/zenburn.vim	/^    let g:zenburn_unified_CursorColumn = 0$/;"	v
+gap	neofetch/config.conf	/^gap=3$/;"	k
+gd	nvim/init.vim.d/plugins.vim	/^nmap <silent> gd <Plug>(coc-definition)$/;"	m
+gdh	nvim/init.vim.d/plugins.vim	/^nnoremap gdh :diffget \/\/2<CR>$/;"	m
+gdl	nvim/init.vim.d/plugins.vim	/^nnoremap gdl :diffget \/\/3<CR>$/;"	m
+gen_list	wallpaper/download_random.py	/^def gen_list(dst='pics_list.txt'):$/;"	f
+gi	nvim/init.vim.d/plugins.vim	/^nmap <silent> gi <Plug>(coc-implementation)$/;"	m
+gmail	polybar/scripts/gmail/list_labels.py	/^gmail = build('gmail', 'v1', credentials=creds)$/;"	v
+gpu_brand	neofetch/config.conf	/^gpu_brand="on"$/;"	k
+gpu_type	neofetch/config.conf	/^gpu_type="all"$/;"	k
+gr	nvim/init.vim.d/plugins.vim	/^nmap <silent> gr <Plug>(coc-references)$/;"	m
+gradient	polybar/config.ini	/^bar-volume-gradient = false$/;"	k	section:module/pulseaudio
+grey_colour	nvim/colors/basic-dark.vim	/^    fun <SID>grey_colour(n)$/;"	f
+grey_colour	nvim/colors/basic-eighties.vim	/^    fun <SID>grey_colour(n)$/;"	f
+grey_colour	nvim/colors/basic-light.vim	/^  fun <SID>grey_colour(n)$/;"	f
+grey_colour	nvim/colors/basic-spacegray.vim	/^    fun <SID>grey_colour(n)$/;"	f
+grey_level	nvim/colors/basic-dark.vim	/^    fun <SID>grey_level(n)$/;"	f
+grey_level	nvim/colors/basic-eighties.vim	/^    fun <SID>grey_level(n)$/;"	f
+grey_level	nvim/colors/basic-light.vim	/^  fun <SID>grey_level(n)$/;"	f
+grey_level	nvim/colors/basic-spacegray.vim	/^    fun <SID>grey_level(n)$/;"	f
+grey_number	nvim/colors/basic-dark.vim	/^    fun <SID>grey_number(x)$/;"	f
+grey_number	nvim/colors/basic-eighties.vim	/^    fun <SID>grey_number(x)$/;"	f
+grey_number	nvim/colors/basic-light.vim	/^  fun <SID>grey_number(x)$/;"	f
+grey_number	nvim/colors/basic-spacegray.vim	/^    fun <SID>grey_number(x)$/;"	f
+groups	qtile/config.py	/^groups = [Group(i) for i in "123456789"]$/;"	v
+gtk2	neofetch/config.conf	/^gtk2="on"$/;"	k
+gtk3	neofetch/config.conf	/^gtk3="on"$/;"	k
+gtk_shorthand	neofetch/config.conf	/^gtk_shorthand="off"$/;"	k
+gy	nvim/init.vim.d/plugins.vim	/^nmap <silent> gy <Plug>(coc-type-definition)$/;"	m
+handle_mime	lf/scope.sh	/^handle_mime() {$/;"	f
+heb	scripts/make_cjhebrew.py	/^heb     = list(sys.stdin)$/;"	v
+heb2signs	scripts/make_cjhebrew.py	/^heb2signs = {v:k for k,v in signs2heb.items()}$/;"	v
+height	pavucontrol.ini	/^height=987$/;"	k	section:window
+height	polybar/config.ini	/^height = 27$/;"	k	section:bar/bottom
+height	polybar/config.ini	/^height = 40$/;"	k	section:bar/top
+history	qutebrowser/qsettings/QtProject.conf	/^history=file:\/\/\/home\/eyal, file:\/\/\/home\/eyal\/documents\/work\/freelance\/conversion_ama/;"	k	section:FileDialog
+ic	nvim/init.vim.d/plugins.vim	/^omap ic <Plug>(coc-classobj-i)$/;"	m
+ic	nvim/init.vim.d/plugins.vim	/^xmap ic <Plug>(coc-classobj-i)$/;"	m
+if	nvim/init.vim.d/plugins.vim	/^omap if <Plug>(coc-funcobj-i)$/;"	m
+if	nvim/init.vim.d/plugins.vim	/^xmap if <Plug>(coc-funcobj-i)$/;"	m
+ignore	pylama/pylama.ini	/^ignore = D212,D203,D400,E221,D200,E501,D415$/;"	k	section:pylama
+image_backend	neofetch/config.conf	/^image_backend="ascii"$/;"	k
+image_loop	neofetch/config.conf	/^image_loop="off"$/;"	k
+image_size	neofetch/config.conf	/^image_size="auto"$/;"	k
+image_source	neofetch/config.conf	/^image_source="auto"$/;"	k
+img_size	neofetch/quote_query.py	/^img_size  = 50$/;"	v
+indicator	polybar/config.ini	/^bar-volume-indicator = │$/;"	k	section:module/pulseaudio
+installed	polybar/scripts/gmail/client_secrets.json	/^{"installed":{"client_id":"1041679298587-8solnkr9tr8iktrut958if6tsgqt42m2.apps.googleusercontent/;"	o
+installed	torbrowser/settings.json	/^{"tbl_version": "0.3.2", "installed": false, "download_over_tor": false, "tor_socks_address": "1/;"	b
+interface	polybar/config.ini	/^interface = wlp59s0$/;"	k	section:module/wireless-network
+interval	polybar/config.ini	/^interval = 1$/;"	k	section:module/ping
+interval	polybar/config.ini	/^interval = 1.0$/;"	k	section:module/date
+interval	polybar/config.ini	/^interval = 3$/;"	k	section:module/memory
+interval	polybar/config.ini	/^interval = 5$/;"	k	section:module/openvpn-status
+interval	polybar/config.ini	/^interval = 5$/;"	k	section:module/pulseaudio
+interval	polybar/config.ini	/^poll-interval = 5$/;"	k	section:module/battery
+is_blur	deepin/deepin-screenshot.conf	/^is_blur=false$/;"	k	section:effect
+is_mosaic	deepin/deepin-screenshot.conf	/^is_mosaic=false$/;"	k	section:effect
+is_straight	deepin/deepin-screenshot.conf	/^is_straight=false$/;"	k	section:arrow
+kernel_shorthand	neofetch/config.conf	/^kernel_shorthand="on"$/;"	k
+key_statistics	openrazer/razer.conf	/^key_statistics = True/;"	k	section:Statistics
+keys	qtile/config.py	/^keys = [$/;"	v
+label	polybar/config.ini	/^label = %date% - %time%$/;"	k	section:module/date
+label	polybar/config.ini	/^label = RAM %percentage_used%%$/;"	k	section:module/memory
+labels	polybar/scripts/gmail/list_labels.py	/^labels = gmail.users().labels().list(userId='me').execute()$/;"	v
+lastVisited	qutebrowser/qsettings/QtProject.conf	/^lastVisited=file:\/\/\/home\/eyal\/documents\/programmation\/unity\/Mario\/Assets$/;"	k	section:FileDialog
+layouts	qtile/config.py	/^layouts = [$/;"	v
+lcd	zsh/functions/general_funcs.sh	/^function lcd(){$/;"	f
+leader	compton.conf	/^detect-client-leader = true;$/;"	k
+left	polybar/config.ini	/^click-left = xdg-open https:\/\/mail.google.com$/;"	k	section:module/gmail
+left	polybar/config.ini	/^module-margin-left = 1$/;"	k	section:bar/bottom
+left	polybar/config.ini	/^modules-left = i3$/;"	k	section:bar/top
+left	polybar/config.ini	/^padding-left = 0$/;"	k	section:bar/bottom
+line	deepin/deepin-screenshot.conf	/^[line]$/;"	s
+line	neofetch/quote_query.py	/^line = random.choice(open(file, 'r').readlines())$/;"	v
+linewidth_index	deepin/deepin-screenshot.conf	/^linewidth_index=1$/;"	k	section:line
+linewidth_index	deepin/deepin-screenshot.conf	/^linewidth_index=1$/;"	k	section:oval
+linewidth_index	deepin/deepin-screenshot.conf	/^linewidth_index=1$/;"	k	section:rectangle
+linters	pylama/pylama.ini	/^linters = pydocstyle$/;"	k	section:pylama
+live_preview	polychromatic/preferences.json	/^        "live_preview": true,$/;"	b	object:editor
+live_switch	polychromatic/preferences.json	/^        "live_switch": true,$/;"	b	object:editor
+main	lf/image.sh	/^main() {$/;"	f
+main	nvim/file_templates/skeleton-main.c	/^int main() {$/;"	f	typeref:typename:int
+main	nvim/file_templates/skeleton-main.cpp	/^int main(int argc, char *argv[]) {$/;"	f	typeref:typename:int
+main	nvim/file_templates/skeleton-main.java	/^	public static void main(String[] args) {$/;"	m	class:Untitled
+main	nvim/file_templates/skeleton-main.py	/^def main():$/;"	f
+mapleader	nvim/init.vim	/^let mapleader =","$/;"	v
+mapleader	nvim/init.vim.d/init.vim	/^let mapleader =","$/;"	v
+match	polybar/config.ini	/^fuzzy-match = true$/;"	k	section:module/i3
+max	polybar/config.ini	/^use-ui-max = true$/;"	k	section:module/pulseaudio
+maxlen	polybar/config.ini	/^label-maxlen = 10$/;"	k	section:module/xwindow
+mem	dwm/statusbar.sh	/^mem(){$/;"	f
+memory_display	neofetch/config.conf	/^memory_display="off"$/;"	k
+memory_percent	neofetch/config.conf	/^memory_percent="off"$/;"	k
+mirror	torbrowser/settings.json	/^{"tbl_version": "0.3.2", "installed": false, "download_over_tor": false, "tor_socks_address": "1/;"	s
+mod	qtile/config.py	/^mod = "mod4"$/;"	v
+module/battery	polybar/config.ini	/^[module\/battery]$/;"	s
+module/date	polybar/config.ini	/^[module\/date]$/;"	s
+module/gmail	polybar/config.ini	/^[module\/gmail]$/;"	s
+module/i3	polybar/config.ini	/^[module\/i3]$/;"	s
+module/memory	polybar/config.ini	/^[module\/memory]$/;"	s
+module/menu-apps	polybar/config.ini	/^[module\/menu-apps]$/;"	s
+module/openvpn-status	polybar/config.ini	/^[module\/openvpn-status]$/;"	s
+module/ping	polybar/config.ini	/^[module\/ping]$/;"	s
+module/pulseaudio	polybar/config.ini	/^[module\/pulseaudio]$/;"	s
+module/wireless-network	polybar/config.ini	/^[module\/wireless-network]$/;"	s
+module/xkeyboard	polybar/config.ini	/^[module\/xkeyboard]$/;"	s
+module/xwindow	polybar/config.ini	/^[module\/xwindow]$/;"	s
+mouse	qtile/config.py	/^mouse = [$/;"	v
+mouse_battery_notifier	openrazer/razer.conf	/^mouse_battery_notifier = True$/;"	k	section:Startup
+mpc_args	neofetch/config.conf	/^mpc_args=()$/;"	k
+music_player	neofetch/config.conf	/^music_player="auto"$/;"	k
+mygroup	nvim/init.vim.d/plugins.vim	/^augroup mygroup$/;"	a
+name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:1
+name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:2
+name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:3
+name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:4
+name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:5
+name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:6
+name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:7
+name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:8
+name	polychromatic/colours.json	/^{"1": {"name": "White", "col": [255, 255, 255]}, "2": {"name": "Red", "col": [255, 0, 0]}, "3": /;"	s	object:9
+o	nvim/init.vim.d/runtime/ftplugin/help.vim	/^nnoremap <buffer> o \/'\\l\\{2,\\}'<CR>$/;"	m
+opacity	compton.conf	/^active-opacity = 1;$/;"	k
+opacity	compton.conf	/^detect-client-opacity = true;$/;"	k
+opacity	compton.conf	/^frame-opacity = 1;$/;"	k
+opacity	compton.conf	/^inactive-opacity = 1;$/;"	k
+opacity	compton.conf	/^shadow-opacity = 0.5;$/;"	k
+open	polybar/config.ini	/^label-open = Apps$/;"	k	section:module/menu-apps
+os_arch	neofetch/config.conf	/^os_arch="on"$/;"	k
+out	neofetch/quote_query.py	/^    out = wrap(line, wrap_size)$/;"	v
+oval	deepin/deepin-screenshot.conf	/^[oval]$/;"	s
+override	compton.conf	/^inactive-opacity-override = false;$/;"	k
+package_managers	neofetch/config.conf	/^package_managers="on"$/;"	k
+packetloss	polybar/config.ini	/^format-packetloss = <animation-packetloss> <label-connected>$/;"	k	section:module/wireless-network
+padding	polybar/config.ini	/^padding = 5$/;"	k	section:bar/top
+parser	polybar/scripts/gmail/launch.py	/^parser = argparse.ArgumentParser()$/;"	v
+pics_list	wallpaper/forget_wp.py	/^pics_list = "my_wallpapers.txt"$/;"	v
+position	polybar/config.ini	/^tray-position =$/;"	k	section:bar/bottom
+possible	compton.conf	/^unredir-if-possible = false;$/;"	k
+print_count	polybar/scripts/gmail/launch.py	/^def print_count(count, is_odd=False):$/;"	f
+project_id	polybar/scripts/gmail/client_secrets.json	/^{"installed":{"client_id":"1041679298587-8solnkr9tr8iktrut958if6tsgqt42m2.apps.googleusercontent/;"	s	object:installed
+public_ip_host	neofetch/config.conf	/^public_ip_host="http:\/\/ident.me"$/;"	k
+public_ip_timeout	neofetch/config.conf	/^public_ip_timeout=2$/;"	k
+pylama	pylama/pylama.ini	/^[pylama]$/;"	s
+python_highlight_all	nvim/init.vim.d/runtime/ftplugin/python.vim	/^let python_highlight_all=1$/;"	v
+qtVersion	qutebrowser/qsettings/QtProject.conf	/^qtVersion=5.14.2$/;"	k	section:FileDialog
+quote	neofetch/config.conf	/^quote=`python $HOME\/.config\/neofetch\/quote_query.py $term_size`$/;"	k
+r	neofetch/quotes_dl.py	/^r = req.get(url)$/;"	v
+radius	compton.conf	/^shadow-radius = 5;$/;"	k
+radius	polybar/config.ini	/^radius = 0$/;"	k	section:bar/bottom
+radius	polybar/config.ini	/^radius = 15$/;"	k	section:bar/top
+rate	compton.conf	/^refresh-rate = 0;$/;"	k
+reconfigure_screens	qtile/config.py	/^reconfigure_screens = True$/;"	v
+rectangle	deepin/deepin-screenshot.conf	/^[rectangle]$/;"	s
+redirect	polybar/config.ini	/^override-redirect = true$/;"	k	section:bar/bottom
+redirect	polybar/config.ini	/^override-redirect = true$/;"	k	section:bar/top
+redirect_uris	polybar/scripts/gmail/client_secrets.json	/^{"installed":{"client_id":"1041679298587-8solnkr9tr8iktrut958if6tsgqt42m2.apps.googleusercontent/;"	a	object:installed
+refresh_rate	neofetch/config.conf	/^refresh_rate="off"$/;"	k
+req	neofetch/quotes_dl.py	/^import requests as req$/;"	I	nameref:module:requests
+req	scripts/thebotofeyal_sendmsg.py	/^import requests as req$/;"	I	nameref:module:requests
+restack	polybar/config.ini	/^wm-restack = i3$/;"	k	section:bar/bottom
+restack	polybar/config.ini	/^wm-restack = i3$/;"	k	section:bar/top
+rgb	nvim/colors/basic-dark.vim	/^    fun <SID>rgb(rgb)$/;"	f
+rgb	nvim/colors/basic-eighties.vim	/^    fun <SID>rgb(rgb)$/;"	f
+rgb	nvim/colors/basic-light.vim	/^  fun <SID>rgb(rgb)$/;"	f
+rgb	nvim/colors/basic-spacegray.vim	/^    fun <SID>rgb(rgb)$/;"	f
+rgb_colour	nvim/colors/basic-dark.vim	/^    fun <SID>rgb_colour(x, y, z)$/;"	f
+rgb_colour	nvim/colors/basic-eighties.vim	/^    fun <SID>rgb_colour(x, y, z)$/;"	f
+rgb_colour	nvim/colors/basic-light.vim	/^  fun <SID>rgb_colour(x, y, z)$/;"	f
+rgb_colour	nvim/colors/basic-spacegray.vim	/^    fun <SID>rgb_colour(x, y, z)$/;"	f
+rgb_level	nvim/colors/basic-dark.vim	/^    fun <SID>rgb_level(n)$/;"	f
+rgb_level	nvim/colors/basic-eighties.vim	/^    fun <SID>rgb_level(n)$/;"	f
+rgb_level	nvim/colors/basic-light.vim	/^  fun <SID>rgb_level(n)$/;"	f
+rgb_level	nvim/colors/basic-spacegray.vim	/^    fun <SID>rgb_level(n)$/;"	f
+rgb_number	nvim/colors/basic-dark.vim	/^    fun <SID>rgb_number(x)$/;"	f
+rgb_number	nvim/colors/basic-eighties.vim	/^    fun <SID>rgb_number(x)$/;"	f
+rgb_number	nvim/colors/basic-light.vim	/^  fun <SID>rgb_number(x)$/;"	f
+rgb_number	nvim/colors/basic-spacegray.vim	/^    fun <SID>rgb_number(x)$/;"	f
+right	polybar/config.ini	/^expand-right = true$/;"	k	section:module/menu-apps
+right	polybar/config.ini	/^module-margin-right = 2$/;"	k	section:bar/bottom
+right	polybar/config.ini	/^modules-right = date memory wireless-network ping xkeyboard openvpn-status$/;"	k	section:bar/top
+right	polybar/config.ini	/^padding-right = 2$/;"	k	section:bar/bottom
+rule	compton.conf	/^opacity-rule = ["85:class_g = `st`"];$/;"	k
+s	nvim/init.vim.d/runtime/ftplugin/help.vim	/^nnoremap <buffer> s \/\\|\\zs\\S\\+\\ze\\|<CR>$/;"	m
+s:aqua	nvim/colors/basic-dark.vim	/^let s:aqua = "00b8d4"$/;"	v
+s:aqua	nvim/colors/basic-eighties.vim	/^let s:aqua = "66cccc"$/;"	v
+s:aqua	nvim/colors/basic-light.vim	/^let s:aqua = "00897b"$/;"	v
+s:aqua	nvim/colors/basic-spacegray.vim	/^let s:aqua = '85a7a5'$/;"	v
+s:background	nvim/colors/basic-dark.vim	/^    let s:background = "202020"$/;"	v
+s:background	nvim/colors/basic-dark.vim	/^let s:background = "263238"$/;"	v
+s:background	nvim/colors/basic-eighties.vim	/^let s:background = "2d2d2d"$/;"	v
+s:background	nvim/colors/basic-light.vim	/^let s:background = "f7faff"$/;"	v
+s:background	nvim/colors/basic-spacegray.vim	/^    let s:background = '202020'$/;"	v
+s:background	nvim/colors/basic-spacegray.vim	/^let s:background = '111314'$/;"	v
+s:blue	nvim/colors/basic-dark.vim	/^let s:blue = "6699cc"$/;"	v
+s:blue	nvim/colors/basic-eighties.vim	/^let s:blue = "6699cc"$/;"	v
+s:blue	nvim/colors/basic-light.vim	/^let s:blue = "3b5bb5"$/;"	v
+s:blue	nvim/colors/basic-spacegray.vim	/^let s:blue = '7d8fa3'$/;"	v
+s:check_back_space	nvim/init.vim.d/plugins.vim	/^function! s:check_back_space() abort$/;"	f
+s:comment	nvim/colors/basic-dark.vim	/^let s:comment = "78909c"$/;"	v
+s:comment	nvim/colors/basic-eighties.vim	/^let s:comment = "999999"$/;"	v
+s:comment	nvim/colors/basic-light.vim	/^let s:comment = "7c7c7c"$/;"	v
+s:comment	nvim/colors/basic-spacegray.vim	/^let s:comment = '515f6a'$/;"	v
+s:diff_aqua	nvim/colors/basic-dark.vim	/^let s:diff_aqua = "333366"$/;"	v
+s:diff_aqua	nvim/colors/basic-eighties.vim	/^let s:diff_aqua = "333366"$/;"	v
+s:diff_aqua	nvim/colors/basic-light.vim	/^let s:diff_aqua = "bbeeff"$/;"	v
+s:diff_aqua	nvim/colors/basic-spacegray.vim	/^let s:diff_aqua = '222255'$/;"	v
+s:diff_green	nvim/colors/basic-dark.vim	/^let s:diff_green = "336633"$/;"	v
+s:diff_green	nvim/colors/basic-eighties.vim	/^let s:diff_green = "336633"$/;"	v
+s:diff_green	nvim/colors/basic-light.vim	/^let s:diff_green = "bbffbb"$/;"	v
+s:diff_green	nvim/colors/basic-spacegray.vim	/^let s:diff_green = '225522'$/;"	v
+s:diff_red	nvim/colors/basic-dark.vim	/^let s:diff_red = "663333"$/;"	v
+s:diff_red	nvim/colors/basic-eighties.vim	/^let s:diff_red = "663333"$/;"	v
+s:diff_red	nvim/colors/basic-light.vim	/^let s:diff_red = "ffaaaa"$/;"	v
+s:diff_red	nvim/colors/basic-spacegray.vim	/^let s:diff_red = '552222'$/;"	v
+s:diff_yellow	nvim/colors/basic-dark.vim	/^let s:diff_yellow = "666633"$/;"	v
+s:diff_yellow	nvim/colors/basic-eighties.vim	/^let s:diff_yellow = "666633"$/;"	v
+s:diff_yellow	nvim/colors/basic-light.vim	/^let s:diff_yellow = "ffffaa"$/;"	v
+s:diff_yellow	nvim/colors/basic-spacegray.vim	/^let s:diff_yellow = '555522'$/;"	v
+s:foreground	nvim/colors/basic-dark.vim	/^let s:foreground = "cfd8dc"$/;"	v
+s:foreground	nvim/colors/basic-eighties.vim	/^let s:foreground = "eeeeee"$/;"	v
+s:foreground	nvim/colors/basic-light.vim	/^let s:foreground = "263238"$/;"	v
+s:foreground	nvim/colors/basic-spacegray.vim	/^let s:foreground = 'b3b8c4'$/;"	v
+s:get_visual_selection	nvim/init.vim.d/functions.vim	/^function! s:get_visual_selection()$/;"	f
+s:gitgutter_aqua	nvim/colors/basic-dark.vim	/^    let s:gitgutter_aqua = s:background$/;"	v
+s:gitgutter_aqua	nvim/colors/basic-dark.vim	/^    let s:gitgutter_aqua = s:diff_aqua$/;"	v
+s:gitgutter_aqua	nvim/colors/basic-eighties.vim	/^  let s:gitgutter_aqua = s:background$/;"	v
+s:gitgutter_aqua	nvim/colors/basic-eighties.vim	/^  let s:gitgutter_aqua = s:diff_aqua$/;"	v
+s:gitgutter_aqua	nvim/colors/basic-light.vim	/^  let s:gitgutter_aqua = s:background$/;"	v
+s:gitgutter_aqua	nvim/colors/basic-light.vim	/^  let s:gitgutter_aqua = s:diff_aqua$/;"	v
+s:gitgutter_aqua	nvim/colors/basic-spacegray.vim	/^    let s:gitgutter_aqua = s:background$/;"	v
+s:gitgutter_aqua	nvim/colors/basic-spacegray.vim	/^    let s:gitgutter_aqua = s:diff_aqua$/;"	v
+s:gitgutter_green	nvim/colors/basic-dark.vim	/^    let s:gitgutter_green = s:background$/;"	v
+s:gitgutter_green	nvim/colors/basic-dark.vim	/^    let s:gitgutter_green = s:diff_green$/;"	v
+s:gitgutter_green	nvim/colors/basic-eighties.vim	/^  let s:gitgutter_green = s:background$/;"	v
+s:gitgutter_green	nvim/colors/basic-eighties.vim	/^  let s:gitgutter_green = s:diff_green$/;"	v
+s:gitgutter_green	nvim/colors/basic-light.vim	/^  let s:gitgutter_green = s:background$/;"	v
+s:gitgutter_green	nvim/colors/basic-light.vim	/^  let s:gitgutter_green = s:diff_green$/;"	v
+s:gitgutter_green	nvim/colors/basic-spacegray.vim	/^    let s:gitgutter_green = s:background$/;"	v
+s:gitgutter_green	nvim/colors/basic-spacegray.vim	/^    let s:gitgutter_green = s:diff_green$/;"	v
+s:gitgutter_red	nvim/colors/basic-dark.vim	/^    let s:gitgutter_red = s:background$/;"	v
+s:gitgutter_red	nvim/colors/basic-dark.vim	/^    let s:gitgutter_red = s:diff_red$/;"	v
+s:gitgutter_red	nvim/colors/basic-eighties.vim	/^  let s:gitgutter_red = s:background$/;"	v
+s:gitgutter_red	nvim/colors/basic-eighties.vim	/^  let s:gitgutter_red = s:diff_red$/;"	v
+s:gitgutter_red	nvim/colors/basic-light.vim	/^  let s:gitgutter_red = s:background$/;"	v
+s:gitgutter_red	nvim/colors/basic-light.vim	/^  let s:gitgutter_red = s:diff_red$/;"	v
+s:gitgutter_red	nvim/colors/basic-spacegray.vim	/^    let s:gitgutter_red = s:background$/;"	v
+s:gitgutter_red	nvim/colors/basic-spacegray.vim	/^    let s:gitgutter_red = s:diff_red$/;"	v
+s:gitgutter_yellow	nvim/colors/basic-dark.vim	/^    let s:gitgutter_yellow = s:background$/;"	v
+s:gitgutter_yellow	nvim/colors/basic-dark.vim	/^    let s:gitgutter_yellow = s:diff_yellow$/;"	v
+s:gitgutter_yellow	nvim/colors/basic-eighties.vim	/^  let s:gitgutter_yellow = s:background$/;"	v
+s:gitgutter_yellow	nvim/colors/basic-eighties.vim	/^  let s:gitgutter_yellow = s:diff_yellow$/;"	v
+s:gitgutter_yellow	nvim/colors/basic-light.vim	/^  let s:gitgutter_yellow = s:background$/;"	v
+s:gitgutter_yellow	nvim/colors/basic-light.vim	/^  let s:gitgutter_yellow = s:diff_yellow$/;"	v
+s:gitgutter_yellow	nvim/colors/basic-spacegray.vim	/^    let s:gitgutter_yellow = s:background$/;"	v
+s:gitgutter_yellow	nvim/colors/basic-spacegray.vim	/^    let s:gitgutter_yellow = s:diff_yellow$/;"	v
+s:green	nvim/colors/basic-dark.vim	/^let s:green = "88b888"$/;"	v
+s:green	nvim/colors/basic-eighties.vim	/^let s:green = "99cc99"$/;"	v
+s:green	nvim/colors/basic-light.vim	/^let s:green = "409b1c"$/;"	v
+s:green	nvim/colors/basic-spacegray.vim	/^let s:green = '85b47b'$/;"	v
+s:grey	nvim/colors/basic-dark.vim	/^let s:grey = "b0bec5"$/;"	v
+s:grey	nvim/colors/basic-eighties.vim	/^let s:grey = "d3d0c8"$/;"	v
+s:grey	nvim/colors/basic-light.vim	/^let s:grey = "888888"$/;"	v
+s:grey	nvim/colors/basic-spacegray.vim	/^let s:grey = '808080'$/;"	v
+s:lcs	nvim/colors/basic-dark.vim	/^let s:lcs = "425761"$/;"	v
+s:lcs	nvim/colors/basic-eighties.vim	/^let s:lcs = "425761"$/;"	v
+s:lcs	nvim/colors/basic-light.vim	/^let s:lcs = "c7bfbb"$/;"	v
+s:lcs	nvim/colors/basic-spacegray.vim	/^let s:lcs = '3e4853'$/;"	v
+s:line	nvim/colors/basic-dark.vim	/^    let s:line = "303030"$/;"	v
+s:line	nvim/colors/basic-dark.vim	/^let s:line = "37474f"$/;"	v
+s:line	nvim/colors/basic-eighties.vim	/^let s:line = "3d3d3d"$/;"	v
+s:line	nvim/colors/basic-light.vim	/^let s:line = "f7faff"$/;"	v
+s:line	nvim/colors/basic-spacegray.vim	/^    let s:line = '303030'$/;"	v
+s:line	nvim/colors/basic-spacegray.vim	/^let s:line = '171717'$/;"	v
+s:orange	nvim/colors/basic-dark.vim	/^let s:orange = "ffb74d"$/;"	v
+s:orange	nvim/colors/basic-eighties.vim	/^let s:orange = "ffb74d"$/;"	v
+s:orange	nvim/colors/basic-light.vim	/^let s:orange = "ff7800"$/;"	v
+s:orange	nvim/colors/basic-spacegray.vim	/^let s:orange = 'e5c078'$/;"	v
+s:purple	nvim/colors/basic-dark.vim	/^let s:purple = "ce93d8"$/;"	v
+s:purple	nvim/colors/basic-eighties.vim	/^let s:purple = "cc99cc"$/;"	v
+s:purple	nvim/colors/basic-light.vim	/^let s:purple = "673ab7"$/;"	v
+s:purple	nvim/colors/basic-spacegray.vim	/^let s:purple = 'a57a9e'$/;"	v
+s:red	nvim/colors/basic-dark.vim	/^let s:red = "ee877d"$/;"	v
+s:red	nvim/colors/basic-eighties.vim	/^let s:red = "f2777a"$/;"	v
+s:red	nvim/colors/basic-light.vim	/^let s:red = "d62a28"$/;"	v
+s:red	nvim/colors/basic-spacegray.vim	/^let s:red = 'cc6666'$/;"	v
+s:selection	nvim/colors/basic-dark.vim	/^let s:selection = "546e7a"$/;"	v
+s:selection	nvim/colors/basic-eighties.vim	/^let s:selection = "546e7a"$/;"	v
+s:selection	nvim/colors/basic-light.vim	/^let s:selection = "e3fc8d"$/;"	v
+s:selection	nvim/colors/basic-spacegray.vim	/^let s:selection = '303537'$/;"	v
+s:show_documentation	nvim/init.vim.d/plugins.vim	/^function! s:show_documentation()$/;"	f
+s:window	nvim/colors/basic-dark.vim	/^let s:window = "37474f"$/;"	v
+s:window	nvim/colors/basic-eighties.vim	/^let s:window = "444444"$/;"	v
+s:window	nvim/colors/basic-light.vim	/^let s:window = "cfd8dc"$/;"	v
+s:window	nvim/colors/basic-spacegray.vim	/^let s:window = '4c5966'$/;"	v
+s:yellow	nvim/colors/basic-dark.vim	/^let s:yellow = "fff176"$/;"	v
+s:yellow	nvim/colors/basic-eighties.vim	/^let s:yellow = "ffcc66"$/;"	v
+s:yellow	nvim/colors/basic-light.vim	/^let s:yellow = "eab700"$/;"	v
+s:yellow	nvim/colors/basic-spacegray.vim	/^let s:yellow = 'ffaf00'$/;"	v
+save	deepin/deepin-screenshot.conf	/^[save]$/;"	s
+save_op	deepin/deepin-screenshot.conf	/^save_op=2$/;"	k	section:save
+save_quality	deepin/deepin-screenshot.conf	/^save_quality=100$/;"	k	section:save
+scaling	polychromatic/preferences.json	/^        "scaling": 1$/;"	n	object:editor
+screens	qtile/config.py	/^screens = [$/;"	v
+scroll	polybar/config.ini	/^cursor-scroll = ns-resize$/;"	k	section:bar/bottom
+scroll	polybar/config.ini	/^enable-scroll = false$/;"	k	section:module/i3
+scroll	polybar/config.ini	/^reverse-scroll = false$/;"	k	section:module/i3
+scroll	polybar/config.ini	/^wrapping-scroll = false$/;"	k	section:module/i3
+send_message	scripts/thebotofeyal_sendmsg.py	/^def send_message(text="", chat_id=EYAL_ID):$/;"	f
+send_output	scripts/thebotofeyal_sendmsg.py	/^def send_output(chat_id=EYAL_ID):$/;"	f
+send_script_stderr	scripts/thebotofeyal_sendmsg.py	/^def send_script_stderr(script_fpath, chat_id=EYAL_ID):$/;"	f
+send_script_stdout	scripts/thebotofeyal_sendmsg.py	/^def send_script_stdout(script_fpath, chat_id=EYAL_ID):$/;"	f
+send_syntax_check	scripts/thebotofeyal_sendmsg.py	/^def send_syntax_check(filepath):$/;"	f
+separator	neofetch/config.conf	/^separator=":"$/;"	k
+separator	polybar/config.ini	/^label-separator = |$/;"	k	section:module/menu-apps
+separator	polybar/config.ini	/^separator = "   "$/;"	k	section:bar/top
+shadow	compton.conf	/^shadow = true;$/;"	k
+shaped	compton.conf	/^shadow-ignore-shaped = false;$/;"	k
+shell_path	neofetch/config.conf	/^shell_path="off"$/;"	k
+shell_version	neofetch/config.conf	/^shell_version="on"$/;"	k
+shortcuts	qutebrowser/qsettings/QtProject.conf	/^shortcuts=file:, file:\/\/\/home\/eyal$/;"	k	section:FileDialog
+showVolumeMeters	pavucontrol.ini	/^showVolumeMeters=1$/;"	k	section:window
+sidebarWidth	qutebrowser/qsettings/QtProject.conf	/^sidebarWidth=82$/;"	k	section:FileDialog
+signs	scripts/make_cjhebrew.py	/^signs   = ""$/;"	v
+signs2heb	scripts/make_cjhebrew.py	/^signs2heb = {$/;"	v
+sinkInputType	pavucontrol.ini	/^sinkInputType=1$/;"	k	section:window
+sinkType	pavucontrol.ini	/^sinkType=0$/;"	k	section:window
+size	polybar/config.ini	/^border-size = 0$/;"	k	section:bar/bottom
+size	polybar/config.ini	/^border-size = 0$/;"	k	section:bar/top
+size	polybar/config.ini	/^line-size = 3$/;"	k	section:bar/bottom
+song_format	neofetch/config.conf	/^song_format="%artist% - %album% - %title%"$/;"	k
+song_shorthand	neofetch/config.conf	/^song_shorthand="off"$/;"	k
+sort	polybar/config.ini	/^index-sort = true$/;"	k	section:module/i3
+sourceOutputType	pavucontrol.ini	/^sourceOutputType=1$/;"	k	section:window
+sourceType	pavucontrol.ini	/^sourceType=1$/;"	k	section:window
+speed_shorthand	neofetch/config.conf	/^speed_shorthand="off"$/;"	k
+speed_type	neofetch/config.conf	/^speed_type="bios_limit"$/;"	k
+startx	zsh/functions/general_funcs.sh	/^startx() {$/;"	f
+stdout	neofetch/config.conf	/^stdout="off"$/;"	k
+stencil	compton.conf	/^glx-no-stencil = true;$/;"	k
+step	compton.conf	/^fade-in-step = 0.03;$/;"	k
+step	compton.conf	/^fade-out-step = 0.03;$/;"	k
+straightline_linewidth_index	deepin/deepin-screenshot.conf	/^straightline_linewidth_index=1$/;"	k	section:arrow
+sync_effects_enabled	openrazer/razer.conf	/^sync_effects_enabled = True$/;"	k	section:Startup
+tail	polybar/config.ini	/^tail = true$/;"	k	section:module/gmail
+tbl_version	torbrowser/settings.json	/^{"tbl_version": "0.3.2", "installed": false, "download_over_tor": false, "tor_socks_address": "1/;"	s
+templates	nvim/init.vim	/^  augroup templates$/;"	a
+templates	nvim/init.vim.d/init.vim	/^  augroup templates$/;"	a
+term_size	neofetch/config.conf	/^term_size=`stty size | awk '{print $2}'`$/;"	k
+terminal	qtile/config.py	/^terminal = guess_terminal()$/;"	v
+text	deepin/deepin-screenshot.conf	/^[text]$/;"	s
+thumbnail_dir	neofetch/config.conf	/^thumbnail_dir="${XDG_CACHE_HOME:-${HOME}\/.cache}\/thumbnails\/neofetch"$/;"	k
+time	polybar/config.ini	/^time = %H:%M$/;"	k	section:module/date
+today	qutebrowser/config.py	/^today = datetime.datetime.now()$/;"	v
+token_uri	polybar/scripts/gmail/client_secrets.json	/^{"installed":{"client_id":"1041679298587-8solnkr9tr8iktrut958if6tsgqt42m2.apps.googleusercontent/;"	s	object:installed
+tor_socks_address	torbrowser/settings.json	/^{"tbl_version": "0.3.2", "installed": false, "download_over_tor": false, "tor_socks_address": "1/;"	s
+transient	compton.conf	/^detect-transient = true;$/;"	k
+tray_icon	polychromatic/preferences.json	/^    "tray_icon": {$/;"	o
+treeViewHeader	qutebrowser/qsettings/QtProject.conf	/^treeViewHeader=@ByteArray(\\0\\0\\0\\xff\\0\\0\\0\\0\\0\\0\\0\\x1\\0\\0\\0\\0\\0\\0\\0\\0\\x1\\0/;"	k	section:FileDialog
+type	polybar/config.ini	/^type = custom\/menu$/;"	k	section:module/menu-apps
+type	polybar/config.ini	/^type = custom\/script$/;"	k	section:module/gmail
+type	polybar/config.ini	/^type = custom\/script$/;"	k	section:module/openvpn-status
+type	polybar/config.ini	/^type = custom\/script$/;"	k	section:module/ping
+type	polybar/config.ini	/^type = internal\/battery$/;"	k	section:module/battery
+type	polybar/config.ini	/^type = internal\/date$/;"	k	section:module/date
+type	polybar/config.ini	/^type = internal\/i3$/;"	k	section:module/i3
+type	polybar/config.ini	/^type = internal\/memory$/;"	k	section:module/memory
+type	polybar/config.ini	/^type = internal\/network$/;"	k	section:module/wireless-network
+type	polybar/config.ini	/^type = internal\/pulseaudio$/;"	k	section:module/pulseaudio
+type	polybar/config.ini	/^type = internal\/xkeyboard$/;"	k	section:module/xkeyboard
+type	polybar/config.ini	/^type = internal\/xwindow$/;"	k	section:module/xwindow
+type	polychromatic/preferences.json	/^        "type": "builtin",$/;"	s	object:tray_icon
+underline_char	neofetch/config.conf	/^underline_char="-"$/;"	k
+underline_enabled	neofetch/config.conf	/^underline_enabled="on"$/;"	k
+unread_prefix	polybar/scripts/gmail/launch.py	/^unread_prefix = '%{F' + args.color + '}' + args.prefix + ' %{F-}'$/;"	v
+up	polybar/config.ini	/^scroll-up = i3wm-wsnext$/;"	k	section:bar/bottom
+update_count	polybar/scripts/gmail/launch.py	/^def update_count(count_was):$/;"	f
+uptime_shorthand	neofetch/config.conf	/^uptime_shorthand="on"$/;"	k
+url	neofetch/quotes_dl.py	/^url = r"https:\/\/raw.githubusercontent.com\/skolakoda\/programming-quotes\/master\/src\/data\/q/;"	v
+value	polychromatic/preferences.json	/^        "value": "0"$/;"	s	object:tray_icon
+verbose_logging	openrazer/razer.conf	/^verbose_logging = True$/;"	k	section:General
+viewMode	qutebrowser/qsettings/QtProject.conf	/^viewMode=Detail$/;"	k	section:FileDialog
+volume	polybar/config.ini	/^format-volume = <ramp-volume> <label-volume>$/;"	k	section:module/pulseaudio
+volume	polybar/config.ini	/^label-volume = %percentage%%$/;"	k	section:module/pulseaudio
+vpn	dwm/statusbar.sh	/^vpn(){$/;"	f
+vsync	compton.conf	/^vsync = true;$/;"	k
+w!!	nvim/init.vim.d/shortcuts.vim	/^	cnoremap w!! execute 'silent! write !sudo tee % >\/dev\/null' <bar> edit!$/;"	m
+widget_defaults	qtile/config.py	/^widget_defaults = dict($/;"	v
+width	pavucontrol.ini	/^width=1234$/;"	k	section:window
+width	polybar/config.ini	/^bar-volume-width = 12$/;"	k	section:module/pulseaudio
+width	polybar/config.ini	/^width = 100%$/;"	k	section:bar/bottom
+width	polybar/config.ini	/^width = 98%$/;"	k	section:bar/top
+wifi	dwm/statusbar.sh	/^wifi(){$/;"	f
+win	compton.conf	/^use-ewmh-active-win = true;$/;"	k
+window	pavucontrol.ini	/^[window]$/;"	s
+wintypes	compton.conf	/^wintypes:$/;"	k
+wmname	qtile/config.py	/^wmname = "LG3D"$/;"	v
+workspaces	polybar/config.ini	/^pin-workspaces = true$/;"	k	section:module/i3
+wp_urls	wallpaper/forget_wp.py	/^wp_urls = list(map(lambda k: k.strip(), open(pics_list, 'r').readlines()))$/;"	v
+wrap	neofetch/quote_query.py	/^def wrap(s, wrap_size):$/;"	f
+wrap_size	neofetch/quote_query.py	/^wrap_size = 40$/;"	v
+wsnumbers	polybar/config.ini	/^strip-wsnumbers = true$/;"	k	section:module/i3
+x	compton.conf	/^shadow-offset-x = -5;$/;"	k
+x	polybar/config.ini	/^offset-x = 1%$/;"	k	section:bar/top
+xoffset	neofetch/config.conf	/^xoffset=0$/;"	k
+y	compton.conf	/^shadow-offset-y = -5;$/;"	k
+y	polybar/config.ini	/^offset-y = 0.5%$/;"	k	section:bar/top
+yoffset	neofetch/config.conf	/^yoffset=0$/;"	k
+à	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap à &agrave;$/;"	m
+á	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap á &aacute;$/;"	m
+ã	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ã &atilde;$/;"	m
+ä	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ä &auml;$/;"	m
+è	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap è &egrave;$/;"	m
+é	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap é &eacute;$/;"	m
+ë	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ë &euml;$/;"	m
+ì	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ì &igrave;$/;"	m
+í	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap í &iacute;$/;"	m
+ï	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ï &iuml;$/;"	m
+ñ	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ñ &ntilde;$/;"	m
+ò	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ò &ograve;$/;"	m
+ó	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ó &oacute;$/;"	m
+õ	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap õ &otilde;$/;"	m
+ö	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ö &ouml;$/;"	m
+ù	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ù &ugrave;$/;"	m
+ú	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ú &uacute;$/;"	m
+ü	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ü &uuml;$/;"	m
+ĩ	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ĩ &itilde;$/;"	m
+ũ	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ũ &utilde;$/;"	m
+ẽ	nvim/init.vim.d/runtime/ftplugin/html.vim	/^inoremap ẽ &etilde;$/;"	m
