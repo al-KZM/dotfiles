@@ -46,7 +46,6 @@ fi
 #exec dwm
 
 # i3:
-<<<<<<< HEAD
 #exec i3
 
 # xfce:

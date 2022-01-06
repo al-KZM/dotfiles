@@ -131,9 +131,10 @@ alias scanslash="ncdu / --exclude '/mnt/*' --exclude '/home/*' --exclude '/opt/*
 # Sixgill
 alias sgvpn="sudo systemctl start openvpn-client@sixgill.service"
 alias sgdockb="docker build -f docker/Dockerfile ."
-alias sgbeg="sudo sh ~/documents/programmation/scripts/sixgill_day.sh"
+alias sgbeg="sudo sh ~/Work/sixgill/scripts/sixgill_day.sh"
 alias sgpy="~/.local/lib/python3.9/site-packages/sixgill-additionals"
-alias sg="cd ~/documents/work/sixgill"
+alias sg="cd ~/Work/sixgill"
+alias sgr="cd ~/Work/sixgill/repos"
 
 # Git
 alias gpsh="git push --set-upstream origin $(git symbolic-ref -q HEAD)"

@@ -26,10 +26,13 @@
 
 from typing import List  # noqa: F401
 
-from libqtile import bar, layout, widget
+from libqtile import bar, layout, widget, extension
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
+
+browser = "firefox"
+lock = "slock"
 
 mod = "mod4"
 terminal = guess_terminal()
@@ -74,12 +77,14 @@ keys = [
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
+    Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
 
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "r", lazy.spawncmd(),
-        desc="Spawn a command using a prompt widget"),
+    Key([mod], "p", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    Key([mod], "r", lazy.spawn("dmenu_run"), desc="Dmenu"),
+    Key([mod], "w", lazy.spawn(browser), desc="Spawn browser"),
+    Key([mod], "x", lazy.spawn(lock), desc="Lock session"),
 ]
 
 groups = [Group(i) for i in "123456789"]
@@ -100,7 +105,7 @@ for i in groups:
     ])
 
 layouts = [
-    layout.Columns(border_focus_stack='#d75f5f'),
+    layout.Columns(border_focus_stack='#97CBEB', border_width=5, border_focus="#97CBEB"),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -137,9 +142,11 @@ screens = [
                     name_transform=lambda name: name.upper(),
                 ),
                 widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
                 widget.Systray(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
+                widget.Backlight(backlight_name="intel_backlight"),
+                widget.BatteryIcon(),
+                widget.Battery(format="{char} {percent:2.0%} ({hour:d}:{min:02d})"),
                 widget.QuickExit(),
             ],
             24,

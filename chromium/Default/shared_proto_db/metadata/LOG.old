@@ -1,0 +1,4 @@
+2022/01/05-13:40:56.401 47c4 Creating DB /home/x41/.config/chromium/Default/shared_proto_db/metadata since it was missing.
+2022/01/05-13:40:56.405 47c4 Reusing MANIFEST /home/x41/.config/chromium/Default/shared_proto_db/metadata/MANIFEST-000001
+2022/01/05-13:40:56.405 47c4 Recovering log #3
+2022/01/05-13:40:56.405 47c4 Reusing old log /home/x41/.config/chromium/Default/shared_proto_db/metadata/000003.log 

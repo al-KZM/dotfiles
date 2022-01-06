@@ -13,9 +13,6 @@ Plug 'vifm/vifm.vim'
 
 Plug 'tpope/vim-surround'
 
-" GOYO: Distraction free
-Plug 'junegunn/goyo.vim'
-
 "Write french accents:
 Plug 'LukeSmithxyz/vimling'
 
@@ -105,6 +102,7 @@ Plug 'kovetskiy/sxhkd-vim'
 Plug 'tmhedberg/SimpylFold'
 
 "Code navigation
+Plug 'junegunn/fzf.vim'
 Plug 'kshenoy/vim-signature'
 Plug 'gcmt/taboo.vim'
 Plug 'xolox/vim-session'
@@ -283,7 +281,8 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-
+"""""""""""""""""""""""""""""""""""""""FZF""""""""""""""""""""""""""""""""""""
+nnoremap <leader>f :FZF<CR>
 
 
 """"""""""""""""""""""""""""""""""""OMNISHARP"""""""""""""""""""""""""""""""""
