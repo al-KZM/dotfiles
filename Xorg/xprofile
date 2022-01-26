@@ -1,1 +1,3 @@
-xcompmgr &
+picom &
+/home/x41/.config/.screenlayout/sixgill_right.sh
+feh --bg-fill ~/.config/wallpaper/wallpaper.jpg

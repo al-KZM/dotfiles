@@ -282,7 +282,8 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 """""""""""""""""""""""""""""""""""""""FZF""""""""""""""""""""""""""""""""""""
-nnoremap <leader>f :FZF<CR>
+nnoremap <leader>f :Ag<CR>
+nnoremap <leader>F :Files<CR>
 
 
 """"""""""""""""""""""""""""""""""""OMNISHARP"""""""""""""""""""""""""""""""""

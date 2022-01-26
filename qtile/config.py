@@ -26,16 +26,33 @@
 
 from typing import List  # noqa: F401
 
-from libqtile import bar, layout, widget, extension
-from libqtile.config import Click, Drag, Group, Key, Match, Screen
+from libqtile import bar, layout, widget, extension, hook
+from libqtile.config import Click, Drag, Group, Key, Match, Screen, KeyChord
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
+import os
+import subprocess
 
-browser = "firefox"
-lock = "slock"
+HOME = "/home/x41"
+BROWSER = "firefox"
+LOCK = "slock"
+SCREENSHOT = "gscreenshot -c -s -f /tmp"
 
 mod = "mod4"
 terminal = guess_terminal()
+
+colors =  [
+        ["#00000000", "#00000000", "#00000000"],     # color 0
+        ["#2e3440", "#2e3440", "#2e3440"], # color 1
+        ["#B591B0", "#B591B0", "#B591B0"], # color 2
+        ["#A480B2", "#A480B2", "#A480B2"], # color 3
+        ["#aed1dc", "#98B7C0", "#aed1dc"], # color 4
+        ["#f3f4f5", "#f3f4f5", "#f3f4f5"], # color 5
+        ["#bb94cc", "#AB87BB", "#bb94cc"], # color 3
+        ["#81658C", "#81658C", "#81658C"], # color 6
+        ["#614C69", "#614C69", "#614C69"], # color 8
+        ["#0ee9af", "#0ee9af", "#0ee9af"]] # color 9
+        # ["#5aec79", "#5aec79", "#5aec79"]] # color 9
 
 keys = [
     # Switch between windows
@@ -55,6 +72,7 @@ keys = [
     Key([mod, "shift"], "j", lazy.layout.shuffle_down(),
         desc="Move window down"),
     Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
+    Key([mod, "shift"], "Left", lazy.layout.swap_left(),
 
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
@@ -71,23 +89,73 @@ keys = [
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key([mod, "shift"], "Return", lazy.layout.toggle_split(),
+    Key([mod, "shift"], "Return", lazy.layout.toggle_split()),
         desc="Toggle between split and unsplit sides of stack"),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
     # Toggle between different layouts as defined below
-    Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
+    Key([mod], "grave", lazy.next_layout(), desc="Toggle between layouts"),
+    Key([mod], "Tab", lazy.window.toggle_fullscreen(), desc="Toggle Full screen"),
+    Key([mod, "shift"], "grave", lazy.window.toggle_floating(), desc="Toggle Full screen"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
 
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "p", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
-    Key([mod], "r", lazy.spawn("dmenu_run"), desc="Dmenu"),
-    Key([mod], "w", lazy.spawn(browser), desc="Spawn browser"),
-    Key([mod], "x", lazy.spawn(lock), desc="Lock session"),
+    Key([mod], "p", lazy.spawn("dmenu_run -i -nb '#282a36' -nf '#f8f8f2' -l 15"), desc="Dmenu"),
+    Key([mod], "w", lazy.spawn(BROWSER), desc="Spawn browser"),
+    Key([mod], "x", lazy.spawn(LOCK), desc="Lock session"),
+    Key([mod], "r", lazy.spawn(SCREENSHOT), desc="Take a screenshot"),
+
+    KeyChord([mod], "m",[
+        Key([], "1", lazy.spawn("redshift -O 6000")),
+        Key([], "2", lazy.spawn("redshift -O 5000")),
+        Key([], "3", lazy.spawn("redshift -O 4500")),
+        Key([], "4", lazy.spawn("redshift -O 4250")),
+        Key([], "5", lazy.spawn("redshift -O 4000")),
+        Key([], "6", lazy.spawn("redshift -O 3500")),
+        Key([], "x", lazy.spawn("redshift -x")),
+            ]),
+
 ]
 
-groups = [Group(i) for i in "123456789"]
+groups = [
+    Group(
+        "1"
+    ),
+    Group(
+        "2"
+    ),
+    Group(
+        "3"
+    ),
+    Group(
+        "4"
+    ),
+    Group(
+        "5"
+    ),
+    Group(
+        "6"
+    ),
+    Group(
+        "7"
+    ),
+    Group(
+        "8"
+    ),
+    Group(
+        "9",
+        matches=[
+            Match(wm_class=["Slack"]),
+            Match(wm_class=["zoom"]),
+            Match(wm_class=["pavucontrol"]),
+        ],
+    ),
+    Group(
+        "0",
+        label="X"
+    ),
+]
 
 for i in groups:
     keys.extend([
@@ -104,20 +172,25 @@ for i in groups:
         #     desc="move focused window to group {}".format(i.name)),
     ])
 
+layout_opts = {
+    "border_focus_stack":"#97CBEB",
+    "border_width":5,
+    "border_focus": "#97CBEB",
+}
+
 layouts = [
-    layout.Columns(border_focus_stack='#97CBEB', border_width=5, border_focus="#97CBEB"),
-    layout.Max(),
+    layout.Columns(border_focus_stack="#97CBEB", border_focus="#97CBEB", border_width=5),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     # layout.Matrix(),
-    # layout.MonadTall(),
-    # layout.MonadWide(),
-    # layout.RatioTile(),
-    # layout.Tile(),
-    # layout.TreeTab(),
-    # layout.VerticalTile(),
-    # layout.Zoomy(),
+    layout.MonadTall(border_focus="#46c000", border_width=5),
+    # layout.MonadWide(**layout_opts),
+    # layout.RatioTile(**layout_opts),
+    layout.Tile(border_focus="#27eebb", border_width=5),
+    layout.TreeTab(border_focus="#97CBEB", border_width=5),
+    #layout.VerticalTile(),
+    #layout.Zoomy(),
 ]
 
 widget_defaults = dict(
@@ -127,32 +200,435 @@ widget_defaults = dict(
 )
 extension_defaults = widget_defaults.copy()
 
+def get_wallpaper() -> str:
+    return "~/.config/wallpaper/wallpaper.jpg"
+
+def get_vpn() -> str:
+    p = subprocess.run(
+        ["sh", f"{HOME}/.config/scripts/check_running_openvpn.sh"],
+        capture_output=True
+    )
+    return p.stdout.decode('utf-8')
+
+screens_nb = subprocess.check_output(["xrandr", "--listmonitors"]).decode('utf-8').count('\n') - 1
 screens = [
     Screen(
-        bottom=bar.Bar(
-            [
-                widget.CurrentLayout(),
-                widget.GroupBox(),
-                widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        'launch': ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
-                ),
-                widget.TextBox("default config", name="default"),
-                widget.Systray(),
-                widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
-                widget.Backlight(backlight_name="intel_backlight"),
-                widget.BatteryIcon(),
-                widget.Battery(format="{char} {percent:2.0%} ({hour:d}:{min:02d})"),
-                widget.QuickExit(),
-            ],
-            24,
-        ),
-    ),
+        #bottom=bar.Bar(
+        #    [
+        #        widget.GroupBox(),
+        #        widget.Prompt(),
+        #        widget.WindowName(),
+        #        widget.Chord(
+        #            chords_colors={
+        #                'launch': ("#ff0000", "#ffffff"),
+        #            },
+        #            name_transform=lambda name: name.upper(),
+        #        ),
+        #        #widgets.VpnChecker(),
+        #        widget.GenPollText(
+        #            func=get_vpn,
+        #            update_interval=1,
+        #        ),
+        #        widget.Systray(),
+        #        widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
+        #        widget.Backlight(backlight_name="intel_backlight", set=2),
+        #        widget.BatteryIcon(),
+        #        widget.Battery(format="{char} {percent:2.0%} ({hour:d}:{min:02d})"),
+        #        widget.QuickExit(),
+        #    ],
+        #    30,
+        #),
+
+        top=bar.Bar(
+                [
+                    widget.TextBox(
+                        text="\ue0b6",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[8],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.TextBox(
+                        text="",
+                        fonts="novamono for powerline bold",
+                        foreground=colors[5],
+                        background=colors[8],
+                        padding=0,
+                        fontsize=28
+                    ),
+                    widget.Sep(
+                        background=colors[8],
+                        padding=8,
+                        linewidth=0,
+                    ),
+                    widget.Clock(
+                        font="novamono for powerline bold",
+                        fontsize=16,
+                        foreground=colors[5],
+                        background=colors[8],
+                        format='%d %b, %A'
+                    ),
+                    widget.TextBox(
+                        text="\ue0b4",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[8],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.Sep(
+                        background=colors[0],
+                        padding=10,
+                        linewidth=0,
+                    ),
+                    widget.TextBox(
+                        text="\ue0b6",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[7],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.TextBox(
+                        text="",
+                        foreground=colors[5],
+                        background=colors[7],
+                        padding=0,
+                        fontsize=33
+                    ),
+                    widget.Memory(
+                        background=colors[7],
+                        foreground=colors[5],
+                        font="novamono for powerline bold",
+                        fontsize=16,
+                        measure_mem='G',
+                        measure_swap='G',
+                        format='{MemUsed: .2f} GB',
+                    ),
+                    widget.TextBox(
+                        text="\ue0b4",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[7],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.Sep(
+                        background=colors[0],
+                        padding=10,
+                        linewidth=0,
+                    ),
+                    widget.TextBox(
+                        text="\ue0b6",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[3],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.TextBox(
+                        text="",
+                        foreground=colors[5],
+                        background=colors[3],
+                        padding=0,
+                        fontsize=33
+                    ),
+                    widget.Memory(
+                        background=colors[3],
+                        foreground=colors[5],
+                        font="novamono for powerline bold",
+                        fontsize=16,
+                        measure_mem='G',
+                        measure_swap='G',
+                        format='{SwapUsed: .2f} GB',
+                    ),
+                    widget.TextBox(
+                        text="\ue0b4",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[3],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.Sep(
+                        background=colors[0],
+                        padding=10,
+                        linewidth=0,
+                    ),
+                    widget.TextBox(
+                        text="\ue0b6",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[3],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.CurrentLayout(
+                        background=colors[3],
+                        foreground=colors[5],
+                        font="novamono for powerline bold",
+                        fontsize=15,
+                    ),
+                    widget.TextBox(
+                        text="\ue0b4",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[3],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.CurrentLayoutIcon(
+                        custom_icon_paths=[os.path.expanduser("~/.config/qtile/icons")],
+                        scale=0.45,
+                        padding=0,
+                        background=colors[0],
+                    ),
+
+                    widget.Spacer(),
+
+                    # widget.TextBox(
+                    #      text="\ue0b6",
+                    #      fonts="droid sans mono for powerline",
+                    #      foreground=colors[1],
+                    #      background=colors[0],
+                    #      padding=0,
+                    #      fontsize=38
+                    # ),
+                    widget.GroupBox(
+                        font="space mono for powerline",
+                        fontsize=14,
+                        margin_y=4,
+                        margin_x=4,
+                        padding_y=5,
+                        padding_x=3,
+                        borderwidth=7,
+                        inactive=colors[2],
+                        active=colors[9],
+                        rounded=True,
+                        highlight_color=colors[0],
+                        highlight_method="block",
+                        this_current_screen_border=colors[2],
+                        block_highlight_text_color=colors[9],
+                        background=colors[0],
+                    ),
+
+                    widget.Spacer(),
+
+                    widget.Systray(
+                        background=colors[0],
+                        foreground=colors[8],
+                        icon_size=20,
+                        padding=4,
+                    ),
+                    # widget.TextBox(
+                    #     text="\uE0B4",
+                    #     fonts="droid sans mono for powerline",
+                    #     foreground=colors[6],
+                    #     background=colors[0],
+                    #     padding=0,
+                    #     fontsize=38
+                    # ),
+                    widget.Sep(
+                        background=colors[0],
+                        padding=10,
+                        linewidth=0,
+                    ),
+                    widget.TextBox(
+                        text="\uE0B6",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[2],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.TextBox(
+                        text="",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[5],
+                        background=colors[2],
+                        padding=0,
+                        fontsize=30
+                    ),
+                    widget.Sep(
+                        background=colors[2],
+                        padding=8,
+                        linewidth=0,
+                    ),
+                    widget.Volume(
+                        background=colors[2],
+                        foreground=colors[5],
+                        font="novamono for powerline bold",
+                        fontsize=16,
+                        mouse_callbacks={'Button3': lambda: qtile.cmd_spawn("pavucontrol")},
+                        update_interval=0.001,
+                    ),
+                    widget.TextBox(
+                        text="\uE0B4",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[2],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.Sep(
+                        background=colors[0],
+                        padding=10,
+                        linewidth=0,
+                    ),
+                    widget.TextBox(
+                        text="\uE0B6",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[3],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.TextBox(
+                        text="",
+                        foreground=colors[5],
+                        background=colors[3],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.CPU(
+                        background=colors[3],
+                        foreground=colors[5],
+                        format=' {load_percent}%',
+                        font='novamono for powerline bold',
+                        fontsize=16
+                    ),
+                    widget.Sep(
+                        background=colors[3],
+                        padding=6,
+                        linewidth=0,
+                    ),
+                    widget.TextBox(
+                        text="\uE0B4",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[3],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.Sep(
+                        background=colors[0],
+                        padding=10,
+                        linewidth=0,
+                    ),
+                    widget.TextBox(
+                        text="\uE0B6",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[7],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.Sep(
+                        background=colors[7],
+                        padding=3,
+                        linewidth=0,
+                    ),
+                    widget.Battery(
+                        foreground=colors[5],
+                        background=colors[7],
+                        fontsize=24,
+                        low_percentage=0.2,
+                        low_foreground=colors[5],
+                        font="lekton nerd font",
+                        update_interval=1,
+                        format='{char}',
+                        charge_char='ﮣ',
+                        discharge_char=' ',
+                    ),
+                    widget.Sep(
+                        background=colors[7],
+                        padding=2,
+                        linewidth=0,
+                    ),
+                    widget.Battery(
+                        background=colors[7],
+                        foreground=colors[5],
+                        charge_char='↑',
+                        discharge_char='↓',
+                        font="novamono for powerline bold",
+                        fontsize=16,
+                        update_interval=1,
+                        format='{percent:2.0%}'
+                    ),
+                    widget.TextBox(
+                        text="\uE0B4",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[7],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    widget.Sep(
+                        background=colors[0],
+                        padding=8,
+                        linewidth=0,
+                    ),
+                    widget.TextBox(
+                        text="\uE0B6",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[8],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                    # widget.Sep(
+                    #     background=colors[8],
+                    #     padding=6,
+                    #     linewidth=0,
+                    # ),
+                    widget.TextBox(
+                        text="",
+                        fonts="novamono for powerline bold",
+                        foreground=colors[5],
+                        background=colors[8],
+                        padding=0,
+                        fontsize=28
+                    ),
+                    widget.Sep(
+                        background=colors[8],
+                        padding=8,
+                        linewidth=0,
+                    ),
+                    widget.Clock(
+                        background=colors[8],
+                        foreground=colors[5],
+                        font="novamono for powerline bold",
+                        fontsize=16,
+                        format='%I:%M %p',
+                    ),
+                    widget.TextBox(
+                        text="\ue0b4",
+                        fonts="droid sans mono for powerline",
+                        foreground=colors[8],
+                        background=colors[0],
+                        padding=0,
+                        fontsize=38
+                    ),
+                ],
+                43,
+                background=colors[0],
+                margin=[10,6,4,6],
+            ),
+        )
+    for _ in range(screens_nb)
 ]
+
+#############################################
+#############################################
+############# AUTOSTART #####################
+#############################################
+@hook.subscribe.startup_once
+def autostart():
+    processes = [
+        ['slack'],
+    ]
+
+    for p in processes:
+        subprocess.Popen(p)
+
 
 # Drag floating layouts.
 mouse = [

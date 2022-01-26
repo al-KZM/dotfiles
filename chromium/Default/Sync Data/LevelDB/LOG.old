@@ -1,4 +1,0 @@
-2022/01/05-13:40:56.064 47b2 Creating DB /home/x41/.config/chromium/Default/Sync Data/LevelDB since it was missing.
-2022/01/05-13:40:56.073 47b2 Reusing MANIFEST /home/x41/.config/chromium/Default/Sync Data/LevelDB/MANIFEST-000001
-2022/01/05-13:40:56.074 47b2 Recovering log #3
-2022/01/05-13:40:56.074 47b2 Reusing old log /home/x41/.config/chromium/Default/Sync Data/LevelDB/000003.log 
