@@ -1,0 +1,142 @@
+[
+	{
+		"name": "TEXT",
+		"value": "Preparing request to http://alert-micro-service-eyal.test.int.cybersixgill.com/internal/report",
+		"timestamp": 1644496710082
+	},
+	{
+		"name": "TEXT",
+		"value": "Current time is 2022-02-10T12:38:30.082Z",
+		"timestamp": 1644496710082
+	},
+	{
+		"name": "TEXT",
+		"value": "Using libcurl/7.73.0 OpenSSL/1.1.1g zlib/1.2.11 brotli/1.0.9 zstd/1.5.2 libidn2/2.3.2 libssh2/1.9.0 nghttp2/1.41.0",
+		"timestamp": 1644496710082
+	},
+	{
+		"name": "TEXT",
+		"value": "Using default HTTP version",
+		"timestamp": 1644496710082
+	},
+	{
+		"name": "TEXT",
+		"value": "Disable timeout",
+		"timestamp": 1644496710082
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable automatic URL encoding",
+		"timestamp": 1644496710082
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable SSL validation",
+		"timestamp": 1644496710082
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable cookie sending with jar of 0 cookies",
+		"timestamp": 1644496710084
+	},
+	{
+		"name": "TEXT",
+		"value": "Found bundle for host alert-micro-service-eyal.test.int.cybersixgill.com: 0x2a5d831f0cc0 [serially]\n",
+		"timestamp": 1644496710088
+	},
+	{
+		"name": "TEXT",
+		"value": "Can not multiplex, even if we wanted to!\n",
+		"timestamp": 1644496710088
+	},
+	{
+		"name": "TEXT",
+		"value": "Re-using existing connection! (#3) with host alert-micro-service-eyal.test.int.cybersixgill.com\n",
+		"timestamp": 1644496710088
+	},
+	{
+		"name": "TEXT",
+		"value": "Connected to alert-micro-service-eyal.test.int.cybersixgill.com (10.20.60.198) port 80 (#3)\n",
+		"timestamp": 1644496710088
+	},
+	{
+		"name": "HEADER_OUT",
+		"value": "POST /internal/report HTTP/1.1\r\nHost: alert-micro-service-eyal.test.int.cybersixgill.com\r\nUser-Agent: insomnia/2021.4.1\r\nContent-Type: application/json\r\nAccept: */*\r\nContent-Length: 256341\r\n\r\n",
+		"timestamp": 1644496710088
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(64 KB hidden)",
+		"timestamp": 1644496710088
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(64 KB hidden)",
+		"timestamp": 1644496710088
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(62.4 KB hidden)",
+		"timestamp": 1644496710828
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "dWnFWxZDtOgqTj70ZH32iRJ2h/aguuVpb9MXVXENcVglM6pDK69vgFhTAMFFiBWqVMSrMTo7Q84EvRInIJC7CgRkdtPNmpo/VtWdzh6+SG7h2K6cgoNp2hPFae+8NTvoPfHG79+ZtvdxU8WNtvCYsZojORXXGqfV/lflggS/6ByugoTBz36BM7JHTrDiRIGcM1chv6ydRdz6eLqn1T3M3WqCzDt7DXYw3SKT6cu7DwttlgmFDWXPg6n7yzje2BhqCFA7Au7ZwJtoND/kPNAgkdzM4mTyb1gc0p6uW9Jk9AuavzVt/1HGhNWDdantuoUike5Edd1ApiJqS1H+FqWjrX9CXZrx7Sg65PmNliv50xLnBMfFXzpCzbtvug/0huRsVvx//BLUC6XgvICrB+O4KiiSUZYMhiU8msPPFYq5tgUDFfndCckRlQlpG1X+FORp9+qL5fHHOkwLyJnqljmJazfKwV431AcJVEcKGOTXNsVT6Czm4sfWCoXBx32yVDrZ3YcOwRFuvr5uE6VS0OZw/IHHYanHIpmTUCrHMizHEgCw/4zTfjxkNF0PIG654DyyP+ZdfIy1jzIVQJbAPoqt+dHmqgR++NYO2M6aYR5oiG662aqrkA/w1fi8XwtZaEcJ/6VIIiG2uR9U7fmdYlFtQnpTkh8hPbZ5AxWGngTFoppERV3ydIoO+Z/TwMHxz0wzyR9KG+QcBTmZh3Pi+9tMYeRMbctsjEMzcmagUZ55JONfw/EjopPIT5imQ26f+jmmVbAPuYJFEVcHEl8sC0umvcgn837BJZSq7Eb75hulpV92dPypTLHiWE11X+qKvpqqYyvIzJ0PN216uNOn53FLy+Oeyi/q6r6o9Km4Vl9/rYKreGw69YjHbq54HPpfUfGSE2gynPFhXe3JXJFL3rGK+oGMlKi3i9PqlvvbOqp+k2vcEsWmMzc/Zw9Bwcs8kI11rxe8vbH1sVXXmyzskc08ArGFPW9zUEKhOXDX54pkjDsdvcVFW6OJb+Jv6139xtAhA0aKKjpTYtN1Z4OQgTzRQzVpBTsz+R3FR+pPXtQTiWWHAdpcJ5OXNJqjoYJnNa4tP5Ckere4sj9NsXNLVk3I9Mb6db2x6X1l6wdXKQTZnVGa9RHYbsbK+IkTFhWnxK6Njm9fsXLzvJWzZIkLJ7slliYnNy5JbotPyfKblwkxuY/cIwsZBfDrDGigslCil2WM9y0iU02Pic1dv0hft1njhC6LJoVr50CBwW7P+5IUbgy9VCgMqMyjE8DabojsHB0CDLla6rTcHEKQSCYaTQUqBxIsIuWj3+waUkRVR7fsDoeaceHZ6YbPS0//lZwwLavsDM09mskxDvNMHeXtWXP2sETu6gpnJCpRxWoinSY5RrJqFTdYSRS8VhRCzCBIDJyg7fmIZEIscRI6wSBPGO4kBUkqIzcXvMU+DI9XzA9nL6yk309jh8LDVySEs/+cC1geD3+EJ1Hsbc4wnkiz31Dhj2HW4MRLHQDbcEoJg4KAJfx/Gf4Wh+rZFrxBy/axx3R4A9usJ4X4iumfphv476wbmUpEEIkPu5Tqh9FOXIWDSMxnBKnUzLWT3FUIYSWksW/Y+YZlLRnj5WGFx063Vuu9VjmMC2PjVwEYZ4kqIYhmqKUUU5COCVH60twJpRI4v88MmVdgmJgI+MOgyHwYdISzim",
+		"timestamp": 1644496711352
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(58.3 KB hidden)",
+		"timestamp": 1644496711388
+	},
+	{
+		"name": "TEXT",
+		"value": "We are completely uploaded and fine\n",
+		"timestamp": 1644496711388
+	},
+	{
+		"name": "TEXT",
+		"value": "Mark bundle as not supporting multiuse\n",
+		"timestamp": 1644496712355
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "HTTP/1.1 400 BAD REQUEST\r\n",
+		"timestamp": 1644496712355
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Date: Thu, 10 Feb 2022 12:40:26 GMT\r\n",
+		"timestamp": 1644496712355
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Type: application/problem+json\r\n",
+		"timestamp": 1644496712355
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Length: 117\r\n",
+		"timestamp": 1644496712355
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Connection: keep-alive\r\n",
+		"timestamp": 1644496712355
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "\r\n",
+		"timestamp": 1644496712355
+	},
+	{
+		"name": "TEXT",
+		"value": "Received 117 B chunk",
+		"timestamp": 1644496712355
+	},
+	{
+		"name": "TEXT",
+		"value": "Connection #3 to host alert-micro-service-eyal.test.int.cybersixgill.com left intact\n",
+		"timestamp": 1644496712356
+	}
+]

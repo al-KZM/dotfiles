@@ -1,0 +1,137 @@
+[
+	{
+		"name": "TEXT",
+		"value": "Preparing request to http://alert-micro-service-eyal.test.int.cybersixgill.com/internal/report",
+		"timestamp": 1644496811056
+	},
+	{
+		"name": "TEXT",
+		"value": "Current time is 2022-02-10T12:40:11.056Z",
+		"timestamp": 1644496811056
+	},
+	{
+		"name": "TEXT",
+		"value": "Using libcurl/7.73.0 OpenSSL/1.1.1g zlib/1.2.11 brotli/1.0.9 zstd/1.5.2 libidn2/2.3.2 libssh2/1.9.0 nghttp2/1.41.0",
+		"timestamp": 1644496811056
+	},
+	{
+		"name": "TEXT",
+		"value": "Using default HTTP version",
+		"timestamp": 1644496811056
+	},
+	{
+		"name": "TEXT",
+		"value": "Disable timeout",
+		"timestamp": 1644496811056
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable automatic URL encoding",
+		"timestamp": 1644496811056
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable SSL validation",
+		"timestamp": 1644496811056
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable cookie sending with jar of 0 cookies",
+		"timestamp": 1644496811058
+	},
+	{
+		"name": "TEXT",
+		"value": "Found bundle for host alert-micro-service-eyal.test.int.cybersixgill.com: 0x2a5d831f0cc0 [serially]\n",
+		"timestamp": 1644496811061
+	},
+	{
+		"name": "TEXT",
+		"value": "Can not multiplex, even if we wanted to!\n",
+		"timestamp": 1644496811061
+	},
+	{
+		"name": "TEXT",
+		"value": "Re-using existing connection! (#3) with host alert-micro-service-eyal.test.int.cybersixgill.com\n",
+		"timestamp": 1644496811061
+	},
+	{
+		"name": "TEXT",
+		"value": "Connected to alert-micro-service-eyal.test.int.cybersixgill.com (10.20.60.198) port 80 (#3)\n",
+		"timestamp": 1644496811061
+	},
+	{
+		"name": "HEADER_OUT",
+		"value": "POST /internal/report HTTP/1.1\r\nHost: alert-micro-service-eyal.test.int.cybersixgill.com\r\nUser-Agent: insomnia/2021.4.1\r\nContent-Type: application/json\r\nAccept: */*\r\nContent-Length: 256344\r\n\r\n",
+		"timestamp": 1644496811061
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(64 KB hidden)",
+		"timestamp": 1644496811061
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(64 KB hidden)",
+		"timestamp": 1644496811062
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(64 KB hidden)",
+		"timestamp": 1644496811062
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(58.3 KB hidden)",
+		"timestamp": 1644496811584
+	},
+	{
+		"name": "TEXT",
+		"value": "We are completely uploaded and fine\n",
+		"timestamp": 1644496811584
+	},
+	{
+		"name": "TEXT",
+		"value": "Mark bundle as not supporting multiuse\n",
+		"timestamp": 1644496812895
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "HTTP/1.1 200 OK\r\n",
+		"timestamp": 1644496812895
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Date: Thu, 10 Feb 2022 12:42:07 GMT\r\n",
+		"timestamp": 1644496812895
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Type: application/json\r\n",
+		"timestamp": 1644496812895
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Length: 191\r\n",
+		"timestamp": 1644496812895
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Connection: keep-alive\r\n",
+		"timestamp": 1644496812895
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "\r\n",
+		"timestamp": 1644496812896
+	},
+	{
+		"name": "TEXT",
+		"value": "Received 191 B chunk",
+		"timestamp": 1644496812896
+	},
+	{
+		"name": "TEXT",
+		"value": "Connection #3 to host alert-micro-service-eyal.test.int.cybersixgill.com left intact\n",
+		"timestamp": 1644496812896
+	}
+]

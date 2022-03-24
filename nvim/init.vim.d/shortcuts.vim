@@ -110,3 +110,5 @@ nmap <leader>C :SyntasticCheck<CR>
 " Paste file on termbin.com
 nmap ,P :!$HOME/.config/scripts/termbin_file.sh %<CR>
 
+" Git
+nmap <leader>ga :Git add %<CR>

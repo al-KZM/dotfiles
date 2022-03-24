@@ -1,0 +1,162 @@
+[
+	{
+		"name": "TEXT",
+		"value": "Preparing request to http://alert-ms.stage.int.cybersixgill.com/internal/report",
+		"timestamp": 1645948803664
+	},
+	{
+		"name": "TEXT",
+		"value": "Current time is 2022-02-27T08:00:03.664Z",
+		"timestamp": 1645948803664
+	},
+	{
+		"name": "TEXT",
+		"value": "Using libcurl/7.73.0 OpenSSL/1.1.1g zlib/1.2.11 brotli/1.0.9 zstd/1.5.2 libidn2/2.3.2 libssh2/1.9.0 nghttp2/1.41.0",
+		"timestamp": 1645948803664
+	},
+	{
+		"name": "TEXT",
+		"value": "Using default HTTP version",
+		"timestamp": 1645948803664
+	},
+	{
+		"name": "TEXT",
+		"value": "Disable timeout",
+		"timestamp": 1645948803664
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable automatic URL encoding",
+		"timestamp": 1645948803664
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable SSL validation",
+		"timestamp": 1645948803664
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable cookie sending with jar of 0 cookies",
+		"timestamp": 1645948803668
+	},
+	{
+		"name": "TEXT",
+		"value": "Too old connection (123 seconds), disconnect it\n",
+		"timestamp": 1645948803673
+	},
+	{
+		"name": "TEXT",
+		"value": "Connection 0 seems to be dead!\n",
+		"timestamp": 1645948803673
+	},
+	{
+		"name": "TEXT",
+		"value": "Closing connection 0\n",
+		"timestamp": 1645948803673
+	},
+	{
+		"name": "TEXT",
+		"value": "Hostname in DNS cache was stale, zapped\n",
+		"timestamp": 1645948803673
+	},
+	{
+		"name": "TEXT",
+		"value": "  Trying 10.30.48.233:80...\n",
+		"timestamp": 1645948804517
+	},
+	{
+		"name": "TEXT",
+		"value": "Connected to alert-ms.stage.int.cybersixgill.com (10.30.48.233) port 80 (#1)\n",
+		"timestamp": 1645948804804
+	},
+	{
+		"name": "HEADER_OUT",
+		"value": "POST /internal/report HTTP/1.1\r\nHost: alert-ms.stage.int.cybersixgill.com\r\nUser-Agent: insomnia/2021.4.1\r\nContent-Type: application/json\r\nAccept: */*\r\nContent-Length: 256344\r\n\r\n",
+		"timestamp": 1645948804804
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(36.1 KB hidden)",
+		"timestamp": 1645948804804
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(27.9 KB hidden)",
+		"timestamp": 1645948805326
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(47.3 KB hidden)",
+		"timestamp": 1645948805330
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(16.7 KB hidden)",
+		"timestamp": 1645948805483
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(64 KB hidden)",
+		"timestamp": 1645948805483
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(58.3 KB hidden)",
+		"timestamp": 1645948805643
+	},
+	{
+		"name": "TEXT",
+		"value": "We are completely uploaded and fine\n",
+		"timestamp": 1645948805643
+	},
+	{
+		"name": "TEXT",
+		"value": "Mark bundle as not supporting multiuse\n",
+		"timestamp": 1645948813313
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "HTTP/1.1 200 OK\r\n",
+		"timestamp": 1645948813313
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Server: nginx/1.17.8\r\n",
+		"timestamp": 1645948813313
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Date: Sun, 27 Feb 2022 08:02:34 GMT\r\n",
+		"timestamp": 1645948813313
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Type: application/json\r\n",
+		"timestamp": 1645948813313
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Length: 191\r\n",
+		"timestamp": 1645948813313
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Connection: keep-alive\r\n",
+		"timestamp": 1645948813313
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "\r\n",
+		"timestamp": 1645948813313
+	},
+	{
+		"name": "TEXT",
+		"value": "Received 191 B chunk",
+		"timestamp": 1645948813313
+	},
+	{
+		"name": "TEXT",
+		"value": "Connection #1 to host alert-ms.stage.int.cybersixgill.com left intact\n",
+		"timestamp": 1645948813313
+	}
+]

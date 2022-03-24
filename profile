@@ -44,18 +44,23 @@ mpd >/dev/null 2>&1 &
 
 [ ! -f ~/.config/shortcutrc ] && shortcuts >/dev/null 2>&1
 
-# Start graphical server if dwm not already running.
-[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x dwm >/dev/null && exec startx
+# Start graphical server if not already running.
+[ "$(tty)" = "/dev/tty1" ] && ! pgrep -x startx >/dev/null && exec startx
+
+sleep 1
+autorandr -c
+bash $HOME/.config/wallpaper/set_feh_bg.sh
 
 # Switch escape and caps if tty:
 sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null
 
 sudo mount /dev/sda1 /mnt/usb 2>/dev/null
 
-# Open ~/.bash_profile (/users/youruser/.bash_profile) and write this line:
-export DATABASE_URI="postgres://postgres:postgres@localhost:5432/firstdb"
-
 export MAIL_USERNAME="eyalchoc.secondary@gmail.com"
 
 # 3 screens layout
 xrandr --output eDP-1 --mode 1920x1080 --pos 4480x0 --rotate normal --output DP-1 --off --output HDMI-1 --off --output DP-1-8 --mode 1920x1080 --pos 2560x0 --rotate normal --output DP-1-9 --mode 2560x1080 --pos 0x0 --rotate normal
+
+# Avoid Gstreamer warning in shells when running howdy
+# https://wiki.archlinux.org/title/Howdy#GStreamer_warnings_in_shell
+export OPENCV_LOG_LEVEL=ERROR

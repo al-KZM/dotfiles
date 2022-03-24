@@ -1,0 +1,41 @@
+{
+  "main_window_geometry": {
+    "__class__": "bytearray",
+    "__value__": "AdnQywADAAAAAAT7AAACMwAACfoAAAMxAAAFAAAAAjgAAAn1AAADLAAAAAIAAAAACgAAAAUAAAACOAAACfUAAAMs"
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIcA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAkwD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAAB5AP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAOEA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEwD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAMUA////AAAE9gAAAPUAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "controls_help_shown_count": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Yotam Ottolenghi"
+        ],
+        "key": "/home/x41/Calibre Library/Yotam Ottolenghi/Ottolenghi (3)/Ottolenghi - Yotam Ottolenghi.epub",
+        "pathtoebook": "/home/x41/Calibre Library/Yotam Ottolenghi/Ottolenghi (3)/Ottolenghi - Yotam Ottolenghi.epub",
+        "timestamp": "2022-01-26T08:33:23.616Z",
+        "title": "Ottolenghi"
+      },
+      {
+        "authors": [
+          "Yotam Ottolenghi"
+        ],
+        "key": "/home/x41/Calibre Library/Yotam Ottolenghi/Ottolenghi (4)/Ottolenghi - Yotam Ottolenghi.epub",
+        "pathtoebook": "/home/x41/Calibre Library/Yotam Ottolenghi/Ottolenghi (4)/Ottolenghi - Yotam Ottolenghi.epub",
+        "timestamp": "2022-01-26T08:24:17.905Z",
+        "title": "Ottolenghi"
+      }
+    ]
+  }
+}

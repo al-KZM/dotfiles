@@ -3,34 +3,33 @@ import os
 import sys
 
 if len(sys.argv) != 3:
-    sys.exit(f"Usage: python {__file__} ALIASES_FILE DST_FILE")
+    sys.exit(f"# Usage: python {__file__} ALIASES_FILE DST_FILE")
 
 aliases_file = sys.argv[1]
 dst_file = sys.argv[2]
 
-current_lines = list(open(file, 'r').readlines())
-out_lines = ["\n", f"# Auto-generated from {file}\n"]
+aliases = {}
 
-with open(file, 'r') as hosts_file:
+# Read all the aliases
+with open(aliases_file, 'r') as hosts_file:
     for line in hosts_file.readlines():
         if line.startswith("#"):
             continue
+
         host, alias = line.split()
-        try:
-            host_ip = socket.gethostbyname_ex(host)[2][0]
-        except:
-            print("Can't resolve", host)
-            continue
 
-        if not host_ip:
-            print("Can't resolve", host)
-            continue
+        aliases[alias] = host
 
-        l = f"{host_ip}\t\t\t{alias}\n"
-        if l in current_lines:
-            print(f"Line <{l}> already exists in file")
-            continue
+# Read the dst file and replace aliases with their value
+out_lines = [f"# Aliased replaced from {aliases_file}\n", "\n"]
+for line in open(dst_file, "r").readlines():
+    newline = line
+    for alias, value in aliases.items():
+        newline = newline.replace(alias, value)
 
-        out_lines.append(l)
+    if newline != line:
+        print(f"[v] {line} -> {newline}")
 
-open("/etc/hosts", "a").writelines(out_lines)
+    out_lines.append(newline)
+
+open(dst_file, "w").writelines(out_lines)

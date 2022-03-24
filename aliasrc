@@ -87,6 +87,9 @@ alias td="rmtrash -r"
 #alias rm="echo Use 'tr', or the full path i.e. /bin/rm"
 
 # Navigation
+alias cddoc="cd ~/Documents"
+alias cduni="cd ~/Documents/University/"
+alias cdxv6="cd ~/Documents/University/xv6-riscv/"
 
 alias xcopy="xclip -selection clipboard"
 
@@ -130,12 +133,12 @@ alias scanslash="ncdu / --exclude '/mnt/*' --exclude '/home/*' --exclude '/opt/*
 
 # Sixgill
 alias sgvpn="sudo systemctl start openvpn-client@sixgill.service"
-alias sgdockb="docker build -f docker/Dockerfile ."
+alias sgdockb="docker build . -f docker/Dockerfile  "
 alias sgbeg="sudo sh ~/Work/sixgill/scripts/sixgill_day.sh"
 alias sgpy="~/.local/lib/python3.9/site-packages/sixgill-additionals"
 alias sg="cd ~/Work/sixgill"
 alias sgr="cd ~/Work/sixgill/repos"
-alias ble="ssh eyalc@10.0.16.159"
+alias ble="ssh eyalc@leak-extractor.int.cybersixgill.com"
 alias sgt="cd ~/Work/sixgill/third_parties"
 alias sgkf="cd ~/Work/sixgill/third_parties/kafka/"
 
@@ -147,4 +150,7 @@ alias gcm="git checkout master"
 # Logs
 alias qtilelogs="tail -f ~/.local/share/qtile/qtile.log"
 
+# Utils
+
+alias yamlcheck="python -c 'import yaml, sys; yaml.safe_load(sys.stdin); print(1)' <"
 

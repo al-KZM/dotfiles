@@ -593,6 +593,14 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
+# Start ssh-agent
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    echo "Starting ssh-agent"
+    ssh-agent -t 6h > "$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+fi
 
 # Additional scripts
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
@@ -604,11 +612,11 @@ neofetch
 builtin cd `cat $LAST_DIR_FILE`  # cd to last dir
 
 powerline-daemon -q
-. /usr/share/powerline/bindings/zsh/powerline.zsh
+#. /usr/share/powerline/bindings/zsh/powerline.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+source ~/.config/zsh/.p10k.zsh

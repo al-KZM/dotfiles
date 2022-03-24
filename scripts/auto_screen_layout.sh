@@ -7,13 +7,13 @@ case $screens_nb in
         xrandr --auto
         ;;
     2)
-        bash $HOME/.config/.screenlayout/dual.sh
+        bash /home/x41/.config/.screenlayout/dual.sh
         ;;
     3)
-        bash $HOME/.config/.screenlayout/sixgill_right.sh
+        bash /home/x41/.config/.screenlayout/sixgill_right.sh
         ;;
     4)
-        bash $HOME/.config/.screenlayout/4mon.sh
+        bash /home/x41/.config/.screenlayout/4mon.sh
         ;;
     *)
         echo "unsupported monitors layout, please edit $script_path to add your configuration"

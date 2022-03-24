@@ -1,0 +1,147 @@
+[
+	{
+		"name": "TEXT",
+		"value": "Preparing request to http://alert-micro-service-eyal.test.int.cybersixgill.com/internal/report",
+		"timestamp": 1644495929271
+	},
+	{
+		"name": "TEXT",
+		"value": "Current time is 2022-02-10T12:25:29.271Z",
+		"timestamp": 1644495929271
+	},
+	{
+		"name": "TEXT",
+		"value": "Using libcurl/7.73.0 OpenSSL/1.1.1g zlib/1.2.11 brotli/1.0.9 zstd/1.5.2 libidn2/2.3.2 libssh2/1.9.0 nghttp2/1.41.0",
+		"timestamp": 1644495929271
+	},
+	{
+		"name": "TEXT",
+		"value": "Using default HTTP version",
+		"timestamp": 1644495929271
+	},
+	{
+		"name": "TEXT",
+		"value": "Disable timeout",
+		"timestamp": 1644495929271
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable automatic URL encoding",
+		"timestamp": 1644495929271
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable SSL validation",
+		"timestamp": 1644495929271
+	},
+	{
+		"name": "TEXT",
+		"value": "Enable cookie sending with jar of 0 cookies",
+		"timestamp": 1644495929273
+	},
+	{
+		"name": "TEXT",
+		"value": "Too old connection (290 seconds), disconnect it\n",
+		"timestamp": 1644495929275
+	},
+	{
+		"name": "TEXT",
+		"value": "Connection 0 seems to be dead!\n",
+		"timestamp": 1644495929275
+	},
+	{
+		"name": "TEXT",
+		"value": "Closing connection 0\n",
+		"timestamp": 1644495929275
+	},
+	{
+		"name": "TEXT",
+		"value": "  Trying 10.20.60.198:80...\n",
+		"timestamp": 1644495929920
+	},
+	{
+		"name": "TEXT",
+		"value": "Connected to alert-micro-service-eyal.test.int.cybersixgill.com (10.20.60.198) port 80 (#1)\n",
+		"timestamp": 1644495930126
+	},
+	{
+		"name": "HEADER_OUT",
+		"value": "POST /internal/report HTTP/1.1\r\nHost: alert-micro-service-eyal.test.int.cybersixgill.com\r\nUser-Agent: insomnia/2021.4.1\r\nContent-Type: application/json\r\nAccept: */*\r\nContent-Length: 256411\r\n\r\n",
+		"timestamp": 1644495930126
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(41.1 KB hidden)",
+		"timestamp": 1644495930127
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(22.9 KB hidden)",
+		"timestamp": 1644495930853
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(59.7 KB hidden)",
+		"timestamp": 1644495930853
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "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",
+		"timestamp": 1644495931331
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(64 KB hidden)",
+		"timestamp": 1644495931331
+	},
+	{
+		"name": "DATA_OUT",
+		"value": "(58.4 KB hidden)",
+		"timestamp": 1644495932173
+	},
+	{
+		"name": "TEXT",
+		"value": "We are completely uploaded and fine\n",
+		"timestamp": 1644495932173
+	},
+	{
+		"name": "TEXT",
+		"value": "Mark bundle as not supporting multiuse\n",
+		"timestamp": 1644495933439
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "HTTP/1.1 200 OK\r\n",
+		"timestamp": 1644495933439
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Date: Thu, 10 Feb 2022 12:27:27 GMT\r\n",
+		"timestamp": 1644495933439
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Type: application/json\r\n",
+		"timestamp": 1644495933439
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Content-Length: 0\r\n",
+		"timestamp": 1644495933439
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "Connection: keep-alive\r\n",
+		"timestamp": 1644495933439
+	},
+	{
+		"name": "HEADER_IN",
+		"value": "\r\n",
+		"timestamp": 1644495933439
+	},
+	{
+		"name": "TEXT",
+		"value": "Connection #1 to host alert-micro-service-eyal.test.int.cybersixgill.com left intact\n",
+		"timestamp": 1644495933439
+	}
+]

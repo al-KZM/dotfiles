@@ -25,7 +25,7 @@
 # SOFTWARE.
 
 from typing import List  # noqa: F401
-
+from libqtile.log_utils import logger
 from libqtile import bar, layout, widget, extension, hook
 from libqtile.config import Click, Drag, Group, Key, Match, Screen, KeyChord
 from libqtile.lazy import lazy
@@ -35,8 +35,10 @@ import subprocess
 
 HOME = "/home/x41"
 BROWSER = "firefox"
-LOCK = "slock"
+LOCK = "/usr/local/bin/slock"
 SCREENSHOT = "gscreenshot -c -s -f /tmp"
+FILE_EXPLORER = "nautilus"
+PYTHON = "/bin/ptpython"
 
 mod = "mod4"
 terminal = guess_terminal()
@@ -51,8 +53,10 @@ colors =  [
         ["#bb94cc", "#AB87BB", "#bb94cc"], # color 3
         ["#81658C", "#81658C", "#81658C"], # color 6
         ["#614C69", "#614C69", "#614C69"], # color 8
-        ["#0ee9af", "#0ee9af", "#0ee9af"]] # color 9
-        # ["#5aec79", "#5aec79", "#5aec79"]] # color 9
+        ["#0ee9af", "#0ee9af", "#0ee9af"], # color 9
+        ["#ff0000", "#ff0000", "#ff0000"], # color 10
+        ["#000000", "#000000", "#000000"], # color 10
+]
 
 keys = [
     # Switch between windows
@@ -103,8 +107,10 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "p", lazy.spawn("dmenu_run -i -nb '#282a36' -nf '#f8f8f2' -l 15"), desc="Dmenu"),
     Key([mod], "w", lazy.spawn(BROWSER), desc="Spawn browser"),
+    Key([mod], "e", lazy.spawn(FILE_EXPLORER), desc="Spawn file explorer"),
     Key([mod], "x", lazy.spawn(LOCK), desc="Lock session"),
     Key([mod], "r", lazy.spawn(SCREENSHOT), desc="Take a screenshot"),
+    Key([mod], "c", lazy.spawn(f"{terminal} -e {PYTHON}"), desc="Open python console"),
 
     KeyChord([mod], "m",[
         Key([], "1", lazy.spawn("redshift -O 6000")),
@@ -157,6 +163,9 @@ groups = [
     ),
 ]
 
+class ScreenSwitcher:
+    pass
+
 for i in groups:
     keys.extend([
         # mod1 + letter of group = switch to group
@@ -164,7 +173,7 @@ for i in groups:
             desc="Switch to group {}".format(i.name)),
 
         # mod1 + shift + letter of group = switch to & move focused window to group
-        Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=True),
+        Key([mod, "shift"], i.name, lazy.window.togroup(i.name, switch_group=False),
             desc="Switch to & move focused window to group {}".format(i.name)),
         # Or, use below if you prefer not to switch to that group.
         # # mod1 + shift + letter of group = move focused window to group
@@ -204,8 +213,10 @@ def get_wallpaper() -> str:
     return "~/.config/wallpaper/wallpaper.jpg"
 
 def get_vpn() -> str:
+    cmd = "curl ifconfig.co"
+    #cmd = f"{HOME}/.config/scripts/check_running_openvpn.sh"
     p = subprocess.run(
-        ["sh", f"{HOME}/.config/scripts/check_running_openvpn.sh"],
+        ["sh", cmd],
         capture_output=True
     )
     return p.stdout.decode('utf-8')
@@ -404,14 +415,27 @@ screens = [
                         inactive=colors[2],
                         active=colors[9],
                         rounded=True,
-                        highlight_color=colors[0],
+                        highlight_color=colors[9],
                         highlight_method="block",
-                        this_current_screen_border=colors[2],
+                        this_current_screen_border=colors[11],
+                        this_screen_border=colors[3],
+                        other_screen_border=colors[1],
                         block_highlight_text_color=colors[9],
                         background=colors[0],
                     ),
 
                     widget.Spacer(),
+
+                    widget.GenPollText(
+                        func=get_vpn,
+                        update_interval=1,
+                    ),
+
+                    widget.Sep(
+                        background=colors[0],
+                        padding=10,
+                        linewidth=0,
+                    ),
 
                     widget.Systray(
                         background=colors[0],
@@ -427,6 +451,9 @@ screens = [
                     #     padding=0,
                     #     fontsize=38
                     # ),
+                    widget.Backlight(
+                        backlight_name="intel_backlight", set=2
+                    ),
                     widget.Sep(
                         background=colors[0],
                         padding=10,
