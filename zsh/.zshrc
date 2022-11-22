@@ -565,6 +565,7 @@ bindkey "^S" history-incremental-pattern-search-forward
 
 if [ -f ~/.alert ]; then echo '>>> Check ~/.alert'; fi
 
+# Sixgill functions
 
 # VIM KEYS
 function zle-keymap-select {
@@ -603,7 +604,6 @@ if [[ ! "$SSH_AUTH_SOCK" ]]; then
 fi
 
 # Additional scripts
-[ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 [ -f "$ZDOTDIR/functions/general_funcs.sh" ] && source "$ZDOTDIR/functions/general_funcs.sh"
 

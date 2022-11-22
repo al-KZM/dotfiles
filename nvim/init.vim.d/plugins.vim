@@ -59,7 +59,7 @@ Plug 'jtratner/vim-flavored-markdown'
 Plug 'suan/vim-instant-markdown'
 Plug 'nelstrom/vim-markdown-preview'
 
-"Latex
+"reStructured Text
 
 "Syntax
 Plug 'vim-syntastic/syntastic'
@@ -92,6 +92,10 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'artur-shaik/vim-javacomplete2'
 Plug 'starcraftman/vim-eclim'
 
+"Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+
 
 "Files syntax
 Plug 'mboughaba/i3config.vim'
@@ -114,6 +118,9 @@ Plug 'ipod825/vim-tabdrop'
 "Plug 'coderifous/working-set.vim'
 "C navigation
 Plug 'vim-scripts/cscope.vim'
+
+"GITHUB COPILOT !!!!
+Plug 'github/copilot.vim'
 
 
 

@@ -1,3 +1,0 @@
-{"_id":"spc_257dc91a63f9410d96fa94ab4ba6b765","type":"ApiSpec","parentId":"wrk_27768cd6ce394f9ba9dfd55e0d4f1ac1","modified":1643550239124,"created":1643550239124,"fileName":"Insomnia","contents":"","contentType":"yaml"}
-{"_id":"spc_30817bcbc48547ffbbca7d7326dc0aff","type":"ApiSpec","parentId":"wrk_f1c181145e1547009a04becb8fdb1d31","modified":1644495453104,"created":1644495453104,"fileName":"Alert MS","contents":"","contentType":"yaml"}
-{"_id":"spc_90f099e51ea94e28a6f0543e13776009","type":"ApiSpec","parentId":"wrk_2ff7ad4ac5c6455fbccb774ea350a03b","modified":1647246653917,"created":1647246653917,"fileName":"Elastic","contents":"","contentType":"yaml"}

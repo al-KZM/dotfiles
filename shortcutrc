@@ -1,6 +1,9 @@
+echo 1
 # vim: filetype=sh
-alias h="cd ~/ && ls -a" \
+echo "LA"
+#alias h="cd ~/ && ls -a" \
 d="cd ~/Documents && ls -a" \
+echo "LA"
 D="cd ~/Downloads && ls -a" \
 m="cd ~/Music && ls -a" \
 pp="cd ~/Pictures && ls -a" \
@@ -27,5 +30,5 @@ cfmc="$EDITOR ~/.config/ncmpcpp/config" \
 er="$EDITOR ~/Documents/referbib" \
 cfB="$EDITOR ~/.config/i3blocks/config" \
 cfk="$EDITOR ~/.config/sxhkd/sxhkdrc" \
-z="$READER $@" \
+z='$READER $@' \
 

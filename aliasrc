@@ -1,4 +1,15 @@
 #!/usr/bin/env sh
+
+alias h="cd ~/ && ls -a" \
+    d="cd ~/Documents && ls -a" \
+    D="cd ~/Downloads && ls -a" \
+    pp="cd ~/Pictures && ls -a" \
+    cf="cd ~/.config && ls -a" \
+    mn="cd /mnt && ls -a" \
+    zrc="$EDITOR ~/.zshrc" \
+    z='$READER $@' \
+
+
 # Wrappers
 alias lf="lfrun"
 alias cat="bat"
@@ -35,6 +46,7 @@ alias ka="killall" \
 	ll="ls -lash"\
     pm="python -m"\
     pi="pip install --user"\
+    pip37="python3.7 -m pip"
     chwp="bash ~/.config/wallpaper/set_feh_bg.sh"\
     rmwp="python ~/.config/wallpaper/forget_wp.py"\
     python="ipython"\
@@ -89,7 +101,7 @@ alias td="rmtrash -r"
 # Navigation
 alias cddoc="cd ~/Documents"
 alias cduni="cd ~/Documents/University/"
-alias cdxv6="cd ~/Documents/University/xv6-riscv/"
+alias cdxv6="cd ~/Documents/University/xv6-docker/"
 
 alias xcopy="xclip -selection clipboard"
 
@@ -103,7 +115,6 @@ alias vfnc="vi ~/.config/nvim/init.vim.d/functions.vim"
 alias vrtp="vi ~/.config/nvim/init.vim.d/runtime/"
 alias lfrc="vi ~/.config/lf/lfrc"
 alias lfdoc="lf -doc | less"
-alias alrc="vi ~/.aliasrc"
 alias vtex="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/tex.snippets"
 alias vsnips="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/"
 alias lfrc="vi ~/.config/lf/lfrc"
@@ -133,7 +144,6 @@ alias scanslash="ncdu / --exclude '/mnt/*' --exclude '/home/*' --exclude '/opt/*
 
 # Sixgill
 alias sgvpn="sudo systemctl start openvpn-client@sixgill.service"
-alias sgdockb="docker build . -f docker/Dockerfile  "
 alias sgbeg="sudo sh ~/Work/sixgill/scripts/sixgill_day.sh"
 alias sgpy="~/.local/lib/python3.9/site-packages/sixgill-additionals"
 alias sg="cd ~/Work/sixgill"
@@ -141,16 +151,20 @@ alias sgr="cd ~/Work/sixgill/repos"
 alias ble="ssh eyalc@leak-extractor.int.cybersixgill.com"
 alias sgt="cd ~/Work/sixgill/third_parties"
 alias sgkf="cd ~/Work/sixgill/third_parties/kafka/"
+alias sgdkb="sh ~/Work/sixgill/scripts/build_docker.sh"
 
 # Git
-alias gpsh="git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)"
-alias gpll="git pull --set-upstream origin $(git rev-parse --abbrev-ref HEAD)"
+alias gpsh='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
+alias gpll='git pull --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 alias gcm="git checkout master"
+alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gpsht="$HOME/.config/scripts/git_push_curr_and_test.sh"
 
 # Logs
 alias qtilelogs="tail -f ~/.local/share/qtile/qtile.log"
 
 # Utils
-
 alias yamlcheck="python -c 'import yaml, sys; yaml.safe_load(sys.stdin); print(1)' <"
+alias rmpcache="sudo find . -name "__pycache__" -type d -exec rm -rf {} \;"
+
 

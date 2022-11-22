@@ -1,0 +1,4 @@
+2022/05/01-11:31:07.149 39177 Creating DB /home/x41/.config/MongoDB Compass/IndexedDB/file__0.indexeddb.leveldb since it was missing.
+2022/05/01-11:31:07.152 39177 Reusing MANIFEST /home/x41/.config/MongoDB Compass/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2022/05/01-11:31:07.152 39177 Recovering log #3
+2022/05/01-11:31:07.152 39177 Reusing old log /home/x41/.config/MongoDB Compass/IndexedDB/file__0.indexeddb.leveldb/000003.log 

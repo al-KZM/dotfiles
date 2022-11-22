@@ -1,6 +1,0 @@
-{
-  "detail": "The method is not allowed for the requested URL.",
-  "status": 405,
-  "title": "Method Not Allowed",
-  "type": "about:blank"
-}

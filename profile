@@ -3,11 +3,13 @@
 
 # PATH
 export PATH=$PATH:/usr/share/pycharm-community-2020.3.3/bin
+export PATH=$PATH:/usr/share
 # Adds `~/.local/bin/` and all subdirectories to $PATH
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 # Adds python site packages
 export PATH="$PATH:$HOME/.local/lib/python3.9/site-packages"
 export PATH="$PATH:$HOME/.config/scripts/"
+export PATH="$PATH:$HOME/.local/bin/"
 
 # Add sixgill additionals (https://bitbucket.org/sixgill/sixgill/src/master/) to pythonpath
 export PYTHONPATH="$PYTHONPATH:$HOME/.local/lib/python3.9/site-packages/sixgill-additionals/"
@@ -17,7 +19,7 @@ export DOCUMENTS="$HOME/documents"
 export DOWNLOADS="$HOME/Downloads"
 export EDITOR="nvim"
 export TERMINAL="st"
-export BROWSER="firefox"
+export BROWSER="google-chrome-stable"
 export READER="zathura"
 export FILE="vifm"
 export BIB="$HOME/Documents/LaTeX/uni.bib"
