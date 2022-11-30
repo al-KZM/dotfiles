@@ -494,29 +494,6 @@ case "$(uname -o)" in
     ;;
 esac
 
-# Aliases
-alias cp='cp -iv'
-alias rcp='rsync -v --progress'
-alias rmv='rsync -v --progress --remove-source-files'
-alias mv='mv -iv'
-alias rm='rm -iv'
-alias rmdir='rmdir -v'
-alias ln='ln -v'
-alias chmod="chmod -c"
-alias chown="chown -c"
-alias mkdir="mkdir -v"
-
-if command -v colordiff > /dev/null 2>&1; then
-    alias diff="colordiff -Nuar"
-else
-    alias diff="diff -Nuar"
-fi
-
-alias grep='grep --colour=auto'
-alias egrep='egrep --colour=auto'
-alias ls='ls --color=auto --human-readable --group-directories-first --classify'
-alias ll='ls --color=auto --human-readable --group-directories-first --classify -l'
-alias lla='ls --color=auto --human-readable --group-directories-first --classify -la'
 
 
 # Keys.
@@ -604,8 +581,9 @@ if [[ ! "$SSH_AUTH_SOCK" ]]; then
 fi
 
 # Additional scripts
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
-[ -f "$ZDOTDIR/functions/general_funcs.sh" ] && source "$ZDOTDIR/functions/general_funcs.sh"
+# '[ -f $file ] &&' is not added on purpose, to display error messages
+source "$HOME/.config/aliasrc"
+source "$ZSHDDIR/functions/general_funcs.sh"
 
 # After
 neofetch
@@ -613,7 +591,7 @@ builtin cd `cat $LAST_DIR_FILE`  # cd to last dir
 
 powerline-daemon -q
 #. /usr/share/powerline/bindings/zsh/powerline.zsh
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
