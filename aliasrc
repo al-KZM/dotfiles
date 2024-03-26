@@ -32,7 +32,7 @@ alias ka="killall" \
 	x="sxiv -ft *" \
 	sdn="sudo shutdown -h now" \
 	gua="git remote | xargs -L1 git push --all" \
-	ls="ls -hN --color=auto --group-directories-first --hide="__pycache__/"" \
+	ls="ls -hN --color=auto  --hide="__pycache__/"" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
@@ -88,9 +88,9 @@ fi
 
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
-alias ls='ls --color=auto --human-readable --group-directories-first --classify'
-alias ll='ls --color=auto --human-readable --group-directories-first --classify -l'
-alias lla='ls --color=auto --human-readable --group-directories-first --classify -la'
+alias ls='ls --color=auto '
+alias ll='ls --color=auto -l'
+alias lla='ls --color=auto -la'
 
 
 # DONT USE RM ANYMORE

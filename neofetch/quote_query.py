@@ -20,7 +20,7 @@ def wrap(s, wrap_size):
 img_size  = 50
 wrap_size = 40
 
-file = "/home/x41/.config/neofetch/quotes.txt"
+file = "/Users/eshukrun/.config/neofetch/quotes.txt"
 line = random.choice(open(file, 'r').readlines())
 
 col = int(sys.argv[1])

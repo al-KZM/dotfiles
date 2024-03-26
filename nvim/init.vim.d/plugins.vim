@@ -22,6 +22,7 @@ Plug 'bling/vim-airline'
 Plug 'tpope/vim-commentary'
 
 "Colors
+Plug 'rebelot/kanagawa.nvim'
 Plug 'lifepillar/vim-solarized8'
 Plug 'jnurmine/Zenburn'
 Plug 'jaredgorski/spacecamp'

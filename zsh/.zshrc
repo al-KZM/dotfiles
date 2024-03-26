@@ -11,7 +11,8 @@ fi
 ##[[ $TERM != "screen" ]] && exec tmux
 
 export ZSH=$HOME/.config/oh-my-zsh
-ZSH_THEME="amuse"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="lukerandall-custom"
 source $ZSH/oh-my-zsh.sh
 
 # Are we running under grsecurity's RBAC?
@@ -240,7 +241,7 @@ precmd() {
     termtitle precmd
 
     # Set optional git part of prompt.
-    setup_git_prompt
+    #setup_git_prompt
 
 # Maybe to be used someday, too annoying with vim and other interactive apps.
 #   # $REPORTTIME is about cpu time, not real time.
@@ -353,10 +354,10 @@ case $USER in
         PROMPT='%B%F{cyan}%m%k %(?..%F{blue}[%F{253}%?%F{blue}] )${prompt_is_ssh}%B%F{blue}%1~${git_prompt}%F{blue} %# %b%f%k'
     ;;
 
-    *)
-        PROMPT='%B%F{blue}%n@%m%k %(?..%F{blue}[%F{253}%?%F{blue}] )${prompt_is_ssh}%B%F{cyan}%1~${git_prompt}%F{cyan} %# %b%f%k'
+    # *)
+    #     PROMPT='%B%F{blue}%n@%m%k %(?..%F{blue}[%F{253}%?%F{blue}] )${prompt_is_ssh}%B%F{cyan}%1~${git_prompt}%F{cyan} %# %b%f%k'
 
-    ;;
+    # ;;
 esac
 
 # Keep history of `cd` as in with `pushd` and make `cd -<TAB>` work.
@@ -572,13 +573,13 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
 # Start ssh-agent
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    echo "Starting ssh-agent"
-    ssh-agent -t 6h > "$XDG_RUNTIME_DIR/ssh-agent.env"
-fi
-if [[ ! "$SSH_AUTH_SOCK" ]]; then
-    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
-fi
+# if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+#     echo "Starting ssh-agent"
+#     ssh-agent -t 6h > "$XDG_RUNTIME_DIR/ssh-agent.env"
+# fi
+# if [[ ! "$SSH_AUTH_SOCK" ]]; then
+#     source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
+# fi
 
 # Additional scripts
 # '[ -f $file ] &&' is not added on purpose, to display error messages
@@ -589,9 +590,8 @@ source "$ZSHDDIR/functions/general_funcs.sh"
 neofetch
 builtin cd `cat $LAST_DIR_FILE`  # cd to last dir
 
-powerline-daemon -q
+#powerline-daemon -q
 #. /usr/share/powerline/bindings/zsh/powerline.zsh
-ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
