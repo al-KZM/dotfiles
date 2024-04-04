@@ -23,12 +23,14 @@ Plug 'tpope/vim-commentary'
 
 "Colors
 Plug 'rebelot/kanagawa.nvim'
-Plug 'lifepillar/vim-solarized8'
-Plug 'jnurmine/Zenburn'
-Plug 'jaredgorski/spacecamp'
-Plug 'chrisbra/Colorizer'
-Plug 'jdsimcoe/abstract.vim'
-Plug 'danilo-augusto/vim-afterglow'
+Plug 'folke/tokyonight.nvim'
+
+" Plug 'lifepillar/vim-solarized8'
+" Plug 'jnurmine/Zenburn'
+" Plug 'jaredgorski/spacecamp'
+" Plug 'chrisbra/Colorizer'
+" Plug 'jdsimcoe/abstract.vim'
+" Plug 'danilo-augusto/vim-afterglow'
 
 "Utils
 Plug 'gyim/vim-boxdraw'
@@ -40,7 +42,6 @@ Plug 'mattn/vim-gist'
 
 "System
 Plug 'voldikss/vim-floaterm'
-Plug 'jmcantrell/vim-virtualenv'
 
 "Filesystem
 Plug 'Valloric/ListToggle'
@@ -66,42 +67,42 @@ Plug 'nelstrom/vim-markdown-preview'
 Plug 'vim-syntastic/syntastic'
 
 "C
-Plug 'vim-scripts/c.vim'
+Plug 'vim-scripts/c.vim', { 'for': 'c' }
 
 "Cpp Syntax highlighting
-Plug 'bfrg/vim-cpp-modern'
+Plug 'bfrg/vim-cpp-modern', { 'for': 'cpp' }
 
 "python syntax checker
-Plug 'nvie/vim-flake8'
-Plug 'vim-scripts/indentpython.vim'
-Plug 'lepture/vim-jinja'
+Plug 'nvie/vim-flake8', { 'for': 'python' }
+Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
+Plug 'lepture/vim-jinja', { 'for': 'python' }
 
 "Python pytest support
-Plug 'alfredodeza/pytest.vim'
+Plug 'alfredodeza/pytest.vim', { 'for': 'python' }
 
 "Auto completion
 "C#
-Plug 'idbrii/vim-unityengine'
-Plug 'idbrii/vim-unityengine-docs'
+Plug 'idbrii/vim-unityengine', { 'for': 'cs.unity' }
+Plug 'idbrii/vim-unityengine-docs', { 'for': 'cs.unity' }
 
 "Dart
-Plug 'dart-lang/dart-vim-plugin'
+Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
 
 "Flutter
 
 "Java
-Plug 'artur-shaik/vim-javacomplete2'
-Plug 'starcraftman/vim-eclim'
+Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
+Plug 'starcraftman/vim-eclim', { 'for': 'java' }
 
 "Go
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
 
 
 
 "Files syntax
-Plug 'mboughaba/i3config.vim'
-Plug 'PotatoesMaster/i3-vim-syntax'
-Plug 'kovetskiy/sxhkd-vim'
+"Plug 'mboughaba/i3config.vim'
+"Plug 'PotatoesMaster/i3-vim-syntax'
+"Plug 'kovetskiy/sxhkd-vim'
 
 "code folding
 Plug 'tmhedberg/SimpylFold'
@@ -117,8 +118,9 @@ Plug 'anschnapp/move-less'
 Plug 'ipod825/vim-tabdrop'
 "Plug 'xolox/vim-easytags'
 "Plug 'coderifous/working-set.vim'
+
 "C navigation
-Plug 'vim-scripts/cscope.vim'
+Plug 'vim-scripts/cscope.vim', { 'for': ['cpp', 'c'] }
 
 "GITHUB COPILOT !!!!
 Plug 'github/copilot.vim'
@@ -329,7 +331,7 @@ nnoremap gdh :diffget //2<CR>
 nnoremap gdl :diffget //3<CR>
 
 """""""""""""""""""""""""""""""""""VIMTEX"""""""""""""""""""""""""""""""""
-Plug 'lervag/vimtex'
+Plug 'lervag/vimtex', { 'for': 'tex' }
 let g:livepreview_previewer = $READER
 let g:tex_flavor = "tex"
 
@@ -338,7 +340,8 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 
 """""""""""""""""""""""""""""""""""VIM-LATEX-LIVE-PREVIEW"""""""""""""""""""""""""""""""""
-Plug 'xuhdev/vim-latex-live-preview'
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+
 let g:livepreview_previewer = 'zathura'
 let g:updatetime = 1000
 
@@ -349,7 +352,8 @@ let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 """"""""""""""""""""""""TEX-CONCEAL""""""""""""""""'
-Plug 'KeitaNakamura/tex-conceal.vim'
+Plug 'KeitaNakamura/tex-conceal.vim', { 'for': 'tex' }
+
 set conceallevel=2
 let g:tex_conceal="abdgms"
 

@@ -30,11 +30,16 @@ autocmd ColorScheme * hi clear SpellRare
 autocmd ColorScheme * hi clear SpellBad
 autocmd ColorScheme * hi clear SpellCap
 autocmd ColorScheme * hi clear SpellLocal
-colorscheme zenburn
+
+colorscheme tokyonight-moon
+"colorscheme "tokyonight-night"
+"colorscheme "tokyonight-storm"
+"colorscheme "tokyonight-day"
+
 
 """Actions on :w
 " Automatic color highligh
-autocmd BufWritePre * ColorHighlight
+"autocmd BufWritePre * ColorHighlight
 
 " TMUX support
 if exists('$TMUX')

@@ -1,4 +1,4 @@
-import = ["/home/x41/.config/alacritty/color_themes/dracula.yml"]
+import = ["/home/x41/.config/alacritty/color_themes/kanagawa.yml"]
 
 [font]
 size = 17.0
@@ -30,6 +30,7 @@ history = 20000
 save_to_clipboard = true
 
 [shell]
+args = ["--login"]
 program = "/bin/zsh"
 
 [window]

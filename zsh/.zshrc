@@ -34,7 +34,7 @@ ZSHDDIR="${HOME}/.config/zsh"
 HISTFILE="${ZDOTDIR}/.zsh_history"
 HISTSIZE='64000'
 SAVEHIST="${HISTSIZE}"
-export EDITOR="/usr/bin/nvim"
+export EDITOR="/opt/homebrew/bin/nvim"
 export TMP="$HOME/tmp"
 export TEMP="$TMP"
 export TMPDIR="$TMP"
@@ -585,6 +585,7 @@ bindkey -v '^?' backward-delete-char
 # '[ -f $file ] &&' is not added on purpose, to display error messages
 source "$HOME/.config/aliasrc"
 source "$ZSHDDIR/functions/general_funcs.sh"
+source "$HOME/.config/nvidia/nvinit.sh"
 
 # After
 neofetch
@@ -598,3 +599,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 source ~/.config/zsh/.p10k.zsh
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

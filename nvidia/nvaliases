@@ -1,0 +1,11 @@
+# Quick actions
+alias nvreload="source $NVIDIA_CONFIG_DIR/nvinit.sh"
+
+
+# SSH Connections
+alias \
+    nvvdi="ssh eshukrun@$NV_HOST_VDI" \
+    nvil1="ssh eshukrun@mtl-e2e-slurm05" \
+
+# Navigation
+alias nvrcd="cd $NV_REMOTE_STORAGE_DIR"
