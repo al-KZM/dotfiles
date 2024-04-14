@@ -1,11 +1,15 @@
 # Quick actions
 alias nvreload="source $NVIDIA_CONFIG_DIR/nvinit.sh"
+alias nvalrc="vi $NVIDIA_CONFIG_DIR/nvaliases; nvreload"
 
 
 # SSH Connections
+alias nvssh="sshpass -p $(pass show nvidia/main) ssh"
 alias \
-    nvvdi="ssh eshukrun@$NV_HOST_VDI" \
-    nvil1="ssh eshukrun@mtl-e2e-slurm05" \
+    nvvdi="nvssh eshukrun@$NV_HOST_VDI" \
+    nvil1="nvssh eshukrun@mtl-e2e-slurm05" \
+    nvhera="nvssh eshukrun@mtl-e2e-slurm04" \
+    nvhpchead="nvssh eshukrun@hpchead" \
 
 # Navigation
 alias nvrcd="cd $NV_REMOTE_STORAGE_DIR"
