@@ -1,5 +1,0 @@
-#!/usr/bin/env sh
-#[ -f "$HOME/.xinitrc " ] && . ~/.xinitrc
-
-#bash ~/.config/.screenlayout/auto_layout.sh
-#chwp
