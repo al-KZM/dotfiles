@@ -31,11 +31,3 @@ function add_dotfile(){
 startx() {
     exec =startx "$@"
 }
-
-function sgdkb() {
-    if [ "$#" -ne 2 ]; then
-        echo "Usage sgdkb <Dockerfile path> <Container name>"
-    else
-        docker build -f $1 -t $2 --build-arg pypi_user=eyalc --build-arg pypi_pass=$(pass show sixgill) --build-arg pypi_host=pypi.int.cybersixgill.com .
-    fi
-}

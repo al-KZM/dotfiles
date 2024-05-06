@@ -505,9 +505,9 @@ bindkey -v '^?' backward-delete-char
 
 # Additional scripts
 # '[ -f $file ] &&' is not added on purpose, to display error messages
-#source "$HOME/.config/aliasrc"
-#source "$ZSHDDIR/functions/general_funcs.sh"
-#source "$HOME/.config/nvidia/nvinit.sh"
+[ -f $file] && source "$HOME/.config/aliasrc"
+source "$ZSHDDIR/functions/general_funcs.sh"
+source "$HOME/.config/nvidia/nvinit.sh"
 
 # After
 builtin cd `cat $LAST_DIR_FILE`  # cd to last dir

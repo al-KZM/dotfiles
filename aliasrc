@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" vi="nvim" # Use neovim for vim if present.
+command -v nvim > /dev/null && magit="nvim -c MagitOnly" \
+
 alias h="cd ~/ && ls -a" \
     d="cd ~/Documents && ls -a" \
     D="cd ~/Downloads && ls -a" \
@@ -12,7 +15,7 @@ alias h="cd ~/ && ls -a" \
 
 # Wrappers
 alias lf="lfrun"
-alias cat="bat"
+command -v bat > /dev/null && alias cat="bat"
 
 alias editbashrc="vi ~/.bashrc; source ~/.bashrc"
 
@@ -21,7 +24,6 @@ alias ka="killall" \
 	mkd="mkdir -pv" \
 	mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
 	calcurse="calcurse -D ~/.config/calcurse" \
-	magit="nvim -c MagitOnly" \
 	p="sudo pacman" \
 	SS="sudo systemctl" \
 	f="$FILE" \
@@ -62,7 +64,6 @@ alias ka="killall" \
     goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
     chrome="google-chrome-stable"\
 
-command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" vi="nvim" # Use neovim for vim if present.
 alias mutt="neomutt"
 
 vf() { fzf | xargs -r -I % $EDITOR % ;}
@@ -78,7 +79,6 @@ alias ln='ln -v'
 alias chmod="chmod -c"
 alias chown="chown -c"
 alias mkdir="mkdir -v"
-alias vi="nvim"
 alias pycheck="pylama -o $HOME/.config/pylama/pylama.ini"
 if command -v colordiff > /dev/null 2>&1; then
     alias diff="colordiff -Nuar"
