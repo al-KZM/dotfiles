@@ -1,0 +1,9 @@
+map <leader>x  :FlutterRun
+map <leader>fr :FlutterHotReload
+map <leader>fR :FlutterHotRestart
+map <leader>fD :FlutterVisualDebug
+map <leader>fq :FlutterQuit
+map <leader>fd :FlutterDevices
+map <leader>fs :FlutterSplit
+map <leader>fv :FlutterVSplit
+map <leader>ft :FlutterTab

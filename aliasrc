@@ -1,0 +1,170 @@
+#!/usr/bin/env sh
+
+alias h="cd ~/ && ls -a" \
+    d="cd ~/Documents && ls -a" \
+    D="cd ~/Downloads && ls -a" \
+    pp="cd ~/Pictures && ls -a" \
+    cf="cd ~/.config && ls -a" \
+    mn="cd /mnt && ls -a" \
+    zrc="$EDITOR ~/.zshrc" \
+    z='$READER $@' \
+
+
+# Wrappers
+alias lf="lfrun"
+alias cat="bat"
+
+alias editbashrc="vi ~/.bashrc; source ~/.bashrc"
+
+alias sudo="sudo "
+alias ka="killall" \
+	mkd="mkdir -pv" \
+	mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
+	calcurse="calcurse -D ~/.config/calcurse" \
+	magit="nvim -c MagitOnly" \
+	p="sudo pacman" \
+	SS="sudo systemctl" \
+	f="$FILE" \
+	g="git" \
+	trem="transmission-remote" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	x="sxiv -ft *" \
+	sdn="sudo shutdown -h now" \
+	gua="git remote | xargs -L1 git push --all" \
+	ls="ls -hN --color=auto  --hide="__pycache__/"" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi" \
+	yt="youtube-dl --add-metadata -i -o '%(upload_date)s-%(title)s.%(ext)s'" \
+	yta="yt -x -f bestaudio/best" \
+	YT="youtube-viewer" \
+	ref="shortcuts >/dev/null; source ~/.config/shortcutrc" \
+	upc="sudo pacman -Syu; pkill -RTMIN+8 i3blocks" \
+	lsp="pacman -Qett --color=always | less" \
+	ffmpeg="ffmpeg -hide_banner"\
+	ll="ls -lash"\
+    pm="python -m"\
+    pi="pip install --user"\
+    pip37="python3.7 -m pip"
+    chwp="bash ~/.config/wallpaper/set_feh_bg.sh"\
+    rmwp="python ~/.config/wallpaper/forget_wp.py"\
+    python="ipython"\
+    cfi="vi ~/.config/i3/config"\
+    goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
+    python="ipython"\
+    routine="python /home/eyal/documents/programmation/training_programs/routine/myroutine.py"\
+    teaching="bash /home/eyal/documents/programmation/scripts/teacher_screen.sh"\
+    web="$BROWSER"\
+    wpp="vi ~/.config/wallpaper/my_wallpapers.txt"\
+    py="ptipython"\
+    python="ipython"\
+    goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
+    chrome="google-chrome-stable"\
+
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" vi="nvim" # Use neovim for vim if present.
+alias mutt="neomutt"
+
+vf() { fzf | xargs -r -I % $EDITOR % ;}
+
+# Commands
+alias cp='cp -iv'
+alias rcp='rsync -v --progress'
+alias rmv='rsync -v --progress --remove-source-files'
+alias mv='mv -iv'
+alias rm='rm -iv'
+alias rmdir='rmdir -v'
+alias ln='ln -v'
+alias chmod="chmod -c"
+alias chown="chown -c"
+alias mkdir="mkdir -v"
+alias vi="nvim"
+alias pycheck="pylama -o $HOME/.config/pylama/pylama.ini"
+if command -v colordiff > /dev/null 2>&1; then
+    alias diff="colordiff -Nuar"
+else
+    alias diff="diff -Nuar"
+fi
+
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias ls='ls --color=auto '
+alias ll='ls --color=auto -l'
+alias lla='ls --color=auto -la'
+
+
+# DONT USE RM ANYMORE
+alias t="rmtrash"
+alias td="rmtrash -r"
+#alias rm="echo Use 'tr', or the full path i.e. /bin/rm"
+
+# Navigation
+alias cddoc="cd ~/Documents"
+alias cduni="cd ~/Documents/University/"
+alias cdxv6="cd ~/Documents/University/xv6-docker/"
+
+alias xcopy="xclip -selection clipboard"
+
+# Files opener
+alias zrc="vi ~/.config/zsh/.zshrc"
+alias vrc="vi ~/.config/nvim/init.vim.d/init.vim"
+alias vinit="vi ~/.config/nvim/init.vim.d/"
+alias vplg="vi ~/.config/nvim/init.vim.d/plugins.vim"
+alias vsht="vi ~/.config/nvim/init.vim.d/shortcuts.vim"
+alias vfnc="vi ~/.config/nvim/init.vim.d/functions.vim"
+alias vrtp="vi ~/.config/nvim/init.vim.d/runtime/"
+alias lfrc="vi ~/.config/lf/lfrc"
+alias lfdoc="lf -doc | less"
+alias vtex="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/tex.snippets"
+alias vsnips="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/"
+alias lfrc="vi ~/.config/lf/lfrc"
+alias lfdoc="lf -doc | less"
+alias alrc="vi ~/.aliasrc; source ~/.aliasrc"
+
+# Files manipulation
+alias cleantex="bash ~/.config/scripts/clean_latex_compilation_files.sh"
+
+# Tmux
+alias xn="tmux new-session"
+alias xnv="tmux new-session \; split-window -v"
+alias xnh="tmux new-session \; split-window -h"
+alias xls="tmux ls"
+alias xat="tmux attach-session -t "
+
+# Java
+alias jvc="javac -d . -sourcepath . *.java"
+alias jvc_src="javac -d . -sourcepath src src/*.java"
+
+# APIS
+alias termbin="nc termbin.com 9999"
+alias paste="sh $HOME/.config/scripts/termbin_file.sh"
+
+# NCDU
+alias scanslash="ncdu / --exclude '/mnt/*' --exclude '/home/*' --exclude '/opt/*' --exclude '/usr/*'"
+
+# Sixgill
+alias sgvpn="sudo systemctl start openvpn-client@sixgill.service"
+alias sgbeg="sudo sh ~/Work/sixgill/scripts/sixgill_day.sh"
+alias sgpy="~/.local/lib/python3.9/site-packages/sixgill-additionals"
+alias sg="cd ~/Work/sixgill"
+alias sgr="cd ~/Work/sixgill/repos"
+alias ble="ssh eyalc@leak-extractor.int.cybersixgill.com"
+alias sgt="cd ~/Work/sixgill/third_parties"
+alias sgkf="cd ~/Work/sixgill/third_parties/kafka/"
+alias sgdkb="sh ~/Work/sixgill/scripts/build_docker.sh"
+
+# Git
+alias gpsh='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
+alias gpll='git pull --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
+alias gcm="git checkout master"
+alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gpsht="$HOME/.config/scripts/git_push_curr_and_test.sh"
+
+# Logs
+alias qtilelogs="tail -f ~/.local/share/qtile/qtile.log"
+
+# Utils
+alias yamlcheck="python -c 'import yaml, sys; yaml.safe_load(sys.stdin); print(1)' <"
+alias rmpcache="sudo find . -name "__pycache__" -type d -exec rm -rf {} \;"
+
+

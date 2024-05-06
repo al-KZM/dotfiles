@@ -1,0 +1,206 @@
+# You can edit this file by hand, but it's recommended not to do that.
+
+# Marks:
+
+# Bookmarks:
+
+# TUI:
+al
+q0
+v2
+ov
+m-1
+l2
+r2
+
+# Left window history (oldest to newest):
+d/home/eyal/documents/work/freelance/atlantis-old/app/templates/crud/read
+	therapy.jin
+3
+d/home/eyal/documents/work/freelance/atlantis-old/app/templates/crud
+	update
+4
+d/home/eyal/documents/work/freelance/atlantis-old/app/templates
+	error.jin
+6
+d/mnt/nasmultimedia
+	Films
+3
+d/mnt/nasmultimedia/Films
+	..
+0
+d/mnt/nasmultimedia
+	Dessins animes
+2
+d/mnt/nasmultimedia/Dessins animes
+	Kung.Fu.Panda.2.avi
+7
+d/mnt/nasmultimedia
+	Films
+3
+d/mnt/nasmultimedia/Films
+	COMEDIE
+3
+d/mnt/nasmultimedia/Films/COMEDIE
+	Situation.Amoureuse.C.Est.Complique.2014.FRENCH.BDRip.x264-ROUGH
+12
+d/mnt/nasmultimedia/Films/COMEDIE/Situation.Amoureuse.C.Est.Complique.2014.FRENCH.BDRip.x264-ROUGH
+	situation.amoureuse.c.est.complique.2014.french.bdrip.x264-rough.mkv
+1
+d/mnt/nasmultimedia
+	Films
+3
+d/mnt/nasmultimedia/Films
+	COMEDIE
+3
+d/mnt/nasmultimedia/Films/COMEDIE
+	Pour 100 briques t'as plus rien ( jugnot - auteuil).AVI
+8
+d/home/eyal/documents/programmation/unity/Corona/Recordings
+	movie.webm
+1
+
+# Right window history (oldest to newest):
+D/home/eyal
+	Images
+2
+D/home/eyal/Images
+	..
+0
+D/home/eyal
+	Images
+2
+D/home/eyal/Images
+	..
+0
+D/home/eyal
+	Images
+3
+D/home/eyal/documents/work/freelance/conversion_amazon_to_cdiscount/AmazonConverter
+	..
+0
+D/home/eyal/documents/work/freelance/conversion_amazon_to_cdiscount
+	converter
+2
+D/home/eyal/documents/work/freelance/conversion_amazon_to_cdiscount/converter
+	..
+0
+D/home/eyal/documents/work/freelance/conversion_amazon_to_cdiscount
+	converter
+2
+D/home/eyal/documents/work/freelance/atlantis-old/app
+	..
+0
+D/home/eyal/documents/work/freelance/atlantis-old/app/templates
+	..
+0
+D/etc/systemd/system
+	..
+0
+D/home/eyal/documents/work/dev-institute/classes/python-2020/class_16/flask_project
+	..
+0
+D/home/eyal/documents/programmation/unity/Corona
+	..
+0
+
+# Command line history (oldest to newest):
+:q
+:.,.+1!!
+:mkdir 
+:mkdir crud
+:mkdir add
+:mkdir edit
+:mkdir read
+:mkdir delete
+:mkdir managers
+:w
+:x
+
+# Search history (oldest to newest):
+/kun
+
+# Prompt history (oldest to newest):
+padmin.jin
+pcreate
+pupdate
+pupdatede
+psession.jin
+pbase.jin
+ptherapy.jin
+
+# Local filter history (oldest to newest):
+
+# Registers:
+""/home/eyal/.local/share/vifm/Trash/000_read_base.jin
+""/home/eyal/.local/share/vifm/Trash/001_read_sessions.jin
+""/home/eyal/.local/share/vifm/Trash/001_session_details.jin
+""/home/eyal/.local/share/vifm/Trash/001_therapy_details.jin
+
+# Directory stack (oldest to newest):
+
+# Trash content:
+t/home/eyal/.local/share/vifm/Trash/000_add_insurance.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/add_insurance.jin
+t/home/eyal/.local/share/vifm/Trash/000_dashboard_admin.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/dashboard_admin.jin
+t/home/eyal/.local/share/vifm/Trash/000_dashboard_assistant.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/dashboard_assistant.jin
+t/home/eyal/.local/share/vifm/Trash/000_dashboard_base.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/dashboard_base.jin
+t/home/eyal/.local/share/vifm/Trash/000_dashboard_coordinator.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/dashboard_coordinator.jin
+t/home/eyal/.local/share/vifm/Trash/000_dashboard_doctor.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/dashboard_doctor.jin
+t/home/eyal/.local/share/vifm/Trash/000_dashboard_secretary.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/dashboard_secretary.jin
+t/home/eyal/.local/share/vifm/Trash/000_edit
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/edit
+t/home/eyal/.local/share/vifm/Trash/000_add_session.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/crud/add_session.jin
+t/home/eyal/.local/share/vifm/Trash/000_add_therapy.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/crud/add_therapy.jin
+t/home/eyal/.local/share/vifm/Trash/000_edit_base.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/crud/edit_base.jin
+t/home/eyal/.local/share/vifm/Trash/000_edit_therapy.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/crud/edit_therapy.jin
+t/home/eyal/.local/share/vifm/Trash/000_edit_user.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/crud/edit_user.jin
+t/home/eyal/.local/share/vifm/Trash/001_add_session.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/add_session.jin
+t/home/eyal/.local/share/vifm/Trash/001_add_therapy.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/add_therapy.jin
+t/home/eyal/.local/share/vifm/Trash/001_edit_base.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/edit_base.jin
+t/home/eyal/.local/share/vifm/Trash/001_edit_therapy.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/edit_therapy.jin
+t/home/eyal/.local/share/vifm/Trash/001_edit_user.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/edit_user.jin
+t/home/eyal/.local/share/vifm/Trash/000_error.log
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/error.log
+t/home/eyal/.local/share/vifm/Trash/000_manage_quotes.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/manage_quotes.jin
+t/home/eyal/.local/share/vifm/Trash/000_manage_sessions.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/manage_sessions.jin
+t/home/eyal/.local/share/vifm/Trash/000_manage_therapies.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/manage_therapies.jin
+t/home/eyal/.local/share/vifm/Trash/000_manage_users.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/manage_users.jin
+t/home/eyal/.local/share/vifm/Trash/000_read_sessions.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/crud/read_sessions.jin
+t/home/eyal/.local/share/vifm/Trash/000_session_details.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/crud/session_details.jin
+t/home/eyal/.local/share/vifm/Trash/000_therapy_details.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/crud/therapy_details.jin
+t/home/eyal/.local/share/vifm/Trash/000_index.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/index.jin
+t/home/eyal/.local/share/vifm/Trash/000_output.log
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/output.log
+t/home/eyal/.local/share/vifm/Trash/000_read_base.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/read_base.jin
+t/home/eyal/.local/share/vifm/Trash/001_read_sessions.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/read_sessions.jin
+t/home/eyal/.local/share/vifm/Trash/001_session_details.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/session_details.jin
+t/home/eyal/.local/share/vifm/Trash/001_therapy_details.jin
+	/home/eyal/documents/work/freelance/atlantis-old/app/templates/therapy_details.jin

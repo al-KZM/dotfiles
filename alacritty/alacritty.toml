@@ -1,0 +1,39 @@
+import = ["/home/x41/.config/alacritty/color_themes/kanagawa.yml"]
+
+[font]
+size = 17.0
+
+#[font.normal]
+#family = "monospace"
+#style = "Bold"
+
+[font.normal]
+family = "JetBrainsMono NF"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono NF"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono NF"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono NF"
+style = "Italic"
+
+[scrolling]
+history = 20000
+
+[selection]
+save_to_clipboard = true
+
+[shell]
+args = ["--login"]
+program = "/bin/zsh"
+
+[window]
+dynamic_title = true
+title = "Terminal"
+opacity = 0.9
