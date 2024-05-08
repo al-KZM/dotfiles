@@ -1,7 +1,8 @@
-### Installation 
+### Installation
 
 ```
-ln -s $HOME/.config/inputrc $HOME/.inputrc   
+ln -s $HOME/.config/inputrc $HOME/.inputrc
+ln -s $HOME/.config/vim.d/vimrc $HOME/.vimrc
 ```
 
 ### Installation - local machine specific
