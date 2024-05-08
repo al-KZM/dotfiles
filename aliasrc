@@ -119,7 +119,7 @@ alias vtex="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/tex.snippets"
 alias vsnips="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/"
 alias lfrc="vi ~/.config/lf/lfrc"
 alias lfdoc="lf -doc | less"
-alias alrc="vi ~/.config/.aliasrc; source ~/.config/.aliasrc"
+alias alrc="vi ~/.config/aliasrc; source ~/.config/aliasrc"
 
 # Files manipulation
 alias cleantex="bash ~/.config/scripts/clean_latex_compilation_files.sh"
