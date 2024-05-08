@@ -1,7 +1,7 @@
 ### Installation 
 
 ```
-ln -s $HOME/.config/inputrc ../.inputrc   
+ln -s $HOME/.config/inputrc $HOME/.inputrc   
 ```
 
 ### Installation - local machine specific
