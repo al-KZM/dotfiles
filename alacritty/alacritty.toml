@@ -1,5 +1,9 @@
 import = ["/home/x41/.config/alacritty/color_themes/kanagawa.yml"]
 
+[env]
+term = "xterm-256color"
+
+
 [font]
 size = 17.0
 
