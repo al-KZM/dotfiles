@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Map hostnames
-if [ "$HOSTNAME" = "mtr-vdi-048" ]; then
+if [ "$HOSTNAME" = "mtr-vdi-049" ]; then
     HOSTNAME="eyal-vdi"
 elif [ "$HOSTNAME" = "mtl-e2e-slurm05" ]; then
     HOSTNAME="israel-1"
@@ -502,12 +502,11 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
 
-
 # Additional scripts
 # '[ -f $file ] &&' is not added on purpose, to display error messages
-[ -f $file] && source "$HOME/.config/aliasrc"
-source "$ZSHDDIR/functions/general_funcs.sh"
-source "$HOME/.config/nvidia/nvinit.sh"
+#source "$HOME/.config/aliasrc"
+#source "$ZSHDDIR/functions/general_funcs.sh"
+#source "$HOME/.config/nvidia/nvinit.sh"
 
 # After
 builtin cd `cat $LAST_DIR_FILE`  # cd to last dir

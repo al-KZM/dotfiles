@@ -1,3 +1,9 @@
+### Installation 
+
+```
+ln -s $HOME/.config/inputrc ../.inputrc   
+```
+
 ### Installation - local machine specific
 
 On local machine, install the [pass](https://github.com/peff/pass) password managers and add two passwords:
@@ -11,7 +17,6 @@ pass insert nvidia/main
 pass insert nvidia/gitlab
 ```
 
-
 ### Installation - zsh specific
 
 ```
@@ -19,4 +24,3 @@ mkdir $HOME/.caching_files
 touch $HOME/.caching_files/.last_dir
 ln -s $HOME/.config/zsh/zshrc $HOME/.zshrc
 ```
-
