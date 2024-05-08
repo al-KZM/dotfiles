@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Map hostnames
-if [ "$HOSTNAME" = "mtr-vdi-049" ]; then
+if [ "$HOSTNAME" = "mtr-vdi-048" ]; then
     HOSTNAME="eyal-vdi"
 elif [ "$HOSTNAME" = "mtl-e2e-slurm05" ]; then
     HOSTNAME="israel-1"
@@ -29,7 +29,7 @@ ZSHDDIR="${HOME}/.config/zsh"
 HISTFILE="${ZDOTDIR}/.zsh_history"
 HISTSIZE='64000'
 SAVEHIST="${HISTSIZE}"
-export EDITOR="/opt/homebrew/bin/nvim"
+export EDITOR=$(command -v nvim >/dev/null && which nvim || which vim)
 export TMP="$HOME/tmp"
 export TEMP="$TMP"
 export TMPDIR="$TMP"
@@ -253,7 +253,7 @@ setopt promptsubst
 
 
 # Prevent insert key from changing input mode.
-# (switch to Emacs mode)
+# (switch to Vim mode)
 bindkey -v
 
 # Control-x-e to open current line in $EDITOR, awesome when writting functions or editing multiline commands.
