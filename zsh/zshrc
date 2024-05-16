@@ -1,4 +1,4 @@
-export CONFIG_DIR="$HOME/.config"
+export CONFIG_DIR="/mtrsysgwork/eshukrun/.config"
 
 [ -f "$CONFIG_DIR/zsh/zshenv" ] && source "$CONFIG_DIR/zsh/zshenv" 
 [ -f "$CONFIG_DIR/commonrc" ] && source "$CONFIG_DIR/commonrc"

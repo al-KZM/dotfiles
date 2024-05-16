@@ -1,6 +1,6 @@
 export LAST_DIR_FILE="$HOME/.caching_files/.last_dir"
 export LAST_LAST_DIR_FILE="$HOME/.caching_files/.last_last_dir"
-export EDITOR="/opt/homebrew/bin/nvim"
+export EDITOR=$(which nvim 2>/dev/null || which vim)
 export TMP="$HOME/tmp"
 export TEMP="$TMP"
 export TMPDIR="$TMP"
@@ -26,9 +26,6 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   tmux a -t default || exec tmux new -s default && exit;
 fi
 
-# Ruby
-PATH="`ruby -e 'puts Gem.user_dir'`/bin:$PATH"
-
 # Not all servers have terminfo for rxvt-256color. :<
 if [ "${TERM}" = 'rxvt-256color' ] && ! [ -f '/usr/share/terminfo/r/rxvt-256color' ] && ! [ -f '/lib/terminfo/r/rxvt-256color' ] && ! [ -f "${HOME}/.terminfo/r/rxvt-256color" ]; then
     export TERM='rxvt-unicode'
@@ -53,5 +50,5 @@ source "$ZSHDDIR/functions/general_funcs.sh"
 source "$CONFIG_DIR/nvidia/nvinit.sh"
 
 # After
-neofetch 2> /dev/null
+command -v neofetch && neofetch 
 builtin cd `cat $LAST_DIR_FILE`  # cd to last dir

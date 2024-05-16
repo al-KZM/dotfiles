@@ -12,7 +12,7 @@ alias h="cd ~/ && ls -a" \
 
 # Wrappers
 alias lf="lfrun"
-alias cat="bat"
+command -v bat && alias cat="bat"
 
 alias editbashrc="vi ~/.bashrc; source ~/.bashrc"
 
@@ -62,6 +62,7 @@ alias ka="killall" \
     goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
     chrome="google-chrome-stable"\
 
+alias vi="vim"
 command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" vi="nvim" # Use neovim for vim if present.
 alias mutt="neomutt"
 
@@ -119,7 +120,7 @@ alias vtex="vi $CONFIG_DIR/nvim/init.vim.d/runtime/UltiSnips/tex.snippets"
 alias vsnips="vi $CONFIG_DIR/nvim/init.vim.d/runtime/UltiSnips/"
 alias lfrc="vi $CONFIG_DIR/lf/lfrc"
 alias lfdoc="lf -doc | less"
-alias alrc="vi $CONFIG_DIR/aliasrc; source $CONFIG_DIR/aliasrc"
+alias alrc="$EDITOR $CONFIG_DIR/aliasrc; source $CONFIG_DIR/aliasrc"
 
 # Files manipulation
 alias cleantex="bash $CONFIG_DIR/scripts/clean_latex_compilation_files.sh"

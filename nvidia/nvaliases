@@ -2,17 +2,14 @@
 alias nvreload="source $NVIDIA_CONFIG_DIR/nvinit.sh"
 alias nvalrc="vi $NVIDIA_CONFIG_DIR/nvaliases; nvreload"
 
-# Useful
-#([ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]) && alias nvdockerlogin="docker login gitlab-master.nvidia.com -p $(pass show nvidia/gitlab) -u eshukrun"
-
-# SSH Connections
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] || ! command -v sshpass &> /dev/null ; then
     alias nvssh="ssh"
+    alias nvdockerlogin="docker login gitlab-master.nvidia.com -u eshukrun"
 else
-    alias nvssh="sshpass -p $(pass show nvidia/main) ssh"
+    alias nvssh="sshpass -p $(pass show nvidia/main) ssh"	
+    alias nvdockerlogin="docker login gitlab-master.nvidia.com -p $(pass show nvidia/gitlab) -u eshukrun"
 fi
 
-alias nvdockerlogin="docker login gitlab-master.nvidia.com -p $(pass show nvidia/gitlab) -u eshukrun"
 
 alias \
     nvvdi="nvssh eshukrun@$NV_HOST_VDI" \
