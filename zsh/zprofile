@@ -1,0 +1,15 @@
+export CONFIG_DIR="$HOME/.config"
+
+[[ -f $HOME/.bashrc ]] && $HOME/.bashrc
+
+# Mount NVIDIA remote directory
+# Should be added as a launch agent
+# https://apple.stackexchange.com/questions/192600/how-to-run-custom-applescript-in-the-background-at-all-times
+#if [[ -z "$(mount | grep mtrsysgwork)" ]]; then
+#    osascript -e 'mount volume "smb://eshukrun@mtrlabfs02/mtrsysgwork"'
+#fi
+
+
+if [ -x /usr/libexec/path_helper ]; then
+   eval `/usr/libexec/path_helper -s`
+fi

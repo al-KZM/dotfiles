@@ -5559,7 +5559,7 @@ Startup
 	- $HOME/.vifm directory;
 	- $APPDATA/Vifm directory (on Windows only);
 	- $XDG_CONFIG_HOME/vifm directory;
-	- $HOME/.config/vifm directory.
+	- $CONFIG_DIR/vifm directory.
 
        vifm tries to find correct configuration file by checking the following
        places:

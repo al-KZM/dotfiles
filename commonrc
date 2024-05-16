@@ -48,9 +48,9 @@ reload () {
 
 # Additional scripts
 # '[ -f $file ] &&' is not added on purpose, to display error messages
-source "$HOME/.config/aliasrc"
+source "$CONFIG_DIR/aliasrc"
 source "$ZSHDDIR/functions/general_funcs.sh"
-source "$HOME/.config/nvidia/nvinit.sh"
+source "$CONFIG_DIR/nvidia/nvinit.sh"
 
 # After
 neofetch 2> /dev/null

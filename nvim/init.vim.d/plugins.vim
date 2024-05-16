@@ -1,11 +1,11 @@
-if ! filereadable(expand('~/.config/nvim/autoload/plug.vim'))
+if ! filereadable(expand('$CONFIG_DIR/nvim/autoload/plug.vim'))
 	echo "Downloading junegunn/vim-plug to manage plugins..."
-	silent !mkdir -p ~/.config/nvim/autoload/
-	silent !curl "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" > ~/.config/nvim/autoload/plug.vim
+	silent !mkdir -p $CONFIG_DIR/nvim/autoload/
+	silent !curl "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" > $CONFIG_DIR/nvim/autoload/plug.vim
 	autocmd VimEnter * PlugInstall
 endif
 
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('$CONFIG_DIR/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch':'release'}
 
@@ -314,7 +314,7 @@ let g:hot_reload_on_save=0
 
 """"""""""""""""""""""""""""""""""""EASY SHARP"""""""""""""""""""""""""""""""""
 let g:easytags_cmd = '/usr/bin/ctags'
-let g:easytags_file = '~/.config/nvim/tags'
+let g:easytags_file = '$CONFIG_DIR/nvim/tags'
 
 """"""""""""""""""""""""""""""""""""COLORIZER"""""""""""""""""""""""""""""""""
 let g:colorizer_auto_color = 1
