@@ -325,16 +325,16 @@ for zshd in $(ls -A ${HOME}/.config/zsh.d/^*.(z)sh$); do
 done
 
 # Completion.
-autoload -Uz compinit
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)		# Include hidden files.
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-zstyle ':completion:*' completer _expand _complete _ignored _approximate
-zstyle ':completion:*' menu select=2
-zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
-zstyle ':completion::complete:*' use-cache 1
-zstyle ':completion:*:descriptions' format '%U%F{cyan}%d%f%u'
+#autoload -Uz compinit
+#zmodload zsh/complist
+#compinit
+#_comp_options+=(globdots)		# Include hidden files.
+#zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+#zstyle ':completion:*' completer _expand _complete _ignored _approximate
+#zstyle ':completion:*' menu select=2
+#zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
+#zstyle ':completion::complete:*' use-cache 1
+#zstyle ':completion:*:descriptions' format '%U%F{cyan}%d%f%u'
 
 # If running as root and nice >0, renice to 0.
 if [ "$USER" = 'root' ] && [ "$(cut -d ' ' -f 19 /proc/$$/stat)" -gt 0 ]; then
@@ -603,3 +603,4 @@ source ~/.config/zsh/.p10k.zsh
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
