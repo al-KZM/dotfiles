@@ -8,7 +8,7 @@ export PATH=$PATH:/usr/share
 export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$//')"
 # Adds python site packages
 export PATH="$PATH:$HOME/.local/lib/python3.9/site-packages"
-export PATH="$PATH:$HOME/.config/scripts/"
+export PATH="$PATH:$CONFIG_DIR/scripts/"
 export PATH="$PATH:$HOME/.local/bin/"
 
 # Add sixgill additionals (https://bitbucket.org/sixgill/sixgill/src/master/) to pythonpath
@@ -25,12 +25,12 @@ export FILE="vifm"
 export BIB="$HOME/Documents/LaTeX/uni.bib"
 export REFER="$HOME/Documents/referbib"
 export SUDO_ASKPASS="$HOME/.local/bin/tools/dmenupass"
-export NOTMUCH_CONFIG="$HOME/.config/notmuch-config"
-export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
-export XDG_CONFIG_HOME="$HOME/.config"
+export NOTMUCH_CONFIG="$CONFIG_DIR/notmuch-config"
+export GTK2_RC_FILES="$CONFIG_DIR/gtk-2.0/gtkrc-2.0"
+export XDG_CONFIG_HOME="$CONFIG_DIR"
 
 # ZSH specific
-export ZDOTDIR="$HOME/.config/zsh"
+export ZDOTDIR="$CONFIG_DIR/zsh"
 
 # less/man colors
 export LESS=-R
@@ -44,14 +44,14 @@ export LESS_TERMCAP_ue="$(printf '%b' '[0m')"; a="${a%_}"
 
 mpd >/dev/null 2>&1 &
 
-[ ! -f ~/.config/shortcutrc ] && shortcuts >/dev/null 2>&1
+[ ! -f $CONFIG_DIR/shortcutrc ] && shortcuts >/dev/null 2>&1
 
 # Start graphical server if not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pgrep -x startx >/dev/null && exec startx
 
 sleep 1
 autorandr -c
-bash $HOME/.config/wallpaper/set_feh_bg.sh
+bash $CONFIG_DIR/wallpaper/set_feh_bg.sh
 
 # Switch escape and caps if tty:
 sudo -n loadkeys ~/.local/bin/ttymaps.kmap 2>/dev/null

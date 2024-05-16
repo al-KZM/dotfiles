@@ -1,6 +1,6 @@
 # Basic Settings
 set preview true
-set previewer ~/.config/lf/preview.sh
+set previewer $CONFIG_DIR/lf/preview.sh
 set hidden true
 set color256 true
 set drawbox true
@@ -21,7 +21,7 @@ cmd open ${{
 
 cmd reload_all &{{
     reload
-    $HOME/.config/lf/image.sh draw "$CACHE" $num 1 $numb $numc
+    $CONFIG_DIR/lf/image.sh draw "$CACHE" $num 1 $numb $numc
 }}
 
 cmd open_shell_at &{{
@@ -138,12 +138,12 @@ map e
 map f
 
 # Not really image preview
-map - $~/.config/lf/draw_img.sh "$f"
+map - $$CONFIG_DIR/lf/draw_img.sh "$f"
 
 cmd video_preview ${{
     CACHE=$(mktemp /tmp/thumb_cache.XXXXX)
     ffmpegthumbnailer -i "$f" -o $CACHE -s 0
-    ~/.config/lf/draw_img $CACHE && rm $CACHE
+    $CONFIG_DIR/lf/draw_img $CACHE && rm $CACHE
 }}
 map + :video_preview
 
@@ -209,8 +209,8 @@ map `n cd ~/documents/work/teaching_notes
 
 map `t cd ~/Downloads
 
-map `c cd ~/.config
-map `v cd ~/.config/nvim/init.vim.d
-map `s cd ~/.config/scripts
+map `c cd $CONFIG_DIR
+map `v cd $CONFIG_DIR/nvim/init.vim.d
+map `s cd $CONFIG_DIR/scripts
 
 

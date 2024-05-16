@@ -13,7 +13,7 @@ import click
 import subprocess
 import javac_parser
 
-COMPILING_SCRIPT="~/.config/scripts/java_compile_notrace.sh"
+COMPILING_SCRIPT="$CONFIG_DIR/scripts/java_compile_notrace.sh"
 DELETE_SCRIPT="/.config/scripts/java_delete_traces.sh"
 EXAM_FILE="/documents/university/courses_notes/java_1/Exam/Exam.java"
 EXAM_DIR="/documents/university/courses_notes/java_1/Exam/"

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ln -s $HOME/.config/gotty/.gotty $HOME/.gotty
-ln -s $HOME/.config/gotty/.gotty.crt $HOME/.gotty.crt
-ln -s $HOME/.config/gotty/.gotty.key $HOME/.gotty.key
+ln -s $CONFIG_DIR/gotty/.gotty $HOME/.gotty
+ln -s $CONFIG_DIR/gotty/.gotty.crt $HOME/.gotty.crt
+ln -s $CONFIG_DIR/gotty/.gotty.key $HOME/.gotty.key
 

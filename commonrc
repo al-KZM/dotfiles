@@ -1,10 +1,4 @@
-export LAST_DIR_FILE="$HOME/.caching_files/.last_dir"
-export LAST_LAST_DIR_FILE="$HOME/.caching_files/.last_last_dir"
-export EDITOR="/opt/homebrew/bin/nvim"
-export TMP="$HOME/tmp"
-export TEMP="$TMP"
-export TMPDIR="$TMP"
-
+echo "Config dir: $CONFIG_DIR"
 # Colors.
 red='\e[0;31m'
 RED='\e[1;31m'
@@ -48,9 +42,9 @@ reload () {
 
 # Additional scripts
 # '[ -f $file ] &&' is not added on purpose, to display error messages
-source "$HOME/.config/aliasrc"
+source "$DIR_CONFIG/aliasrc"
 source "$ZSHDDIR/functions/general_funcs.sh"
-source "$HOME/.config/nvidia/nvinit.sh"
+source "$DIR_CONFIG/nvidia/nvinit.sh"
 
 # After
 neofetch 2> /dev/null

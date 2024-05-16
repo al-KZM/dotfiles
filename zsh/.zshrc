@@ -3,7 +3,7 @@
 # Start up Tmux automatically
 ##[[ $TERM != "screen" ]] && exec tmux
 
-export ZSH=$HOME/.config/oh-my-zsh
+export ZSH=$CONFIG_DIR/oh-my-zsh
 ZSH_THEME="amuse"
 source $ZSH/oh-my-zsh.sh
 
@@ -588,8 +588,8 @@ bindkey -v '^?' backward-delete-char
 
 
 # Additional scripts
-[ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+[ -f "$CONFIG_DIR/shortcutrc" ] && source "$CONFIG_DIR/shortcutrc"
+[ -f "$CONFIG_DIR/aliasrc" ] && source "$CONFIG_DIR/aliasrc"
 [ -f "$ZDOTDIR/functions/general_funcs.sh" ] && source "$ZDOTDIR/functions/general_funcs.sh"
 
 # After

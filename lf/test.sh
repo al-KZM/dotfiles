@@ -12,5 +12,5 @@ mkfifo "$FIFO_UEBERZUG"
 trap cleanup EXIT
 tail --follow "$FIFO_UEBERZUG" | ueberzug layer --silent --parser bash &
 
-$HOME/.config/lf/image.sh draw ~/images/belette.jpeg 30 1 30 30
+$CONFIG_DIR/lf/image.sh draw ~/images/belette.jpeg 30 1 30 30
 

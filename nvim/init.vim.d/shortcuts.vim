@@ -108,7 +108,7 @@ nmap <leader>C :SyntasticCheck<CR>
 " Comment lines: gcc
 
 " Paste file on termbin.com
-nmap ,P :!$HOME/.config/scripts/termbin_file.sh %<CR>
+nmap ,P :!$CONFIG_DIR/scripts/termbin_file.sh %<CR>
 
 " Git
 nmap <leader>ga :Git add %<CR>

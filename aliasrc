@@ -4,7 +4,7 @@ alias h="cd ~/ && ls -a" \
     d="cd ~/Documents && ls -a" \
     D="cd ~/Downloads && ls -a" \
     pp="cd ~/Pictures && ls -a" \
-    cf="cd ~/.config && ls -a" \
+    cf="cd $CONFIG_DIR && ls -a" \
     mn="cd /mnt && ls -a" \
     zrc="$EDITOR ~/.zshrc" \
     z='$READER $@' \
@@ -20,7 +20,7 @@ alias sudo="sudo "
 alias ka="killall" \
 	mkd="mkdir -pv" \
 	mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)" \
-	calcurse="calcurse -D ~/.config/calcurse" \
+	calcurse="calcurse -D $CONFIG_DIR/calcurse" \
 	magit="nvim -c MagitOnly" \
 	p="sudo pacman" \
 	SS="sudo systemctl" \
@@ -39,7 +39,7 @@ alias ka="killall" \
 	yt="youtube-dl --add-metadata -i -o '%(upload_date)s-%(title)s.%(ext)s'" \
 	yta="yt -x -f bestaudio/best" \
 	YT="youtube-viewer" \
-	ref="shortcuts >/dev/null; source ~/.config/shortcutrc" \
+	ref="shortcuts >/dev/null; source $CONFIG_DIR/shortcutrc" \
 	upc="sudo pacman -Syu; pkill -RTMIN+8 i3blocks" \
 	lsp="pacman -Qett --color=always | less" \
 	ffmpeg="ffmpeg -hide_banner"\
@@ -47,16 +47,16 @@ alias ka="killall" \
     pm="python -m"\
     pi="pip install --user"\
     pip37="python3.7 -m pip"
-    chwp="bash ~/.config/wallpaper/set_feh_bg.sh"\
-    rmwp="python ~/.config/wallpaper/forget_wp.py"\
+    chwp="bash $CONFIG_DIR/wallpaper/set_feh_bg.sh"\
+    rmwp="python $CONFIG_DIR/wallpaper/forget_wp.py"\
     python="ipython"\
-    cfi="vi ~/.config/i3/config"\
+    cfi="vi $CONFIG_DIR/i3/config"\
     goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
     python="ipython"\
     routine="python /home/eyal/documents/programmation/training_programs/routine/myroutine.py"\
     teaching="bash /home/eyal/documents/programmation/scripts/teacher_screen.sh"\
     web="$BROWSER"\
-    wpp="vi ~/.config/wallpaper/my_wallpapers.txt"\
+    wpp="vi $CONFIG_DIR/wallpaper/my_wallpapers.txt"\
     py="ptipython"\
     python="ipython"\
     goodsteam="LD_PRELOAD=/usr/lib/libfreetype.so steam"\
@@ -79,7 +79,7 @@ alias chmod="chmod -c"
 alias chown="chown -c"
 alias mkdir="mkdir -v"
 alias vi="nvim"
-alias pycheck="pylama -o $HOME/.config/pylama/pylama.ini"
+alias pycheck="pylama -o $CONFIG_DIR/pylama/pylama.ini"
 if command -v colordiff > /dev/null 2>&1; then
     alias diff="colordiff -Nuar"
 else
@@ -106,23 +106,23 @@ alias cdxv6="cd ~/Documents/University/xv6-docker/"
 alias xcopy="xclip -selection clipboard"
 
 # Files opener
-alias zrc="vi ~/.config/zsh/.zshrc"
-alias vrc="vi ~/.config/nvim/init.vim.d/init.vim"
-alias vinit="vi ~/.config/nvim/init.vim.d/"
-alias vplg="vi ~/.config/nvim/init.vim.d/plugins.vim"
-alias vsht="vi ~/.config/nvim/init.vim.d/shortcuts.vim"
-alias vfnc="vi ~/.config/nvim/init.vim.d/functions.vim"
-alias vrtp="vi ~/.config/nvim/init.vim.d/runtime/"
-alias lfrc="vi ~/.config/lf/lfrc"
+alias zrc="vi $CONFIG_DIR/zsh/.zshrc"
+alias vrc="vi $CONFIG_DIR/nvim/init.vim.d/init.vim"
+alias vinit="vi $CONFIG_DIR/nvim/init.vim.d/"
+alias vplg="vi $CONFIG_DIR/nvim/init.vim.d/plugins.vim"
+alias vsht="vi $CONFIG_DIR/nvim/init.vim.d/shortcuts.vim"
+alias vfnc="vi $CONFIG_DIR/nvim/init.vim.d/functions.vim"
+alias vrtp="vi $CONFIG_DIR/nvim/init.vim.d/runtime/"
+alias lfrc="vi $CONFIG_DIR/lf/lfrc"
 alias lfdoc="lf -doc | less"
-alias vtex="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/tex.snippets"
-alias vsnips="vi ~/.config/nvim/init.vim.d/runtime/UltiSnips/"
-alias lfrc="vi ~/.config/lf/lfrc"
+alias vtex="vi $CONFIG_DIR/nvim/init.vim.d/runtime/UltiSnips/tex.snippets"
+alias vsnips="vi $CONFIG_DIR/nvim/init.vim.d/runtime/UltiSnips/"
+alias lfrc="vi $CONFIG_DIR/lf/lfrc"
 alias lfdoc="lf -doc | less"
-alias alrc="vi ~/.config/aliasrc; source ~/.config/aliasrc"
+alias alrc="vi $CONFIG_DIR/aliasrc; source $CONFIG_DIR/aliasrc"
 
 # Files manipulation
-alias cleantex="bash ~/.config/scripts/clean_latex_compilation_files.sh"
+alias cleantex="bash $CONFIG_DIR/scripts/clean_latex_compilation_files.sh"
 
 # Tmux
 alias xn="tmux new-session"
@@ -137,7 +137,7 @@ alias jvc_src="javac -d . -sourcepath src src/*.java"
 
 # APIS
 alias termbin="nc termbin.com 9999"
-alias paste="sh $HOME/.config/scripts/termbin_file.sh"
+alias paste="sh $CONFIG_DIR/scripts/termbin_file.sh"
 
 # NCDU
 alias scanslash="ncdu / --exclude '/mnt/*' --exclude '/home/*' --exclude '/opt/*' --exclude '/usr/*'"
@@ -158,7 +158,7 @@ alias gpsh='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 alias gpll='git pull --set-upstream origin $(git rev-parse --abbrev-ref HEAD)'
 alias gcm="git checkout master"
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gpsht="$HOME/.config/scripts/git_push_curr_and_test.sh"
+alias gpsht="$CONFIG_DIR/scripts/git_push_curr_and_test.sh"
 
 # Logs
 alias qtilelogs="tail -f ~/.local/share/qtile/qtile.log"

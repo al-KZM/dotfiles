@@ -25,7 +25,7 @@ function clip(){
 }
 
 function add_dotfile(){
-    echo `realpath $1` >> $HOME/.config/dotfiles_bkp/dotfiles_list.txt
+    echo `realpath $1` >> $CONFIG_DIR/dotfiles_bkp/dotfiles_list.txt
 }
 
 startx() {

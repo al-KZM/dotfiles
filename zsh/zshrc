@@ -1,13 +1,17 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh/.zshrc.
+export CONFIG_DIR="$HOME/.config"
+
+[ -f "$CONFIG_DIR/zsh/zshenv" ] && source "$CONFIG_DIR/zsh/zshenv" 
+[ -f "$CONFIG_DIR/commonrc" ] && source "$CONFIG_DIR/commonrc"
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of $CONFIG_DIR/zsh/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-[ -f "$HOME/.config/commonrc" ] && source "$HOME/.config/commonrc"
 
-export ZSH=$HOME/.config/oh-my-zsh
+export ZSH=$CONFIG_DIR/oh-my-zsh
 #ZSH_THEME="powerlevel10k/powerlevel10k"
 ZSH_THEME="lukerandall-custom"
 source $ZSH/oh-my-zsh.sh
@@ -543,8 +547,8 @@ bindkey -v '^?' backward-delete-char
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-source ~/.config/zsh/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit $CONFIG_DIR/zsh/.p10k.zsh.
+source $CONFIG_DIR/zsh/.p10k.zsh
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"

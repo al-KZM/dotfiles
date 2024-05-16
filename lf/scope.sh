@@ -52,7 +52,7 @@ handle_mime() {
         */pdf)
             CACHE=$(mktemp /tmp/thumbcache.XXXXX)
             pdftoppm -png -f 1 -singlefile "$1" "$CACHE"
-            $HOME/.config/lf/image.sh draw "$CACHE.png" $num 1 $numb $numc
+            $CONFIG_DIR/lf/image.sh draw "$CACHE.png" $num 1 $numb $numc
             ;;
         *opendocument*) odt2txt "${FILE_PATH}" ;;
     esac

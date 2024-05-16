@@ -1,4 +1,4 @@
 #!/bin/bash
 
-python $HOME/.config/scripts/thebotofeyal_sendmsg.py $@
+python $CONFIG_DIR/scripts/thebotofeyal_sendmsg.py $@
 

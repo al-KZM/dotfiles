@@ -3,7 +3,7 @@ set my_pass="`pass show email/x41lakazam@gmail.com`"
 set hostname  = "gmail.com"
 set realname  = "Eyal Shukrun"
 set from      = "x41lakazam@gmail.com"
-set signature = "~/.config/neomutt/signatur.x41lakazam"
+set signature = "$CONFIG_DIR/neomutt/signatur.x41lakazam"
 
 set imap_user = "x41lakazam@gmail.com"
 set imap_pass = $my_pass

@@ -7,10 +7,10 @@ case $screens_nb in
         xrandr --auto
         ;;
     2)
-        bash $HOME/.config/.screenlayout/dual.sh
+        bash $CONFIG_DIR/.screenlayout/dual.sh
         ;;
     3)
-        bash $HOME/.config/.screenlayout/3mon.sh
+        bash $CONFIG_DIR/.screenlayout/3mon.sh
         ;;
     *)
         echo "unsupported monitors layout, please edit $script_path to add your configuration"

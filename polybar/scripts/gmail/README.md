@@ -20,7 +20,7 @@ You can change the icon or turn off sound, for more info see [script arguments](
 ## Installation
 
 ```sh
-cd ~/.config/polybar
+cd $CONFIG_DIR/polybar
 curl -LO https://github.com/vyachkonovalov/polybar-gmail/archive/master.tar.gz
 tar zxf master.tar.gz && rm master.tar.gz
 mv polybar-gmail-master gmail
@@ -29,7 +29,7 @@ mv polybar-gmail-master gmail
 and obtain/refresh credentials
 
 ```sh
-~/.config/polybar/gmail/auth.py
+$CONFIG_DIR/polybar/gmail/auth.py
 ```
 
 ### Module
@@ -37,7 +37,7 @@ and obtain/refresh credentials
 ```ini
 [module/gmail]
 type = custom/script
-exec = ~/.config/polybar/gmail/launch.py
+exec = $CONFIG_DIR/polybar/gmail/launch.py
 tail = true
 click-left = xdg-open https://mail.google.com
 ```

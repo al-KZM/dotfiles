@@ -199,7 +199,7 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id transmission-daemon
 
 #Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $CONFIG_DIR/polybar/launch.sh
 
 #Add hebrew to keyboard
 exec_always --no-startup-id setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
@@ -314,13 +314,13 @@ bindsym $mod+r             mode "resize"
 bindsym $mod+Shift+r       restart
 
 # Change wallpaper
-bindsym $mod+Shift+p        exec $HOME/.config/wallpaper/set_feh_bg.sh
-bindsym $mod+mod1+p        exec $HOME/.config/wallpaper/forget_wp.py
+bindsym $mod+Shift+p        exec $CONFIG_DIR/wallpaper/set_feh_bg.sh
+bindsym $mod+mod1+p        exec $CONFIG_DIR/wallpaper/forget_wp.py
 
 # Adjust brightness
-bindsym mod1+F8             exec "$HOME/.config/scripts/brightness/dec.sh 15"
-bindsym mod1+F9             exec "$HOME/.config/scripts/brightness/inc.sh 15"
-bindsym mod1+t        exec "$HOME/.config/scripts/brightness/toggle_onoff.sh"
+bindsym mod1+F8             exec "$CONFIG_DIR/scripts/brightness/dec.sh 15"
+bindsym mod1+F9             exec "$CONFIG_DIR/scripts/brightness/inc.sh 15"
+bindsym mod1+t        exec "$CONFIG_DIR/scripts/brightness/toggle_onoff.sh"
 
 
 # switch to workspace
