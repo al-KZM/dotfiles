@@ -1,4 +1,3 @@
-echo "Config dir: $CONFIG_DIR"
 # Colors.
 red='\e[0;31m'
 RED='\e[1;31m'
@@ -42,9 +41,9 @@ reload () {
 
 # Additional scripts
 # '[ -f $file ] &&' is not added on purpose, to display error messages
-source "$DIR_CONFIG/aliasrc"
+source "$CONFIG_DIR/aliasrc"
 source "$ZSHDDIR/functions/general_funcs.sh"
-source "$DIR_CONFIG/nvidia/nvinit.sh"
+source "$CONFIG_DIR/nvidia/nvinit.sh"
 
 # After
 neofetch 2> /dev/null
