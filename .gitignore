@@ -1,4 +1,5 @@
 nvim/plugged/
+nvim/autoload/
 
 *.log
 tomorrow.png
