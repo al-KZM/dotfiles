@@ -89,6 +89,10 @@ func! MakeCjhebrew()
     let @h=""
 endfunc
 
+func! JsonFormat()
+    silent execute "%!python -m json.tool"
+endfunc
+
 
 map <F6> :call MakeCjhebrew()<CR>
 

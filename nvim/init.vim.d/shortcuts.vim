@@ -4,8 +4,6 @@ nnoremap <A-a> <C-x>
 " Source vimrc
 
 
-
-
 map <leader>vR :source ~/.vimrc<CR>
 " Shortcutting split navigation, saving a keypress:
 	map <C-h> <C-w>h
@@ -39,9 +37,6 @@ nnoremap <space> za
 
 
 """""" LEADER SHORTCUTS
-
-" Goyo plugin makes text more readable when writing prose:
-map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
 
 " Spell-check set to <leader>o, 'o' for 'orthography':
 nmap <leader>or :setlocal spell! spelllang=en_us<CR>
@@ -102,7 +97,7 @@ let g:lt_location_list_toggle_map = '<F10>'
 let g:lt_quickfix_list_toggle_map = '<F11>'
 
 " Ctrl-p funky extension
-nnoremap <Leader>fu :CtrlPFunky<Cr>
+nnoremap <Leader>pu :CtrlPFunky<Cr>
 " narrow the list down with a word under cursor
 nnoremap <Leader>uu :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 
@@ -115,3 +110,5 @@ nmap <leader>C :SyntasticCheck<CR>
 " Paste file on termbin.com
 nmap ,P :!$HOME/.config/scripts/termbin_file.sh %<CR>
 
+" Git
+nmap <leader>ga :Git add %<CR>
