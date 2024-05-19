@@ -46,7 +46,6 @@ reload () {
 # Additional scripts
 # '[ -f $file ] &&' is not added on purpose, to display error messages
 source "$CONFIG_DIR/aliasrc"
-source "$ZSHDDIR/functions/general_funcs.sh"
 source "$CONFIG_DIR/nvidia/nvinit.sh"
 
 # After

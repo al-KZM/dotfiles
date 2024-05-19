@@ -41,11 +41,14 @@ rbac_auth
 # Basic zsh config.
 umask 077
 ZDOTDIR=${ZDOTDIR:-${HOME}}
-ZSHDDIR="${HOME}/.config/zsh"
+ZSHDDIR="${CONFIG_DIR}/zsh"
 HISTFILE="${ZDOTDIR}/.zsh_history"
 HISTSIZE='64000'
 SAVEHIST="${HISTSIZE}"
 export TMPPREFIX="${TMPDIR}/zsh"
+
+# Additional scripts
+source "$ZSHDDIR/functions/general_funcs.sh"
 
 if [ ! -d "${TMP}" ]; then mkdir "${TMP}"; fi
 
@@ -284,7 +287,7 @@ if [ ! -d "${ZSHDDIR}" ]; then
     mkdir -p "${ZSHDDIR}" && echo "# Put your user-specified config here." > "${ZSHDDIR}/example.zsh"
 fi
 
-for zshd in $(ls -A ${HOME}/.config/zsh.d/^*.(z)sh$); do
+for zshd in $(ls -A ${CONFIG_DIR}/zsh.d/^*.(z)sh$); do
     . "${zshd}"
 done
 
@@ -540,4 +543,4 @@ builtin cd `cat $LAST_DIR_FILE`  # cd to last dir
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-source ~/.config/zsh/.p10k.zsh
+source $CONFIG_DIR/zsh/.p10k.zsh

@@ -79,7 +79,6 @@ alias ln='ln -v'
 alias chmod="chmod -c"
 alias chown="chown -c"
 alias mkdir="mkdir -v"
-alias vi="nvim"
 alias pycheck="pylama -o $CONFIG_DIR/pylama/pylama.ini"
 if command -v colordiff > /dev/null 2>&1; then
     alias diff="colordiff -Nuar"
