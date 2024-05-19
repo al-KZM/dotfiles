@@ -47,9 +47,10 @@ fi
 alias \
 	gpsh='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)' \
 	gpll='git pull --set-upstream origin $(git rev-parse --abbrev-ref HEAD)' \
-	gcm="git checkout master" 
+	gcm="git checkout master" \
 	glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit" \
-	gpsht="$CONFIG_DIR/scripts/git_push_curr_and_test.sh"  
+	gpsht="$CONFIG_DIR/scripts/git_push_curr_and_test.sh"   \
+	gsync="git add -u; git commit -m 'sync'; gpsh"
 
 # Utils
 alias \
