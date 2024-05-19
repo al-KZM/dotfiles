@@ -13,6 +13,8 @@ parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+[[ -n "$CONFIG_DIR" ]] && bash $CONFIG_DIR/scripts/sync_config.sh
+
 #stty -ixon # Disable ctrl-s and ctrl-q.
 #shopt -s autocd #Allows you to cd into directory merely by typing the directory name.
 
