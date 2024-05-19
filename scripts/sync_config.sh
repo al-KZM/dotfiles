@@ -6,7 +6,7 @@ fi
 cd $CONFIG_DIR
 git pull origin $(git rev-parse --abbrev-ref HEAD) 2> /tmp/sync_config_err > /dev/null
 
-if [[ -n `cat /tmp/sync_config_err` ]]; then
+if [[ "$?" -ne "0" ]]; then
 	echo "Error while syncing config dir (script $0): "
 	cat /tmp/sync_config_err
 fi
