@@ -1,17 +1,4 @@
-# Colors.
-export red='\e[0;31m'
-export RED='\e[1;31m'
-export green='\e[0;32m'
-export GREEN='\e[1;32m'
-export yellow='\e[0;33m'
-export YELLOW='\e[1;33m'
-export blue='\e[0;34m'
-export BLUE='\e[1;34m'
-export purple='\e[0;35m'
-export PURPLE='\e[1;35m'
-export cyan='\e[0;36m'
-export CYAN='\e[1;36m'
-export NC='\e[0m'
+echo "common profile"
 
 export LAST_DIR_FILE="$HOME/.caching_files/.last_dir"
 export LAST_LAST_DIR_FILE="$HOME/.caching_files/.last_last_dir"
@@ -44,4 +31,29 @@ export LESS_TERMCAP_ue="$(printf '%b' '[0m')"; a="${a%_}"
 if [ "${TERM}" = 'rxvt-256color' ] && ! [ -f '/usr/share/terminfo/r/rxvt-256color' ] && ! [ -f '/lib/terminfo/r/rxvt-256color' ] && ! [ -f "${HOME}/.terminfo/r/rxvt-256color" ]; then
     export TERM='rxvt-unicode'
 fi
+
+# Map hostnames
+vdi_color="green"
+cluster_color="cyan"
+nodes_color="magenta"
+
+case "$HOSTNAME" in 
+	"mtr-vdi-049")
+   		HOSTNAME="eyal-vdi"
+    	HOST_COLOR=$vdi_color
+		;; 
+
+	"mtl-e2e-slurm05")
+    	HOSTNAME="israel-1"
+    	HOST_COLOR=$cluster_color
+		;;
+
+	"hpchead")
+		HOST_COLOR=$cluster_color
+		;;
+
+esac
+
+export HOSTNAME
+export HOST_COLOR
 

@@ -1,6 +1,6 @@
 export CONFIG_DIR="/mtrsysgwork/eshukrun/.config"
+echo "zshrc"
 
-[ -f "$CONFIG_DIR/zsh/zshenv" ] && source "$CONFIG_DIR/zsh/zshenv" 
 [ -f "$CONFIG_DIR/commonrc" ] && source "$CONFIG_DIR/commonrc"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of $CONFIG_DIR/zsh/.zshrc.
@@ -10,20 +10,12 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Map hostnames
-if [ "$HOSTNAME" = "mtr-vdi-049" ]; then
-    HOSTNAME="eyal-vdi"
-elif [ "$HOSTNAME" = "mtl-e2e-slurm05" ]; then
-    HOSTNAME="israel-1"
-fi
-
-export HOSTNAME
-
 
 plugins=(git)
 
 export ZSH=$CONFIG_DIR/oh-my-zsh
-ZSH_THEME="lukerandall-custom"
+export ZSH_CUSTOM=$CONFIG_DIR/zsh/ohmyzsh_custom
+ZSH_THEME="mytheme"
 source $ZSH/oh-my-zsh.sh
 
 # Are we running under grsecurity's RBAC?

@@ -29,13 +29,6 @@ parse_git_branch() {
 # Run init commands in the shell
 #neofetch
 
-#setxkbmap -model pc105 -layout us,il -option grp:alt_shift_toggle
-# Enable the subsequent settings only in interactive sessions
-case $- in
-  *i*) ;;
-    *) return;;
-esac
-
 # Path to your oh-my-bash installation.
 export OSH='/labhome/eshukrun/.oh-my-bash'
 
