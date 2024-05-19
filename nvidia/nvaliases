@@ -2,16 +2,20 @@
 alias nvreload="source $NVIDIA_CONFIG_DIR/nvinit.sh"
 alias nvalrc="vi $NVIDIA_CONFIG_DIR/nvaliases; nvreload"
 
-# Useful
-alias nvdockerlogin="docker login gitlab-master.nvidia.com -p $(pass show nvidia/gitlab) -u eshukrun"
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] || ! command -v sshpass &> /dev/null ; then
+    alias nvssh="ssh"
+    alias nvdockerlogin="docker login gitlab-master.nvidia.com -u eshukrun"
+else
+    alias nvssh="sshpass -p $(pass show nvidia/main) ssh"
+    alias nvdockerlogin="docker login gitlab-master.nvidia.com -p $(pass show nvidia/gitlab) -u eshukrun"
+fi
 
-# SSH Connections
-alias nvssh="sshpass -p $(pass show nvidia/main) ssh"
+
 alias \
     nvvdi="nvssh eshukrun@$NV_HOST_VDI" \
     nvil1="nvssh eshukrun@mtl-e2e-slurm05" \
     nvhera="nvssh eshukrun@mtl-e2e-slurm04" \
     nvhpchead="nvssh eshukrun@hpchead" \
 
-# Navigation
+# nvrcd navigate to your global directory
 alias nvrcd="cd $NV_REMOTE_STORAGE_DIR"

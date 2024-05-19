@@ -1,0 +1,52 @@
+echo "common profile"
+
+export LAST_DIR_FILE="$HOME/.caching_files/.last_dir"
+export LAST_LAST_DIR_FILE="$HOME/.caching_files/.last_last_dir"
+export EDITOR=$(which nvim 2>/dev/null || which vim)
+export TMP="$HOME/tmp"
+export TEMP="$TMP"
+export TMPDIR="$TMP"
+
+# PATH
+export PATH=$PATH:/usr/share
+
+# less/man colors
+export LESS=-R
+export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"; a="${a%_}"
+export LESS_TERMCAP_md="$(printf '%b' '[1;36m')"; a="${a%_}"
+export LESS_TERMCAP_me="$(printf '%b' '[0m')"; a="${a%_}"
+export LESS_TERMCAP_so="$(printf '%b' '[01;44;33m')"; a="${a%_}"
+export LESS_TERMCAP_se="$(printf '%b' '[0m')"; a="${a%_}"
+export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"; a="${a%_}"
+export LESS_TERMCAP_ue="$(printf '%b' '[0m')"; a="${a%_}"
+
+# Not all servers have terminfo for rxvt-256color. :<
+if [ "${TERM}" = 'rxvt-256color' ] && ! [ -f '/usr/share/terminfo/r/rxvt-256color' ] && ! [ -f '/lib/terminfo/r/rxvt-256color' ] && ! [ -f "${HOME}/.terminfo/r/rxvt-256color" ]; then
+    export TERM='rxvt-unicode'
+fi
+
+# Map hostnames
+vdi_color="green"
+cluster_color="cyan"
+nodes_color="magenta"
+
+case "$HOSTNAME" in 
+	"mtr-vdi-049")
+   	HOSTNAME="VDI"
+    	HOST_COLOR=$vdi_color
+		;; 
+
+	"mtl-e2e-slurm05")
+    	HOSTNAME="israel-1"
+    	HOST_COLOR=$cluster_color
+		;;
+
+	"hpchead")
+		HOST_COLOR=$cluster_color
+		;;
+
+esac
+
+export HOSTNAME
+export HOST_COLOR
+
