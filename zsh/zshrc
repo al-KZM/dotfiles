@@ -18,6 +18,8 @@ plugins=(git git-prompt)
 export ZSH=$CONFIG_DIR/oh-my-zsh
 export ZSH_CUSTOM=$CONFIG_DIR/zsh/ohmyzsh_custom
 ZSH_THEME="mytheme"
+# Temporary fix for git info in prompt, see https://github.com/ohmyzsh/ohmyzsh/issues/12328 for updates
+zstyle ':omz:alpha:lib:git' async-prompt no
 source $ZSH/oh-my-zsh.sh
 
 # Are we running under grsecurity's RBAC?
