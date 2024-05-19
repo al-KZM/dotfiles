@@ -1,5 +1,3 @@
-echo "common profile"
-
 export LAST_DIR_FILE="$HOME/.caching_files/.last_dir"
 export LAST_LAST_DIR_FILE="$HOME/.caching_files/.last_last_dir"
 export EDITOR=$(which nvim 2>/dev/null || which vim)

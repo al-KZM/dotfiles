@@ -1,5 +1,8 @@
-export CONFIG_DIR="/mtrsysgwork/eshukrun/.config"
-echo "zshrc"
+CONFIG_DIR="/mtrsysgwork/eshukrun/.config"
+if [[ ! -d "$CONFIG_DIR" ]]; then
+	CONFIG_DIR="$HOME/.config"
+fi
+export CONFIG_DIR
 
 [ -f "$CONFIG_DIR/commonrc" ] && source "$CONFIG_DIR/commonrc"
 
