@@ -1,6 +1,6 @@
 export CONFIG_DIR="/mtrsysgwork/eshukrun/.config"
 
-[[ -f $HOME/.bashrc ]] && $HOME/.bashrc
+[[ -f $CONFIG_DIR/bashrc ]] && bash $CONFIG_DIR/bashrc
 
 # Mount NVIDIA remote directory
 # Should be added as a launch agent
