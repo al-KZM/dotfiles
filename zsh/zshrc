@@ -13,8 +13,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
-plugins=(git)
+plugins=(git git-prompt)
 
 export ZSH=$CONFIG_DIR/oh-my-zsh
 export ZSH_CUSTOM=$CONFIG_DIR/zsh/ohmyzsh_custom
