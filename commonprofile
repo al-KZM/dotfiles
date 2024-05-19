@@ -32,7 +32,7 @@ nodes_color="magenta"
 
 case "$HOSTNAME" in 
 	"mtr-vdi-049")
-   		HOSTNAME="eyal-vdi"
+   	HOSTNAME="VDI"
     	HOST_COLOR=$vdi_color
 		;; 
 
