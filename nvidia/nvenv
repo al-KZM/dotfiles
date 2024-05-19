@@ -1,2 +1,10 @@
-export NV_REMOTE_STORAGE_DIR="/mtrsysgwork/$(whoami)"
+if [[ -d "/mtrsysgwork" ]]; then
+    NV_REMOTE_STORAGE_DIR="/mtrsysgwork/$(whoami)"
+elif [[ -d "/Volumes/mtrsysgwork" ]]; then
+    NV_REMOTE_STORAGE_DIR="/Volumes/mtrsysgwork/$(whoami)"
+else
+    NV_REMOTE_STORAGE_DIR="/.autodirect/mtrsysgwork/$(whoami)"
+fi
+
+export NV_REMOTE_STORAGE_DIR
 export NV_HOST_VDI="mtr-vdi-049.wap.labs.mlnx"
