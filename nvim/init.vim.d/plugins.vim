@@ -2,128 +2,128 @@ if ! filereadable(expand('$CONFIG_DIR/nvim/autoload/plug.vim'))
 	echo "Downloading junegunn/vim-plug to manage plugins..."
 	silent !mkdir -p $CONFIG_DIR/nvim/autoload/
 	silent !curl "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" > $CONFIG_DIR/nvim/autoload/plug.vim
-	autocmd VimEnter * PlugInstall
+	autocmd VimEnter * "PlugInstall
 endif
 
 call plug#begin('$CONFIG_DIR/nvim/plugged')
 
-Plug 'neoclide/coc.nvim', {'branch':'release'}
+"Plug 'neoclide/coc.nvim', {'branch':'release'}
 
-Plug 'vifm/vifm.vim'
+"Plug 'vifm/vifm.vim'
 
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 
 "Write french accents:
-Plug 'LukeSmithxyz/vimling'
+"Plug 'LukeSmithxyz/vimling'
 
-Plug 'bling/vim-airline'
+"Plug 'bling/vim-airline'
 "
 " gcc to comment:
-Plug 'tpope/vim-commentary'
+"Plug 'tpope/vim-commentary'
 
 "Colors
-Plug 'rebelot/kanagawa.nvim'
-Plug 'folke/tokyonight.nvim'
+"Plug 'rebelot/kanagawa.nvim'
+"Plug 'folke/tokyonight.nvim'
 
-" Plug 'lifepillar/vim-solarized8'
-" Plug 'jnurmine/Zenburn'
-" Plug 'jaredgorski/spacecamp'
-" Plug 'chrisbra/Colorizer'
-" Plug 'jdsimcoe/abstract.vim'
-" Plug 'danilo-augusto/vim-afterglow'
+" "Plug 'lifepillar/vim-solarized8'
+" "Plug 'jnurmine/Zenburn'
+" "Plug 'jaredgorski/spacecamp'
+" "Plug 'chrisbra/Colorizer'
+" "Plug 'jdsimcoe/abstract.vim'
+" "Plug 'danilo-augusto/vim-afterglow'
 
 "Utils
-Plug 'gyim/vim-boxdraw'
-Plug 'vimwiki/vimwiki'
+"Plug 'gyim/vim-boxdraw'
+"Plug 'vimwiki/vimwiki'
 
 "APIs
-Plug 'mattn/webapi-vim'
-Plug 'mattn/vim-gist'
+"Plug 'mattn/webapi-vim'
+"Plug 'mattn/vim-gist'
 
 "System
-Plug 'voldikss/vim-floaterm'
+"Plug 'voldikss/vim-floaterm'
 
 "Filesystem
-Plug 'Valloric/ListToggle'
-Plug 'liuchengxu/vim-clap'
-Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'Valloric/ListToggle'
+"Plug 'liuchengxu/vim-clap'
+"Plug 'ctrlpvim/ctrlp.vim'
 
 "CTRLP extensions
-Plug 'tacahiroy/ctrlp-funky'
+"Plug 'tacahiroy/ctrlp-funky'
 
 "Git interface
-Plug 'cohama/agit.vim'
-"DOESNT WORK: Plug 'jreybert/vimagit'
-Plug 'airblade/vim-gitgutter'
+"Plug 'cohama/agit.vim'
+"DOESNT WORK: "Plug 'jreybert/vimagit'
+"Plug 'airblade/vim-gitgutter'
 
 "Html
-Plug 'jtratner/vim-flavored-markdown'
-Plug 'suan/vim-instant-markdown'
-Plug 'nelstrom/vim-markdown-preview'
+"Plug 'jtratner/vim-flavored-markdown'
+"Plug 'suan/vim-instant-markdown'
+"Plug 'nelstrom/vim-markdown-preview'
 
 "reStructured Text
 
 "Syntax
-Plug 'vim-syntastic/syntastic'
+"Plug 'vim-syntastic/syntastic'
 
 "C
-Plug 'vim-scripts/c.vim', { 'for': 'c' }
+"Plug 'vim-scripts/c.vim', { 'for': 'c' }
 
 "Cpp Syntax highlighting
-Plug 'bfrg/vim-cpp-modern', { 'for': 'cpp' }
+"Plug 'bfrg/vim-cpp-modern', { 'for': 'cpp' }
 
 "python syntax checker
-Plug 'nvie/vim-flake8', { 'for': 'python' }
-Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
-Plug 'lepture/vim-jinja', { 'for': 'python' }
+"Plug 'nvie/vim-flake8', { 'for': 'python' }
+"Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
+"Plug 'lepture/vim-jinja', { 'for': 'python' }
 
 "Python pytest support
-Plug 'alfredodeza/pytest.vim', { 'for': 'python' }
+"Plug 'alfredodeza/pytest.vim', { 'for': 'python' }
 
 "Auto completion
 "C#
-Plug 'idbrii/vim-unityengine', { 'for': 'cs.unity' }
-Plug 'idbrii/vim-unityengine-docs', { 'for': 'cs.unity' }
+"Plug 'idbrii/vim-unityengine', { 'for': 'cs.unity' }
+"Plug 'idbrii/vim-unityengine-docs', { 'for': 'cs.unity' }
 
 "Dart
-Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
+"Plug 'dart-lang/dart-vim-plugin', { 'for': 'dart' }
 
 "Flutter
 
 "Java
-Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
-Plug 'starcraftman/vim-eclim', { 'for': 'java' }
+"Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
+"Plug 'starcraftman/vim-eclim', { 'for': 'java' }
 
 "Go
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
+"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
 
 
 
 "Files syntax
-"Plug 'mboughaba/i3config.vim'
-"Plug 'PotatoesMaster/i3-vim-syntax'
-"Plug 'kovetskiy/sxhkd-vim'
+""Plug 'mboughaba/i3config.vim'
+""Plug 'PotatoesMaster/i3-vim-syntax'
+""Plug 'kovetskiy/sxhkd-vim'
 
 "code folding
-Plug 'tmhedberg/SimpylFold'
+"Plug 'tmhedberg/SimpylFold'
 
 "Code navigation
-Plug 'junegunn/fzf.vim'
-Plug 'kshenoy/vim-signature'
-Plug 'gcmt/taboo.vim'
-Plug 'xolox/vim-session'
-Plug 'xolox/vim-misc'
-Plug 'majutsushi/tagbar'
-Plug 'anschnapp/move-less'
-Plug 'ipod825/vim-tabdrop'
-"Plug 'xolox/vim-easytags'
-"Plug 'coderifous/working-set.vim'
+"Plug 'junegunn/fzf.vim'
+"Plug 'kshenoy/vim-signature'
+"Plug 'gcmt/taboo.vim'
+"Plug 'xolox/vim-session'
+"Plug 'xolox/vim-misc'
+"Plug 'majutsushi/tagbar'
+"Plug 'anschnapp/move-less'
+"Plug 'ipod825/vim-tabdrop'
+""Plug 'xolox/vim-easytags'
+""Plug 'coderifous/working-set.vim'
 
 "C navigation
-Plug 'vim-scripts/cscope.vim', { 'for': ['cpp', 'c'] }
+"Plug 'vim-scripts/cscope.vim', { 'for': ['cpp', 'c'] }
 
 "GITHUB COPILOT !!!!
-Plug 'github/copilot.vim'
+"Plug 'github/copilot.vim'
 
 
 
@@ -195,14 +195,14 @@ endif
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> [g <"Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <"Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gd <"Plug>(coc-definition)
+nmap <silent> gy <"Plug>(coc-type-definition)
+nmap <silent> gi <"Plug>(coc-implementation)
+nmap <silent> gr <"Plug>(coc-references)
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
@@ -219,11 +219,11 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>rn <"Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>f  <"Plug>(coc-format-selected)
+nmap <leader>f  <"Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -235,29 +235,29 @@ augroup end
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
-xmap <leader>a  <Plug>(coc-codeaction-selected)
-nmap <leader>a  <Plug>(coc-codeaction-selected)
+xmap <leader>a  <"Plug>(coc-codeaction-selected)
+nmap <leader>a  <"Plug>(coc-codeaction-selected)
 
 " Remap keys for applying codeAction to the current buffer.
-nmap <leader>ac  <Plug>(coc-codeaction)
+nmap <leader>ac  <"Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
-nmap <leader>qf  <Plug>(coc-fix-current)
+nmap <leader>qf  <"Plug>(coc-fix-current)
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-xmap if <Plug>(coc-funcobj-i)
-omap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap af <Plug>(coc-funcobj-a)
-xmap ic <Plug>(coc-classobj-i)
-omap ic <Plug>(coc-classobj-i)
-xmap ac <Plug>(coc-classobj-a)
-omap ac <Plug>(coc-classobj-a)
+xmap if <"Plug>(coc-funcobj-i)
+omap if <"Plug>(coc-funcobj-i)
+xmap af <"Plug>(coc-funcobj-a)
+omap af <"Plug>(coc-funcobj-a)
+xmap ic <"Plug>(coc-classobj-i)
+omap ic <"Plug>(coc-classobj-i)
+xmap ac <"Plug>(coc-classobj-a)
+omap ac <"Plug>(coc-classobj-a)
 
 " Use CTRL-S for selections ranges.
 " Requires 'textDocument/selectionRange' support of LS, ex: coc-tsserver
-nmap <silent> <C-s> <Plug>(coc-range-select)
-xmap <silent> <C-s> <Plug>(coc-range-select)
+nmap <silent> <C-s> <"Plug>(coc-range-select)
+xmap <silent> <C-s> <"Plug>(coc-range-select)
 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocActionAsync('format')
@@ -297,7 +297,7 @@ nnoremap <leader>F :Files<CR>
 
 
 """"""""""""""""""""""""""""""""""""OMNISHARP"""""""""""""""""""""""""""""""""
-Plug 'OmniSharp/omnisharp-vim'
+"Plug 'OmniSharp/omnisharp-vim'
 let g:OmniSharp_server_use_mono = 1
 
 inoremap <expr> <Tab> pumvisible() ? '<C-n>' :
@@ -309,7 +309,7 @@ nnoremap <C-o><C-d><C-p> :OmniSharpPreviewDefinition<CR>
 nnoremap <C-o><C-r> :!dotnet run
 
 """"""""""""""""""""""""""""""""""""VIM-FLUTTER"""""""""""""""""""""""""""""""""
-Plug 'thosakwe/vim-flutter'
+"Plug 'thosakwe/vim-flutter'
 let g:hot_reload_on_save=0
 
 """"""""""""""""""""""""""""""""""""EASY SHARP"""""""""""""""""""""""""""""""""
@@ -320,18 +320,18 @@ let g:easytags_file = '$CONFIG_DIR/nvim/tags'
 let g:colorizer_auto_color = 1
 
 """"""""""""""""""""""""""""""""""""NERD TREE"""""""""""""""""""""""""""""""""
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
 """""""""""""""""""""""""""""""""""""""""""""""""""FUGITIVE"""""""""""""""""""""""""""""""""
-Plug 'tpope/vim-fugitive'
+"Plug 'tpope/vim-fugitive'
 nnoremap <leader>gd :Gvdiff<CR>
 nnoremap gdh :diffget //2<CR>
 nnoremap gdl :diffget //3<CR>
 
 """""""""""""""""""""""""""""""""""VIMTEX"""""""""""""""""""""""""""""""""
-Plug 'lervag/vimtex', { 'for': 'tex' }
+"Plug 'lervag/vimtex', { 'for': 'tex' }
 let g:livepreview_previewer = $READER
 let g:tex_flavor = "tex"
 
@@ -340,19 +340,19 @@ let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 
 """""""""""""""""""""""""""""""""""VIM-LATEX-LIVE-PREVIEW"""""""""""""""""""""""""""""""""
-Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+"Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 let g:livepreview_previewer = 'zathura'
 let g:updatetime = 1000
 
 """""""""""""""""""""""""""""""""""ULTISNIPS"""""""""""""""""""""""""""""""""
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 """"""""""""""""""""""""TEX-CONCEAL""""""""""""""""'
-Plug 'KeitaNakamura/tex-conceal.vim', { 'for': 'tex' }
+"Plug 'KeitaNakamura/tex-conceal.vim', { 'for': 'tex' }
 
 set conceallevel=2
 let g:tex_conceal="abdgms"

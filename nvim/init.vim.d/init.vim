@@ -31,7 +31,7 @@ autocmd ColorScheme * hi clear SpellBad
 autocmd ColorScheme * hi clear SpellCap
 autocmd ColorScheme * hi clear SpellLocal
 
-colorscheme tokyonight-moon
+"colorscheme tokyonight-moon
 "colorscheme "tokyonight-night"
 "colorscheme "tokyonight-storm"
 "colorscheme "tokyonight-day"
@@ -67,7 +67,7 @@ nnoremap c "_c
 set nocompatible
 filetype plugin on
 filetype plugin indent on
-syntax on
+"syntax on
 set encoding=utf-8
 set number relativenumber
 
@@ -115,10 +115,10 @@ if has("autocmd")
   augroup END
 endif
 
-function Gitignore(env)
-    echom g:skeletons_dir . '/skeleton-gitignore-' . a:env
-    silent! execute '0r ' . g:skeletons_dir . '/skeleton-gitignore-' . a:env
-endfunction
+"function Gitignore(env)
+"    echom g:skeletons_dir . '/skeleton-gitignore-' . a:env
+"    silent! execute '0r ' . g:skeletons_dir . '/skeleton-gitignore-' . a:env
+"endfunction
 
 " I need to put this here, it is related to plugin tex-conceal
 hi Conceal ctermbg=NONE
