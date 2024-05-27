@@ -3,9 +3,9 @@
 # Wrappers
 alias \
 	vi="vim" \
+	ls="ls -h --color=auto" \
 	h="cd ~/ && ls -a" \
     cf="cd $CONFIG_DIR && ls -a" \
-	ls="ls -hN --color=auto  --hide="__pycache__/"" \
 	ll="ls -lash"\
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
@@ -60,6 +60,6 @@ alias \
 # Cluster
 alias \
 	slurmenv='echo $(printenv | grep SLURM | sed -rn "s/=(.*)/='\1'/p" | paste -d  -s)'
-	
+
 
 
