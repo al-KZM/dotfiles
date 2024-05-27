@@ -1,9 +1,14 @@
 ### Installation
 
 ```
-# For a nvidia vdi, do:
-# CONFIG_DIR=/mtrsysgwork/<your_user>/.config 
-# mkdir -p $CONFIG_DIR
+CONFIG_DIR=$HOME/.config
+BRANCH="master"
+
+# For a nvidia vdi, uncomment:
+#CONFIG_DIR=/mtrsysgwork/<your_user>/.config
+#BRANCH="nv-vdi"
+
+git clone -b nv-vdi --single-branch https://github.com/x41lakazam/dotfiles $CONFIG_DIR
 
 ln -s $CONFIG_DIR/inputrc $HOME/.inputrc
 ln -s $CONFIG_DIR/vim.d/vimrc $HOME/.vimrc

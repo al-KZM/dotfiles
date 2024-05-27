@@ -22,12 +22,12 @@ alias \
 	ln='ln -v	' \
 	chmod="chmod -	c" \
 	chown="chown -c	" \
-	mkdir="mkdir -v	" 
+	mkdir="mkdir -v	"
 
 # External wrappers
-command -v bat && alias cat="bat"
-command -v ipython && python="ipython"
-command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d" vi="nvim" # Use neovim for vim if present.
+command -v bat &>/dev/null && alias cat="bat"
+command -v ipython &>/dev/null && python="ipython"
+command -v nvim &>/dev/null && alias vim="nvim" vimdiff="nvim -d" vi="nvim" # Use neovim for vim if present.
 
 # Edit files
 alias \
