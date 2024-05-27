@@ -107,12 +107,14 @@ Plug 'tmhedberg/SimpylFold'
 
 "Code navigation
 Plug 'junegunn/fzf.vim'
-"Plug 'kshenoy/vim-signature'
+Plug 'kshenoy/vim-signature'
 "Plug 'gcmt/taboo.vim'
 "Plug 'xolox/vim-session'
 "Plug 'xolox/vim-misc'
-"Plug 'majutsushi/tagbar'
-"Plug 'anschnapp/move-less'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'majutsushi/tagbar'
+Plug 'anschnapp/move-less'
+Plug 'universal-ctags/ctags'
 "Plug 'ipod825/vim-tabdrop'
 ""Plug 'xolox/vim-easytags'
 ""Plug 'coderifous/working-set.vim'
@@ -320,6 +322,7 @@ let g:colorizer_auto_color = 1
 """"""""""""""""""""""""""""""""""""NERD TREE"""""""""""""""""""""""""""""""""
 Plug 'scrooloose/nerdtree'
 autocmd VimEnter * NERDTree     " Open NERDTree automatically
+autocmd VimEnter * wincmd p     " Focus on main window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeIgnore=['\.pyc$', '\~$', '\.lo$', '\.o$'] "ignore files in NERDTree
 let g:NERDTreeMouseMode=3       " Single click open folder

@@ -8,8 +8,15 @@ BRANCH="master"
 #CONFIG_DIR=/mtrsysgwork/<your_user>/.config
 #BRANCH="nv-vdi"
 
+# Requirements
+brew install universal-ctags
+pip3 install neovim
+pip install neovim
+
+# Clone my config
 git clone -b nv-vdi --single-branch https://github.com/x41lakazam/dotfiles $CONFIG_DIR
 
+# Create symlinks
 ln -s $CONFIG_DIR/inputrc $HOME/.inputrc
 ln -s $CONFIG_DIR/vim.d/vimrc $HOME/.vimrc
 ln -s $CONFIG_DIR/bashrc $HOME/.bashrc
