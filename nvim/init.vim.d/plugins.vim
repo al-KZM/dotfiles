@@ -7,7 +7,8 @@ endif
 
 call plug#begin('$CONFIG_DIR/nvim/plugged')
 
-Plug 'neoclide/coc.nvim', {'branch':'release'}
+"Plug 'neoclide/coc.nvim', {'branch':'release'}
+
 
 Plug 'vifm/vifm.vim'
 
@@ -44,7 +45,7 @@ Plug 'voldikss/vim-floaterm'
 
 "Filesystem
 "Plug 'Valloric/ListToggle'
-Plug 'liuchengxu/vim-clap'
+"Plug 'liuchengxu/vim-clap'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tacahiroy/ctrlp-funky'
 
