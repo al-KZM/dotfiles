@@ -5,6 +5,9 @@ export TMP="$HOME/tmp"
 export TEMP="$TMP"
 export TMPDIR="$TMP"
 
+# If you want to use your nvim config directory
+export VIM=$CONFIG_DIR/nvim
+
 # PATH
 export PATH=$PATH:/usr/share
 
@@ -28,11 +31,11 @@ vdi_color="green"
 cluster_color="cyan"
 nodes_color="magenta"
 
-case "$HOSTNAME" in 
+case "$HOSTNAME" in
 	"mtr-vdi-049")
    	HOSTNAME="VDI"
     	HOST_COLOR=$vdi_color
-		;; 
+		;;
 
 	"mtl-e2e-slurm05")
     	HOSTNAME="israel-1"
