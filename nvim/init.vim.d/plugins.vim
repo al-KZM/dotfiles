@@ -7,8 +7,7 @@ endif
 
 call plug#begin('$CONFIG_DIR/nvim/plugged')
 
-"Plug 'neoclide/coc.nvim', {'branch':'release'}
-
+Plug 'neoclide/coc.nvim', {'branch':'release'}
 
 Plug 'vifm/vifm.vim'
 
@@ -320,8 +319,14 @@ let g:colorizer_auto_color = 1
 
 """"""""""""""""""""""""""""""""""""NERD TREE"""""""""""""""""""""""""""""""""
 Plug 'scrooloose/nerdtree'
+autocmd VimEnter * NERDTree     " Open NERDTree automatically
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+let NERDTreeIgnore=['\.pyc$', '\~$', '\.lo$', '\.o$'] "ignore files in NERDTree
+let g:NERDTreeMouseMode=3       " Single click open folder
+let NERDTreeShowBookmarks=1             " NERDTree bookmarks
+
+
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""FUGITIVE"""""""""""""""""""""""""""""""""
 "Plug 'tpope/vim-fugitive'

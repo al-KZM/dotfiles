@@ -1,9 +1,9 @@
 if [[ -d "/mtrsysgwork" ]]; then
     NV_REMOTE_STORAGE_DIR="/mtrsysgwork/$(whoami)"
-elif [[ -d "/Volumes/mtrsysgwork" ]]; then
-    NV_REMOTE_STORAGE_DIR="/Volumes/mtrsysgwork/$(whoami)"
-else
+elif [[ -d "/.autodirect" ]];then
     NV_REMOTE_STORAGE_DIR="/.autodirect/mtrsysgwork/$(whoami)"
+else
+    NV_REMOTE_STORAGE_DIR="/Volumes/mtrsysgwork/$(whoami)"
 fi
 
 export NV_REMOTE_STORAGE_DIR
