@@ -18,4 +18,4 @@ alias \
     nvhpchead="nvssh eshukrun@hpchead" \
 
 # nvrcd navigate to your global directory
-alias nvrcd="cd $NV_REMOTE_STORAGE_DIR"
+alias nvrcd="cd $NV_REMOTE_STORAGE_DIR; ls"
