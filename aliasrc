@@ -57,4 +57,9 @@ alias \
 	yamlcheck="python -c 'import yaml, sys; yaml.safe_load(sys.stdin); print(1)' <" \
 	rmpcache="sudo find . -name "__pycache__" -type d -exec rm -rf {} \;"
 
+# Cluster
+alias \
+	slurmenv='echo $(printenv | grep SLURM | sed -rn "s/=(.*)/='\1'/p" | paste -d  -s)'
+	
+
 
