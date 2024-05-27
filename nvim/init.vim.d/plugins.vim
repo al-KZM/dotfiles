@@ -7,24 +7,23 @@ endif
 
 call plug#begin('$CONFIG_DIR/nvim/plugged')
 
-"Plug 'neoclide/coc.nvim', {'branch':'release'}
+Plug 'neoclide/coc.nvim', {'branch':'release'}
 
-"Plug 'vifm/vifm.vim'
+Plug 'vifm/vifm.vim'
 
-"Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 "Write french accents:
 "Plug 'LukeSmithxyz/vimling'
 
-"Plug 'bling/vim-airline'
-"
+Plug 'bling/vim-airline'
+
 " gcc to comment:
-"Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
 
 "Colors
 "Plug 'rebelot/kanagawa.nvim'
 "Plug 'folke/tokyonight.nvim'
-
 " "Plug 'lifepillar/vim-solarized8'
 " "Plug 'jnurmine/Zenburn'
 " "Plug 'jaredgorski/spacecamp'
@@ -41,15 +40,13 @@ call plug#begin('$CONFIG_DIR/nvim/plugged')
 "Plug 'mattn/vim-gist'
 
 "System
-"Plug 'voldikss/vim-floaterm'
+Plug 'voldikss/vim-floaterm'
 
 "Filesystem
 "Plug 'Valloric/ListToggle'
-"Plug 'liuchengxu/vim-clap'
-"Plug 'ctrlpvim/ctrlp.vim'
-
-"CTRLP extensions
-"Plug 'tacahiroy/ctrlp-funky'
+Plug 'liuchengxu/vim-clap'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tacahiroy/ctrlp-funky'
 
 "Git interface
 "Plug 'cohama/agit.vim'
@@ -64,18 +61,21 @@ call plug#begin('$CONFIG_DIR/nvim/plugged')
 "reStructured Text
 
 "Syntax
-"Plug 'vim-syntastic/syntastic'
+Plug 'vim-syntastic/syntastic'
 
-"C
-"Plug 'vim-scripts/c.vim', { 'for': 'c' }
+"C/Cpp
+Plug 'vim-scripts/a.vim', { 'for': ['c', 'cpp']}
 
-"Cpp Syntax highlighting
-"Plug 'bfrg/vim-cpp-modern', { 'for': 'cpp' }
+"C only
+Plug 'vim-scripts/c.vim', { 'for': 'c' }
+
+"Cpp only
+Plug 'bfrg/vim-cpp-modern', { 'for': 'cpp' }
 
 "python syntax checker
-"Plug 'nvie/vim-flake8', { 'for': 'python' }
-"Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
-"Plug 'lepture/vim-jinja', { 'for': 'python' }
+Plug 'nvie/vim-flake8', { 'for': 'python' }
+Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
+Plug 'lepture/vim-jinja', { 'for': 'python' }
 
 "Python pytest support
 "Plug 'alfredodeza/pytest.vim', { 'for': 'python' }
@@ -97,18 +97,16 @@ call plug#begin('$CONFIG_DIR/nvim/plugged')
 "Go
 "Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'for': 'go' }
 
-
-
-"Files syntax
+"Special files syntax
 ""Plug 'mboughaba/i3config.vim'
 ""Plug 'PotatoesMaster/i3-vim-syntax'
 ""Plug 'kovetskiy/sxhkd-vim'
 
 "code folding
-"Plug 'tmhedberg/SimpylFold'
+Plug 'tmhedberg/SimpylFold'
 
 "Code navigation
-"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'
 "Plug 'kshenoy/vim-signature'
 "Plug 'gcmt/taboo.vim'
 "Plug 'xolox/vim-session'
@@ -216,7 +214,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
+"autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <"Plug>(coc-rename)
@@ -230,7 +228,7 @@ augroup mygroup
   " Setup formatexpr specified filetype(s).
   autocmd FileType typescript,json setl formatexpr=CocActionAsync('formatSelected')
   " Update signature help on jump placeholder.
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+  "autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
 " Applying codeAction to the selected region.
@@ -271,7 +269,7 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+"set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Mappings for CoCList
 " Show all diagnostics.
@@ -320,7 +318,7 @@ let g:easytags_file = '$CONFIG_DIR/nvim/tags'
 let g:colorizer_auto_color = 1
 
 """"""""""""""""""""""""""""""""""""NERD TREE"""""""""""""""""""""""""""""""""
-"Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
@@ -346,7 +344,7 @@ let g:livepreview_previewer = 'zathura'
 let g:updatetime = 1000
 
 """""""""""""""""""""""""""""""""""ULTISNIPS"""""""""""""""""""""""""""""""""
-"Plug 'SirVer/ultisnips'
+Plug 'SirVer/ultisnips'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
@@ -369,7 +367,7 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 " let g:syntastic_java_checkstyle_classpath = '$HOME/documents/clones/checkstyle/checkstyle-8.39-all.jar'
 " let g:syntastic_java_checkstyle_conf_file = '$HOME/documents/clones/checkstyle/checkstyle.xml'
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 
