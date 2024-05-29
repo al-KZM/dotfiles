@@ -18,7 +18,7 @@ set secure
 let g:lt_height = 10
 
 "Add my custom runtime to runtime path
-let &rtp .= ','.expand("$CONFIG_DIR/nvim/init.vim.d/runtime")
+let &rtp .= ','.expand("$CONFIG_DIR/nvim/runtime")
 "source $CONFIG_DIR/nvim/init.vim.d/Filetype.vim
 source $CONFIG_DIR/nvim/init.vim.d/plugins.vim
 source $CONFIG_DIR/nvim/init.vim.d/functions.vim

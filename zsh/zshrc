@@ -527,11 +527,7 @@ bindkey -v '^?' backward-delete-char
 
 # Additional scripts
 [ -f "$CONFIG_DIR/shortcutrc" ] && source "$CONFIG_DIR/shortcutrc"
-[ -f "$CONFIG_DIR/aliasrc" ] && source "$CONFIG_DIR/aliasrc"
 [ -f "$ZDOTDIR/functions/general_funcs.sh" ] && source "$ZDOTDIR/functions/general_funcs.sh"
-
-# After
-builtin cd `cat $LAST_DIR_FILE`  # cd to last dir
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

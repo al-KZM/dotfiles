@@ -1,9 +1,9 @@
 " Vim syntax file
 " Language:		VHDL [VHSIC (Very High Speed Integrated Circuit) Hardware Description Language]
-" Maintainer:		Daniel Kho <daniel.kho@tauhop.com>
+" Maintainer:		Daniel Kho <daniel.kho@logik.haus>
 " Previous Maintainer:	Czo <Olivier.Sirol@lip6.fr>
 " Credits:		Stephan Hegel <stephan.hegel@snc.siemens.com.cn>
-" Last Changed:		2016 Mar 05 by Daniel Kho
+" Last Changed:		2020 Apr 04 by Daniel Kho
 
 " quit when a syntax file was already loaded
 if exists("b:current_syntax")
@@ -16,10 +16,10 @@ set cpo&vim
 " case is not significant
 syn case	ignore
 
-" VHDL keywords
-syn keyword	vhdlStatement	access after alias all assert
+" VHDL 1076-2019 keywords
+syn keyword	vhdlStatement	access after alias all
 syn keyword 	vhdlStatement	architecture array attribute
-syn keyword 	vhdlStatement	assume assume_guarantee
+syn keyword 	vhdlStatement	assert assume
 syn keyword 	vhdlStatement	begin block body buffer bus
 syn keyword 	vhdlStatement	case component configuration constant
 syn keyword 	vhdlStatement	context cover
@@ -34,18 +34,19 @@ syn keyword 	vhdlStatement	map
 syn keyword 	vhdlStatement	new next null
 syn keyword 	vhdlStatement	of on open others out
 syn keyword 	vhdlStatement	package port postponed procedure process pure
-syn keyword 	vhdlStatement	parameter property protected
+syn keyword 	vhdlStatement	parameter property protected private
 syn keyword 	vhdlStatement	range record register reject report return
-syn keyword 	vhdlStatement	release restrict restrict_guarantee
-syn keyword 	vhdlStatement	select severity signal shared
-syn keyword 	vhdlStatement	subtype
+syn keyword 	vhdlStatement	release restrict
+syn keyword 	vhdlStatement	select severity signal shared subtype
 syn keyword 	vhdlStatement	sequence strong
 syn keyword 	vhdlStatement	then to transport type
 syn keyword 	vhdlStatement	unaffected units until use
-syn keyword 	vhdlStatement	variable
-syn keyword 	vhdlStatement	vmode vprop vunit
+syn keyword 	vhdlStatement	variable view
+syn keyword 	vhdlStatement	vpkg vmode vprop vunit
 syn keyword 	vhdlStatement	wait when while with
-syn keyword 	vhdlStatement	note warning error failure
+
+" VHDL predefined severity levels
+syn keyword 	vhdlAttribute	note warning error failure
 
 " Linting of conditionals.
 syn match	vhdlStatement	"\<\(if\|else\)\>"
@@ -69,9 +70,7 @@ syn match	vhdlType	"\<time_vector\>\'\="
 
 syn match	vhdlType	"\<character\>\'\="
 syn match	vhdlType	"\<string\>\'\="
-"syn keyword	vhdlType	severity_level
-syn keyword	vhdlType	line
-syn keyword	vhdlType	text
+syn keyword	vhdlType	line text side width
 
 " Predefined standard IEEE VHDL types
 syn match	vhdlType	"\<std_ulogic\>\'\="
@@ -124,6 +123,8 @@ syn match   	vhdlAttribute	"\'succ"
 syn match   	vhdlAttribute	"\'val"
 syn match   	vhdlAttribute	"\'image"
 syn match   	vhdlAttribute	"\'value"
+" VHDL-2019 interface attribute
+syn match   	vhdlAttribute	"\'converse"
 
 syn keyword	vhdlBoolean	true false
 
@@ -165,6 +166,9 @@ syn match	vhdlOperator	"=\|\/=\|>\|<\|>="
 syn match	vhdlOperator	"<=\|:="
 syn match	vhdlOperator	"=>"
 
+" VHDL-202x concurrent signal association (spaceship) operator
+syn match	vhdlOperator	"<=>"
+
 " VHDL-2008 conversion, matching equality/non-equality operators
 syn match	vhdlOperator	"??\|?=\|?\/=\|?<\|?<=\|?>\|?>="
 
@@ -183,8 +187,11 @@ syn match	vhdlError	"\(<\)[&+\-\/\\]\+"
 syn match	vhdlError	"[>=&+\-\/\\]\+\(<\)"
 " Covers most operators
 " support negative sign after operators. E.g. q<=-b;
-syn match	vhdlError	"\(&\|+\|\-\|\*\*\|\/=\|??\|?=\|?\/=\|?<=\|?>=\|>=\|<=\|:=\|=>\)[<>=&+\*\\?:]\+"
-syn match	vhdlError	"[<>=&+\-\*\\:]\+\(&\|+\|\*\*\|\/=\|??\|?=\|?\/=\|?<\|?<=\|?>\|?>=\|>=\|<=\|:=\|=>\)"
+" Supports VHDL-202x spaceship (concurrent simple signal association).
+syn match	vhdlError	"\(<=\)[<=&+\*\\?:]\+"
+syn match	vhdlError	"[>=&+\-\*\\:]\+\(=>\)"
+syn match	vhdlError	"\(&\|+\|\-\|\*\*\|\/=\|??\|?=\|?\/=\|?<=\|?>=\|>=\|:=\|=>\)[<>=&+\*\\?:]\+"
+syn match	vhdlError	"[<>=&+\-\*\\:]\+\(&\|+\|\*\*\|\/=\|??\|?=\|?\/=\|?<\|?<=\|?>\|?>=\|>=\|<=\|:=\)"
 syn match	vhdlError	"\(?<\|?>\)[<>&+\*\/\\?:]\+"
 syn match	vhdlError	"\(<<\|>>\)[<>&+\*\/\\?:]\+"
 
@@ -257,4 +264,5 @@ let b:current_syntax = "vhdl"
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
+
 " vim: ts=8

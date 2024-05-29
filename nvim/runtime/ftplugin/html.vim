@@ -1,45 +1,59 @@
-inoremap ,b <b></b><Space><++><Esc>FbT>i
-inoremap ,it <em></em><Space><++><Esc>FeT>i
-inoremap ,1 <h1></h1><Enter><Enter><++><Esc>2kf<i
-inoremap ,2 <h2></h2><Enter><Enter><++><Esc>2kf<i
-inoremap ,3 <h3></h3><Enter><Enter><++><Esc>2kf<i
-inoremap ,p <p></p><Enter><Enter><++><Esc>02kf>a
-inoremap ,a <a<Space>href=""><++></a><Space><++><Esc>14hi
-inoremap ,e <a<Space>target="_blank"<Space>href=""><++></a><Space><++><Esc>14hi
-inoremap ,ul <ul><Enter><li></li><Enter></ul><Enter><Enter><++><Esc>03kf<i
-inoremap ,li <Esc>o<li></li><Esc>F>a
-inoremap ,ol <ol><Enter><li></li><Enter></ol><Enter><Enter><++><Esc>03kf<i
-inoremap ,im <img src="" alt="<++>"><++><esc>Fcf"a
-inoremap ,td <td></td><++><Esc>Fdcit
-inoremap ,tr <tr></tr><Enter><++><Esc>kf<i
-inoremap ,th <th></th><++><Esc>Fhcit
-inoremap ,tab <table><Enter></table><Esc>O
-inoremap ,gr <font color="green"></font><Esc>F>a
-inoremap ,rd <font color="red"></font><Esc>F>a
-inoremap ,yl <font color="yellow"></font><Esc>F>a
-inoremap ,dt <dt></dt><Enter><dd><++></dd><Enter><++><esc>2kcit
-inoremap ,dl <dl><Enter><Enter></dl><enter><enter><++><esc>3kcc
-inoremap &<space> &amp;<space>
-inoremap á &aacute;
-inoremap é &eacute;
-inoremap í &iacute;
-inoremap ó &oacute;
-inoremap ú &uacute;
-inoremap ä &auml;
-inoremap ë &euml;
-inoremap ï &iuml;
-inoremap ö &ouml;
-inoremap ü &uuml;
-inoremap ã &atilde;
-inoremap ẽ &etilde;
-inoremap ĩ &itilde;
-inoremap õ &otilde;
-inoremap ũ &utilde;
-inoremap ñ &ntilde;
-inoremap à &agrave;
-inoremap è &egrave;
-inoremap ì &igrave;
-inoremap ò &ograve;
-inoremap ù &ugrave;
+" Vim filetype plugin file
+" Language:		HTML
+" Maintainer:		Doug Kearns <dougkearns@gmail.com>
+" Previous Maintainer:	Dan Sharp
+" Last Change:		2024 Jan 14
 
-nnoremap <leader>w !google-chrome-stable %
+if exists("b:did_ftplugin")
+  finish
+endif
+let b:did_ftplugin = 1
+
+let s:save_cpo = &cpo
+set cpo-=C
+
+setlocal matchpairs+=<:>
+setlocal commentstring=<!--%s-->
+setlocal comments=s:<!--,m:\ \ \ \ ,e:-->
+
+let b:undo_ftplugin = "setlocal comments< commentstring< matchpairs<"
+
+if get(g:, "ft_html_autocomment", 0)
+  setlocal formatoptions-=t formatoptions+=croql
+  let b:undo_ftplugin ..= " | setlocal formatoptions<"
+endif
+
+if exists('&omnifunc')
+  setlocal omnifunc=htmlcomplete#CompleteTags
+  call htmlcomplete#DetectOmniFlavor()
+  let b:undo_ftplugin ..= " | setlocal omnifunc<"
+endif
+
+" HTML: thanks to Johannes Zellner and Benji Fisher.
+if exists("loaded_matchit") && !exists("b:match_words")
+  let b:match_ignorecase = 1
+  let b:match_words = '<!--:-->,' ..
+	\	      '<:>,' ..
+	\	      '<\@<=[ou]l\>[^>]*\%(>\|$\):<\@<=li\>:<\@<=/[ou]l>,' ..
+	\	      '<\@<=dl\>[^>]*\%(>\|$\):<\@<=d[td]\>:<\@<=/dl>,' ..
+	\	      '<\@<=\([^/!][^ \t>]*\)[^>]*\%(>\|$\):<\@<=/\1>'
+  let b:html_set_match_words = 1
+  let b:undo_ftplugin ..= " | unlet! b:match_ignorecase b:match_words b:html_set_match_words"
+endif
+
+" Change the :browse e filter to primarily show HTML-related files.
+if (has("gui_win32") || has("gui_gtk")) && !exists("b:browsefilter")
+  let  b:browsefilter = "HTML Files (*.html, *.htm)\t*.html;*.htm\n" ..
+	\		"JavaScript Files (*.js)\t*.js\n" ..
+	\		"Cascading StyleSheets (*.css)\t*.css\n"
+  if has("win32")
+    let b:browsefilter ..= "All Files (*.*)\t*\n"
+  else
+    let b:browsefilter ..= "All Files (*)\t*\n"
+  endif
+  let b:html_set_browsefilter = 1
+  let b:undo_ftplugin ..= " | unlet! b:browsefilter b:html_set_browsefilter"
+endif
+
+let &cpo = s:save_cpo
+unlet s:save_cpo

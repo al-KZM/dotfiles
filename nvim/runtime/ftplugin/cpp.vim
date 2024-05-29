@@ -1,15 +1,19 @@
+" Vim filetype plugin file
+" Language:	C++
+" Maintainer:	The Vim Project <https://github.com/vim/vim>
+" Last Change:	2023 Aug 10
+" Former Maintainer:	Bram Moolenaar <Bram@vim.org>
 
-"""TODO:
-"Install CScope
+" Only do this when not done yet for this buffer
+if exists("b:did_ftplugin")
+  finish
+endif
 
-""" Editor options
-set noexpandtab
-set colorcolumn=110
-highlight ColorColumn ctermbg=darkgray
-"Vim has a gf command (and related, <C-W><C-F> to open in new tab) which open file whose name is under or after the cursor. This feature is extremely useful for browsing header files.
-let &path.="src/include,/usr/include/AL,"
+" Behaves mostly just like C
+" XXX: "[.]" in the first pattern makes it a wildcard on Windows
+runtime! ftplugin/c[.]{vim,lua} ftplugin/c_*.{vim,lua} ftplugin/c/*.{vim,lua}
 
-""" Compiler options
-function Cout()
-	execute "normal!
-endfunction
+" C++ uses templates with <things>
+" Disabled, because it gives an error for typing an unmatched ">".
+" set matchpairs+=<:>
+" let b:undo_ftplugin ..= ' | setl matchpairs<'

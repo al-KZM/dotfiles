@@ -1,9 +1,10 @@
 " Vim syntax file
 " Language:	Yacc
-" Maintainer:	Charles E. Campbell <NdrOchipS@PcampbellAfamily.Mbiz>
-" Last Change:	Aug 31, 2016
-" Version:	15
-" URL:	http://www.drchip.org/astronaut/vim/index.html#SYNTAX_YACC
+" Former Maintainer: Charles E. Campbell
+" Last Change:	Mar 25, 2019
+" Version:	17
+"   2024 Feb 19 by Vim Project (announce adoption)
+" Former URL:	http://www.drchip.org/astronaut/vim/index.html#SYNTAX_YACC
 "
 " Options: {{{1
 "   g:yacc_uses_cpp : if this variable exists, then C++ is loaded rather than C
@@ -43,12 +44,12 @@ syn cluster yaccRulesCluster	contains=yaccNonterminal,yaccString
 
 " ---------------------------------------------------------------------
 "  Yacc Sections: {{{1
-SynFold syn	region	yaccInit	start='.'ms=s-1,rs=s-1	matchgroup=yaccSectionSep	end='^%%$'me=e-2,re=e-2	contains=@yaccInitCluster	nextgroup=yaccRules	skipwhite skipempty contained
-SynFold syn	region	yaccInit2      start='\%^.'ms=s-1,rs=s-1	matchgroup=yaccSectionSep	end='^%%$'me=e-2,re=e-2	contains=@yaccInitCluster	nextgroup=yaccRules	skipwhite skipempty
-SynFold syn	region	yaccHeader2	matchgroup=yaccSep	start="^\s*\zs%{"	end="^\s*%}"		contains=@yaccCode	nextgroup=yaccInit	skipwhite skipempty contained
-SynFold syn	region	yaccHeader	matchgroup=yaccSep	start="^\s*\zs%{"	end="^\s*%}"		contains=@yaccCode	nextgroup=yaccInit	skipwhite skipempty
-SynFold syn	region	yaccRules	matchgroup=yaccSectionSep	start='^%%$'		end='^%%$'me=e-2,re=e-2	contains=@yaccRulesCluster	nextgroup=yaccEndCode	skipwhite skipempty contained
-SynFold syn	region	yaccEndCode	matchgroup=yaccSectionSep	start='^%%$'		end='\%$'		contains=@yaccCode	contained
+SynFold syn	region	yaccInit	start='.'ms=s-1,rs=s-1	matchgroup=yaccSectionSep		end='^%%\ze\(\s*/[*/].*\)\=$'me=e-2,re=e-2	contains=@yaccInitCluster	nextgroup=yaccRules	skipwhite skipempty contained
+SynFold syn	region	yaccInit2      start='\%^.'ms=s-1,rs=s-1	matchgroup=yaccSectionSep		end='^%%\ze\(\s*/[*/].*\)\=$'me=e-2,re=e-2	contains=@yaccInitCluster	nextgroup=yaccRules	skipwhite skipempty
+SynFold syn	region	yaccHeader2	matchgroup=yaccSep	start="^\s*\zs%{"		end="^\s*%}"			contains=@yaccCode	nextgroup=yaccInit	skipwhite skipempty contained
+SynFold syn	region	yaccHeader	matchgroup=yaccSep	start="^\s*\zs%{"		end="^\s*%}"			contains=@yaccCode	nextgroup=yaccInit	skipwhite skipempty
+SynFold syn	region	yaccRules	matchgroup=yaccSectionSep	start='^%%\ze\(\s*/[*/].*\)\=$'	end='^%%\ze\(\s*/[*/].*\)\=$'me=e-2,re=e-2	contains=@yaccRulesCluster	nextgroup=yaccEndCode	skipwhite skipempty contained
+SynFold syn	region	yaccEndCode	matchgroup=yaccSectionSep	start='^%%\ze\(\s*/[*/].*\)\=$'	end='\%$'			contains=@yaccCode	contained
 
 " ---------------------------------------------------------------------
 " Yacc Commands: {{{1
@@ -72,6 +73,7 @@ syn	match	yaccType	"<[a-zA-Z_][a-zA-Z0-9_]*>"	contains=yaccBrkt	contained
 
 SynFold syn	region	yaccNonterminal	start="^\s*\a\w*\ze\_s*\(/\*\_.\{-}\*/\)\=\_s*:"	matchgroup=yaccDelim end=";"	matchgroup=yaccSectionSep end='^%%$'me=e-2,re=e-2 contains=yaccAction,yaccDelim,yaccString,yaccComment	contained
 syn	region	yaccComment	start="/\*"	end="\*/"
+syn	region	yaccComment	start="//"	end="$"
 syn	match	yaccString	"'[^']*'"	contained
 
 

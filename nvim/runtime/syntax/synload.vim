@@ -1,6 +1,7 @@
 " Vim syntax support file
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last Change:	2016 Nov 04
+" Maintainer:	The Vim Project <https://github.com/vim/vim>
+" Last Change:	2023 Aug 10
+" Former Maintainer:	Bram Moolenaar <Bram@vim.org>
 
 " This file sets up for syntax highlighting.
 " It is loaded from "syntax.vim" and "manual.vim".
@@ -13,13 +14,6 @@ endif
 
 " let others know that syntax has been switched on
 let syntax_on = 1
-
-" Set the default highlighting colors.  Use a color scheme if specified.
-if exists("colors_name")
-  exe "colors " . colors_name
-else
-  runtime! syntax/syncolor.vim
-endif
 
 " Line continuation is used here, remove 'C' from 'cpoptions'
 let s:cpo_save = &cpo
@@ -37,7 +31,7 @@ fun! s:SynSet()
     unlet b:current_syntax
   endif
 
-  let s = expand("<amatch>")
+  0verbose let s = expand("<amatch>")
   if s == "ON"
     " :set syntax=ON
     if &filetype == ""
@@ -52,9 +46,12 @@ fun! s:SynSet()
 
   if s != ""
     " Load the syntax file(s).  When there are several, separated by dots,
-    " load each in sequence.
+    " load each in sequence.  Skip empty entries.
     for name in split(s, '\.')
-      exe "runtime! syntax/" . name . ".vim syntax/" . name . "/*.vim"
+      if !empty(name)
+        " XXX: "[.]" in the first pattern makes it a wildcard on Windows
+        exe $'runtime! syntax/{name}[.]{{vim,lua}} syntax/{name}/*.{{vim,lua}}'
+      endif
     endfor
   endif
 endfun

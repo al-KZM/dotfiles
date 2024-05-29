@@ -1,9 +1,11 @@
 " Vim syntax file
 " Language:	Maple V (based on release 4)
-" Maintainer:	Charles E. Campbell <NdrOchipS@PcampbellAfamily.Mbiz>
-" Last Change:	Aug 31, 2016
-" Version:	15
-" URL:	http://www.drchip.org/astronaut/vim/index.html#SYNTAX_MAPLE
+" Maintainer:	This runtime file is looking for a new maintainer.
+" Former Maintainer:Charles E. Campbell
+" Last Change:	Mar 26, 2019
+"   2024 Feb 19 by Vim Project (announce adoption)
+" Version:	17
+" Former URL:	http://www.drchip.org/astronaut/vim/index.html#SYNTAX_MAPLE
 "
 " Package Function Selection: {{{1
 " Because there are a lot of packages, and because of the potential for namespace
@@ -27,10 +29,10 @@ if exists("b:current_syntax")
 endif
 
 " Iskeyword Effects: {{{1
-if !has("patch-7.4.1142")
- setl isk=$,48-57,_,a-z,@-Z
-else
+if (v:version == 704 && has("patch-7.4.1142")) || v:version > 704
  syn iskeyword $,48-57,_,a-z,@-Z
+else
+ setl isk=$,48-57,_,a-z,@-Z
 endif
 
 " Package Selection: {{{1
