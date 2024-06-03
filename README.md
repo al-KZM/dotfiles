@@ -22,6 +22,9 @@ ln -s $CONFIG_DIR/vim.d/vimrc $HOME/.vimrc
 ln -s $CONFIG_DIR/bashrc $HOME/.bashrc
 ln -s $CONFIG_DIR/profile $HOME/.profile
 ln -s $CONFIG_DIR/bash_profile $HOME/.bash_profile
+
+bash /mtrsysgwork/eshukrun/.config/scripts/yum_user_install.sh neovim.x86_64
+
 ```
 
 ### Installation - local machine specific

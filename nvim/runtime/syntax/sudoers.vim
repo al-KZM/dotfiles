@@ -1,8 +1,7 @@
 " Vim syntax file
 " Language:             sudoers(5) configuration files
-" Maintainer:           Eisuke Kawashima ( e.kawaschima+vim AT gmail.com )
 " Previous Maintainer:  Nikolai Weibull <now@bitwi.se>
-" Latest Revision:      2021 Mar 15
+" Latest Revision:      2018-08-18
 " Recent Changes:	Support for #include and #includedir.
 " 			Added many new options (Samuel D. Leslie)
 
@@ -27,7 +26,7 @@ syn cluster sudoersCmndSpecList       contains=sudoersUserRunasBegin,sudoersPASS
 syn keyword sudoersTodo               contained TODO FIXME XXX NOTE
 
 syn region  sudoersComment            display oneline start='#' end='$' contains=sudoersTodo
-syn region  sudoersInclude            display oneline start='[#@]\%(include\|includedir\)\>' end='$'
+syn region  sudoersInclude            display oneline start='#\(include\|includedir\)' end='$'
 
 syn keyword sudoersAlias              User_Alias Runas_Alias nextgroup=sudoersUserAlias skipwhite skipnl
 syn keyword sudoersAlias              Host_Alias nextgroup=sudoersHostAlias skipwhite skipnl
@@ -202,7 +201,7 @@ syn keyword sudoersBooleanParameter contained skipwhite skipnl
                                   \ shell_noargs
                                   \ stay_setuid
                                   \ sudoedit_checkdir
-                                  \ sudoedit_follow
+                                  \ sudoedit_fellow
                                   \ syslog_pid
                                   \ targetpw
                                   \ tty_tickets

@@ -1,4 +1,4 @@
-" Maintainer:          Anmol Sethi <hi@nhooyr.io>
+" Maintainer:          Anmol Sethi <anmol@aubble.com>
 " Previous Maintainer: SungHyun Nam <goweol@gmail.com>
 
 if exists('b:current_syntax')
@@ -6,13 +6,13 @@ if exists('b:current_syntax')
 endif
 
 syntax case  ignore
-syntax match manReference      display '[^()[:space:]]\+(\%([0-9][a-z]*\|[nlpox]\))'
+syntax match manReference      display '[^()[:space:]]\+([0-9nx][a-z]*)'
 syntax match manSectionHeading display '^\S.*$'
-syntax match manHeader         display '^\%1l.*$'
+syntax match manTitle          display '^\%1l.*$'
 syntax match manSubHeading     display '^ \{3\}\S.*$'
-syntax match manOptionDesc     display '^\s\+\(\%(+\|-\)\S\+,\s\+\)*\%(+\|-\)\S\+'
+syntax match manOptionDesc     display '^\s\+\%(+\|-\)\S\+'
 
-highlight default link manHeader         Title
+highlight default link manTitle          Title
 highlight default link manSectionHeading Statement
 highlight default link manOptionDesc     Constant
 highlight default link manReference      PreProc
@@ -27,7 +27,10 @@ if &filetype != 'man'
   finish
 endif
 
-if get(b:, 'man_sect', '') =~# '^[023]'
+if !exists('b:man_sect')
+  call man#init_pager()
+endif
+if b:man_sect =~# '^[023]'
   syntax case match
   syntax include @c $VIMRUNTIME/syntax/c.vim
   syntax match manCFuncDefinition display '\<\h\w*\>\ze\(\s\|\n\)*(' contained

@@ -1,11 +1,10 @@
 " Vim syntax file
 " Language: Scheme (R7RS)
-" Last Change: 2021-01-03
+" Last Change: 2018-01-06
 " Author: Evan Hanson <evhan@foldling.org>
 " Maintainer: Evan Hanson <evhan@foldling.org>
 " Previous Author: Dirk van Deun <dirk@igwe.vub.ac.be>
 " Previous Maintainer: Sergey Khorev <sergey.khorev@gmail.com>
-" Repository: https://git.foldling.org/vim-scheme.git
 " URL: https://foldling.org/vim/syntax/scheme.vim
 
 if exists('b:current_syntax')
@@ -14,8 +13,6 @@ endif
 
 let s:cpo = &cpo
 set cpo&vim
-
-syn spell notoplevel
 
 syn match schemeParentheses "[^ '`\t\n()\[\]";]\+"
 syn match schemeParentheses "[)\]]"
@@ -38,7 +35,7 @@ syn region schemeUnquote matchgroup=schemeParentheses start=/,@(/ end=/)/ contai
 syn region schemeQuoteForm matchgroup=schemeData start=/(/ end=/)/ contained contains=ALLBUT,schemeQuasiquote,schemeQuasiquoteForm,schemeUnquote,schemeForm,schemeDatumCommentForm,schemeImport,@schemeImportCluster,@schemeSyntaxCluster
 syn region schemeQuasiquoteForm matchgroup=schemeData start=/(/ end=/)/ contained contains=ALLBUT,schemeQuote,schemeForm,schemeDatumCommentForm,schemeImport,@schemeImportCluster,@schemeSyntaxCluster
 
-syn region schemeString start=/\(\\\)\@<!"/ skip=/\\[\\"]/ end=/"/ contains=@Spell
+syn region schemeString start=/\(\\\)\@<!"/ skip=/\\[\\"]/ end=/"/
 syn region schemeSymbol start=/\(\\\)\@<!|/ skip=/\\[\\|]/ end=/|/
 
 syn match schemeNumber /\(#[dbeio]\)*[+\-]*\([0-9]\+\|inf.0\|nan.0\)\(\/\|\.\)\?[0-9+\-@\ilns]*\>/
@@ -50,9 +47,9 @@ syn match schemeBoolean /#f\(alse\)\?/
 syn match schemeCharacter /#\\.[^ `'\t\n\[\]()]*/
 syn match schemeCharacter /#\\x[0-9a-fA-F]\+/
 
-syn match schemeComment /;.*$/ contains=@Spell
+syn match schemeComment /;.*$/
 
-syn region schemeMultilineComment start=/#|/ end=/|#/ contains=schemeMultilineComment,@Spell
+syn region schemeMultilineComment start=/#|/ end=/|#/ contains=schemeMultilineComment
 
 syn region schemeForm matchgroup=schemeParentheses start="(" end=")" contains=ALLBUT,schemeUnquote,schemeDatumCommentForm,@schemeImportCluster
 syn region schemeForm matchgroup=schemeParentheses start="\[" end="\]" contains=ALLBUT,schemeUnquote,schemeDatumCommentForm,@schemeImportCluster
@@ -66,7 +63,7 @@ else
   syn region schemeImport matchgroup=schemeImport start="\(([ \t\n]*\)\@<=\(import\)\>" end=")"me=e-1 contained contains=schemeImportForm,schemeIdentifier,schemeComment,schemeDatumComment
 endif
 
-syn match   schemeImportKeyword "\(([ \t\n]*\)\@<=\(except\|only\|prefix\|rename\)\>"
+syn match   schemeImportKeyword "\(([ \t\n]*\)\@<=\(except\|only\|prefix\|rename\|srfi\)\>"
 syn region  schemeImportForm matchgroup=schemeParentheses start="(" end=")" contained contains=schemeIdentifier,schemeComment,schemeDatumComment,@schemeImportCluster
 syn cluster schemeImportCluster contains=schemeImportForm,schemeImportKeyword
 

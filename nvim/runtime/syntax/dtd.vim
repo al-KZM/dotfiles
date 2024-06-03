@@ -1,11 +1,10 @@
 " Vim syntax file
-" Language: DTD (Document Type Definition for XML)
-" Maintainer: Christian Brabandt <cb@256bit.org>
-" Repository: https://github.com/chrisbra/vim-xml-ftplugin
-" Previous Maintainer: Johannes Zellner <johannes@zellner.org>
-" Author: Daniel Amyot <damyot@site.uottawa.ca>
-" Last Changed:	Sept 24, 2019
-" Filenames: *.dtd
+" Language:	DTD (Document Type Definition for XML)
+" Maintainer:	Johannes Zellner <johannes@zellner.org>
+"		Author and previous maintainer:
+"		Daniel Amyot <damyot@site.uottawa.ca>
+" Last Change:	Tue, 27 Apr 2004 14:54:59 CEST
+" Filenames:	*.dtd
 "
 " REFERENCES:
 "   http://www.w3.org/TR/html40/
@@ -45,7 +44,7 @@ if !exists("dtd_no_tag_errors")
     syn region dtdError contained start=+<!+lc=2 end=+>+
 endif
 
-" if this is a html like comment highlight also
+" if this is a html like comment hightlight also
 " the opening <! and the closing > as Comment.
 syn region dtdComment		start=+<![ \t]*--+ end=+-->+ contains=dtdTodo,@Spell
 
@@ -99,8 +98,8 @@ syn match   dtdEntity		      "&[^; \t]*;" contains=dtdEntityPunct
 syn match   dtdEntityPunct  contained "[&.;]"
 
 " Strings are between quotes
-syn region dtdString    start=+"+ skip=+\\\\\|\\"+  end=+"+ contains=dtdAttrDef,dtdAttrType,dtdParamEntityInst,dtdEntity,dtdCard
-syn region dtdString    start=+'+ skip=+\\\\\|\\'+  end=+'+ contains=dtdAttrDef,dtdAttrType,dtdParamEntityInst,dtdEntity,dtdCard
+syn region dtdString    start=+"+ skip=+\\\\\|\\"+  end=+"+ contains=dtdAttrDef,dtdAttrType,dtdEnum,dtdParamEntityInst,dtdEntity,dtdCard
+syn region dtdString    start=+'+ skip=+\\\\\|\\'+  end=+'+ contains=dtdAttrDef,dtdAttrType,dtdEnum,dtdParamEntityInst,dtdEntity,dtdCard
 
 " Enumeration of elements or data between parenthesis
 "

@@ -1,4 +1,4 @@
-export CONFIG_DIR="/mtrsysgwork/eshukrun/.config"
+export CONFIG_DIR="/.autodirect/mtrsysgwork/eshukrun/.config"
 
 if [ -f /bin/zsh ]; then
     exec /bin/zsh -l

@@ -2,13 +2,14 @@
 " Language:	less
 " Maintainer:	Alessandro Vioni <jenoma@gmail.com>
 " URL: https://github.com/genoma/vim-less
-" Last Change:	2020 Sep 29
+" Last Change:	2014 November 24
 
 if exists("b:current_syntax")
   finish
 endif
 
 runtime! syntax/css.vim
+runtime! after/syntax/css.vim
 
 syn case ignore
 

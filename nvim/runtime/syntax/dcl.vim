@@ -1,20 +1,19 @@
 " Vim syntax file
 " Language:	DCL (Digital Command Language - vms)
-" Maintainer:	This runtime file is looking for a new maintainer.
-" Former Maintainer: Charles E. Campbell
-" Last Change:	Mar 26, 2019
-" Version:	13
-" Former URL:	http://www.drchip.org/astronaut/vim/index.html#SYNTAX_DCL
+" Maintainer:	Charles E. Campbell <NdrOchipS@PcampbellAfamily.Mbiz>
+" Last Change:	Aug 31, 2016
+" Version:	11
+" URL:	http://www.drchip.org/astronaut/vim/index.html#SYNTAX_DCL
 
 " quit when a syntax file was already loaded
 if exists("b:current_syntax")
   finish
 endif
 
-if (v:version == 704 && has("patch-7.4.1142")) || v:version > 704
- syn iskeyword $,@,48-57,_
+if !has("patch-7.4.1142")
+  setlocal iskeyword=$,@,48-57,_
 else
- setlocal iskeyword=$,@,48-57,_
+ syn iskeyword $,@,48-57,_
 endif
 
 syn case ignore

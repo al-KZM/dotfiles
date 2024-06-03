@@ -1,8 +1,7 @@
 " Vim syntax file
 " Language:     Objective-C
 " Maintainer:   Kazunobu Kuriyama <kazunobu.kuriyama@gmail.com>
-" Last Change:  2020 Jun 07
-" Last Change By Maintainer:   2015 Dec 14
+" Last Change:  2015 Dec 14
 
 """ Preparation for loading ObjC stuff
 if exists("b:current_syntax")
@@ -25,7 +24,7 @@ syn keyword objcUsefulTerm nil Nil NO YES
 
 " Preprocessor Directives
 syn region objcImported display contained start=+"+ skip=+\\\\\|\\"+ end=+"+
-syn match objcImported display contained "\(<\h[-+a-zA-Z0-9_/]*\.h>\|<[a-z0-9]\+>\)"
+syn match objcImported display contained "\(<\h[-a-zA-Z0-9_/]*\.h>\|<[a-z0-9]\+>\)"
 syn match objcImport display "^\s*\(%:\|#\)\s*import\>\s*["<]" contains=objcImported
 
 " ObjC Compiler Directives
@@ -64,7 +63,7 @@ syn keyword objcStorageClass nullable nonnull null_unspecified
 " ObjC type specifier
 syn keyword objcTypeSpecifier __kindof __covariant
 
-" ObjC Type Information Parameters
+" ObjC Type Infomation Parameters
 syn keyword objcTypeInfoParams ObjectType KeyType
 
 " shorthand

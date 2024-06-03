@@ -5,7 +5,7 @@ set -g base-index 1
 set -sg escape-time 0
 
 ## Allow mouse interaction
-set-option -g mouse on
+#set-option -g mouse on
 
 ## Automatically set window title
 set-window-option -g automatic-rename on
@@ -18,9 +18,10 @@ setw -g monitor-activity on
 
 ########## SHORTCUTS ##########
 ## remap prefix from 'C-b' to 'C-a'
-unbind C-b
-set-option -g prefix C-a
-bind-key C-a send-prefix
+#unbind C-b
+#set-option -g prefix C-a
+#bind-key C-a send-prefix
+
 
 #bind-key C-o set-window-option synchronize-panes
 
@@ -32,7 +33,7 @@ set -g status-right "#(cut -d ' ' -f -3 /proc/loadavg) %H:%M %d-%b-%y"
 
 ## split panes using ; and '
 bind "'" split-window -h
-bind ';' split-window -v
+bind ";" split-window -v
 unbind '"'
 unbind %
 
@@ -65,8 +66,6 @@ bind-key V choose-window 'join-pane -h -s "%%"'
 ########## THEME #########
 set -g status-bg black
 set -g status-fg white
-set -g window-status-current-style bg=white
-set -g window-status-current-style fg=black
 #set -g window-status-current-style attr=bold
 set -g status-interval 60
 set -g status-left-length 30

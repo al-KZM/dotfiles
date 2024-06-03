@@ -1,6 +1,7 @@
 " Vim syntax file
 " Language:	CVS commit file
-" Maintainer:	Matt Dunford (zenmatic@gmail.com)
+" Maintainer:	Matt Dunford (zoot@zotikos.com)
+" URL:		http://www.zotikos.com/downloads/cvs.vim
 " Last Change:	Sat Nov 24 23:25:11 CET 2001
 
 " quit when a syntax file was already loaded

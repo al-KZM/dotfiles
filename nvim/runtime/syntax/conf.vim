@@ -1,8 +1,7 @@
 " Vim syntax file
 " Language:	generic configure file
-" Maintainer:	The Vim Project <https://github.com/vim/vim>
-" Last Change:	2023 Aug 10
-" Former Maintainer:	Bram Moolenaar <Bram@vim.org>
+" Maintainer:	Bram Moolenaar <Bram@vim.org>
+" Last Change:	2005 Jun 20
 
 " Quit when a (custom) syntax file was already loaded
 if exists("b:current_syntax")
@@ -11,8 +10,8 @@ endif
 
 syn keyword	confTodo	contained TODO FIXME XXX
 " Avoid matching "text#text", used in /etc/disktab and /etc/gettytab
-syn match	confComment	"^#.*" contains=confTodo,@Spell
-syn match	confComment	"\s#.*"ms=s+1 contains=confTodo,@Spell
+syn match	confComment	"^#.*" contains=confTodo
+syn match	confComment	"\s#.*"ms=s+1 contains=confTodo
 syn region	confString	start=+"+ skip=+\\\\\|\\"+ end=+"+ oneline
 syn region	confString	start=+'+ skip=+\\\\\|\\'+ end=+'+ oneline
 

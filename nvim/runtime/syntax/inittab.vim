@@ -1,8 +1,9 @@
 " Vim syntax file
+" This is a GENERATED FILE. Please always refer to source file at the URI below.
 " Language: SysV-compatible init process control file `inittab'
-" Maintainer: Donovan Keohane <donovan.keohane@gmail.com>
-" Previous Maintainer: David Ne\v{c}as (Yeti) <yeti@physics.muni.cz>
-" Last Change: 2019-11-19
+" Maintainer: David Ne\v{c}as (Yeti) <yeti@physics.muni.cz>
+" Last Change: 2002-09-13
+" URL: http://physics.muni.cz/~yeti/download/syntax/inittab.vim
 
 " Setup
 " quit when a syntax file was already loaded
@@ -24,7 +25,7 @@ syn region inittabShString start=+"+ end=+"+ skip=+\\\\\|\\\"+ contained
 syn region inittabShString start=+'+ end=+'+ contained
 syn match inittabShOption "\s[-+][[:alnum:]]\+"ms=s+1 contained
 syn match inittabShOption "\s--[:alnum:][-[:alnum:]]*"ms=s+1 contained
-syn match inittabShCommand "\S\+" contained
+syn match inittabShCommand "/\S\+" contained
 syn cluster inittabSh add=inittabShOption,inittabShString,inittabShCommand
 
 " Keywords
@@ -38,7 +39,7 @@ syn match inittabColonAction ":" contained nextgroup=inittabAction,inittabError
 syn match inittabAction "\w\+" contained nextgroup=inittabColonProcess,inittabError contains=inittabActionName
 syn match inittabColonProcess ":" contained nextgroup=inittabProcessPlus,inittabProcess,inittabError
 syn match inittabProcessPlus "+" contained nextgroup=inittabProcess,inittabError
-syn region inittabProcess start="\S" end="$" transparent oneline contained contains=@inittabSh,inittabComment
+syn region inittabProcess start="/" end="$" transparent oneline contained contains=@inittabSh,inittabComment
 
 " Define the default highlighting
 

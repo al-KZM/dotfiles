@@ -1,7 +1,6 @@
 " Vim syntax support file
-" Maintainer:	The Vim Project <https://github.com/vim/vim>
-" Last Change:	2023 Aug 10
-" Former Maintainer:	Bram Moolenaar <Bram@vim.org>
+" Maintainer:	Bram Moolenaar <Bram@vim.org>
+" Last Change:	2001 Sep 04
 
 " This file is used for ":syntax on".
 " It installs the autocommands and starts highlighting for all buffers.
@@ -28,12 +27,11 @@ else
 endif
 
 " Set up the connection between FileType and Syntax autocommands.
-" This makes the syntax automatically set when the file type is detected
-" unless treesitter highlighting is enabled.
-" Avoid an error when 'verbose' is set and <amatch> expansion fails.
+" This makes the syntax automatically set when the file type is detected.
 augroup syntaxset
-  au! FileType *	if !exists('b:ts_highlight') | 0verbose exe "set syntax=" . expand("<amatch>") | endif
+  au! FileType *	exe "set syntax=" . expand("<amatch>")
 augroup END
+
 
 " Execute the syntax autocommands for the each buffer.
 " If the filetype wasn't detected yet, do that now.

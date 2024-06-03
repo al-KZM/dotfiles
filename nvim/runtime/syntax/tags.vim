@@ -1,10 +1,8 @@
 " Language:		tags
-" Maintainer:	This runtime file is looking for a new maintainer.
-" Former Maintainer:	Charles E. Campbell
+" Maintainer:	Charles E. Campbell  <NdrOchip@PcampbellAfamily.Mbiz>
 " Last Change:	Oct 26, 2016
-"   2024 Feb 19 by Vim Project (announce adoption)
-" Version:		8
-" Former URL:	http://www.drchip.org/astronaut/vim/index.html#SYNTAX_TAGS
+" Version:		7
+" URL:	http://www.drchip.org/astronaut/vim/index.html#SYNTAX_TAGS
 
 " quit when a syntax file was already loaded
 if exists("b:current_syntax")

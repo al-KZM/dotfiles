@@ -285,8 +285,8 @@ for zshd in $(ls -A ${CONFIG_DIR}/zsh.d/^*.(z)sh$); do
     . "${zshd}"
 done
 
-# Completion.
-autoload -Uz compinit
+# Completioon.
+autoload -U compinit
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.

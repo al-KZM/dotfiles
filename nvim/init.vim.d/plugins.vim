@@ -7,7 +7,7 @@ endif
 
 call plug#begin('$CONFIG_DIR/nvim/plugged')
 
-Plug 'neoclide/coc.nvim', {'branch':'release'}
+"Plug 'neoclide/coc.nvim', {'branch':'release'}
 
 Plug 'vifm/vifm.vim'
 
