@@ -24,7 +24,6 @@ ln -s $CONFIG_DIR/profile $HOME/.profile
 ln -s $CONFIG_DIR/bash_profile $HOME/.bash_profile
 
 bash /mtrsysgwork/eshukrun/.config/scripts/yum_user_install.sh neovim.x86_64
-
 ```
 
 ### Installation - local machine specific
@@ -49,3 +48,11 @@ ln -s $CONFIG_DIR/zsh/zshrc $HOME/.zshrc
 ln -s $CONFIG_DIR/zsh/zprofile $HOME/.zprofile
 ```
 
+### Installation - VDI specific
+
+```
+sudo dnf upgrade --refresh && \
+	sudo dnf install neovim python3-neovim
+
+pip install pynvim
+```

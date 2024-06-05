@@ -1,4 +1,5 @@
-echo "zprofile"
+[[ -n "$DEBUG_STARTUP" ]] && echo "Running zprofile"
+
 export CONFIG_DIR="/.autodirect/mtrsysgwork/eshukrun/.config"
 
 if [[ -f "$CONFIG_DIR/commonprofile" ]]; then

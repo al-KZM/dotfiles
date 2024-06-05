@@ -1,5 +1,5 @@
-echo "zshrc"
-CONFIG_DIR="/mtrsysgwork/eshukrun/.config"
+[[ -n "$DEBUG_STARTUP" ]] && echo "zshrc"
+CONFIG_DIR="/.autodirect/mtrsysgwork/eshukrun/.config"
 if [[ ! -d "$CONFIG_DIR" ]]; then
 	CONFIG_DIR="$HOME/.config"
 fi

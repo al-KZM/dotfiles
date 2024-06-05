@@ -1,9 +1,11 @@
+let g:python3_host_prog = '/usr/bin/python3.10'
+
+
 set guifont=Monaco:h28
 let mapleader =","
 let VIMDIR="$CONFIG_DIR/nvim/init.vim.d"
 set statusline+=%F
 
-let g:python3_host_prog = expand('')
 
 """ Path config
 "let g:skeletons_dir="$CONFIG_DIR/nvim/file_templates"

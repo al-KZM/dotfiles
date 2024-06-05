@@ -16,7 +16,7 @@ Plug 'tpope/vim-surround'
 "Write french accents:
 "Plug 'LukeSmithxyz/vimling'
 
-Plug 'bling/vim-airline'
+"Plug 'bling/vim-airline'
 
 " gcc to comment:
 Plug 'tpope/vim-commentary'
@@ -353,10 +353,10 @@ let g:livepreview_previewer = 'zathura'
 let g:updatetime = 1000
 
 """""""""""""""""""""""""""""""""""ULTISNIPS"""""""""""""""""""""""""""""""""
-Plug 'SirVer/ultisnips'
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+"Plug 'SirVer/ultisnips'
+"let g:UltiSnipsExpandTrigger = '<tab>'
+"let g:UltiSnipsJumpForwardTrigger = '<tab>'
+"let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 """"""""""""""""""""""""TEX-CONCEAL""""""""""""""""'
 "Plug 'KeitaNakamura/tex-conceal.vim', { 'for': 'tex' }
