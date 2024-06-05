@@ -1,3 +1,4 @@
+echo "commonrc"
 over_ssh() {
     if [ -n "${SSH_CLIENT}" ]; then
         return 0
@@ -15,11 +16,22 @@ reload () {
 source "$CONFIG_DIR/aliasrc"
 source "$CONFIG_DIR/nvidia/nvinit.sh"
 
+
 # Start up Tmux automatically
 # export
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  tmux a -t default || exec tmux new -s default && exit;
+if command -v tmux &> /dev/null && [ -n "$PS1" ]; then
+    # Local machine
+    if [[ -z "$SSH_TTY" ]] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+        echo 2
+        tmux a -t default || exec tmux new -s default && exit;
+    # SSH machine + nested
+    elif [[ -n "$SSH_TTY" ]] && [[ -z "$NESTED_SSH" ]] ; then
+        echo 1
+        export NESTED_SSH=1
+        tmux a -t nested || exec tmux new -s nested -f $CONFIG_DIR/tmux/conf && exit
+    fi
 fi
+
 
 # After
 command -v neofetch && neofetch

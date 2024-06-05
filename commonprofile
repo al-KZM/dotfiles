@@ -50,4 +50,3 @@ esac
 
 export HOSTNAME
 export HOST_COLOR
-

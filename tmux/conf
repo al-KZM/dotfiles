@@ -17,7 +17,7 @@ set -g status-keys vi
 setw -g monitor-activity on
 
 ########## SHORTCUTS ##########
-## remap prefix from 'C-b' to 'C-a'
+## remap prefix from 'C-b' to 'C-a' --> Don't do this in VDI
 #unbind C-b
 #set-option -g prefix C-a
 #bind-key C-a send-prefix

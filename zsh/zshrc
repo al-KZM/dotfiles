@@ -1,3 +1,4 @@
+echo "zshrc"
 CONFIG_DIR="/mtrsysgwork/eshukrun/.config"
 if [[ ! -d "$CONFIG_DIR" ]]; then
 	CONFIG_DIR="$HOME/.config"

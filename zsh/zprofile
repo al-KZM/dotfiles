@@ -1,3 +1,4 @@
+echo "zprofile"
 export CONFIG_DIR="/.autodirect/mtrsysgwork/eshukrun/.config"
 
 if [[ -f "$CONFIG_DIR/commonprofile" ]]; then
