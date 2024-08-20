@@ -1,6 +1,8 @@
-[[ -n "$DEBUG_STARTUP" ]] && echo "Running zprofile"
+[[ -f ~/.shell_init_verbose ]] && echo "Running zprofile"
 
-export CONFIG_DIR="/.autodirect/mtrsysgwork/eshukrun/.config"
+
+export HOME_DIR="/.autodirect/mtrsysgwork/eshukrun"
+export CONFIG_DIR="$HOME_DIR/.config"
 
 if [[ -f "$CONFIG_DIR/commonprofile" ]]; then
     source $CONFIG_DIR/commonprofile

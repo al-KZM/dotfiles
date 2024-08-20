@@ -1,4 +1,8 @@
+[[ -f ~/.shell_init_verbose ]] && echo "Running commonprofile"
+
 export XDG_CONFIG_HOME=$CONFIG_DIR
+export XDG_DATA_HOME="$HOME_DIR/.local/share"
+export XDG_CACHE_HOME="$HOME_DIR/.cache"
 
 export LAST_DIR_FILE="$HOME/.caching_files/.last_dir"
 export LAST_LAST_DIR_FILE="$HOME/.caching_files/.last_last_dir"
@@ -12,6 +16,8 @@ export VIM=$CONFIG_DIR/nvim
 
 # PATH
 export PATH=$PATH:/usr/share
+[ -d $HOME_DIR ] && export PATH=$HOME_DIR/.local/bin:$PATH
+export PATH=/.autodirect/mtrsysgwork/eshukrun/.local/share/ngc-cli/:$PATH
 
 # less/man colors
 export LESS=-R

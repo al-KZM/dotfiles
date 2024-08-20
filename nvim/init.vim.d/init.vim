@@ -1,8 +1,8 @@
 let g:python3_host_prog = '/usr/bin/python3.10'
 
-
 set guifont=Monaco:h28
 let mapleader =","
+:lua vim.g.mapleader = ","
 let VIMDIR="$CONFIG_DIR/nvim/init.vim.d"
 set statusline+=%F
 
@@ -24,9 +24,11 @@ let g:lt_height = 10
 "Add my custom runtime to runtime path
 let &rtp .= ','.expand("$CONFIG_DIR/nvim/runtime")
 "source $CONFIG_DIR/nvim/init.vim.d/Filetype.vim
-source $CONFIG_DIR/nvim/init.vim.d/plugins.vim
+:lua require("config.lazy")
+" Now I want to use lazy.nvim, so disable this:
+"source $CONFIG_DIR/nvim/init.vim.d/plugins.vim
 source $CONFIG_DIR/nvim/init.vim.d/functions.vim
-source $CONFIG_DIR/nvim/init.vim.d/shortcuts.vim
+au VimEnter * source $CONFIG_DIR/nvim/init.vim.d/shortcuts.vim
 
 "Basic config
 autocmd ColorScheme * hi clear SpellBad
@@ -35,6 +37,7 @@ autocmd ColorScheme * hi clear SpellBad
 autocmd ColorScheme * hi clear SpellCap
 autocmd ColorScheme * hi clear SpellLocal
 
+colorscheme catppuccin
 "colorscheme tokyonight-moon
 "colorscheme "tokyonight-night"
 "colorscheme "tokyonight-storm"
@@ -59,8 +62,7 @@ set bg=light
 set go=a
 set mouse=a
 set nohlsearch
-set clipboard+=unnamedplus
-
+"set clipboard+=unnamedplus
 "Indents settings
 set tabstop=4
 set shiftwidth=4

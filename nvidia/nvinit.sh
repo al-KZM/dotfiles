@@ -1,3 +1,5 @@
+[[ -f ~/.shell_init_verbose ]] && echo "Running NV init"
+
 # Init script for all nvidia environment
 export NVIDIA_CONFIG_DIR="$CONFIG_DIR/nvidia"
 

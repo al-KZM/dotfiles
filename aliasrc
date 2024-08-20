@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
+[[ -f ~/.shell_init_verbose ]] && echo "Running aliasrc"
+
 
 # Wrappers
 alias \
@@ -23,6 +25,9 @@ alias \
 	chmod="chmod -	c" \
 	chown="chown -c	" \
 	mkdir="mkdir -v	"
+
+# Navigation
+alias vicnf='cd $CONFIG_DIR/nvim'
 
 # External wrappers
 command -v bat &>/dev/null && alias cat="bat"
@@ -57,11 +62,17 @@ alias \
 # Utils
 alias \
 	yamlcheck="python -c 'import yaml, sys; yaml.safe_load(sys.stdin); print(1)' <" \
-	rmpcache="sudo find . -name "__pycache__" -type d -exec rm -rf {} \;"
+	rmpcache="sudo find . -name "__pycache__" -type d -exec rm -rf {} \;" \
+    rmnbsp="sed -i 's/ / /g'"
 
 # Cluster
+print_slurmenv(){
+    env=$(printenv | grep SLURM | sed -rn "s/=(.*)/='\1'/p" | paste -d' ' -s)
+    echo $env
+}
 alias \
-	slurmenv='echo $(printenv | grep SLURM | sed -rn "s/=(.*)/='\1'/p" | paste -d  -s)'
+    slurmenv="print_slurmenv"
+
 
 
 

@@ -1,5 +1,8 @@
-[[ -n "$DEBUG_STARTUP" ]] && echo "zshrc"
-CONFIG_DIR="/.autodirect/mtrsysgwork/eshukrun/.config"
+[[ -f ~/.shell_init_verbose ]] && echo "Running zshrc"
+
+
+HOME_DIR="/.autodirect/mtrsysgwork/eshukrun"
+CONFIG_DIR="$HOME_DIR/.config"
 if [[ ! -d "$CONFIG_DIR" ]]; then
 	CONFIG_DIR="$HOME/.config"
 fi
@@ -535,3 +538,6 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 source $CONFIG_DIR/zsh/.p10k.zsh
+
+# This should be after compinit
+eval "$(zoxide init zsh)"

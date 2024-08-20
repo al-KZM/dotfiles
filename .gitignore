@@ -84,3 +84,6 @@ QtProject.conf/
 user-dirs.dirs/
 Xmodmap/
 */muttrc
+nvim/runtime/*
+akonadi/
+nvim/runtime/

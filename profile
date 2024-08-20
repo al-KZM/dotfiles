@@ -1,4 +1,4 @@
-!/usr/bin/env sh
+#!/usr/bin/env sh
 # Profile file. Runs on login.
 
 # Switch escape and caps if tty:

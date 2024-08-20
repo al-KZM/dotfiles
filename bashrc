@@ -1,18 +1,21 @@
 #!/usr/bin/env bash
-#  _________________________________________ 
+#  _________________________________________
 # / Are you sure you don't want to edit the \
 # \ zshrc instead ??                        /
-#  ----------------------------------------- 
+#  -----------------------------------------
 #         \   ^__^
 #          \  (oo)\_______
 #             (__)\       )\/\
 #                 ||----w |
 #                 ||     ||
 
+[[ -f ~/.shell_init_verbose ]] && echo "Running config bashrc"
+
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
+[[ -f "$CONFIG_DIR/commonrc" ]] && source $CONFIG_DIR/commonrc 
 [[ -n "$CONFIG_DIR" ]] && bash $CONFIG_DIR/scripts/sync_config.sh
 
 #stty -ixon # Disable ctrl-s and ctrl-q.
@@ -21,10 +24,6 @@ parse_git_branch() {
 #HISTSIZE= HISTFILESIZE= # Infinite history.
 
 #export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h \[$(tput setaf 5)\]\W\[$(tput setaf 1)\]]\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
-
-# Load aliases and shortcuts if existent.
-[ -f "$CONFIG_DIR/shortcutrc" ] && source "$CONFIG_DIR/shortcutrc"
-[ -f "$CONFIG_DIR/aliasrc" ] && source "$CONFIG_DIR/aliasrc"
 
 # Run init commands in the shell
 #neofetch
@@ -185,3 +184,4 @@ set show-mode-in-prompt on
 set vi-cmd-mode-string "\1\e[2 q\2"
 set vi-ins-mode-string "\1\e[6 q\2"
 
+eval "$(zoxide init bash)"
