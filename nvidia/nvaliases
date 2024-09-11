@@ -6,8 +6,8 @@ if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ] || ! command -v sshpass &> /dev/nul
     alias nvssh="ssh"
     alias nvdockerlogin="docker login gitlab-master.nvidia.com -u eshukrun"
 else
-    alias nvssh="sshpass -p $(pass show nvidia/main) ssh"
-    alias nvdockerlogin="docker login gitlab-master.nvidia.com -p $(pass show nvidia/gitlab) -u eshukrun"
+    alias nvssh='sshpass -p $(pass show nvidia/main) ssh'
+    alias nvdockerlogin='docker login gitlab-master.nvidia.com -p $(pass show nvidia/gitlab) -u eshukrun'
 fi
 
 
