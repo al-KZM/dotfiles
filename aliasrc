@@ -65,6 +65,10 @@ alias \
 	rmpcache="sudo find . -name "__pycache__" -type d -exec rm -rf {} \;" \
     rmnbsp="sed -i 's/ / /g'"
 
+# Tmux
+alias \
+    mux="tmuxifier load-window"
+
 # Cluster
 print_slurmenv(){
     env=$(printenv | grep SLURM | sed -rn "s/=(.*)/='\1'/p" | paste -d' ' -s)

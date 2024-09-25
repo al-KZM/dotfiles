@@ -16,6 +16,7 @@ export VIM=$CONFIG_DIR/nvim
 
 # PATH
 export PATH=$PATH:/usr/share
+export PATH=$PATH:$CONFIG_DIR/tmux/plugins/tmuxifier/bin
 [ -d $HOME_DIR ] && export PATH=$HOME_DIR/.local/bin:$PATH
 export PATH=/.autodirect/mtrsysgwork/eshukrun/.local/share/ngc-cli/:$PATH
 
