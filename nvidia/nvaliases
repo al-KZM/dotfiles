@@ -13,7 +13,7 @@ fi
 
 alias \
     nvvdi="nvssh eshukrun@$NV_HOST_VDI" \
-    nvil1="nvssh eshukrun@mtl-e2e-slurm05" \
+    nvil1="nvssh eshukrun@mtl-isr1-slurm-gw" \
     nvhera="nvssh eshukrun@mtl-e2e-slurm04" \
     nvhpchead="nvssh eshukrun@hpchead" \
 

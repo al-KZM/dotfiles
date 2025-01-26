@@ -1,15 +1,15 @@
 [[ -f ~/.shell_init_verbose ]] && echo "Running commonprofile"
 
-export XDG_CONFIG_HOME=$CONFIG_DIR
-export XDG_DATA_HOME="$HOME_DIR/.local/share"
-export XDG_CACHE_HOME="$HOME_DIR/.cache"
+#export XDG_CONFIG_HOME=$CONFIG_DIR
+#export XDG_DATA_HOME="$HOME_DIR/.local/share"
+#export XDG_CACHE_HOME="$HOME_DIR/.cache"
 
 export LAST_DIR_FILE="$HOME/.caching_files/.last_dir"
 export LAST_LAST_DIR_FILE="$HOME/.caching_files/.last_last_dir"
 export EDITOR=$(which nvim 2>/dev/null || which vim)
-export TMP="$HOME/tmp"
-export TEMP="$TMP"
-export TMPDIR="$TMP"
+#export TMP="/tmp"
+#export TEMP="$TMP"
+#export TMPDIR="$TMP"
 
 # If you want to use your nvim config directory
 export VIM=$CONFIG_DIR/nvim
@@ -47,6 +47,11 @@ case "$HOSTNAME" in
 		;;
 
 	"mtl-e2e-slurm05")
+    	HOSTNAME="israel-1"
+    	HOST_COLOR=$cluster_color
+		;;
+
+	"mtl-isr1-slurm-gw")
     	HOSTNAME="israel-1"
     	HOST_COLOR=$cluster_color
 		;;

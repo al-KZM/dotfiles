@@ -8,6 +8,8 @@ if [[ ! -d "$CONFIG_DIR" ]]; then
 fi
 export CONFIG_DIR
 
+[[ -z SSH_CLIENT ]] && exit 0
+
 [ -f "$CONFIG_DIR/commonrc" ] && source "$CONFIG_DIR/commonrc"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of $CONFIG_DIR/zsh/.zshrc.

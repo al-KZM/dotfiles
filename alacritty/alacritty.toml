@@ -1,4 +1,6 @@
-import = ["/home/x41/.config/alacritty/color_themes/kanagawa.yml"]
+import = [
+	"$CONFIG_DIR/alacritty/color_themes/one_light.yml"
+]
 
 [env]
 term = "xterm-256color"

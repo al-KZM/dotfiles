@@ -10,13 +10,14 @@
 #                 ||     ||
 
 [[ -f ~/.shell_init_verbose ]] && echo "Running config bashrc"
+[[ -z SSH_CLIENT ]] && exit 0
 
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
 [[ -f "$CONFIG_DIR/commonrc" ]] && source $CONFIG_DIR/commonrc 
-[[ -n "$CONFIG_DIR" ]] && bash $CONFIG_DIR/scripts/sync_config.sh
+#[[ -n "$CONFIG_DIR" ]] && bash $CONFIG_DIR/scripts/sync_config.sh 2>&1
 
 #stty -ixon # Disable ctrl-s and ctrl-q.
 #shopt -s autocd #Allows you to cd into directory merely by typing the directory name.
