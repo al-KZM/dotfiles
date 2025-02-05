@@ -1,6 +1,14 @@
 [[ -f ~/.shell_init_verbose ]] && echo "Running config bash_profile"
 
-export HOME_DIR="/.autodirect/mtrsysgwork/eshukrun"
+if [[ -d "/.autodirect/mtrsysgwork/eshukrun" ]]; then
+    HOME_DIR="/.autodirect/mtrsysgwork/eshukrun"
+elif [[ -d "/.autodirect/swgwork/eshukrun" ]]; then
+    HOME_DIR="/.autodirect/swgwork/eshukrun"
+else
+    HOME_DIR="/labhome/eshukrun"
+fi
+echo "HOME_DIR is $HOME_DIR"
+export HOME_DIR
 export CONFIG_DIR="$HOME_DIR/.config"
 
 [[ -f "$CONFIG_DIR/secrets" ]] && source "$CONFIG_DIR/secrets"
