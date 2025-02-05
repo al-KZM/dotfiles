@@ -57,7 +57,12 @@ case "$HOSTNAME" in
 		;;
 
 	"tlv01-e2e-slurm12")
-    	HOSTNAME="israel-1"
+    	HOSTNAME="GAIA"
+    	HOST_COLOR=$cluster_color
+		;;
+
+	"swx-ucc-build01")
+    	HOSTNAME="UCC-BUILD"
     	HOST_COLOR=$cluster_color
 		;;
 
