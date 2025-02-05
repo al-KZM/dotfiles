@@ -1,8 +1,9 @@
 [[ -f ~/.shell_init_verbose ]] && echo "Running config bash_profile"
 
-
 export HOME_DIR="/.autodirect/mtrsysgwork/eshukrun"
 export CONFIG_DIR="$HOME_DIR/.config"
+
+[[ -f "$CONFIG_DIR/secrets" ]] && source "$CONFIG_DIR/secrets"
 
 if [[ -f "$CONFIG_DIR/commonprofile" ]]; then
     source $CONFIG_DIR/commonprofile

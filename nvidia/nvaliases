@@ -16,6 +16,10 @@ alias \
     nvil1="nvssh eshukrun@mtl-isr1-slurm-gw" \
     nvhera="nvssh eshukrun@mtl-e2e-slurm04" \
     nvhpchead="nvssh eshukrun@hpchead" \
+    nvgaia="nvssh eshukrun@tlv01-e2e-slurm12" \
+    nvuccbuild="nvssh eshukrun@swx-ucc-build01" \
+    nvhpcbuild="nvssh hpc-build"
+
 
 # nvrcd navigate to your global directory
 alias nvrcd="cd $NV_REMOTE_STORAGE_DIR; ls"

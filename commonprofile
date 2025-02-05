@@ -56,6 +56,11 @@ case "$HOSTNAME" in
     	HOST_COLOR=$cluster_color
 		;;
 
+	"tlv01-e2e-slurm12")
+    	HOSTNAME="israel-1"
+    	HOST_COLOR=$cluster_color
+		;;
+
 	"hpchead")
 		HOST_COLOR=$cluster_color
 		;;
